@@ -77,15 +77,7 @@ namespace FFXIVAPP.Common.Helpers
             var split = theme.Split('|');
             var accent = split[0];
             var shade = split[1];
-            switch (shade)
-            {
-                case "Dark":
-                    ThemeManager.ChangeTheme(window, ThemeManager.DefaultAccents.First(a => a.Name == accent), Theme.Dark);
-                    break;
-                case "Light":
-                    ThemeManager.ChangeTheme(window, ThemeManager.DefaultAccents.First(a => a.Name == accent), Theme.Light);
-                    break;
-            }
+            ThemeManager.ChangeAppStyle(window, ThemeManager.Accents.First(a => a.Name == accent), ThemeManager.AppThemes.First(t => t.Name == ("Base" + shade)));
         }
     }
 }

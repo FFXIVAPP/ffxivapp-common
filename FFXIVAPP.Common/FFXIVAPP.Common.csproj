@@ -126,7 +126,6 @@
     <Compile Include="Utilities\Logging.cs" />
     <Compile Include="Utilities\ScreenCapture.cs" />
     <Compile Include="Utilities\SelectionBehavior.cs" />
-    <Compile Include="Utilities\ThemeManager.cs" />
     <Compile Include="ViewModelBase\CommandManagerHelper.cs" />
     <Compile Include="ViewModelBase\DelegateCommand.cs" />
     <Compile Include="Helpers\XmlHelper.cs" />

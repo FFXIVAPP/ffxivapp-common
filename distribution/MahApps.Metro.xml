@@ -6,7 +6,7 @@
     <members>
         <member name="T:MahApps.Metro.Accent">
             <summary>
-            An object that represents the foreground color for a Metro <see cref="T:MahApps.Metro.Theme"/>.
+            An object that represents the foreground color for a Metro <see cref="T:MahApps.Metro.AppTheme"/>.
             </summary>
         </member>
         <member name="F:MahApps.Metro.Accent.Resources">
@@ -29,6 +29,21 @@
         <member name="P:MahApps.Metro.Accent.Name">
             <summary>
             Gets/sets the name of the Accent.
+            </summary>
+        </member>
+        <member name="T:MahApps.Metro.AppTheme">
+            <summary>
+            Represents the background theme of the application.
+            </summary>
+        </member>
+        <member name="P:MahApps.Metro.AppTheme.Resources">
+            <summary>
+            The ResourceDictionary that represents this application theme.
+            </summary>
+        </member>
+        <member name="P:MahApps.Metro.AppTheme.Name">
+            <summary>
+            Gets the name of the application theme.
             </summary>
         </member>
         <member name="T:MahApps.Metro.Behaviours.BorderlessWindowBehavior">
@@ -78,18 +93,14 @@
             <see cref="T:System.Windows.Controls.ComboBox"/>
             </summary>
         </member>
-        <member name="T:MahApps.Metro.Controls.CustomValidationPopup">
-            <summary>
-            This custom popup is used by the validation error template.
-            It provides some additional nice features:
-                - repositioning if host-window size or location changed
-                - repositioning if host-window gets maximized and vice versa
-                - it's only topmost if the host-window is activated
-            </summary>
-        </member>
         <member name="T:MahApps.Metro.Controls.ControlsHelper">
             <summary>
             A helper class that provides various attached properties for the GroupBox, TabItem and MetroTabItem controls.
+            </summary>
+        </member>
+        <member name="F:MahApps.Metro.Controls.ControlsHelper.IsUnderlinedProperty">
+            <summary>
+            Defines whether the underline below the <see cref="T:System.Windows.Controls.TabControl"/> is shown or not.
             </summary>
         </member>
         <member name="F:MahApps.Metro.Controls.ControlsHelper.ButtonWidthProperty">
@@ -119,6 +130,15 @@
             <summary>
             This property can be used to handle the style for CheckBox and RadioButton
             LeftToRight means content left and button right and RightToLeft vise versa
+            </summary>
+        </member>
+        <member name="T:MahApps.Metro.Controls.CustomValidationPopup">
+            <summary>
+            This custom popup is used by the validation error template.
+            It provides some additional nice features:
+                - repositioning if host-window size or location changed
+                - repositioning if host-window gets maximized and vice versa
+                - it's only topmost if the host-window is activated
             </summary>
         </member>
         <member name="T:MahApps.Metro.Controls.Dialogs.BaseMetroDialog">
@@ -205,14 +225,6 @@
         <member name="P:MahApps.Metro.Controls.Dialogs.MetroDialogSettings.ColorScheme">
             <summary>
             Gets/sets whether the metro dialog should use the default black/white appearance (theme) or try to use the current accent.
-            </summary>
-        </member>
-        <member name="P:MahApps.Metro.Controls.Dialogs.MetroDialogSettings.UseAnimations">
-            <summary>
-            Enable/disable dialog showing/hiding animations.
-            Setting this value will also set both AnimateShow and AnimateHide properties to the same value.
-            Getting "True" - at least AnimateHide or AnimateHide is "True".
-            Getting "False" - both AnimateHide and AnimateHide are "False".
             </summary>
         </member>
         <member name="P:MahApps.Metro.Controls.Dialogs.MetroDialogSettings.AnimateShow">
@@ -468,7 +480,7 @@
             <seealso cref="T:MahApps.Metro.Controls.FlyoutsControl"/>
             </summary>
         </member>
-        <member name="E:MahApps.Metro.Controls.Flyout.IsOpenChanged">
+        <member name="F:MahApps.Metro.Controls.Flyout.IsOpenChangedEvent">
             <summary>
             An event that is raised when IsOpen changes.
             </summary>
@@ -491,6 +503,11 @@
         <member name="P:MahApps.Metro.Controls.Flyout.AnimateOnPositionChange">
             <summary>
             Gets/sets whether this flyout uses the open/close animation when changing the <see cref="P:MahApps.Metro.Controls.Flyout.Position"/> property. (default is true)
+            </summary>
+        </member>
+        <member name="P:MahApps.Metro.Controls.Flyout.AnimateOpacity">
+            <summary>
+            Gets/sets whether this flyout animates the opacity of the flyout when opening/closing.
             </summary>
         </member>
         <member name="P:MahApps.Metro.Controls.Flyout.IsPinned">
@@ -652,11 +669,6 @@
             CleanWindow sets this so it has the correct default window commands brush
             </summary>
         </member>
-        <member name="P:MahApps.Metro.Controls.MetroWindow.ShowWindowCommandsOnTop">
-            <summary>
-            Gets/sets whether the Window Commands will show on top of a Flyout with it's position set to Top or Right.
-            </summary>
-        </member>
         <member name="P:MahApps.Metro.Controls.MetroWindow.WindowMinButtonStyle">
             <summary>
             Gets/sets the style for the MIN button style.
@@ -698,11 +710,6 @@
             </summary>
         </member>
         <member name="P:MahApps.Metro.Controls.MetroWindow.RightWindowCommands">
-            <summary>
-            Gets/sets the right window commands that hosts the user commands.
-            </summary>
-        </member>
-        <member name="P:MahApps.Metro.Controls.MetroWindow.WindowCommands">
             <summary>
             Gets/sets the right window commands that hosts the user commands.
             </summary>
@@ -760,11 +767,6 @@
         <member name="P:MahApps.Metro.Controls.MetroWindow.ShowCloseButton">
             <summary>
             Gets/sets if the close button is visible.
-            </summary>
-        </member>
-        <member name="P:MahApps.Metro.Controls.MetroWindow.ShowWindowButtonCommandsOnHiddenTitleBar">
-            <summary>
-            Gets/sets whether the Window Button Commands will show if the TitleBar is hidden.
             </summary>
         </member>
         <member name="P:MahApps.Metro.Controls.MetroWindow.ShowSystemMenuOnRightClick">
@@ -1139,6 +1141,21 @@
             </summary>
         </member>
         <!-- Badly formed XML comment ignored for member "T:MahApps.Metro.Controls.SplitButton" -->
+        <member name="F:MahApps.Metro.Controls.WindowCommandsOverlayBehavior.Never">
+            <summary>
+            Doesn't overlay flyouts nor a hidden TitleBar.
+            </summary>
+        </member>
+        <member name="F:MahApps.Metro.Controls.WindowCommandsOverlayBehavior.Flyouts">
+            <summary>
+            Overlays opened <see cref="T:MahApps.Metro.Controls.Flyout"/> controls.
+            </summary>
+        </member>
+        <member name="F:MahApps.Metro.Controls.WindowCommandsOverlayBehavior.HiddenTitleBar">
+            <summary>
+            Overlays a hidden TitleBar.
+            </summary>
+        </member>
         <member name="M:MahApps.Metro.Converters.BackgroundToForegroundConverter.IdealTextColor(System.Windows.Media.Color)">
             <summary>
             Determining Ideal Text Color Based on Specified Background Color
@@ -4720,26 +4737,6 @@
         </member>
         <member name="M:MahApps.Metro.Native.UnsafeNativeMethods.EnableMenuItem(System.IntPtr,System.UInt32,System.UInt32)">
             <devdoc>http://msdn.microsoft.com/en-us/library/windows/desktop/ms647636(v=vs.85).aspx</devdoc>
-        </member>
-        <member name="T:MahApps.Metro.Theme">
-            <summary>
-            An enum that represents the two Metro styles: Light and Dark.
-            </summary>
-        </member>
-        <member name="T:MahApps.Metro.AppTheme">
-            <summary>
-            Represents the background theme of the application.
-            </summary>
-        </member>
-        <member name="P:MahApps.Metro.AppTheme.Resources">
-            <summary>
-            The ResourceDictionary that represents this application theme.
-            </summary>
-        </member>
-        <member name="P:MahApps.Metro.AppTheme.Name">
-            <summary>
-            Gets the name of the application theme.
-            </summary>
         </member>
         <member name="T:MahApps.Metro.ThemeManager">
             <summary>
