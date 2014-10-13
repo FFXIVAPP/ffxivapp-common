@@ -82,6 +82,10 @@
     <Compile Include="Converters\StringToBrushConverter.cs" />
     <Compile Include="Converters\TabStripBorderConverter.cs" />
     <Compile Include="Converters\VisibilityConverter.cs" />
+    <Compile Include="Core\Memory\ItemInfo.cs" />
+    <Compile Include="Core\Memory\Enums\Inventory.cs" />
+    <Compile Include="Core\Memory\Interfaces\IItemInfo.cs" />
+    <Compile Include="Core\Memory\Interfaces\IInventoryEntity.cs" />
     <Compile Include="Core\Memory\PartyEntity.cs" />
     <Compile Include="Core\Memory\Enums\Actor.cs" />
     <Compile Include="Core\Memory\Interfaces\IPartyEntity.cs" />
@@ -99,6 +103,7 @@
     <Compile Include="Core\Constant\Interfaces\IConstantsEntity.cs" />
     <Compile Include="Core\Memory\Interfaces\IPlayerEntity.cs" />
     <Compile Include="Core\Memory\PlayerEntity.cs" />
+    <Compile Include="Core\Memory\InventoryEntity.cs" />
     <Compile Include="Core\Memory\StatusEntry.cs" />
     <Compile Include="Core\Memory\TargetEntity.cs" />
     <Compile Include="Events\PopupResultEvent.cs" />
