@@ -31,6 +31,7 @@ namespace FFXIVAPP.Common.Core.Memory.Interfaces
 {
     public interface IItemInfo
     {
+        int Slot { get; set; }
         uint Amount { get; set; }
         uint Durability { get; set; }
         decimal DurabilityPercent { get; }
