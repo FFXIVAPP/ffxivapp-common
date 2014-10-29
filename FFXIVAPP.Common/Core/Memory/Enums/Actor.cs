@@ -110,8 +110,8 @@ namespace FFXIVAPP.Common.Core.Memory.Enums
             ACN = 0x1A,
             SMN = 0x1B,
             SCH = 0x1C,
-            Chocobo = 0x1D,
-            Pet = 0x1E
+            ROG = 0x1D,
+            NIN = 0x1E
         }
 
         public enum Sex : byte

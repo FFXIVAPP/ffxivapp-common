@@ -61,6 +61,8 @@ namespace FFXIVAPP.Common.Core.Memory.Interfaces
 
         byte ACN { get; set; }
 
+        byte ROG { get; set; }
+
         byte CPT { get; set; }
 
         byte BSM { get; set; }
@@ -103,6 +105,8 @@ namespace FFXIVAPP.Common.Core.Memory.Interfaces
 
         int ACN_CurrentEXP { get; set; }
 
+        int ROG_CurrentEXP { get; set; }
+
         int BSM_CurrentEXP { get; set; }
 
         int CPT_CurrentEXP { get; set; }
@@ -112,6 +116,8 @@ namespace FFXIVAPP.Common.Core.Memory.Interfaces
         int ARM_CurrentEXP { get; set; }
 
         int WVR_CurrentEXP { get; set; }
+        
+        int ALC_CurrentEXP { get; set; }
 
         int LTW_CurrentEXP { get; set; }
 
