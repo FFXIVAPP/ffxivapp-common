@@ -87,6 +87,12 @@
             </para>
             </summary>
         </member>
+        <member name="M:MahApps.Metro.Controls.ButtonHelper.GetPreserveTextCase(System.Windows.UIElement)">
+            <summary>
+            Overrides the text case behavior for certain buttons.
+            When set to <c>true</c>, the text case will be preserved and won't be changed to upper or lower case.
+            </summary>
+        </member>
         <member name="T:MahApps.Metro.Controls.ComboBoxHelper">
             <summary>
             A helper class that provides various attached properties for the ComboBox control.
@@ -95,12 +101,7 @@
         </member>
         <member name="T:MahApps.Metro.Controls.ControlsHelper">
             <summary>
-            A helper class that provides various attached properties for the GroupBox, TabItem and MetroTabItem controls.
-            </summary>
-        </member>
-        <member name="F:MahApps.Metro.Controls.ControlsHelper.IsUnderlinedProperty">
-            <summary>
-            Defines whether the underline below the <see cref="T:System.Windows.Controls.TabControl"/> is shown or not.
+            A helper class that provides various controls.
             </summary>
         </member>
         <member name="F:MahApps.Metro.Controls.ControlsHelper.ButtonWidthProperty">
@@ -110,26 +111,24 @@
             For normal TextBox, PasswordBox the width is the height. 
             </summary>
         </member>
-        <member name="F:MahApps.Metro.Controls.ControlsHelper.VerticalScrollBarOnLeftSideProperty">
+        <member name="M:MahApps.Metro.Controls.ControlsHelper.SetFocusBorderBrush(System.Windows.DependencyObject,System.Windows.Media.Brush)">
             <summary>
-            This property can be used to set vertical scrollbar left side from the tabpanel (look at MetroAnimatedSingleRowTabControl)
+            Sets the brush used to draw the focus border.
             </summary>
         </member>
-        <member name="F:MahApps.Metro.Controls.ControlsHelper.TransitionProperty">
+        <member name="M:MahApps.Metro.Controls.ControlsHelper.GetFocusBorderBrush(System.Windows.DependencyObject)">
             <summary>
-            This property can be used to set the Transition for animated TabControls
+            Gets the brush used to draw the focus border.
             </summary>
         </member>
-        <member name="F:MahApps.Metro.Controls.ControlsHelper.ContentDirectionProperty">
+        <member name="M:MahApps.Metro.Controls.ControlsHelper.SetMouseOverBorderBrush(System.Windows.DependencyObject,System.Windows.Media.Brush)">
             <summary>
-            This property can be used to handle the style for CheckBox and RadioButton
-            LeftToRight means content left and button right and RightToLeft vise versa
+            Sets the brush used to draw the mouse over brush.
             </summary>
         </member>
-        <member name="M:MahApps.Metro.Controls.ControlsHelper.GetContentDirection(System.Windows.UIElement)">
+        <member name="M:MahApps.Metro.Controls.ControlsHelper.GetMouseOverBorderBrush(System.Windows.DependencyObject)">
             <summary>
-            This property can be used to handle the style for CheckBox and RadioButton
-            LeftToRight means content left and button right and RightToLeft vise versa
+            Gets the brush used to draw the mouse over brush.
             </summary>
         </member>
         <member name="T:MahApps.Metro.Controls.CustomValidationPopup">
@@ -146,7 +145,7 @@
              The base class for dialogs.
             
              You probably don't want to use this class, if you want to add arbitrary content to your dialog, 
-             use the <see cref="T:MahApps.Metro.Controls.Dialogs.SimpleDialog"/> class.
+             use the <see cref="T:MahApps.Metro.Controls.Dialogs.CustomDialog"/> class.
              </summary>
         </member>
         <member name="M:MahApps.Metro.Controls.Dialogs.BaseMetroDialog.#ctor(MahApps.Metro.Controls.MetroWindow,MahApps.Metro.Controls.Dialogs.MetroDialogSettings)">
@@ -154,6 +153,7 @@
             Initializes a new MahApps.Metro.Controls.BaseMetroDialog.
             </summary>
             <param name="owningWindow">The window that is the parent of the dialog.</param>
+            <param name="settings">The settings for the message dialog.</param>
         </member>
         <member name="M:MahApps.Metro.Controls.Dialogs.BaseMetroDialog.#ctor">
             <summary>
@@ -180,11 +180,6 @@
         <member name="P:MahApps.Metro.Controls.Dialogs.BaseMetroDialog.Title">
             <summary>
             Gets/sets the dialog's title.
-            </summary>
-        </member>
-        <member name="P:MahApps.Metro.Controls.Dialogs.BaseMetroDialog.DialogBody">
-            <summary>
-            Gets/sets arbitrary content in the "message" area in the dialog. 
             </summary>
         </member>
         <member name="P:MahApps.Metro.Controls.Dialogs.BaseMetroDialog.DialogTop">
@@ -251,10 +246,16 @@
             An enum representing the different choices for a color scheme in a Metro Dialog.
             </summary>
         </member>
+        <member name="T:MahApps.Metro.Controls.Dialogs.CustomDialog">
+            <summary>
+            An implementation of BaseMetroDialog allowing arbitrary content.
+            </summary>
+        </member>
         <member name="M:MahApps.Metro.Controls.Dialogs.DialogManager.ShowLoginAsync(MahApps.Metro.Controls.MetroWindow,System.String,System.String,MahApps.Metro.Controls.Dialogs.LoginDialogSettings)">
             <summary>
             Creates a LoginDialog inside of the current window.
             </summary>
+            <param name="window">The window that is the parent of the dialog.</param>
             <param name="title">The title of the LoginDialog.</param>
             <param name="message">The message contained within the LoginDialog.</param>
             <param name="settings">Optional settings that override the global metro dialog settings.</param>
@@ -264,6 +265,7 @@
             <summary>
             Creates a InputDialog inside of the current window.
             </summary>
+            <param name="window">The MetroWindow</param>
             <param name="title">The title of the MessageDialog.</param>
             <param name="message">The message contained within the MessageDialog.</param>
             <param name="settings">Optional settings that override the global metro dialog settings.</param>
@@ -273,6 +275,7 @@
             <summary>
             Creates a MessageDialog inside of the current window.
             </summary>
+            <param name="window">The MetroWindow</param>
             <param name="title">The title of the MessageDialog.</param>
             <param name="message">The message contained within the MessageDialog.</param>
             <param name="style">The type of buttons to use.</param>
@@ -283,6 +286,7 @@
             <summary>
             Creates a ProgressDialog inside of the current window.
             </summary>
+            <param name="window">The MetroWindow</param>
             <param name="title">The title of the ProgressDialog.</param>
             <param name="message">The message within the ProgressDialog.</param>
             <param name="isCancelable">Determines if the cancel button is visible.</param>
@@ -428,11 +432,6 @@
             Gets if the Cancel button has been pressed.
             </summary>
         </member>
-        <member name="T:MahApps.Metro.Controls.Dialogs.SimpleDialog">
-            <summary>
-            A simple implementation of BaseMetroDialog allowing arbitrary content.
-            </summary>
-        </member>
         <member name="T:MahApps.Metro.Controls.FlipView">
             <summary>
             A control that imitate a slideshow with back/forward buttons.
@@ -485,9 +484,20 @@
             An event that is raised when IsOpen changes.
             </summary>
         </member>
+        <member name="P:MahApps.Metro.Controls.Flyout.TitleVisibility">
+            <summary>
+            Gets/sets if the title is visible in this flyout.
+            </summary>
+        </member>
+        <member name="P:MahApps.Metro.Controls.Flyout.CloseButtonVisibility">
+            <summary>
+            Gets/sets if the close button is visible in this flyout.
+            </summary>
+        </member>
         <member name="P:MahApps.Metro.Controls.Flyout.CloseCommand">
             <summary>
             An ICommand that executes when the flyout's close button is clicked.
+            Note that this won't execute when <see cref="P:MahApps.Metro.Controls.Flyout.IsOpen"/> is set to <c>false</c>.
             </summary>
         </member>
         <member name="P:MahApps.Metro.Controls.Flyout.HeaderTemplate">
@@ -919,7 +929,7 @@
             <summary>
             Gets or sets the base uniform resource identifier (URI) of the current context.
             </summary>
-            <see cref="!:System.Windows.Navigation.NavigationWindow.IUriContext.BaseUri"/>
+            <see cref="P:System.Windows.Markup.IUriContext.BaseUri"/>
         </member>
         <member name="P:MahApps.Metro.Controls.MetroNavigationWindow.Source">
             <summary>
@@ -1027,7 +1037,14 @@
             <param name="window">The MetroWindow</param>
             <param name="name">The name of the template child</param>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:MahApps.Metro.Controls.MetroWindowHelpers.HandleWindowCommandsForFlyouts(MahApps.Metro.Controls.MetroWindow,System.Collections.Generic.IEnumerable{MahApps.Metro.Controls.Flyout},System.Windows.Media.Brush)" -->
+        <member name="M:MahApps.Metro.Controls.MetroWindowHelpers.HandleWindowCommandsForFlyouts(MahApps.Metro.Controls.MetroWindow,System.Collections.Generic.IEnumerable{MahApps.Metro.Controls.Flyout},System.Windows.Media.Brush)">
+            <summary>
+            Adapts the WindowCommands to the theme of the first opened, topmost &amp;&amp; (top || right || left) flyout
+            </summary>
+            <param name="window">The MetroWindow</param>
+            <param name="flyouts">All the flyouts! Or flyouts that fall into the category described in the summary.</param>
+            <param name="resetBrush">An optional brush to reset the window commands brush to.</param>
+        </member>
         <member name="T:MahApps.Metro.Controls.NumericUpDown">
             <summary>
                 Represents a Windows spin box (also known as an up-down control) that displays numeric values.
@@ -1082,7 +1099,7 @@
             <summary>
                 Gets or sets a value indicating whether the control must have the focus in order to change values using the mouse wheel.
             <remarks>
-                If the value is true then the value changes when the mouse wheel is over the control. If the value is false then the value changes only if the control has the focus. If <see cref="P:MahApps.Metro.Controls.NumericUpDown.InterceptMouseWheel"/> is set to <see cref="!:bool.False"/> then this property has no effect.
+                If the value is true then the value changes when the mouse wheel is over the control. If the value is false then the value changes only if the control has the focus. If <see cref="P:MahApps.Metro.Controls.NumericUpDown.InterceptMouseWheel"/> is set to "false" then this property has no effect.
             </remarks>
             </summary>
         </member>
@@ -1140,7 +1157,38 @@
             An Enum representing different positions, such as Left or Right.
             </summary>
         </member>
-        <!-- Badly formed XML comment ignored for member "T:MahApps.Metro.Controls.SplitButton" -->
+        <member name="F:MahApps.Metro.Controls.ScrollBarHelper.VerticalScrollBarOnLeftSideProperty">
+            <summary>
+            This property can be used to set vertical scrollbar left side from the tabpanel (look at MetroAnimatedSingleRowTabControl)
+            </summary>
+        </member>
+        <member name="T:MahApps.Metro.Controls.SplitButton">
+            <summary>
+                &lt;MyNamespace:CustomControl1/&gt;
+            </summary>
+        </member>
+        <member name="F:MahApps.Metro.Controls.TabControlHelper.IsUnderlinedProperty">
+            <summary>
+            Defines whether the underline below the <see cref="T:System.Windows.Controls.TabControl"/> is shown or not.
+            </summary>
+        </member>
+        <member name="F:MahApps.Metro.Controls.TabControlHelper.TransitionProperty">
+            <summary>
+            This property can be used to set the Transition for animated TabControls
+            </summary>
+        </member>
+        <member name="F:MahApps.Metro.Controls.ToggleButtonHelper.ContentDirectionProperty">
+            <summary>
+            This property can be used to handle the style for CheckBox and RadioButton
+            LeftToRight means content left and button right and RightToLeft vise versa
+            </summary>
+        </member>
+        <member name="M:MahApps.Metro.Controls.ToggleButtonHelper.GetContentDirection(System.Windows.UIElement)">
+            <summary>
+            This property can be used to handle the style for CheckBox and RadioButton
+            LeftToRight means content left and button right and RightToLeft vise versa
+            </summary>
+        </member>
         <member name="F:MahApps.Metro.Controls.WindowCommandsOverlayBehavior.Never">
             <summary>
             Doesn't overlay flyouts nor a hidden TitleBar.
@@ -1291,26 +1339,6 @@
             Indicates if a TextBox or RichTextBox should use SpellCheck context menu
             </summary>
         </member>
-        <member name="M:MahApps.Metro.Controls.TextboxHelper.SetFocusBorderBrush(System.Windows.DependencyObject,System.Windows.Media.Brush)">
-            <summary>
-            Sets the brush used to draw the focus border.
-            </summary>
-        </member>
-        <member name="M:MahApps.Metro.Controls.TextboxHelper.GetFocusBorderBrush(System.Windows.DependencyObject)">
-            <summary>
-            Gets the brush used to draw the focus border.
-            </summary>
-        </member>
-        <member name="M:MahApps.Metro.Controls.TextboxHelper.SetMouseOverBorderBrush(System.Windows.DependencyObject,System.Windows.Media.Brush)">
-            <summary>
-            Sets the brush used to draw the mouse over brush.
-            </summary>
-        </member>
-        <member name="M:MahApps.Metro.Controls.TextboxHelper.GetMouseOverBorderBrush(System.Windows.DependencyObject)">
-            <summary>
-            Gets the brush used to draw the mouse over brush.
-            </summary>
-        </member>
         <member name="M:MahApps.Metro.Controls.TextboxHelper.GetHasText(System.Windows.DependencyObject)">
             <summary>
             Gets if the attached TextBox has text.
@@ -1413,6 +1441,17 @@
             <returns>The first parent item that matches the submitted
             type parameter. If not matching item can be found, a null
             reference is being returned.</returns>
+        </member>
+        <member name="M:MahApps.Metro.Controls.TreeHelper.FindChild``1(System.Windows.DependencyObject,System.String)">
+            <summary>
+            Finds a Child of a given item in the visual tree. 
+            </summary>
+            <param name="parent">A direct parent of the queried item.</param>
+            <typeparam name="T">The type of the queried item.</typeparam>
+            <param name="childName">x:Name or Name of child. </param>
+            <returns>The first parent item that matches the submitted type parameter. 
+            If not matching item can be found, 
+            a null parent is being returned.</returns>
         </member>
         <member name="M:MahApps.Metro.Controls.TreeHelper.GetParentObject(System.Windows.DependencyObject)">
             <summary>
@@ -1896,7 +1935,7 @@
             <summary>
             Convert a point in system coordinates to a point in device independent pixels (1/96").
             </summary>
-            <param name="logicalPoint">A point in the physical coordinate system.</param>
+            <param name="devicePoint">A point in the physical coordinate system.</param>
             <returns>Returns the parameter converted to the device independent coordinate system.</returns>
         </member>
         <member name="T:Standard.Win32Error">
@@ -1980,7 +2019,6 @@
         </member>
         <member name="M:Standard.Win32Error.ToHRESULT">
             <summary>Performs HRESULT_FROM_WIN32 conversion.</summary>
-            <param name="error">The Win32 error being converted to an HRESULT.</param>
             <returns>The equivilent HRESULT value.</returns>
         </member>
         <member name="M:Standard.Win32Error.GetLastError">
@@ -2850,7 +2888,6 @@
             Retrieve an IEnumObjects or IObjectArray for IShellItems and/or IShellLinks. 
             Items may appear in both the frequent and recent lists.  
             </summary>
-            <param name="?"></param>
             <returns></returns>
         </member>
         <member name="T:Standard.IObjectWithAppUserModelId">
@@ -3077,9 +3114,6 @@
             <summary>
             Wrapper around File.Copy to provide feedback as to whether the file wasn't copied because it didn't exist.
             </summary>
-            <param name="cachePath"></param>
-            <param name="suggestedPath"></param>
-            <param name="overwrite"></param>
             <returns></returns>
         </member>
         <member name="M:Standard.Utility.SafeDeleteFile(System.String)">
@@ -3209,9 +3243,11 @@
             <param name="lowerBoundInclusive">The lower bound inclusive value.</param>
             <param name="value">The value to verify.</param>
             <param name="upperBoundExclusive">The upper bound exclusive value.</param>
+            <param name="parameterName">The name of the parameter that caused the current exception.</param>
         </member>
         <member name="M:Microsoft.Windows.Shell.SystemCommands.ShowSystemMenu(System.Windows.Window,System.Windows.Point)">
             <summary>Display the system menu at a specified location.</summary>
+            <param name="window">The MetroWindow</param>
             <param name="screenLocation">The location to display the system menu, in logical screen coordinates.</param>
         </member>
         <member name="M:Microsoft.Windows.Shell.SystemParameters2.#ctor">
@@ -4708,7 +4744,7 @@
         <member name="M:MahApps.Metro.Native.UnsafeNativeMethods.SetWindowPos(System.IntPtr,System.IntPtr,System.Int32,System.Int32,System.Int32,System.Int32,System.UInt32)">
             <devdoc>http://msdn.microsoft.com/en-us/library/windows/desktop/ms633545(v=vs.85).aspx</devdoc>
         </member>
-        <member name="M:MahApps.Metro.Native.UnsafeNativeMethods.LoadString(System.IntPtr,System.UInt32,System.Text.StringBuilder,System.Int32)">
+        <member name="M:MahApps.Metro.Native.UnsafeNativeMethods.LoadString(MahApps.Metro.Native.SafeLibraryHandle,System.UInt32,System.Text.StringBuilder,System.Int32)">
             <devdoc>http://msdn.microsoft.com/en-us/library/windows/desktop/ms647486%28v=vs.85%29.aspx</devdoc>
         </member>
         <member name="M:MahApps.Metro.Native.UnsafeNativeMethods.IsWindow(System.IntPtr)">
