@@ -1,7 +1,7 @@
 ﻿// FFXIVAPP.Common
 // IPlayerEntity.cs
 // 
-// Copyright © 2007 - 2014 Ryan Wilson - All Rights Reserved
+// Copyright © 2007 - 2015 Ryan Wilson - All Rights Reserved
 // 
 // Redistribution and use in source and binary forms, with or without 
 // modification, are permitted provided that the following conditions are met: 
@@ -116,7 +116,7 @@ namespace FFXIVAPP.Common.Core.Memory.Interfaces
         int ARM_CurrentEXP { get; set; }
 
         int WVR_CurrentEXP { get; set; }
-        
+
         int ALC_CurrentEXP { get; set; }
 
         int LTW_CurrentEXP { get; set; }
