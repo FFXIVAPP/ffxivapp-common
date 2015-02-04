@@ -34,6 +34,7 @@ namespace FFXIVAPP.Common.Core.Memory.Interfaces
 {
     public interface IActorEntity
     {
+        ActorEntity CurrentUser { get; set; }
         uint MapIndex { get; set; }
         string Name { get; set; }
         uint ID { get; set; }
@@ -79,5 +80,6 @@ namespace FFXIVAPP.Common.Core.Memory.Interfaces
         uint CastingTargetID { get; set; }
         float CastingProgress { get; set; }
         float CastingTime { get; set; }
+        int HitBoxRadius { get; }
     }
 }

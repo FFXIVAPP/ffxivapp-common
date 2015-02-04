@@ -187,6 +187,7 @@ namespace FFXIVAPP.Common.Core.Memory
         }
 
         public byte GatheringStatus { get; set; }
+        public ActorEntity CurrentUser { get; set; }
         public uint MapIndex { get; set; }
 
         public string Name
@@ -251,12 +252,30 @@ namespace FFXIVAPP.Common.Core.Memory
         public float CastingProgress { get; set; }
         public float CastingTime { get; set; }
 
+        public int HitBoxRadius
+        {
+            get
+            {
+                if (CurrentUser != null)
+                {
+                    return (int) Math.Floor(GetDistanceTo(CurrentUser) - 0.0001) - (Distance);
+                }
+                return 0;
+            }
+        }
+
         public float GetDistanceTo(ActorEntity compare)
         {
             var distanceX = (float) Math.Abs(X - compare.X);
             var distanceY = (float) Math.Abs(Y - compare.Y);
             var distanceZ = (float) Math.Abs(Z - compare.Z);
             return (float) Math.Sqrt((distanceX * distanceX) + (distanceY * distanceY) + (distanceZ * distanceZ));
+        }
+
+        public float GetCastingDistanceTo(ActorEntity compare)
+        {
+            var distance = GetDistanceTo(compare) - compare.HitBoxRadius;
+            return distance > 0 ? distance : 0;
         }
     }
 }
