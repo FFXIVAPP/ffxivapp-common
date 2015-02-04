@@ -251,6 +251,25 @@ namespace FFXIVAPP.Common.Core.Memory
         public float CastingProgress { get; set; }
         public float CastingTime { get; set; }
 
+        public ActorEntity CurrentUser { get; set; }
+
+        public int HitBoxRadius
+        {
+            get
+            {
+                return (int)Math.Floor((double)this.GetDistanceTo(this.CurrentUser) - 0.0001) - this.Distance;
+            }
+        }
+        public float GetCastingDistanceTo(ActorEntity compare)
+        {
+            float distanceTo = this.GetDistanceTo(compare) - (float)compare.HitBoxRadius;
+            if (distanceTo <= 0f)
+            {
+                return 0f;
+            }
+            return distanceTo;
+        }
+
         public float GetDistanceTo(ActorEntity compare)
         {
             var distanceX = (float) Math.Abs(X - compare.X);
