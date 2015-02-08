@@ -35,6 +35,7 @@ namespace FFXIVAPP.Common.Core.Memory.Interfaces
         string TargetName { get; set; }
         string StatusName { get; set; }
         short StatusID { get; set; }
+        byte Stacks { get; set; }
         float Duration { get; set; }
         uint CasterID { get; set; }
         bool IsValid();
