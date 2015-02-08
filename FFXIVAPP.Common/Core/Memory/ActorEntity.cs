@@ -258,7 +258,11 @@ namespace FFXIVAPP.Common.Core.Memory
             {
                 if (CurrentUser != null)
                 {
-                    return (int) Math.Floor(GetDistanceTo(CurrentUser) - 0.0001) - (Distance);
+                    if (CurrentUser.ID == this.ID)
+                    {
+                        return 1;
+                    }
+                    return (int) Math.Floor(GetHorizontalDistanceTo(CurrentUser) - 0.0001) - Distance;
                 }
                 return 0;
             }
@@ -271,10 +275,16 @@ namespace FFXIVAPP.Common.Core.Memory
             var distanceZ = (float) Math.Abs(Z - compare.Z);
             return (float) Math.Sqrt((distanceX * distanceX) + (distanceY * distanceY) + (distanceZ * distanceZ));
         }
+        public float GetHorizontalDistanceTo(ActorEntity compare)
+        {
+            var distanceX = (float)Math.Abs(X - compare.X);
+            var distanceY = (float)Math.Abs(Y - compare.Y);
+            return (float) Math.Sqrt((distanceX * distanceX) + (distanceY * distanceY));
+        }
 
         public float GetCastingDistanceTo(ActorEntity compare)
         {
-            var distance = GetDistanceTo(compare) - compare.HitBoxRadius;
+            var distance = GetHorizontalDistanceTo(compare) - compare.HitBoxRadius;
             return distance > 0 ? distance : 0;
         }
     }
