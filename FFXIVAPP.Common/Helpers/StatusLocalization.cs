@@ -35,5 +35,6 @@ namespace FFXIVAPP.Common.Helpers
         public string French { get; set; }
         public string Japanese { get; set; }
         public string German { get; set; }
+        public string Chinese { get; set; }
     }
 }

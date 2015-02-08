@@ -258,7 +258,7 @@ namespace FFXIVAPP.Common.Core.Memory
             {
                 if (CurrentUser != null)
                 {
-                    if (CurrentUser.ID == this.ID)
+                    if (CurrentUser.ID == ID)
                     {
                         return 1;
                     }
@@ -275,10 +275,11 @@ namespace FFXIVAPP.Common.Core.Memory
             var distanceZ = (float) Math.Abs(Z - compare.Z);
             return (float) Math.Sqrt((distanceX * distanceX) + (distanceY * distanceY) + (distanceZ * distanceZ));
         }
+
         public float GetHorizontalDistanceTo(ActorEntity compare)
         {
-            var distanceX = (float)Math.Abs(X - compare.X);
-            var distanceY = (float)Math.Abs(Y - compare.Y);
+            var distanceX = (float) Math.Abs(X - compare.X);
+            var distanceY = (float) Math.Abs(Y - compare.Y);
             return (float) Math.Sqrt((distanceX * distanceX) + (distanceY * distanceY));
         }
 
