@@ -46,6 +46,7 @@ namespace FFXIVAPP.Common.Core.Memory
 
         public string StatusName { get; set; }
         public short StatusID { get; set; }
+        public byte Stacks { get; set; }
         public float Duration { get; set; }
         public uint CasterID { get; set; }
 
