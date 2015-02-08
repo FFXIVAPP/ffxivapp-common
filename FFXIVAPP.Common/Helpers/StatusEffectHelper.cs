@@ -65,6 +65,7 @@ namespace FFXIVAPP.Common.Helpers
                 {
                     Name = new StatusLocalization
                     {
+                        Chinese = "???",
                         English = "???",
                         French = "???",
                         German = "???",
@@ -81,6 +82,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Petrification",
                     English = "Petrification",
                     French = "Pétrification",
                     German = "Stein",
@@ -92,6 +94,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Stun",
                     English = "Stun",
                     French = "Étourdissement",
                     German = "Betäubung",
@@ -103,6 +106,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sleep",
                     English = "Sleep",
                     French = "Sommeil",
                     German = "Schlaf",
@@ -114,6 +118,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Daze",
                     English = "Daze",
                     French = "Évanouissement",
                     German = "Benommenheit",
@@ -125,6 +130,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Amnesia",
                     English = "Amnesia",
                     French = "Amnésie",
                     German = "Amnesie",
@@ -136,6 +142,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Pacification",
                     English = "Pacification",
                     French = "Pacification",
                     German = "Pacem",
@@ -147,6 +154,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Silence",
                     English = "Silence",
                     French = "Silence",
                     German = "Stumm",
@@ -158,6 +166,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Haste",
                     English = "Haste",
                     French = "Hâte",
                     German = "Hast",
@@ -169,6 +178,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Slow",
                     English = "Slow",
                     French = "Lenteur",
                     German = "Gemach",
@@ -180,6 +190,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Slow",
                     English = "Slow",
                     French = "Lenteur neurolienne",
                     German = "Gemach",
@@ -191,6 +202,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Confused",
                     English = "Confused",
                     French = "Confusion",
                     German = "Konfus",
@@ -202,6 +214,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Levitation",
                     English = "Levitation",
                     French = "Lévitation",
                     German = "Levitation",
@@ -213,6 +226,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bind",
                     English = "Bind",
                     French = "Entrave",
                     German = "Fessel",
@@ -224,6 +238,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Heavy",
                     English = "Heavy",
                     French = "Pesanteur",
                     German = "Gewicht",
@@ -235,6 +250,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Blind",
                     English = "Blind",
                     French = "Cécité",
                     German = "Blind",
@@ -246,6 +262,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Paralysis",
                     English = "Paralysis",
                     French = "Paralysie",
                     German = "Paralyse",
@@ -257,6 +274,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Poison",
                     English = "Poison",
                     French = "Poison",
                     German = "Gift",
@@ -268,6 +286,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Pollen",
                     English = "Pollen",
                     French = "Poison violent",
                     German = "Giftpollen",
@@ -279,6 +298,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "TP Bleed",
                     English = "TP Bleed",
                     French = "Saignée de PT",
                     German = "TP-Verlust",
@@ -290,6 +310,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "HP Boost",
                     English = "HP Boost",
                     French = "Bonus de PV",
                     German = "LP-Bonus",
@@ -301,6 +322,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "HP Penalty",
                     English = "HP Penalty",
                     French = "Malus de PV",
                     German = "LP-Malus",
@@ -312,6 +334,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "MP Boost",
                     English = "MP Boost",
                     French = "Bonus de PM",
                     German = "MP-Bonus",
@@ -323,6 +346,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "MP Penalty",
                     English = "MP Penalty",
                     French = "Malus de PM",
                     German = "MP-Malus",
@@ -334,6 +358,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Attack Up",
                     English = "Attack Up",
                     French = "Bonus d'attaque",
                     German = "Attacke-Bonus",
@@ -345,6 +370,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Attack Down",
                     English = "Attack Down",
                     French = "Malus d'attaque",
                     German = "Attacke-Malus",
@@ -356,6 +382,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Accuracy Up",
                     English = "Accuracy Up",
                     French = "Bonus de précision",
                     German = "Präzisions-Bonus",
@@ -367,6 +394,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Accuracy Down",
                     English = "Accuracy Down",
                     French = "Malus de précision",
                     German = "Präzisions-Malus",
@@ -378,6 +406,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Defense Up",
                     English = "Defense Up",
                     French = "Bonus de défense",
                     German = "Verteidigungs-Bonus",
@@ -389,6 +418,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Defense Down",
                     English = "Defense Down",
                     French = "Malus de défense",
                     German = "Verteidigungs-Malus",
@@ -400,6 +430,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Evasion Up",
                     English = "Evasion Up",
                     French = "Bonus d'esquive",
                     German = "Ausweich-Bonus",
@@ -411,6 +442,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Evasion Down",
                     English = "Evasion Down",
                     French = "Malus d'esquive",
                     German = "Ausweich-Malus",
@@ -422,6 +454,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Attack Magic Potency Up",
                     English = "Attack Magic Potency Up",
                     French = "Bonus de puissance magique",
                     German = "Offensivmagie-Bonus",
@@ -433,6 +466,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Attack Magic Potency Down",
                     English = "Attack Magic Potency Down",
                     French = "Malus de puissance magique",
                     German = "Offensivmagie-Malus",
@@ -444,6 +478,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Healing Potency Up",
                     English = "Healing Potency Up",
                     French = "Bonus de magie curative",
                     German = "Heilmagie-Bonus",
@@ -455,6 +490,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Healing Potency Down",
                     English = "Healing Potency Down",
                     French = "Malus de magie curative",
                     German = "Heilmagie-Malus",
@@ -466,6 +502,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Magic Defense Up",
                     English = "Magic Defense Up",
                     French = "Bonus de défense magique",
                     German = "Magieabwehr-Bonus",
@@ -477,6 +514,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Magic Defense Down",
                     English = "Magic Defense Down",
                     French = "Malus de défense magique",
                     German = "Magieabwehr-Malus",
@@ -488,6 +526,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Stun Resistance",
                     English = "Stun Resistance",
                     French = "Résistance à Étourdissement",
                     German = "Betäubungsresistenz",
@@ -499,6 +538,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Silence Resistance",
                     English = "Silence Resistance",
                     French = "Résistance à Silence",
                     German = "Stumm-Resistenz",
@@ -510,6 +550,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Crafting Facility",
                     English = "Crafting Facility",
                     French = "Installation d'artisanat",
                     German = "Werkstattstimmung",
@@ -521,6 +562,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "The Echo",
                     English = "The Echo",
                     French = "L'Écho",
                     German = "Kraft des Transzendierens",
@@ -532,6 +574,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Weakness",
                     English = "Weakness",
                     French = "Affaiblissement",
                     German = "Schwäche",
@@ -543,6 +586,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Brink of Death",
                     English = "Brink of Death",
                     French = "Mourant",
                     German = "Sterbenselend",
@@ -554,6 +598,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Crafter's Grace",
                     English = "Crafter's Grace",
                     French = "Grâce de l'artisan",
                     German = "Sternstunde der Handwerker",
@@ -565,6 +610,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Gatherer's Grace",
                     English = "Gatherer's Grace",
                     French = "Grâce du récolteur",
                     German = "Sternstunde der Sammler",
@@ -576,6 +622,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Stealth",
                     English = "Stealth",
                     French = "Furtivité",
                     German = "Coeurl-Pfoten",
@@ -587,6 +634,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Well Fed",
                     English = "Well Fed",
                     French = "Repu",
                     German = "Gut gesättigt",
@@ -598,6 +646,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Medicated",
                     English = "Medicated",
                     French = "Médicamenté",
                     German = "Stärkung",
@@ -609,6 +658,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sprint",
                     English = "Sprint",
                     French = "Sprint",
                     German = "Sprint",
@@ -620,6 +670,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Strength Down",
                     English = "Strength Down",
                     French = "Malus de force",
                     German = "Stärke-Malus",
@@ -631,6 +682,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Vitality Down",
                     English = "Vitality Down",
                     French = "Malus de vitalité",
                     German = "Konstitutions-Malus",
@@ -642,6 +694,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Physical Damage Up",
                     English = "Physical Damage Up",
                     French = "Bonus de dégâts physiques",
                     German = "Schadenswert +",
@@ -653,6 +706,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Physical Damage Down",
                     English = "Physical Damage Down",
                     French = "Malus de dégâts physiques",
                     German = "Schadenswert -",
@@ -664,6 +718,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Physical Vulnerability Down",
                     English = "Physical Vulnerability Down",
                     French = "Vulnérabilité physique diminuée",
                     German = "Verringerte physische Verwundbarkeit",
@@ -675,6 +730,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Physical Vulnerability Up",
                     English = "Physical Vulnerability Up",
                     French = "Vulnérabilité physique augmentée",
                     German = "Erhöhte physische Verwundbarkeit",
@@ -686,6 +742,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Magic Damage Up",
                     English = "Magic Damage Up",
                     French = "Bonus de dégâts magiques",
                     German = "Magieschaden +",
@@ -697,6 +754,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Magic Damage Down",
                     English = "Magic Damage Down",
                     French = "Malus de dégâts magiques",
                     German = "Magieschaden -",
@@ -708,6 +766,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Magic Vulnerability Down",
                     English = "Magic Vulnerability Down",
                     French = "Vulnérabilité magique diminuée",
                     German = "Verringerte Magie-Verwundbarkeit",
@@ -719,6 +778,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Magic Vulnerability Up",
                     English = "Magic Vulnerability Up",
                     French = "Vulnérabilité magique augmentée",
                     German = "Erhöhte Magie-Verwundbarkeit",
@@ -730,6 +790,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Damage Up",
                     English = "Damage Up",
                     French = "Bonus de dégâts",
                     German = "Schaden +",
@@ -741,6 +802,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Damage Down",
                     English = "Damage Down",
                     French = "Malus de dégâts",
                     German = "Schaden -",
@@ -752,6 +814,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Vulnerability Down",
                     English = "Vulnerability Down",
                     French = "Vulnérabilité diminuée",
                     German = "Verringerte Verwundbarkeit",
@@ -763,6 +826,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Vulnerability Up",
                     English = "Vulnerability Up",
                     French = "Vulnérabilité augmentée",
                     German = "Erhöhte Verwundbarkeit",
@@ -774,6 +838,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Critical Skill",
                     English = "Critical Skill",
                     French = "Maîtrise critique",
                     German = "Kritisches Potenzial",
@@ -785,6 +850,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Terror",
                     English = "Terror",
                     French = "Terreur",
                     German = "Terror",
@@ -796,6 +862,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Leaden",
                     English = "Leaden",
                     French = "Plombé",
                     German = "Bleischwere",
@@ -807,6 +874,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Drainstrikes",
                     English = "Drainstrikes",
                     French = "Coups drainants",
                     German = "Auszehren",
@@ -818,6 +886,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Aspirstrikes",
                     English = "Aspirstrikes",
                     French = "Coups aspirants",
                     German = "Auslaugen",
@@ -829,6 +898,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Stunstrikes",
                     English = "Stunstrikes",
                     French = "Coups étourdissants",
                     German = "Ausschalten",
@@ -840,6 +910,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Rampart",
                     English = "Rampart",
                     French = "Rempart",
                     German = "Schutzwall",
@@ -851,6 +922,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Convalescence",
                     English = "Convalescence",
                     French = "Convalescence",
                     German = "Konvaleszenz",
@@ -862,6 +934,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Awareness",
                     English = "Awareness",
                     French = "Diligence",
                     German = "Achtsamkeit",
@@ -873,6 +946,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sentinel",
                     English = "Sentinel",
                     French = "Sentinelle",
                     German = "Sentinel",
@@ -884,6 +958,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Tempered Will",
                     English = "Tempered Will",
                     French = "Volonté d'acier",
                     German = "Eherner Wille",
@@ -895,6 +970,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fight or Flight",
                     English = "Fight or Flight",
                     French = "Combat acharné",
                     German = "Verwegenheit",
@@ -906,6 +982,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bulwark",
                     English = "Bulwark",
                     French = "Forteresse",
                     German = "Bollwerk",
@@ -917,6 +994,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sword Oath",
                     English = "Sword Oath",
                     French = "Serment de l'épée",
                     German = "Schwert-Eid",
@@ -928,6 +1006,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Shield Oath",
                     English = "Shield Oath",
                     French = "Serment du bouclier",
                     German = "Schild-Eid",
@@ -939,6 +1018,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Cover",
                     English = "Cover",
                     French = "Couverture",
                     German = "Deckung",
@@ -950,6 +1030,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Covered",
                     English = "Covered",
                     French = "Couvert",
                     German = "Gedeckt",
@@ -961,6 +1042,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Hallowed Ground",
                     English = "Hallowed Ground",
                     French = "Invincible",
                     German = "Heiliger Boden",
@@ -972,6 +1054,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Foresight",
                     English = "Foresight",
                     French = "Aguet",
                     German = "Vorahnung",
@@ -983,6 +1066,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bloodbath",
                     English = "Bloodbath",
                     French = "Bain de sang",
                     German = "Blutbad",
@@ -994,6 +1078,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Maim",
                     English = "Maim",
                     French = "Mutilation",
                     German = "Verstümmelung",
@@ -1005,6 +1090,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Berserk",
                     English = "Berserk",
                     French = "Berserk",
                     German = "Tollwut",
@@ -1016,6 +1102,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Thrill of Battle",
                     English = "Thrill of Battle",
                     French = "Frisson de la bataille",
                     German = "Kampfrausch",
@@ -1027,6 +1114,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Holmgang",
                     English = "Holmgang",
                     French = "Holmgang",
                     German = "Holmgang",
@@ -1038,6 +1126,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Vengeance",
                     English = "Vengeance",
                     French = "Représailles",
                     German = "Rache",
@@ -1049,6 +1138,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Storm's Eye",
                     English = "Storm's Eye",
                     French = "Œil de la tempête",
                     German = "Sturmbrecher",
@@ -1060,6 +1150,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Defiance",
                     English = "Defiance",
                     French = "Défi",
                     German = "Verteidiger",
@@ -1071,6 +1162,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Unchained",
                     English = "Unchained",
                     French = "Affranchissement",
                     German = "Entfesselt",
@@ -1082,6 +1174,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Wrath",
                     English = "Wrath",
                     French = "Rage",
                     German = "Zorn",
@@ -1093,6 +1186,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Wrath II",
                     English = "Wrath II",
                     French = "Rage II",
                     German = "Zorn II",
@@ -1104,6 +1198,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Wrath III",
                     English = "Wrath III",
                     French = "Rage III",
                     German = "Zorn III",
@@ -1115,6 +1210,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Wrath IV",
                     English = "Wrath IV",
                     French = "Rage IV",
                     German = "Zorn IV",
@@ -1126,6 +1222,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Infuriated",
                     English = "Infuriated",
                     French = "Rage V",
                     German = "Zorn V",
@@ -1137,6 +1234,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Dragon Kick",
                     English = "Dragon Kick",
                     French = "Tacle du dragon",
                     German = "Drachentritt",
@@ -1148,6 +1246,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Featherfoot",
                     English = "Featherfoot",
                     French = "Pieds légers",
                     German = "Leichtfuß",
@@ -1159,6 +1258,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Internal Release",
                     English = "Internal Release",
                     French = "Relâchement intérieur",
                     German = "Innere Gelöstheit",
@@ -1170,6 +1270,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Twin Snakes",
                     English = "Twin Snakes",
                     French = "Serpents jumeaux",
                     German = "Doppelviper",
@@ -1181,6 +1282,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Mantra",
                     English = "Mantra",
                     French = "Mantra",
                     German = "Mantra",
@@ -1192,6 +1294,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fists of Fire",
                     English = "Fists of Fire",
                     French = "Poings de feu",
                     German = "Sengende Aura",
@@ -1203,6 +1306,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fists of Earth",
                     English = "Fists of Earth",
                     French = "Poings de terre",
                     German = "Steinerne Aura",
@@ -1214,6 +1318,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fists of Wind",
                     English = "Fists of Wind",
                     French = "Poings de vent",
                     German = "Beflügelnde Aura",
@@ -1225,6 +1330,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Touch of Death",
                     English = "Touch of Death",
                     French = "Toucher mortel",
                     German = "Hauch des Todes",
@@ -1236,6 +1342,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Opo-opo Form",
                     English = "Opo-opo Form",
                     French = "Posture de l'opo-opo",
                     German = "Opo-Opo-Form",
@@ -1247,6 +1354,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Raptor Form",
                     English = "Raptor Form",
                     French = "Posture du raptor",
                     German = "Raptor-Form",
@@ -1258,6 +1366,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Coeurl Form",
                     English = "Coeurl Form",
                     French = "Posture du coeurl",
                     German = "Coeurl-Form",
@@ -1269,6 +1378,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Perfect Balance",
                     English = "Perfect Balance",
                     French = "Équilibre parfait",
                     German = "Improvisation",
@@ -1280,6 +1390,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Greased Lightning",
                     English = "Greased Lightning",
                     French = "Vitesse de l'éclair",
                     German = "Geölter Blitz",
@@ -1291,6 +1402,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Greased Lightning II",
                     English = "Greased Lightning II",
                     French = "Vitesse de l'éclair II",
                     German = "Geölter Blitz II",
@@ -1302,6 +1414,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Greased Lightning III",
                     English = "Greased Lightning III",
                     French = "Vitesse de l'éclair III",
                     German = "Geölter Blitz III",
@@ -1313,6 +1426,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Keen Flurry",
                     English = "Keen Flurry",
                     French = "Volée défensive",
                     German = "Auge des Sturms",
@@ -1324,6 +1438,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Heavy Thrust",
                     English = "Heavy Thrust",
                     French = "Percée puissante",
                     German = "Gewaltiger Stoß",
@@ -1335,6 +1450,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Life Surge",
                     English = "Life Surge",
                     French = "Souffle de vie",
                     German = "Vitalwallung",
@@ -1346,6 +1462,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Blood for Blood",
                     English = "Blood for Blood",
                     French = "Du sang pour du sang",
                     German = "Zahn um Zahn",
@@ -1357,6 +1474,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Chaos Thrust",
                     English = "Chaos Thrust",
                     French = "Percée chaotique",
                     German = "Chaotischer Tjost",
@@ -1368,6 +1486,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Phlebotomize",
                     English = "Phlebotomize",
                     French = "Double percée",
                     German = "Phlebotomie",
@@ -1379,6 +1498,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Power Surge",
                     English = "Power Surge",
                     French = "Souffle de puissance",
                     German = "Drachenklaue",
@@ -1390,6 +1510,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Disembowel",
                     English = "Disembowel",
                     French = "Éventration",
                     German = "Drachengriff",
@@ -1401,6 +1522,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Straighter Shot",
                     English = "Straighter Shot",
                     French = "Tir à l'arc surpuissant",
                     German = "Direkter Schuss +",
@@ -1412,6 +1534,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Hawk's Eye",
                     English = "Hawk's Eye",
                     French = "Œil de faucon",
                     German = "Falkenauge",
@@ -1423,6 +1546,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Venomous Bite",
                     English = "Venomous Bite",
                     French = "Morsure venimeuse",
                     German = "Infizierte Wunde",
@@ -1434,6 +1558,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Raging Strikes",
                     English = "Raging Strikes",
                     French = "Tir furieux",
                     German = "Wütende Attacke",
@@ -1445,6 +1570,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Physical Vulnerability Up",
                     English = "Physical Vulnerability Up",
                     French = "Vulnérabilité physique augmentée",
                     German = "Erhöhte physische Verwundbarkeit",
@@ -1456,6 +1582,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Quelling Strikes",
                     English = "Quelling Strikes",
                     French = "Frappe silencieuse",
                     German = "Heimliche Attacke",
@@ -1467,6 +1594,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Barrage",
                     English = "Barrage",
                     French = "Rafale de coups",
                     German = "Sperrfeuer",
@@ -1478,6 +1606,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Windbite",
                     English = "Windbite",
                     French = "Morsure du vent",
                     German = "Beißender Wind",
@@ -1489,6 +1618,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Straight Shot",
                     English = "Straight Shot",
                     French = "Tir droit",
                     German = "Direkter Schuss",
@@ -1500,6 +1630,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Downpour of Death",
                     English = "Downpour of Death",
                     French = "Déluge mortel",
                     German = "Tödlicher Regen +",
@@ -1511,6 +1642,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Quicker Nock",
                     English = "Quicker Nock",
                     French = "Salve fulgurante améliorée",
                     German = "Pfeilsalve +",
@@ -1522,6 +1654,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Swiftsong",
                     English = "Swiftsong",
                     French = "Chant rapide",
                     German = "Schmissiger Song",
@@ -1533,6 +1666,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Swiftsong",
                     English = "Swiftsong",
                     French = "Chant rapide",
                     German = "Schmissiger Song",
@@ -1544,6 +1678,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Mage's Ballad",
                     English = "Mage's Ballad",
                     French = "Ballade du mage",
                     German = "Ballade des Weisen",
@@ -1555,6 +1690,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Mage's Ballad",
                     English = "Mage's Ballad",
                     French = "Ballade du mage",
                     German = "Ballade des Weisen",
@@ -1566,6 +1702,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Army's Paeon",
                     English = "Army's Paeon",
                     French = "Péan martial",
                     German = "Hymne der Krieger",
@@ -1577,6 +1714,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Army's Paeon",
                     English = "Army's Paeon",
                     French = "Péan martial",
                     German = "Hymne der Krieger",
@@ -1588,6 +1726,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Foe Requiem",
                     English = "Foe Requiem",
                     French = "Requiem ennemi",
                     German = "Requiem der Feinde",
@@ -1599,6 +1738,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Foe Requiem",
                     English = "Foe Requiem",
                     French = "Requiem ennemi",
                     German = "Requiem der Feinde",
@@ -1610,6 +1750,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Battle Voice",
                     English = "Battle Voice",
                     French = "Voix de combat",
                     German = "Ode an die Seele",
@@ -1621,6 +1762,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Chameleon",
                     English = "Chameleon",
                     French = "Caméléon",
                     German = "Chamäleon",
@@ -1632,6 +1774,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Aero",
                     English = "Aero",
                     French = "Vent",
                     German = "Wind",
@@ -1643,6 +1786,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Aero II",
                     English = "Aero II",
                     French = "Extra Vent",
                     German = "Windra",
@@ -1654,6 +1798,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Cleric Stance",
                     English = "Cleric Stance",
                     French = "Prestance du prêtre",
                     German = "Bußprediger",
@@ -1665,6 +1810,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Protect",
                     English = "Protect",
                     French = "Bouclier",
                     German = "Protes",
@@ -1676,6 +1822,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Protect",
                     English = "Protect",
                     French = "Bouclier",
                     German = "Protes",
@@ -1687,6 +1834,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Raise",
                     English = "Raise",
                     French = "Vie",
                     German = "Wiederbeleben",
@@ -1698,6 +1846,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Stun",
                     English = "Stun",
                     French = "Étourdissement",
                     German = "Betäubung",
@@ -1709,6 +1858,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Medica II",
                     English = "Medica II",
                     French = "Extra Médica",
                     German = "Resedra",
@@ -1720,6 +1870,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Stoneskin",
                     English = "Stoneskin",
                     French = "Cuirasse",
                     German = "Steinhaut",
@@ -1731,6 +1882,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Stoneskin (Physical)",
                     English = "Stoneskin (Physical)",
                     French = "Cuirasse (physique)",
                     German = "Steinhaut (physisch)",
@@ -1742,6 +1894,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Stoneskin (Magical)",
                     English = "Stoneskin (Magical)",
                     French = "Cuirasse (magique)",
                     German = "Steinhaut (magisch)",
@@ -1753,6 +1906,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Shroud of Saints",
                     English = "Shroud of Saints",
                     French = "Voile des saints",
                     German = "Fispelstimme",
@@ -1764,6 +1918,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Freecure",
                     English = "Freecure",
                     French = "Extra Soin amélioré",
                     German = "Vitra +",
@@ -1775,6 +1930,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Overcure",
                     English = "Overcure",
                     French = "Méga Soin amélioré",
                     German = "Vitaga +",
@@ -1786,6 +1942,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Presence of Mind",
                     English = "Presence of Mind",
                     French = "Présence d'esprit",
                     German = "Geistesgegenwart",
@@ -1797,6 +1954,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Regen",
                     English = "Regen",
                     French = "Récup",
                     German = "Regena",
@@ -1808,6 +1966,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Divine Seal",
                     English = "Divine Seal",
                     French = "Sceau divin",
                     German = "Göttliches Siegel",
@@ -1819,6 +1978,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Surecast",
                     English = "Surecast",
                     French = "Stoïcisme",
                     German = "Unbeirrbarkeit",
@@ -1830,6 +1990,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Thunder",
                     English = "Thunder",
                     French = "Foudre",
                     German = "Blitz",
@@ -1841,6 +2002,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Thunder II",
                     English = "Thunder II",
                     French = "Extra Foudre",
                     German = "Blitzra",
@@ -1852,6 +2014,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Thunder III",
                     English = "Thunder III",
                     French = "Méga Foudre",
                     German = "Blitzga",
@@ -1863,6 +2026,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Thundercloud",
                     English = "Thundercloud",
                     French = "Nuage d'orage",
                     German = "Blitz +",
@@ -1874,6 +2038,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Firestarter",
                     English = "Firestarter",
                     French = "Pyromane",
                     German = "Feuga +",
@@ -1885,6 +2050,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Succor",
                     English = "Succor",
                     French = "Dogme de survie",
                     German = "Kurieren +",
@@ -1896,6 +2062,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Swiftcast",
                     English = "Swiftcast",
                     French = "Magie prompte",
                     German = "Spontaneität",
@@ -1907,6 +2074,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Manaward",
                     English = "Manaward",
                     French = "Barrière de mana",
                     German = "Mana-Schild",
@@ -1918,6 +2086,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Manawall",
                     English = "Manawall",
                     French = "Mur de mana",
                     German = "Mana-Wand",
@@ -1929,6 +2098,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Apocatastasis",
                     English = "Apocatastasis",
                     French = "Apocatastase",
                     German = "Apokatastasis",
@@ -1940,6 +2110,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Ekpyrosis",
                     English = "Ekpyrosis",
                     French = "Ekpyrosis",
                     German = "Ekpyrosis",
@@ -1951,6 +2122,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Infirmity",
                     English = "Infirmity",
                     French = "Infirmité",
                     German = "Gebrechlichkeit",
@@ -1962,6 +2134,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Astral Fire",
                     English = "Astral Fire",
                     French = "Feu astral",
                     German = "Lichtfeuer",
@@ -1973,6 +2146,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Astral Fire II",
                     English = "Astral Fire II",
                     French = "Feu astral II",
                     German = "Lichtfeuer II",
@@ -1984,6 +2158,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Astral Fire III",
                     English = "Astral Fire III",
                     French = "Feu astral III",
                     German = "Lichtfeuer III",
@@ -1995,6 +2170,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Umbral Ice",
                     English = "Umbral Ice",
                     French = "Glace ombrale",
                     German = "Schatteneis",
@@ -2006,6 +2182,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Umbral Ice II",
                     English = "Umbral Ice II",
                     French = "Glace ombrale II",
                     German = "Schatteneis II",
@@ -2017,6 +2194,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Umbral Ice III",
                     English = "Umbral Ice III",
                     French = "Glace ombrale III",
                     German = "Schatteneis III",
@@ -2028,6 +2206,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bio",
                     English = "Bio",
                     French = "Bactérie",
                     German = "Bio",
@@ -2039,6 +2218,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Miasma",
                     English = "Miasma",
                     French = "Miasmes",
                     German = "Miasma",
@@ -2050,6 +2230,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Disease",
                     English = "Disease",
                     French = "Maladie",
                     German = "Krankheit",
@@ -2061,6 +2242,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Virus",
                     English = "Virus",
                     French = "Virus",
                     German = "Virus",
@@ -2072,6 +2254,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fever",
                     English = "Fever",
                     French = "Virus de l'esprit",
                     German = "Geistesvirus",
@@ -2083,6 +2266,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sustain",
                     English = "Sustain",
                     French = "Transfusion",
                     German = "Erhaltung",
@@ -2094,6 +2278,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Eye for an Eye",
                     English = "Eye for an Eye",
                     French = "Garde-corps",
                     German = "Auge um Auge",
@@ -2105,6 +2290,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Eye for an Eye",
                     English = "Eye for an Eye",
                     French = "Garde-corps",
                     German = "Auge um Auge",
@@ -2116,6 +2302,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Rouse",
                     English = "Rouse",
                     French = "Stimulation",
                     German = "Aufmuntern",
@@ -2127,6 +2314,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Miasma II",
                     English = "Miasma II",
                     French = "Extra Miasmes",
                     German = "Miasra",
@@ -2138,6 +2326,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bio II",
                     English = "Bio II",
                     French = "Extra Bactérie",
                     German = "Biora",
@@ -2149,6 +2338,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Shadow Flare",
                     English = "Shadow Flare",
                     French = "Éruption ténébreuse",
                     German = "Schattenflamme",
@@ -2160,6 +2350,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Spur",
                     English = "Spur",
                     French = "Encouragement",
                     German = "Ansporn",
@@ -2171,6 +2362,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Slow",
                     English = "Slow",
                     French = "Lenteur",
                     German = "Gemach",
@@ -2182,6 +2374,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Shield Wall",
                     English = "Shield Wall",
                     French = "Mur protecteur",
                     German = "Schutzschild",
@@ -2193,6 +2386,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Mighty Guard",
                     English = "Mighty Guard",
                     French = "Garde puissante",
                     German = "Totalabwehr",
@@ -2204,6 +2398,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Last Bastion",
                     English = "Last Bastion",
                     French = "Dernier bastion",
                     German = "Letzte Bastion",
@@ -2215,6 +2410,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Blaze Spikes",
                     English = "Blaze Spikes",
                     French = "Pointes de feu",
                     German = "Feuerstachel",
@@ -2226,6 +2422,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Ice Spikes",
                     English = "Ice Spikes",
                     French = "Pointes de glace",
                     German = "Eisstachel",
@@ -2237,6 +2434,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Shock Spikes",
                     English = "Shock Spikes",
                     French = "Pointes de foudre",
                     German = "Schockstachel",
@@ -2248,6 +2446,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Physical Vulnerability Up",
                     English = "Physical Vulnerability Up",
                     French = "Vulnérabilité physique augmentée",
                     German = "Erhöhte physische Verwundbarkeit",
@@ -2259,6 +2458,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Stun",
                     English = "Stun",
                     French = "Étourdissement",
                     German = "Betäubung",
@@ -2270,6 +2470,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Vulnerability Up",
                     English = "Vulnerability Up",
                     French = "Vulnérabilité augmentée",
                     German = "Erhöhte Verwundbarkeit",
@@ -2281,6 +2482,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Boost",
                     English = "Boost",
                     French = "Accumulation",
                     German = "Akkumulation",
@@ -2292,6 +2494,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Enfire",
                     English = "Enfire",
                     French = "EndoFeu",
                     German = "Runenwaffe: Feuer",
@@ -2303,6 +2506,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Enblizzard",
                     English = "Enblizzard",
                     French = "EndoGlace",
                     German = "Runenwaffe: Eis",
@@ -2314,6 +2518,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Enaero",
                     English = "Enaero",
                     French = "EndoVent",
                     German = "Runenwaffe: Wind",
@@ -2325,6 +2530,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Enstone",
                     English = "Enstone",
                     French = "EndoPierre",
                     German = "Runenwaffe: Erde",
@@ -2336,6 +2542,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Enthunder",
                     English = "Enthunder",
                     French = "EndoFoudre",
                     German = "Runenwaffe: Blitz",
@@ -2347,6 +2554,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Enwater",
                     English = "Enwater",
                     French = "EndoEau",
                     German = "Runenwaffe: Wasser",
@@ -2358,6 +2566,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Doom",
                     English = "Doom",
                     French = "Glas",
                     German = "Todesurteil",
@@ -2369,6 +2578,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sharpened Knife",
                     English = "Sharpened Knife",
                     French = "Couteau aiguisé",
                     German = "Gewetztes Messer",
@@ -2380,6 +2590,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "True Sight",
                     English = "True Sight",
                     French = "Vision véritable",
                     German = "Wahre Gestalt",
@@ -2391,6 +2602,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Pacification",
                     English = "Pacification",
                     French = "Tranquillisation",
                     German = "Besänftigung",
@@ -2402,6 +2614,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Agitation",
                     English = "Agitation",
                     French = "Énervement",
                     German = "Aufstachelung",
@@ -2413,6 +2626,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Damage Down",
                     English = "Damage Down",
                     French = "Malus de dégâts",
                     German = "Schaden -",
@@ -2424,6 +2638,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Paralysis",
                     English = "Paralysis",
                     French = "Paralysie",
                     German = "Paralyse",
@@ -2435,6 +2650,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Triangulate",
                     English = "Triangulate",
                     French = "Forestier",
                     German = "Geodäsie",
@@ -2446,6 +2662,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Gathering Rate Up",
                     English = "Gathering Rate Up",
                     French = "Récolte améliorée",
                     German = "Sammelrate erhöht",
@@ -2457,6 +2674,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Gathering Yield Up",
                     English = "Gathering Yield Up",
                     French = "Récolte abondante",
                     German = "Sammelgewinn erhöht",
@@ -2468,6 +2686,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Gathering Fortune Up",
                     English = "Gathering Fortune Up",
                     French = "Récolte de qualité",
                     German = "Sammelglück erhöht",
@@ -2479,6 +2698,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Truth of Forests",
                     English = "Truth of Forests",
                     French = "Science des végétaux",
                     German = "Flurenthüllung",
@@ -2490,6 +2710,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Truth of Mountains",
                     English = "Truth of Mountains",
                     French = "Science des minéraux",
                     German = "Tellurische Enthüllung",
@@ -2501,6 +2722,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Byregot's Ward",
                     English = "Byregot's Ward",
                     French = "Grâce de Byregot",
                     German = "Byregots Segen",
@@ -2512,6 +2734,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Nophica's Ward",
                     English = "Nophica's Ward",
                     French = "Grâce de Nophica",
                     German = "Nophicas Segen",
@@ -2523,6 +2746,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Prospect",
                     English = "Prospect",
                     French = "Prospecteur",
                     German = "Prospektion",
@@ -2534,6 +2758,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Haste",
                     English = "Haste",
                     French = "Hâte",
                     German = "Hast",
@@ -2545,6 +2770,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Seduced",
                     English = "Seduced",
                     French = "Séduction",
                     German = "Versuchung",
@@ -2556,6 +2782,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Menphina's Ward",
                     English = "Menphina's Ward",
                     French = "Grâce de Menphina",
                     German = "Menphinas Segen",
@@ -2567,6 +2794,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Nald'thal's Ward",
                     English = "Nald'thal's Ward",
                     French = "Grâce de Nald'thal",
                     German = "Nald'thals Segen",
@@ -2578,6 +2806,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Llymlaen's Ward",
                     English = "Llymlaen's Ward",
                     French = "Grâce de Llymlaen",
                     German = "Llymlaens Segen",
@@ -2589,6 +2818,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Thaliak's Ward",
                     English = "Thaliak's Ward",
                     French = "Grâce de Thaliak",
                     German = "Thaliaks Segen",
@@ -2600,6 +2830,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Preparation",
                     English = "Preparation",
                     French = "Préparation",
                     German = "Vorausplanung",
@@ -2611,6 +2842,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Arbor Call",
                     English = "Arbor Call",
                     French = "Dendrologie",
                     German = "Ruf des Waldes",
@@ -2622,6 +2854,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Lay of the Land",
                     English = "Lay of the Land",
                     French = "Géologie",
                     German = "Bodenbefund",
@@ -2633,6 +2866,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Windburn",
                     English = "Windburn",
                     French = "Brûlure du vent",
                     German = "Beißender Wind",
@@ -2644,6 +2878,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Choco Beak",
                     English = "Choco Beak",
                     French = "Choco-bec",
                     German = "Chocobo-Schnabel",
@@ -2655,6 +2890,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Choco Regen",
                     English = "Choco Regen",
                     French = "Choco-récup",
                     German = "Chocobo-Regena",
@@ -2666,6 +2902,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Choco Surge",
                     English = "Choco Surge",
                     French = "Choco-ardeur",
                     German = "Chocobo-Quelle",
@@ -2677,6 +2914,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "The Echo",
                     English = "The Echo",
                     French = "L'Écho",
                     German = "Kraft des Transzendierens",
@@ -2688,6 +2926,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Heavy",
                     English = "Heavy",
                     French = "Pesanteur",
                     German = "Gewicht",
@@ -2699,6 +2938,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Blessing of Light",
                     English = "Blessing of Light",
                     French = "Bénédiction de la Lumière",
                     German = "Gnade des Lichts",
@@ -2710,6 +2950,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Arbor Call II",
                     English = "Arbor Call II",
                     French = "Dendrologie II",
                     German = "Ruf des Waldes II",
@@ -2721,6 +2962,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Lay of the Land II",
                     English = "Lay of the Land II",
                     French = "Géologie II",
                     German = "Bodenbefund II",
@@ -2732,6 +2974,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fracture",
                     English = "Fracture",
                     French = "Fracture",
                     German = "Knochenbrecher",
@@ -2743,6 +2986,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sanction",
                     English = "Sanction",
                     French = "Sanction",
                     German = "Ermächtigung",
@@ -2754,6 +2998,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Demolish",
                     English = "Demolish",
                     French = "Démolition",
                     German = "Demolieren",
@@ -2765,6 +3010,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Rain of Death",
                     English = "Rain of Death",
                     French = "Pluie mortelle",
                     German = "Tödlicher Regen",
@@ -2776,6 +3022,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Circle of Scorn",
                     English = "Circle of Scorn",
                     French = "Cercle du destin",
                     German = "Kreis der Verachtung",
@@ -2787,6 +3034,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Flaming Arrow",
                     English = "Flaming Arrow",
                     French = "Flèche enflammée",
                     German = "Flammenpfeil",
@@ -2798,6 +3046,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Burns",
                     English = "Burns",
                     French = "Brûlure",
                     German = "Brandwunde",
@@ -2809,6 +3058,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Inner Quiet",
                     English = "Inner Quiet",
                     French = "Calme intérieur",
                     German = "Innere Ruhe",
@@ -2820,6 +3070,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Waste Not",
                     English = "Waste Not",
                     French = "Parcimonie",
                     German = "Nachhaltigkeit",
@@ -2831,6 +3082,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Steady Hand",
                     English = "Steady Hand",
                     French = "Main sûre",
                     German = "Ruhige Hand",
@@ -2842,6 +3094,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Great Strides",
                     English = "Great Strides",
                     French = "Grands progrès",
                     German = "Große Schritte",
@@ -2853,6 +3106,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Ingenuity",
                     English = "Ingenuity",
                     French = "Ingéniosité",
                     German = "Einfallsreichtum",
@@ -2864,6 +3118,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Ingenuity II",
                     English = "Ingenuity II",
                     French = "Ingéniosité II",
                     German = "Einfallsreichtum II",
@@ -2875,6 +3130,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Waste Not II",
                     English = "Waste Not II",
                     French = "Parcimonie II",
                     German = "Nachhaltigkeit II",
@@ -2886,6 +3142,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Manipulation",
                     English = "Manipulation",
                     French = "Manipulation",
                     German = "Manipulation",
@@ -2897,6 +3154,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Innovation",
                     English = "Innovation",
                     French = "Innovation",
                     German = "Innovation",
@@ -2908,6 +3166,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Reclaim",
                     English = "Reclaim",
                     French = "Récupération",
                     German = "Reklamation",
@@ -2919,6 +3178,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Comfort Zone",
                     English = "Comfort Zone",
                     French = "Zone de confort",
                     German = "Komfortzone",
@@ -2930,6 +3190,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Steady Hand II",
                     English = "Steady Hand II",
                     French = "Main sûre II",
                     German = "Ruhige Hand II",
@@ -2941,6 +3202,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Damage Up",
                     English = "Damage Up",
                     French = "Bonus de dégâts",
                     German = "Schaden +",
@@ -2952,6 +3214,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Flesh Wound",
                     English = "Flesh Wound",
                     French = "Blessure physique",
                     German = "Fleischwunde",
@@ -2963,6 +3226,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Stab Wound",
                     English = "Stab Wound",
                     French = "Perforation",
                     German = "Stichwunde",
@@ -2974,6 +3238,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Concussion",
                     English = "Concussion",
                     French = "Concussion",
                     German = "Prellung",
@@ -2985,6 +3250,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Burns",
                     English = "Burns",
                     French = "Brûlure",
                     German = "Brandwunde",
@@ -2996,6 +3262,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Frostbite",
                     English = "Frostbite",
                     French = "Gelure",
                     German = "Erfrierung",
@@ -3007,6 +3274,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Windburn",
                     English = "Windburn",
                     French = "Brûlure du vent",
                     German = "Beißender Wind",
@@ -3018,6 +3286,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sludge",
                     English = "Sludge",
                     French = "Emboué",
                     German = "Schlamm",
@@ -3029,6 +3298,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Electrocution",
                     English = "Electrocution",
                     French = "Électrocution",
                     German = "Stromschlag",
@@ -3040,6 +3310,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Dropsy",
                     English = "Dropsy",
                     French = "Œdème",
                     German = "Wassersucht",
@@ -3051,6 +3322,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bleeding",
                     English = "Bleeding",
                     French = "Saignant",
                     German = "Blutung",
@@ -3062,6 +3334,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Recuperation",
                     English = "Recuperation",
                     French = "Rétablissement",
                     German = "Segnung",
@@ -3073,6 +3346,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Poison +1",
                     English = "Poison +1",
                     French = "Poison",
                     German = "Gift +1",
@@ -3084,6 +3358,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Voice of Valor",
                     English = "Voice of Valor",
                     French = "Voix de la valeur",
                     German = "Lob des Kämpen",
@@ -3095,6 +3370,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Voice of Fortitude",
                     English = "Voice of Fortitude",
                     French = "Voix de la ténacité",
                     German = "Stimme der Stärke",
@@ -3106,6 +3382,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Relentless March",
                     English = "Relentless March",
                     French = "Marche implacable",
                     German = "無敵の進撃マーチ：効果",
@@ -3117,6 +3394,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Rehabilitation",
                     English = "Rehabilitation",
                     French = "Recouvrement",
                     German = "Rehabilitation",
@@ -3128,6 +3406,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bind",
                     English = "Bind",
                     French = "Entrave",
                     German = "Fessel",
@@ -3139,6 +3418,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Physical Damage Down",
                     English = "Physical Damage Down",
                     French = "Malus de dégâts physiques",
                     German = "Schadenswert -",
@@ -3150,6 +3430,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Mana Modulation",
                     English = "Mana Modulation",
                     French = "Anormalité magique",
                     German = "Magieschaden -",
@@ -3161,6 +3442,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Dropsy",
                     English = "Dropsy",
                     French = "Œdème",
                     German = "Wassersucht",
@@ -3172,6 +3454,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Burns",
                     English = "Burns",
                     French = "Brûlure",
                     German = "Brandwunde",
@@ -3183,6 +3466,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Frostbite",
                     English = "Frostbite",
                     French = "Gelure",
                     German = "Erfrierung",
@@ -3194,6 +3478,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Windburn",
                     English = "Windburn",
                     French = "Brûlure du vent",
                     German = "Beißender Wind",
@@ -3205,6 +3490,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sludge",
                     English = "Sludge",
                     French = "Emboué",
                     German = "Schlamm",
@@ -3216,6 +3502,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Electrocution",
                     English = "Electrocution",
                     French = "Électrocution",
                     German = "Stromschlag",
@@ -3227,6 +3514,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Dropsy",
                     English = "Dropsy",
                     French = "Œdème",
                     German = "Wassersucht",
@@ -3238,6 +3526,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Damage Up",
                     English = "Damage Up",
                     French = "Bonus de dégâts",
                     German = "Schaden +",
@@ -3249,6 +3538,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Hundred Fists",
                     English = "Hundred Fists",
                     French = "Cent poings",
                     German = "100 Fäuste",
@@ -3260,6 +3550,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fetters",
                     English = "Fetters",
                     French = "Attache",
                     German = "Granitgefängnis",
@@ -3271,6 +3562,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Skill Speed Up",
                     English = "Skill Speed Up",
                     French = "Bonus de vivacité",
                     German = "Schnelligkeit +",
@@ -3282,6 +3574,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Spell Speed Up",
                     English = "Spell Speed Up",
                     French = "Bonus de célérité",
                     German = "Zaubertempo +",
@@ -3293,6 +3586,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Goldbile",
                     English = "Goldbile",
                     French = "Eau bilieuse",
                     German = "Goldlunge",
@@ -3304,6 +3598,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Hysteria",
                     English = "Hysteria",
                     French = "Hystérie",
                     German = "Panik",
@@ -3315,6 +3610,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Galvanize",
                     English = "Galvanize",
                     French = "Traité du réconfort",
                     German = "Adloquium",
@@ -3326,6 +3622,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sacred Soil",
                     English = "Sacred Soil",
                     French = "Dogme de survie",
                     German = "Geweihte Erde",
@@ -3337,6 +3634,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sacred Soil",
                     English = "Sacred Soil",
                     French = "Dogme de survie",
                     German = "Geweihte Erde",
@@ -3348,6 +3646,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Damage Up",
                     English = "Damage Up",
                     French = "Bonus de dégâts",
                     German = "Schaden +",
@@ -3359,6 +3658,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Critical Strikes",
                     English = "Critical Strikes",
                     French = "Coups critiques",
                     German = "Kritische Attacke",
@@ -3370,6 +3670,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Gold Lung",
                     English = "Gold Lung",
                     French = "Poumons bilieux",
                     German = "Galle",
@@ -3381,6 +3682,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Burrs",
                     English = "Burrs",
                     French = "Bardanes",
                     German = "Klettenpilz",
@@ -3392,6 +3694,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Aetherflow",
                     English = "Aetherflow",
                     French = "Flux d'éther",
                     German = "Ätherfluss",
@@ -3403,6 +3706,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "The Dragon's Curse",
                     English = "The Dragon's Curse",
                     French = "Malédiction du dragon",
                     German = "Bann des Drachen",
@@ -3414,6 +3718,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Inner Dragon",
                     English = "Inner Dragon",
                     French = "Dragon intérieur",
                     German = "Kraft des Drachen",
@@ -3425,6 +3730,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Voice of Valor",
                     English = "Voice of Valor",
                     French = "Voix de la valeur",
                     German = "Lob des Kämpen",
@@ -3436,6 +3742,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Voice of Fortitude",
                     English = "Voice of Fortitude",
                     French = "Voix de la ténacité",
                     German = "Stimme der Stärke",
@@ -3447,6 +3754,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Relentless March",
                     English = "Relentless March",
                     French = "Marche implacable",
                     German = "Marsch ohne Rücksicht",
@@ -3458,6 +3766,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Curl",
                     English = "Curl",
                     French = "Pelotonnement",
                     German = "Einrollen",
@@ -3469,6 +3778,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Earthen Ward",
                     English = "Earthen Ward",
                     French = "Barrière terrestre",
                     German = "Erdengewahrsam",
@@ -3480,6 +3790,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Razed Earth",
                     English = "Razed Earth",
                     French = "Fureur tellurique",
                     German = "Gaias Zorn",
@@ -3491,6 +3802,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Radiant Shield",
                     English = "Radiant Shield",
                     French = "Bouclier radiant",
                     German = "Glühender Schild",
@@ -3502,6 +3814,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Inferno",
                     English = "Inferno",
                     French = "Flammes de l'enfer",
                     German = "Inferno",
@@ -3513,6 +3826,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Whispering Dawn",
                     English = "Whispering Dawn",
                     French = "Murmure de l'aurore",
                     German = "Erhebendes Flüstern",
@@ -3524,6 +3838,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fey Covenant",
                     English = "Fey Covenant",
                     French = "Alliance féerique",
                     German = "Feenverheißung",
@@ -3535,6 +3850,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fey Illumination",
                     English = "Fey Illumination",
                     French = "Illumination féerique",
                     German = "Illumination",
@@ -3546,6 +3862,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fey Glow",
                     English = "Fey Glow",
                     French = "Lueur féerique",
                     German = "Sprühender Glanz",
@@ -3557,6 +3874,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fey Light",
                     English = "Fey Light",
                     French = "Lumière féerique",
                     German = "Feenlicht",
@@ -3568,6 +3886,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bleeding",
                     English = "Bleeding",
                     French = "Saignant",
                     German = "Blutung",
@@ -3579,6 +3898,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Gungnir",
                     English = "Gungnir",
                     French = "Gungnir",
                     German = "Gugnir",
@@ -3590,6 +3910,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Crystal Veil",
                     English = "Crystal Veil",
                     French = "Voile cristallin",
                     German = "Kristallschleier",
@@ -3601,6 +3922,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Reduced Immunity",
                     English = "Reduced Immunity",
                     French = "Immunité réduite",
                     German = "Schwache Immunabwehr",
@@ -3612,6 +3934,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Greenwrath",
                     English = "Greenwrath",
                     French = "Ire de la forêt",
                     German = "Sintmal",
@@ -3623,6 +3946,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Invincibility",
                     English = "Invincibility",
                     French = "Invulnérable",
                     German = "Unverwundbar",
@@ -3634,6 +3958,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Lightning Charge",
                     English = "Lightning Charge",
                     French = "Charge électrique",
                     German = "Statische Ladung",
@@ -3645,6 +3970,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Ice Charge",
                     English = "Ice Charge",
                     French = "Charge glacée",
                     German = "Eisige Ladung",
@@ -3656,6 +3982,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Heart of the Mountain",
                     English = "Heart of the Mountain",
                     French = "Cœur de la montagne",
                     German = "Herz des Felsgotts",
@@ -3667,6 +3994,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Modification",
                     English = "Modification",
                     French = "Récupération robotique",
                     German = "Fortifikationsprogramm 1",
@@ -3678,6 +4006,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Haste",
                     English = "Haste",
                     French = "Hâte",
                     German = "Hast",
@@ -3689,6 +4018,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Magic Vulnerability Down",
                     English = "Magic Vulnerability Down",
                     French = "Vulnérabilité magique diminuée",
                     German = "Verringerte Magie-Verwundbarkeit",
@@ -3700,6 +4030,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Damage Up",
                     English = "Damage Up",
                     French = "Bonus de dégâts",
                     German = "Schaden +",
@@ -3711,6 +4042,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Allagan Rot",
                     English = "Allagan Rot",
                     French = "Pourriture allagoise",
                     German = "Allagische Fäulnis",
@@ -3722,6 +4054,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Allagan Immunity",
                     English = "Allagan Immunity",
                     French = "Anticorps allagois",
                     German = "Allagische Immunität",
@@ -3733,6 +4066,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Firestream",
                     English = "Firestream",
                     French = "Courants de feu",
                     German = "Feuerstrahlen",
@@ -3744,6 +4078,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sequence AB1",
                     English = "Sequence AB1",
                     French = "Séquence AB1",
                     German = "Sequenz AB1",
@@ -3755,6 +4090,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sequence AP1",
                     English = "Sequence AP1",
                     French = "Séquence AP1",
                     German = "Sequenz AP1",
@@ -3766,6 +4102,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sequence AS1",
                     English = "Sequence AS1",
                     French = "Séquence AS1",
                     German = "Sequenz AS1",
@@ -3777,6 +4114,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bleeding",
                     English = "Bleeding",
                     French = "Saignant",
                     German = "Blutung",
@@ -3788,6 +4126,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Physical Field",
                     English = "Physical Field",
                     French = "Champ physique",
                     German = "Physisches Feld",
@@ -3799,6 +4138,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Aetherial Field",
                     English = "Aetherial Field",
                     French = "Champ éthéré",
                     German = "Magisches Feld",
@@ -3810,6 +4150,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Repelling Spray",
                     English = "Repelling Spray",
                     French = "Réplique",
                     German = "Reflektorschild",
@@ -3821,6 +4162,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bleeding",
                     English = "Bleeding",
                     French = "Saignant",
                     German = "Blutung",
@@ -3832,6 +4174,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Neurolink",
                     English = "Neurolink",
                     French = "Neurolien",
                     German = "Neurolink",
@@ -3843,6 +4186,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Recharge",
                     English = "Recharge",
                     French = "Recharge",
                     German = "Aufladung",
@@ -3854,6 +4198,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Waxen Flesh",
                     English = "Waxen Flesh",
                     French = "Chair fondue",
                     German = "Wächserne Haut",
@@ -3865,6 +4210,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Pox",
                     English = "Pox",
                     French = "Vérole",
                     German = "Pocken",
@@ -3876,6 +4222,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Disseminate",
                     English = "Disseminate",
                     French = "Dissémination",
                     German = "Aussäen",
@@ -3887,6 +4234,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Steel Scales",
                     English = "Steel Scales",
                     French = "Écailles d'acier",
                     German = "Stahlschuppen",
@@ -3898,6 +4246,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Vulnerability Down",
                     English = "Vulnerability Down",
                     French = "Vulnérabilité diminuée",
                     German = "Verringerte Verwundbarkeit",
@@ -3909,6 +4258,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Rancor",
                     English = "Rancor",
                     French = "Rancune",
                     German = "Groll",
@@ -3920,6 +4270,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Spjot",
                     English = "Spjot",
                     French = "Spjot",
                     German = "Gugnirs Zauber",
@@ -3931,6 +4282,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Brave New World",
                     English = "Brave New World",
                     French = "Un nouveau monde",
                     German = "Startbonus",
@@ -3942,6 +4294,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Live off the Land",
                     English = "Live off the Land",
                     French = "Vivre de la terre",
                     German = "Sammelgeschick-Bonus",
@@ -3953,6 +4306,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "What You See",
                     English = "What You See",
                     French = "Avoir le coup d'œil",
                     German = "Wahrnehmungsbonus",
@@ -3964,6 +4318,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Eat from the Hand",
                     English = "Eat from the Hand",
                     French = "La main qui nourrit",
                     German = "Kunstfertigkeits-Bonus",
@@ -3975,6 +4330,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "In Control",
                     English = "In Control",
                     French = "Passer maître",
                     German = "Kontrolle-Bonus",
@@ -3986,6 +4342,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Snowman",
                     English = "Snowman",
                     French = "Bonhomme de neige",
                     German = "Schneemann",
@@ -3997,6 +4354,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fey Fire",
                     English = "Fey Fire",
                     French = "Feu follet",
                     German = "Feenfeuer",
@@ -4008,6 +4366,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Meat and Mead",
                     English = "Meat and Mead",
                     French = "À boire et à manger",
                     German = "Längere Nahrungseffekte",
@@ -4019,6 +4378,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "That Which Binds Us",
                     English = "That Which Binds Us",
                     French = "Union parfaite",
                     German = "Bindungsbonus",
@@ -4030,6 +4390,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Proper Care",
                     English = "Proper Care",
                     French = "Protections protégées",
                     German = "Verminderter Verschleiß",
@@ -4041,6 +4402,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Back on Your Feet",
                     English = "Back on Your Feet",
                     French = "Prompt rétablissement",
                     German = "Verkürzte Schwäche",
@@ -4052,6 +4414,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Reduced Rates",
                     English = "Reduced Rates",
                     French = "Prix d'ami",
                     German = "Vergünstigter Teleport",
@@ -4063,6 +4426,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "The Heat of Battle",
                     English = "The Heat of Battle",
                     French = "Feu du combat",
                     German = "Kampfroutine-Bonus",
@@ -4074,6 +4438,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "A Man's Best Friend",
                     English = "A Man's Best Friend",
                     French = "Meilleur ami de l'homme",
                     German = "Mitstreiterroutine-Bonus",
@@ -4085,6 +4450,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Earth and Water",
                     English = "Earth and Water",
                     French = "Terre et eau",
                     German = "Sammelroutine-Bonus",
@@ -4096,6 +4462,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Helping Hand",
                     English = "Helping Hand",
                     French = "Être en bonnes mains",
                     German = "Syntheseroutine-Bonus",
@@ -4107,6 +4474,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Viscous Aetheroplasm",
                     English = "Viscous Aetheroplasm",
                     French = "Éthéroplasma",
                     German = "Ätheroplasma",
@@ -4118,6 +4486,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Siren Song",
                     English = "Siren Song",
                     French = "Chant de la sirène",
                     German = "Sirenengesang",
@@ -4129,6 +4498,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Zombification",
                     English = "Zombification",
                     French = "Zombi",
                     German = "Zombie",
@@ -4140,6 +4510,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Brood Rage",
                     English = "Brood Rage",
                     French = "Colère maternelle",
                     German = "Brutrage",
@@ -4151,6 +4522,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Blight",
                     English = "Blight",
                     French = "Insoignabilité",
                     German = "Unheilbar",
@@ -4162,6 +4534,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Corrupted Crystal",
                     English = "Corrupted Crystal",
                     French = "Cristaux corrompus",
                     German = "Denaturierter Kristall",
@@ -4173,6 +4546,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Suppuration",
                     English = "Suppuration",
                     French = "Morsure du feu",
                     German = "Verbrennung",
@@ -4184,6 +4558,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Searing Wind",
                     English = "Searing Wind",
                     French = "Fournaise",
                     German = "Gluthitze",
@@ -4195,6 +4570,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Infernal Fetters",
                     English = "Infernal Fetters",
                     French = "Chaînes infernales",
                     German = "Infernofesseln",
@@ -4206,6 +4582,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Death Throes",
                     English = "Death Throes",
                     French = "Affres de la mort",
                     German = "Agonales Klammern",
@@ -4217,6 +4594,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Thermal Low",
                     English = "Thermal Low",
                     French = "Basse pression",
                     German = "Tiefdruck",
@@ -4228,6 +4606,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Thermal High",
                     English = "Thermal High",
                     French = "Haute pression",
                     German = "Hochdruck",
@@ -4239,6 +4618,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Testudo",
                     English = "Testudo",
                     French = "Testudo",
                     German = "Testudo",
@@ -4250,6 +4630,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Thrill of War",
                     English = "Thrill of War",
                     French = "Frisson de la guerre",
                     German = "Schlachtrausch",
@@ -4261,6 +4642,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Full Swing",
                     English = "Full Swing",
                     French = "Plein élan",
                     German = "Voller Schwinger",
@@ -4272,6 +4654,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Somersault",
                     English = "Somersault",
                     French = "Saut périlleux",
                     German = "Salto",
@@ -4283,6 +4666,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fetter Ward",
                     English = "Fetter Ward",
                     French = "Émancipation",
                     German = "Obhut",
@@ -4294,6 +4678,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Impulse Rush",
                     English = "Impulse Rush",
                     French = "Impulsion subite",
                     German = "Impuls-Ansturm",
@@ -4305,6 +4690,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Skewer",
                     English = "Skewer",
                     French = "Embrochement",
                     German = "Spieß",
@@ -4316,6 +4702,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sacred Prism",
                     English = "Sacred Prism",
                     French = "Prisme sacré",
                     German = "Barmherzigkeit",
@@ -4327,6 +4714,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Phantom Dart",
                     English = "Phantom Dart",
                     French = "Projectile fantôme",
                     German = "Phantompfeil",
@@ -4338,6 +4726,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Misty Veil",
                     English = "Misty Veil",
                     French = "Voile de brume",
                     German = "Nebelschleier",
@@ -4349,6 +4738,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Wither",
                     English = "Wither",
                     French = "Flétrissure",
                     German = "Entkräften",
@@ -4360,6 +4750,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Focalization",
                     English = "Focalization",
                     French = "Traité de la focalisation",
                     German = "Lege Artis",
@@ -4371,6 +4762,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Aetheric Burst",
                     English = "Aetheric Burst",
                     French = "Explosion éthérée",
                     German = "Ätherschub",
@@ -4382,6 +4774,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Equanimity",
                     English = "Equanimity",
                     French = "Équanimité",
                     German = "Gleichmut",
@@ -4393,6 +4786,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Attunement",
                     English = "Attunement",
                     French = "Harmonie",
                     German = "Einstimmung",
@@ -4404,6 +4798,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Astral Realignment",
                     English = "Astral Realignment",
                     French = "Alignement astral",
                     German = "Astralkörper",
@@ -4415,6 +4810,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Corporeal Return",
                     English = "Corporeal Return",
                     French = "Retour corporel",
                     German = "Wiederkunft",
@@ -4426,6 +4822,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Charge",
                     English = "Charge",
                     French = "Charge électrique",
                     German = "Laden",
@@ -4437,6 +4834,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Seized",
                     English = "Seized",
                     French = "Étreinte mortelle",
                     German = "Umklammert",
@@ -4448,6 +4846,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Thrown for a Loop",
                     English = "Thrown for a Loop",
                     French = "Acharnement aveugle",
                     German = "Blinde Wut",
@@ -4459,6 +4858,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Damage Up",
                     English = "Damage Up",
                     French = "Bonus de dégâts",
                     German = "Schaden +",
@@ -4470,6 +4870,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Transporting",
                     English = "Transporting",
                     French = "Chargé",
                     German = "Transport",
@@ -4481,6 +4882,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bewildered",
                     English = "Bewildered",
                     French = "Égarement",
                     German = "Bezaubert",
@@ -4492,6 +4894,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Vulnerability Down",
                     English = "Vulnerability Down",
                     French = "Vulnérabilité diminuée",
                     German = "Verringerte Verwundbarkeit",
@@ -4503,6 +4906,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Dust Poisoning",
                     English = "Dust Poisoning",
                     French = "Empoisonnement cristallin",
                     German = "Staubvergiftung",
@@ -4514,6 +4918,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Storm's Path",
                     English = "Storm's Path",
                     French = "Couperet de justice",
                     German = "Sturmkeil",
@@ -4525,6 +4930,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Holmgang",
                     English = "Holmgang",
                     French = "Holmgang",
                     German = "Holmgang",
@@ -4536,6 +4942,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Antibody",
                     English = "Antibody",
                     French = "Réaction antivirale",
                     German = "Antikörper",
@@ -4547,6 +4954,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Inner Beast",
                     English = "Inner Beast",
                     French = "Bête intérieure",
                     German = "Tier in dir",
@@ -4558,6 +4966,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Hover",
                     English = "Hover",
                     French = "Élévation",
                     German = "Schweben",
@@ -4569,6 +4978,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Mark Up",
                     English = "Mark Up",
                     French = "Marque des vainqueurs",
                     German = "Wolfsmarken-Bonus",
@@ -4580,6 +4990,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Seal Sweetener",
                     English = "Seal Sweetener",
                     French = "Solde accrue",
                     German = "Staatstaler-Bonus",
@@ -4591,6 +5002,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Regain",
                     English = "Regain",
                     French = "Regain",
                     German = "Erholen",
@@ -4602,6 +5014,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Transparent",
                     English = "Transparent",
                     French = "Transparence",
                     German = "Transparenz",
@@ -4613,6 +5026,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Protect",
                     English = "Protect",
                     French = "Bouclier",
                     German = "Protes",
@@ -4624,6 +5038,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Physical Vulnerability Down",
                     English = "Physical Vulnerability Down",
                     French = "Vulnérabilité physique diminuée",
                     German = "Verringerte physische Verwundbarkeit",
@@ -4635,6 +5050,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Misty Veil",
                     English = "Misty Veil",
                     French = "Voile de brume",
                     German = "Nebelschleier",
@@ -4646,6 +5062,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Prey",
                     English = "Prey",
                     French = "Marquage",
                     German = "Markiert",
@@ -4657,6 +5074,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Devoured",
                     English = "Devoured",
                     French = "Dévorement",
                     German = "Halbverschlungen",
@@ -4668,6 +5086,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Healing Magic Down",
                     English = "Healing Magic Down",
                     French = "Malus de soin",
                     German = "Heilmagie -",
@@ -4679,6 +5098,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Nightmare",
                     English = "Nightmare",
                     French = "Cauchemar",
                     German = "Albtraum",
@@ -4690,6 +5110,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Diabolic Curse",
                     English = "Diabolic Curse",
                     French = "Maléfice du néant",
                     German = "Diabolischer Fluch",
@@ -4701,6 +5122,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Eerie Air",
                     English = "Eerie Air",
                     French = "Présence du néant",
                     German = "Diabolische Aura",
@@ -4712,6 +5134,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Noctoshield",
                     English = "Noctoshield",
                     French = "Nocto-bouclier",
                     German = "Nachtschild",
@@ -4723,6 +5146,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Slow+",
                     English = "Slow+",
                     French = "Lenteur +",
                     German = "Gemach +",
@@ -4734,6 +5158,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Haste+",
                     English = "Haste+",
                     French = "Hâte +",
                     German = "Hast +",
@@ -4745,6 +5170,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Scale Flakes",
                     English = "Scale Flakes",
                     French = "Poussière érosive",
                     German = "Erosionsstaub",
@@ -4756,6 +5182,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Misery",
                     English = "Misery",
                     French = "Désolation",
                     German = "Kummer",
@@ -4767,6 +5194,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Water Resistance Down",
                     English = "Water Resistance Down",
                     French = "Vulnérabilité à l'eau",
                     German = "Wasserresistenz -",
@@ -4778,6 +5206,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Briny Mirror",
                     English = "Briny Mirror",
                     French = "Reflets d'eau libérés",
                     German = "Wassermembran",
@@ -4789,6 +5218,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Briny Veil",
                     English = "Briny Veil",
                     French = "Reflet d'eau",
                     German = "Wasserspiegelung",
@@ -4800,6 +5230,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Absolute Bind",
                     English = "Absolute Bind",
                     French = "Étreinte impénétrable",
                     German = "Absoluter Bann",
@@ -4811,6 +5242,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Demon Eye",
                     English = "Demon Eye",
                     French = "Œil diabolique",
                     German = "Dämonenauge",
@@ -4822,6 +5254,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Briar",
                     English = "Briar",
                     French = "Ronces sauvages",
                     German = "Dorngestrüpp",
@@ -4833,6 +5266,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Stone Curse",
                     English = "Stone Curse",
                     French = "Piège de pierre",
                     German = "Steinfluch",
@@ -4844,6 +5278,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Minimum",
                     English = "Minimum",
                     French = "Mini",
                     German = "Wicht",
@@ -4855,6 +5290,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Toad",
                     English = "Toad",
                     French = "Crapaud",
                     German = "Frosch",
@@ -4866,6 +5302,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Minimum",
                     English = "Minimum",
                     French = "Mini",
                     German = "Wicht",
@@ -4877,6 +5314,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Toad",
                     English = "Toad",
                     French = "Crapaud",
                     German = "Frosch",
@@ -4888,6 +5326,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Slow",
                     English = "Slow",
                     French = "Lenteur",
                     German = "Gemach",
@@ -4899,6 +5338,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Damage Up",
                     English = "Damage Up",
                     French = "Bonus de dégâts",
                     German = "Schaden +",
@@ -4910,6 +5350,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Vulnerability Up",
                     English = "Vulnerability Up",
                     French = "Vulnérabilité augmentée",
                     German = "Erhöhte Verwundbarkeit",
@@ -4921,6 +5362,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Thorny Vine",
                     English = "Thorny Vine",
                     French = "Sarment de ronces",
                     German = "Dornenranken",
@@ -4932,6 +5374,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Honey-glazed",
                     English = "Honey-glazed",
                     French = "Mielleux",
                     German = "Honigsüß",
@@ -4943,6 +5386,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Potent Acid",
                     English = "Potent Acid",
                     French = "Acide corrosif",
                     German = "Konzentrierte Säure",
@@ -4954,6 +5398,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Swarmed",
                     English = "Swarmed",
                     French = "Essaim",
                     German = "Umschwärmt",
@@ -4965,6 +5410,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Stung",
                     English = "Stung",
                     French = "Dard",
                     German = "Gestochen",
@@ -4976,6 +5422,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Petrification Resistance",
                     English = "Petrification Resistance",
                     French = "Résistance à Pétrification",
                     German = "Steinresistenz",
@@ -4987,6 +5434,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Cursed Voice",
                     English = "Cursed Voice",
                     French = "Voix du maléfice",
                     German = "Stimme der Verwünschung",
@@ -4998,6 +5446,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Cursed Shriek",
                     English = "Cursed Shriek",
                     French = "Cri du maléfice",
                     German = "Schrei der Verwünschung",
@@ -5009,6 +5458,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Allagan Venom",
                     English = "Allagan Venom",
                     French = "Venin allagois",
                     German = "Allagisches Gift",
@@ -5020,6 +5470,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Allagan Field",
                     English = "Allagan Field",
                     French = "Champ allagois",
                     German = "Allagisches Feld",
@@ -5031,6 +5482,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Languishing",
                     English = "Languishing",
                     French = "Agonie vitale",
                     German = "Ermattung",
@@ -5042,6 +5494,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Maximum HP Down",
                     English = "Maximum HP Down",
                     French = "PV maximum réduits",
                     German = "LP-Malus",
@@ -5053,6 +5506,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bind+",
                     English = "Bind+",
                     French = "Entrave +",
                     German = "Fessel +",
@@ -5064,6 +5518,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Raven Blight",
                     English = "Raven Blight",
                     French = "Bile de rapace",
                     German = "Pestschwinge",
@@ -5075,6 +5530,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Normal Stance",
                     English = "Normal Stance",
                     French = "Posture normale",
                     German = "Normales Verhalten",
@@ -5086,6 +5542,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Aggressive Stance",
                     English = "Aggressive Stance",
                     French = "Posture d'attaque",
                     German = "Aggressives Verhalten",
@@ -5097,6 +5554,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Subversive Stance",
                     English = "Subversive Stance",
                     French = "Posture de diversion",
                     German = "Hemmendes Verhalten",
@@ -5108,6 +5566,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Garrote Twist",
                     English = "Garrote Twist",
                     French = "Sangle accélérée",
                     German = "Leicht fixierbar",
@@ -5119,6 +5578,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Garrote",
                     English = "Garrote",
                     French = "Attache",
                     German = "Fixierungsfessel",
@@ -5130,6 +5590,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Firescorched",
                     English = "Firescorched",
                     French = "Corne-de-feu",
                     German = "Feuerhorn",
@@ -5141,6 +5602,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Icebitten",
                     English = "Icebitten",
                     French = "Griffe-de-glace",
                     German = "Eisklaue",
@@ -5152,6 +5614,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Thunderstruck",
                     English = "Thunderstruck",
                     French = "Aile-de-foudre",
                     German = "Donnerschwinge",
@@ -5163,6 +5626,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Briny Veil",
                     English = "Briny Veil",
                     French = "Reflet d'eau",
                     German = "Wasserspiegelung",
@@ -5174,6 +5638,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Voidbound",
                     English = "Voidbound",
                     French = "Transfert du néant",
                     German = "Nichtsgebunden",
@@ -5185,6 +5650,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "High and Mighty",
                     English = "High and Mighty",
                     French = "Monarchie absolue",
                     German = "Absoluter Herrscher",
@@ -5196,6 +5662,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Pombination",
                     English = "Pombination",
                     French = "Mogtimisation",
                     German = "Pombination",
@@ -5207,6 +5674,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Moglight Resistance Down",
                     English = "Moglight Resistance Down",
                     French = "Nyctophobie mog",
                     German = "Mogryschatten-Aversion",
@@ -5218,6 +5686,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Mogdark Resistance Down",
                     English = "Mogdark Resistance Down",
                     French = "Photophobie mog",
                     German = "Moglicht-Empfindlichkeit",
@@ -5229,6 +5698,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bemoggled",
                     English = "Bemoggled",
                     French = "Tournis mog",
                     German = "Tohuwabohu-Wahn",
@@ -5240,6 +5710,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Royal Rouse",
                     English = "Royal Rouse",
                     French = "Mogtivation",
                     German = "Mogul-Fanfare",
@@ -5251,6 +5722,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Slippery Prey",
                     English = "Slippery Prey",
                     French = "Marquage impossible",
                     German = "Unmarkierbar",
@@ -5262,6 +5734,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Gloam",
                     English = "Gloam",
                     French = "Voile ombreux",
                     German = "Dämmerlicht",
@@ -5273,6 +5746,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Mantle of the Whorl",
                     English = "Mantle of the Whorl",
                     French = "Manteau du Déchaîneur",
                     German = "Wogenmantel",
@@ -5284,6 +5758,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Veil of the Whorl",
                     English = "Veil of the Whorl",
                     French = "Voile du Déchaîneur",
                     German = "Wogenschleier",
@@ -5295,6 +5770,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Rehabilitation",
                     English = "Rehabilitation",
                     French = "Recouvrement",
                     German = "Rehabilitation",
@@ -5306,6 +5782,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Haste+",
                     English = "Haste+",
                     French = "Hâte +",
                     German = "Hast +",
@@ -5317,6 +5794,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sprint",
                     English = "Sprint",
                     French = "Sprint",
                     German = "Sprint",
@@ -5328,6 +5806,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Paralysis",
                     English = "Paralysis",
                     French = "Paralysie",
                     German = "Paralyse",
@@ -5339,6 +5818,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "HP Boost",
                     English = "HP Boost",
                     French = "Bonus de PV",
                     German = "LP-Bonus",
@@ -5350,6 +5830,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Ink",
                     English = "Ink",
                     French = "Sépia venimeux",
                     German = "Toxische Tinte",
@@ -5361,6 +5842,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Dropsy",
                     English = "Dropsy",
                     French = "Œdème",
                     German = "Wassersucht",
@@ -5372,6 +5854,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Watery Grave",
                     English = "Watery Grave",
                     French = "Geôle aqueuse",
                     German = "Wasserkäfig",
@@ -5383,6 +5866,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Deep Freeze",
                     English = "Deep Freeze",
                     French = "Congélation",
                     German = "Tiefkühlung",
@@ -5394,6 +5878,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Perfect Dodge",
                     English = "Perfect Dodge",
                     French = "Esquive absolue",
                     German = "Superkniff",
@@ -5405,6 +5890,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Kiss of the Wasp",
                     English = "Kiss of the Wasp",
                     French = "Baiser de guêpe",
                     German = "Wespenkuss",
@@ -5416,6 +5902,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Kiss of the Viper",
                     English = "Kiss of the Viper",
                     French = "Baiser de vipère",
                     German = "Vipernkuss",
@@ -5427,6 +5914,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Dancing Edge",
                     English = "Dancing Edge",
                     French = "Lame dansante",
                     German = "Tanzende Schneide",
@@ -5438,6 +5926,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Mutilation",
                     English = "Mutilation",
                     French = "Attaque mutilante",
                     German = "Verstümmeln",
@@ -5449,6 +5938,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Shadow Fang",
                     English = "Shadow Fang",
                     French = "Croc d'ombre",
                     German = "Schattenfang",
@@ -5460,6 +5950,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Goad",
                     English = "Goad",
                     French = "Aiguillonnement",
                     German = "Dampf",
@@ -5471,6 +5962,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Mudra",
                     English = "Mudra",
                     French = "Mudrâ",
                     German = "Mudra",
@@ -5482,6 +5974,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Kassatsu",
                     English = "Kassatsu",
                     French = "Kassatsu",
                     German = "Kassatsu",
@@ -5493,6 +5986,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Huton",
                     English = "Huton",
                     French = "Fûton",
                     German = "Huton",
@@ -5504,6 +5998,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Doton",
                     English = "Doton",
                     French = "Doton",
                     German = "Doton",
@@ -5515,6 +6010,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Doton Heavy",
                     English = "Doton Heavy",
                     French = "Pesanteur",
                     German = "Gewicht",
@@ -5526,6 +6022,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fetters",
                     English = "Fetters",
                     French = "Attache",
                     German = "Gefesselt",
@@ -5537,6 +6034,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Damage Up",
                     English = "Damage Up",
                     French = "Bonus de dégâts",
                     German = "Schaden +",
@@ -5548,6 +6046,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Vertigo",
                     English = "Vertigo",
                     French = "Vertige",
                     German = "Schwindel",
@@ -5559,6 +6058,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Suiton",
                     English = "Suiton",
                     French = "Suiton",
                     German = "Suiton",
@@ -5570,6 +6070,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Shadow Fang",
                     English = "Shadow Fang",
                     French = "Croc d'ombre",
                     German = "Schattenfang",
@@ -5581,6 +6082,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Aetherochemical Bomb",
                     English = "Aetherochemical Bomb",
                     French = "Magismobombe",
                     German = "Magitek-Sprengkörper",
@@ -5592,6 +6094,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fetters",
                     English = "Fetters",
                     French = "Attache",
                     German = "Gefesselt",
@@ -5603,6 +6106,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fire Toad",
                     English = "Fire Toad",
                     French = "Pyrocrapaud",
                     German = "Knallfrosch",
@@ -5614,6 +6118,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Electroconductivity",
                     English = "Electroconductivity",
                     French = "Électroconductivité",
                     German = "Elektrokonduktivität",
@@ -5625,6 +6130,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Static Condensation",
                     English = "Static Condensation",
                     French = "Charge électrostatique",
                     German = "Statische Ladung",
@@ -5636,6 +6142,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Causality",
                     English = "Causality",
                     French = "Causalité",
                     German = "Kausalität",
@@ -5647,6 +6154,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Thunderclap",
                     English = "Thunderclap",
                     French = "Roulement de tonnerre",
                     German = "Rollender Donner",
@@ -5658,6 +6166,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Chaos",
                     English = "Chaos",
                     French = "Chaos",
                     German = "Chaos",
@@ -5669,6 +6178,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Surge Protection",
                     English = "Surge Protection",
                     French = "Parafoudre",
                     German = "Überspannungsschutz",
@@ -5680,6 +6190,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Reflect",
                     English = "Reflect",
                     French = "Miroir",
                     German = "Reflektion",
@@ -5691,6 +6202,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Counter",
                     English = "Counter",
                     French = "Riposte",
                     German = "Konter",
@@ -5702,6 +6214,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fire Resistance Up",
                     English = "Fire Resistance Up",
                     French = "Résistance au feu accrue",
                     German = "Feuerresistenz +",
@@ -5713,6 +6226,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Water Resistance Up",
                     English = "Water Resistance Up",
                     French = "Résistance à l'eau accrue",
                     German = "Wasserresistenz +",
@@ -5724,6 +6238,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Wind Resistance Up",
                     English = "Wind Resistance Up",
                     French = "Résistance au vent accrue",
                     German = "Windresistenz +",
@@ -5735,6 +6250,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Lightning Resistance Up",
                     English = "Lightning Resistance Up",
                     French = "Résistance à la foudre accrue",
                     German = "Blitzresistenz +",
@@ -5746,6 +6262,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Earth Resistance Up",
                     English = "Earth Resistance Up",
                     French = "Résistance à la terre accrue",
                     German = "Erdresistenz +",
@@ -5757,6 +6274,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Ice Resistance Up",
                     English = "Ice Resistance Up",
                     French = "Résistance à la glace accrue",
                     German = "Eisresistenz +",
@@ -5768,6 +6286,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Frost Blade",
                     English = "Frost Blade",
                     French = "Lame glaciale",
                     German = "Frostklinge",
@@ -5779,6 +6298,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Frost Brand",
                     English = "Frost Brand",
                     French = "Bâton glacial",
                     German = "Froststab",
@@ -5790,6 +6310,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Frost Bow",
                     English = "Frost Bow",
                     French = "Arc glacial",
                     German = "Frostbogen",
@@ -5801,6 +6322,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Invincibility",
                     English = "Invincibility",
                     French = "Invulnérable",
                     German = "Unverwundbar",
@@ -5812,6 +6334,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Burns",
                     English = "Burns",
                     French = "Brûlure",
                     German = "Brandwunde",
@@ -5823,6 +6346,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Dropsy",
                     English = "Dropsy",
                     French = "Œdème",
                     German = "Wassersucht",
@@ -5834,6 +6358,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Windburn",
                     English = "Windburn",
                     French = "Brûlure du vent",
                     German = "Beißender Wind",
@@ -5845,6 +6370,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Electrocution",
                     English = "Electrocution",
                     French = "Électrocution",
                     German = "Stromschlag",
@@ -5856,6 +6382,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Sludge",
                     English = "Sludge",
                     French = "Emboué",
                     German = "Schlamm",
@@ -5867,6 +6394,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Frostbite",
                     English = "Frostbite",
                     French = "Gelure",
                     German = "Erfrierung",
@@ -5878,6 +6406,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Companion EXP Up",
                     English = "Companion EXP Up",
                     French = "Compagnon d'expérience",
                     German = "Sternstunde der Mitstreiter",
@@ -5889,6 +6418,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Companion EXP Up II",
                     English = "Companion EXP Up II",
                     French = "Compagnon d'expérience II",
                     German = "Sternstunde der Mitstreiter II",
@@ -5900,6 +6430,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Companion Attack Up",
                     English = "Companion Attack Up",
                     French = "Compagnon d'attaque",
                     German = "Mitstreiter-Attackebonus",
@@ -5911,6 +6442,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Companion Attack Up II",
                     English = "Companion Attack Up II",
                     French = "Compagnon d'attaque II",
                     German = "Mitstreiter-Attackebonus II",
@@ -5922,6 +6454,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Companion Healing Potency Up",
                     English = "Companion Healing Potency Up",
                     French = "Compagnon attentionné",
                     German = "Mitstreiter-Heilmagiebonus",
@@ -5933,6 +6466,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Companion Healing Potency Up II",
                     English = "Companion Healing Potency Up II",
                     French = "Compagnon attentioné II",
                     German = "Mitstreiter-Heilmagiebonus II",
@@ -5944,6 +6478,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Companion Maximum HP Up",
                     English = "Companion Maximum HP Up",
                     French = "Compagnon gaillard",
                     German = "Mitstreiter-LP-Bonus",
@@ -5955,6 +6490,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Companion Maximum HP Up II",
                     English = "Companion Maximum HP Up II",
                     French = "Compagnon gaillard II",
                     German = "Mitstreiter-LP-Bonus II",
@@ -5966,6 +6502,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Companion Enmity Up",
                     English = "Companion Enmity Up",
                     French = "Compagnon boutefeu",
                     German = "Provokativer Mitstreiter",
@@ -5977,6 +6514,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Companion Enmity Up II",
                     English = "Companion Enmity Up II",
                     French = "Compagnon boutefeu II",
                     German = "Provokativer Mitstreiter II",
@@ -5988,6 +6526,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Enervation",
                     English = "Enervation",
                     French = "Dans les choux",
                     German = "Schöner Salat",
@@ -5999,6 +6538,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Facility Access: Production",
                     English = "Facility Access: Production",
                     French = "Installation: production",
                     German = "Arbeitsstätte: Herstellung",
@@ -6010,6 +6550,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Facility Access: Finishing",
                     English = "Facility Access: Finishing",
                     French = "Installation: finition",
                     German = "Arbeitsstätte: Veredelung",
@@ -6021,6 +6562,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Facility Access: Detailing",
                     English = "Facility Access: Detailing",
                     French = "Installation: minutie",
                     German = "Arbeitsstätte: Feinarbeit",
@@ -6032,6 +6574,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Facility Access: Production II",
                     English = "Facility Access: Production II",
                     French = "Installation: production II",
                     German = "Arbeitsstätte: Herstellung II",
@@ -6043,6 +6586,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Facility Access: Specialization",
                     English = "Facility Access: Specialization",
                     French = "Installation: spécialité",
                     German = "Arbeitsstätte: Spezialisierung",
@@ -6054,6 +6598,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Facility Access: Specialization II",
                     English = "Facility Access: Specialization II",
                     French = "Installation: spécialité II",
                     German = "Arbeitsstätte: Spezialisierung II",
@@ -6065,6 +6610,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Facility Access: Detailing II",
                     English = "Facility Access: Detailing II",
                     French = "Installation: minutie II",
                     German = "Arbeitsstätte: Feinarbeit II",
@@ -6076,6 +6622,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Facility Access: Finishing II",
                     English = "Facility Access: Finishing II",
                     French = "Installation: finition II",
                     German = "Arbeitsstätte: Veredelung II",
@@ -6087,6 +6634,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Repelling Spray",
                     English = "Repelling Spray",
                     French = "Réplique",
                     German = "Reflektorschild",
@@ -6098,6 +6646,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Repelling Spray",
                     English = "Repelling Spray",
                     French = "Réplique",
                     German = "Reflektorschild",
@@ -6109,6 +6658,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Repelling Spray",
                     English = "Repelling Spray",
                     French = "Réplique",
                     German = "Reflektorschild",
@@ -6120,6 +6670,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Repelling Spray",
                     English = "Repelling Spray",
                     French = "Réplique",
                     German = "Reflektorschild",
@@ -6131,6 +6682,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Poison",
                     English = "Poison",
                     French = "Poison",
                     German = "Gift",
@@ -6142,6 +6694,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Poison",
                     English = "Poison",
                     French = "Poison",
                     German = "Gift",
@@ -6153,6 +6706,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Slow",
                     English = "Slow",
                     French = "Lenteur",
                     German = "Gemach",
@@ -6164,6 +6718,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Prey",
                     English = "Prey",
                     French = "Marquage",
                     German = "Markiert",
@@ -6175,6 +6730,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Vulnerability Up",
                     English = "Vulnerability Up",
                     French = "Vulnérabilité augmentée",
                     German = "Erhöhte Verwundbarkeit",
@@ -6186,6 +6742,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bind",
                     English = "Bind",
                     French = "Entrave",
                     German = "Fessel",
@@ -6197,6 +6754,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Transfiguration",
                     English = "Transfiguration",
                     French = "Transformation",
                     German = "Verwandlung",
@@ -6208,6 +6766,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Damage Up",
                     English = "Damage Up",
                     French = "Bonus de dégâts",
                     German = "Schaden +",
@@ -6219,6 +6778,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Shifting Sands",
                     English = "Shifting Sands",
                     French = "Sable mouvant",
                     German = "Treibsand",
@@ -6230,6 +6790,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fisher's Intuition",
                     English = "Fisher's Intuition",
                     French = "Instinct du pêcheur",
                     German = "Petri Heil",
@@ -6241,6 +6802,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Slime",
                     English = "Slime",
                     French = "Mucus",
                     German = "Schleim",
@@ -6252,6 +6814,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "In the Line of Fire",
                     English = "In the Line of Fire",
                     French = "Dans la ligne de tir",
                     German = "In der Schusslinie",
@@ -6263,6 +6826,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Blind",
                     English = "Blind",
                     French = "Cécité",
                     German = "Blind",
@@ -6274,6 +6838,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Slashing Resistance Down",
                     English = "Slashing Resistance Down",
                     French = "Résistance au tranchant réduite",
                     German = "Hiebresistenz -",
@@ -6285,6 +6850,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Blunt Resistance Down",
                     English = "Blunt Resistance Down",
                     French = "Résistance au contondant réduite",
                     German = "Schlagresistenz -",
@@ -6296,6 +6862,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Erratic Blaster",
                     English = "Erratic Blaster",
                     French = "Électrochoc imprévisible",
                     German = "Erratischer Puls",
@@ -6307,6 +6874,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Static Charge",
                     English = "Static Charge",
                     French = "Charge statique",
                     German = "Statische Ladung",
@@ -6318,6 +6886,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Lightning Resistance Down",
                     English = "Lightning Resistance Down",
                     French = "Résistance à la foudre réduite",
                     German = "Blitzresistenz -",
@@ -6329,6 +6898,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Barofield",
                     English = "Barofield",
                     French = "Barotraumatisme",
                     German = "Baro-Feld",
@@ -6340,6 +6910,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "In the Headlights",
                     English = "In the Headlights",
                     French = "À portée de tête",
                     German = "Hauptkopf",
@@ -6351,6 +6922,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Critical Strikes",
                     English = "Critical Strikes",
                     French = "Coups critiques",
                     German = "Kritische Attacke",
@@ -6362,6 +6934,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Aetherochemical Nanospores α",
                     English = "Aetherochemical Nanospores α",
                     French = "Magismoparticules α",
                     German = "Nanosporen α",
@@ -6373,6 +6946,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Aetherochemical Nanospores β",
                     English = "Aetherochemical Nanospores β",
                     French = "Magismoparticules β",
                     German = "Nanosporen β",
@@ -6384,6 +6958,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Magic Vulnerability Down",
                     English = "Magic Vulnerability Down",
                     French = "Vulnérabilité magique diminuée",
                     German = "Verringerte Magie-Verwundbarkeit",
@@ -6395,6 +6970,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Physical Vulnerability Down",
                     English = "Physical Vulnerability Down",
                     French = "Vulnérabilité physique diminuée",
                     German = "Verringerte physische Verwundbarkeit",
@@ -6406,6 +6982,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Energy Field",
                     English = "Energy Field",
                     French = "Champ défensif",
                     German = "Abwehrfeld",
@@ -6417,6 +6994,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Energy Field Down",
                     English = "Energy Field Down",
                     French = "Anti-champ défensif",
                     German = "Anti-Abwehrfeld",
@@ -6428,6 +7006,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "HP Boost",
                     English = "HP Boost",
                     French = "Bonus de PV",
                     German = "LP-Bonus",
@@ -6439,6 +7018,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Forked Lightning",
                     English = "Forked Lightning",
                     French = "Éclair ramifié",
                     German = "Gabelblitz",
@@ -6450,6 +7030,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Revelation Resistance Down",
                     English = "Revelation Resistance Down",
                     French = "Résistance à Révélation réduite",
                     German = "Offenbarungs-Resistenz -",
@@ -6461,6 +7042,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Chain of Purgatory",
                     English = "Chain of Purgatory",
                     French = "Souffle du purgatoire",
                     German = "Kette der Purgation",
@@ -6472,6 +7054,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Arm of Purgatory",
                     English = "Arm of Purgatory",
                     French = "Bras du purgatoire",
                     German = "Arm der Purgation",
@@ -6483,6 +7066,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bluefire",
                     English = "Bluefire",
                     French = "Flamme bleue",
                     German = "Blaufeuer",
@@ -6494,6 +7078,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Ring of Fire",
                     English = "Ring of Fire",
                     French = "Vortex de feu",
                     German = "Flammenwand",
@@ -6505,6 +7090,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Rise of the Phoenix",
                     English = "Rise of the Phoenix",
                     French = "Oiseau de feu",
                     German = "Feuervogel",
@@ -6516,6 +7102,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Harvest",
                     English = "Harvest",
                     French = "Buveur d'âme",
                     German = "Seelensog",
@@ -6527,6 +7114,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Cloak of Death",
                     English = "Cloak of Death",
                     French = "Remous de la vie",
                     German = "Sog der Verzehrung",
@@ -6538,6 +7126,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Suffocated Will",
                     English = "Suffocated Will",
                     French = "Aura du Dragon-dieu",
                     German = "Drachenopfer",
@@ -6549,6 +7138,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Flare Dampening",
                     English = "Flare Dampening",
                     French = "ParaTéraBrasier",
                     German = "Neurolink",
@@ -6560,6 +7150,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "(仮)物理シールド(ストンスキン)",
                     English = "(仮)物理シールド(ストンスキン)",
                     French = "(仮)物理シールド(ストンスキン)",
                     German = "(仮)物理シールド(ストンスキン)",
@@ -6571,6 +7162,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "(仮)魔法シールド(ストンスキン)",
                     English = "(仮)魔法シールド(ストンスキン)",
                     French = "(仮)魔法シールド(ストンスキン)",
                     German = "(仮)魔法シールド(ストンスキン)",
@@ -6582,6 +7174,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Magic Vulnerability Down",
                     English = "Magic Vulnerability Down",
                     French = "Vulnérabilité magique diminuée",
                     German = "Verringerte Magie-Verwundbarkeit",
@@ -6593,6 +7186,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Physical Vulnerability Down",
                     English = "Physical Vulnerability Down",
                     French = "Vulnérabilité physique diminuée",
                     German = "Verringerte physische Verwundbarkeit",
@@ -6604,6 +7198,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Curse of the Mummy",
                     English = "Curse of the Mummy",
                     French = "Malédiction d'Azeyma",
                     German = "Azeymas Fluch",
@@ -6615,6 +7210,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Mummification",
                     English = "Mummification",
                     French = "Pion d'Azeyma",
                     German = "Azeymas Jünger",
@@ -6626,6 +7222,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Thin Ice",
                     English = "Thin Ice",
                     French = "Verglas",
                     German = "Glatteis",
@@ -6637,6 +7234,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Frostbite",
                     English = "Frostbite",
                     French = "Gelure",
                     German = "Erfrierung",
@@ -6648,6 +7246,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Frozen",
                     English = "Frozen",
                     French = "Glaciation",
                     German = "Überfroren",
@@ -6659,6 +7258,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Snowball",
                     English = "Snowball",
                     French = "Boule de neige",
                     German = "Schneeball",
@@ -6670,6 +7270,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Death Throes",
                     English = "Death Throes",
                     French = "Affres de la mort",
                     German = "Agonales Klammern",
@@ -6681,6 +7282,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Seized",
                     English = "Seized",
                     French = "Étreinte mortelle",
                     German = "Umschlungen",
@@ -6692,6 +7294,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Petrification",
                     English = "Petrification",
                     French = "Pétrification",
                     German = "Stein",
@@ -6703,6 +7306,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Invigoration",
                     English = "Invigoration",
                     French = "Bonne humeur",
                     German = "Schwippdischwapp",
@@ -6714,6 +7318,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Wet Plate",
                     English = "Wet Plate",
                     French = "Plein d'eau",
                     German = "Vollgelaufen",
@@ -6725,6 +7330,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Imp",
                     English = "Imp",
                     French = "Kappa",
                     German = "Flusskobold",
@@ -6736,6 +7342,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Hidden",
                     English = "Hidden",
                     French = "Dissimulation",
                     German = "Versteckt",
@@ -6747,6 +7354,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Hidden",
                     English = "Hidden",
                     French = "Dissimulation",
                     German = "Versteckt",
@@ -6758,6 +7366,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Invisible",
                     English = "Invisible",
                     French = "Invisible",
                     German = "Unsichtbar",
@@ -6769,6 +7378,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Irradiated",
                     English = "Irradiated",
                     French = "Irradiation",
                     German = "Erstrahlend",
@@ -6780,6 +7390,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Area of Influence Up",
                     English = "Area of Influence Up",
                     French = "Aire d'effet augmentée",
                     German = "Erweiterter Radius",
@@ -6791,6 +7402,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Burns",
                     English = "Burns",
                     French = "Brûlure",
                     German = "Brandwunde",
@@ -6802,6 +7414,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Pacification",
                     English = "Pacification",
                     French = "Pacification",
                     German = "Pacem",
@@ -6813,6 +7426,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fire Resistance Down",
                     English = "Fire Resistance Down",
                     French = "Résistance au feu diminuée",
                     German = "Feuerresistenz -",
@@ -6824,6 +7438,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Rotting Lungs",
                     English = "Rotting Lungs",
                     French = "Gaz putride",
                     German = "Verrottende Lunge",
@@ -6835,6 +7450,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Disease",
                     English = "Disease",
                     French = "Maladie",
                     German = "Krankheit",
@@ -6846,6 +7462,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Flesh Wound",
                     English = "Flesh Wound",
                     French = "Blessure physique",
                     German = "Fleischwunde",
@@ -6857,6 +7474,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Down for the Count",
                     English = "Down for the Count",
                     French = "Au tapis",
                     German = "Am Boden",
@@ -6868,6 +7486,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Out of the Action",
                     English = "Out of the Action",
                     French = "Actions bloquées",
                     German = "Außer Gefecht",
@@ -6879,6 +7498,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Regen",
                     English = "Regen",
                     French = "Récup",
                     German = "Regena",
@@ -6890,6 +7510,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Medica II",
                     English = "Medica II",
                     French = "Extra Médica",
                     German = "Resedra",
@@ -6901,6 +7522,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Febrile",
                     English = "Febrile",
                     French = "Infirmité",
                     German = "Fiebrig",
@@ -6912,6 +7534,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Brand of the Sullen",
                     English = "Brand of the Sullen",
                     French = "Marque de la désolation",
                     German = "Mal des Leids",
@@ -6923,6 +7546,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Brand of the Ireful",
                     English = "Brand of the Ireful",
                     French = "Marque de la fureur",
                     German = "Mal des Zorns",
@@ -6934,6 +7558,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Vulnerability Up",
                     English = "Vulnerability Up",
                     French = "Vulnérabilité augmentée",
                     German = "Erhöhte Verwundbarkeit",
@@ -6945,6 +7570,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Pyretic",
                     English = "Pyretic",
                     French = "Pyromanie",
                     German = "Pyretisch",
@@ -6956,6 +7582,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Poison Resistance Up",
                     English = "Poison Resistance Up",
                     French = "Résistance au poison accrue",
                     German = "Giftresistenz +",
@@ -6967,6 +7594,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bleeding",
                     English = "Bleeding",
                     French = "Saignant",
                     German = "Blutung",
@@ -6978,6 +7606,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Bleeding",
                     English = "Bleeding",
                     French = "Saignant",
                     German = "Blutung",
@@ -6989,6 +7618,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Chicken",
                     English = "Chicken",
                     French = "Poulet",
                     German = "Huhn",
@@ -7000,6 +7630,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Digesting",
                     English = "Digesting",
                     French = "Digestion",
                     German = "Verdauung",
@@ -7011,6 +7642,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Abandonment",
                     English = "Abandonment",
                     French = "Isolement",
                     German = "Verlassen",
@@ -7022,6 +7654,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Atrophy",
                     English = "Atrophy",
                     French = "Épuisement",
                     German = "Atrophie",
@@ -7033,6 +7666,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Rehabilitation",
                     English = "Rehabilitation",
                     French = "Récup",
                     German = "Rehabilitation",
@@ -7044,6 +7678,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Attack Up",
                     English = "Attack Up",
                     French = "Bonus d'attaque",
                     German = "Attacke-Bonus",
@@ -7055,6 +7690,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Attack Magic Potency Up",
                     English = "Attack Magic Potency Up",
                     French = "Bonus de puissance magique",
                     German = "Offensivmagie-Bonus",
@@ -7066,6 +7702,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Haste",
                     English = "Haste",
                     French = "Hâte",
                     German = "Hast",
@@ -7077,6 +7714,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "HP & MP Boost",
                     English = "HP & MP Boost",
                     French = "Bonus de PV et PM",
                     German = "LP-/MP-Bonus",
@@ -7088,6 +7726,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Battle High",
                     English = "Battle High",
                     French = "Ivresse du combat",
                     German = "Euphorie",
@@ -7099,6 +7738,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Battle Fever",
                     English = "Battle Fever",
                     French = "Fièvre du combat",
                     German = "Raserei",
@@ -7110,6 +7750,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Aegis Boon",
                     English = "Aegis Boon",
                     French = "Égide",
                     German = "Ägidensegen",
@@ -7121,6 +7762,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Invincibility",
                     English = "Invincibility",
                     French = "Invulnérable",
                     German = "Unverwundbar",
@@ -7132,6 +7774,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Physical Vulnerability Up",
                     English = "Physical Vulnerability Up",
                     French = "Vulnérabilité physique augmentée",
                     German = "Erhöhte physische Verwundbarkeit",
@@ -7143,6 +7786,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Magic Vulnerability Up",
                     English = "Magic Vulnerability Up",
                     French = "Vulnérabilité magique augmentée",
                     German = "Erhöhte Magie-Verwundbarkeit",
@@ -7154,6 +7798,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Blight",
                     English = "Blight",
                     French = "Supplice",
                     German = "Pesthauch",
@@ -7165,6 +7810,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Extend",
                     English = "Extend",
                     French = "Prolongation",
                     German = "Zeitdehnung",
@@ -7176,6 +7822,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Double",
                     English = "Double",
                     French = "Double",
                     German = "Doppel",
@@ -7187,6 +7834,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Triple",
                     English = "Triple",
                     French = "Triple",
                     German = "Tripel",
@@ -7198,6 +7846,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Prey",
                     English = "Prey",
                     French = "Marquage",
                     German = "Markiert",
@@ -7209,6 +7858,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Slippery Prey",
                     English = "Slippery Prey",
                     French = "Marquage impossible",
                     German = "Unmarkierbar",
@@ -7220,6 +7870,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "感電",
                     English = "感電",
                     French = "感電",
                     German = "感電",
@@ -7231,6 +7882,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fetters",
                     English = "Fetters",
                     French = "Attache",
                     German = "Gefesselt",
@@ -7242,6 +7894,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fetters",
                     English = "Fetters",
                     French = "Attache",
                     German = "Gefesselt",
@@ -7253,6 +7906,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Movement Speed Up",
                     English = "Movement Speed Up",
                     French = "Vitesse de déplacement accrue",
                     German = "Geschwindigkeit +",
@@ -7264,6 +7918,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Fire Resistance Down",
                     English = "Fire Resistance Down",
                     French = "Résistance au feu diminuée",
                     German = "Feuerresistenz -",
@@ -7275,6 +7930,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Invincibility",
                     English = "Invincibility",
                     French = "Invulnérable",
                     German = "Unverwundbar",
@@ -7286,6 +7942,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
+                    Chinese = "Damage Up",
                     English = "Damage Up",
                     French = "Bonus de dégâts",
                     German = "Schaden +",
