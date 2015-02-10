@@ -54,7 +54,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 new MapInfo(false, 128)
                 {
-                    Chinese = "Limsa Lominsa Upper Decks",
+                    Chinese = "利姆萨·罗敏萨上层甲上层甲板",
                     English = "Limsa Lominsa Upper Decks",
                     French = "Le Tillac",
                     German = "Obere Decks",
@@ -62,7 +62,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 129)
                 {
-                    Chinese = "Limsa Lominsa Lower Decks",
+                    Chinese = "利姆萨·罗敏萨下层甲上层甲板",
                     English = "Limsa Lominsa Lower Decks",
                     French = "L'Entrepont",
                     German = "Untere Decks",
@@ -70,7 +70,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 130)
                 {
-                    Chinese = "Ul'dah - Steps of Nald",
+                    Chinese = "乌尔达哈现世回廊",
                     English = "Ul'dah - Steps of Nald",
                     French = "Ul'dah - faubourg de Nald",
                     German = "Nald-Kreuzgang",
@@ -78,7 +78,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 131)
                 {
-                    Chinese = "Ul'dah - Steps of Thal",
+                    Chinese = "乌尔达哈来生回廊",
                     English = "Ul'dah - Steps of Thal",
                     French = "Ul'dah - faubourg de Thal",
                     German = "Thal-Kreuzgang",
@@ -86,7 +86,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 132)
                 {
-                    Chinese = "New Gridania",
+                    Chinese = "格里达尼亚新街",
                     English = "New Gridania",
                     French = "Nouvelle Gridania",
                     German = "Neu-Gridania",
@@ -94,7 +94,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 133)
                 {
-                    Chinese = "Old Gridania",
+                    Chinese = "格里达尼亚旧街",
                     English = "Old Gridania",
                     French = "Vieille Gridania",
                     German = "Alt-Gridania",
@@ -102,7 +102,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 134)
                 {
-                    Chinese = "Middle La Noscea",
+                    Chinese = "中拉诺西亚",
                     English = "Middle La Noscea",
                     French = "Noscea centrale",
                     German = "Zentrales La Noscea",
@@ -110,7 +110,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 135)
                 {
-                    Chinese = "Lower La Noscea",
+                    Chinese = "拉诺西亚低地",
                     English = "Lower La Noscea",
                     French = "Basse-Noscea",
                     German = "Unteres La Noscea",
@@ -118,7 +118,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 137)
                 {
-                    Chinese = "Eastern La Noscea",
+                    Chinese = "东拉诺西亚",
                     English = "Eastern La Noscea",
                     French = "Noscea orientale",
                     German = "Östliches La Noscea",
@@ -126,7 +126,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 138)
                 {
-                    Chinese = "Western La Noscea",
+                    Chinese = "西拉诺西亚",
                     English = "Western La Noscea",
                     French = "Noscea occidentale",
                     German = "Westliches La Noscea",
@@ -134,7 +134,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 139)
                 {
-                    Chinese = "Upper La Noscea",
+                    Chinese = "拉诺西亚高地",
                     English = "Upper La Noscea",
                     French = "Haute-Noscea",
                     German = "Oberes La Noscea",
@@ -142,7 +142,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 140)
                 {
-                    Chinese = "Western Thanalan",
+                    Chinese = "西萨纳兰",
                     English = "Western Thanalan",
                     French = "Thanalan occidental",
                     German = "Westliches Thanalan",
@@ -150,7 +150,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 141)
                 {
-                    Chinese = "Central Thanalan",
+                    Chinese = "中萨纳兰",
                     English = "Central Thanalan",
                     French = "Thanalan central",
                     German = "Zentrales Thanalan",
@@ -158,7 +158,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 145)
                 {
-                    Chinese = "Eastern Thanalan",
+                    Chinese = "东萨纳兰",
                     English = "Eastern Thanalan",
                     French = "Thanalan oriental",
                     German = "Östliches Thanalan",
@@ -166,7 +166,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 146)
                 {
-                    Chinese = "Southern Thanalan",
+                    Chinese = "南萨纳兰",
                     English = "Southern Thanalan",
                     French = "Thanalan méridional",
                     German = "Südliches Thanalan",
@@ -174,7 +174,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 147)
                 {
-                    Chinese = "Northern Thanalan",
+                    Chinese = "北萨纳兰",
                     English = "Northern Thanalan",
                     French = "Thanalan septentrional",
                     German = "Nördliches Thanalan",
@@ -182,7 +182,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 148)
                 {
-                    Chinese = "Central Shroud",
+                    Chinese = "黑衣森林中央林区",
                     English = "Central Shroud",
                     French = "Forêt centrale",
                     German = "Tiefer Wald",
@@ -190,7 +190,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 152)
                 {
-                    Chinese = "East Shroud",
+                    Chinese = "黑衣森林东部林区",
                     English = "East Shroud",
                     French = "Forêt de l'est",
                     German = "Ostwald",
@@ -198,7 +198,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 153)
                 {
-                    Chinese = "South Shroud",
+                    Chinese = "黑衣森林南部林区",
                     English = "South Shroud",
                     French = "Forêt du sud",
                     German = "Südwald",
@@ -206,7 +206,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 154)
                 {
-                    Chinese = "North Shroud",
+                    Chinese = "黑衣森林北部林区",
                     English = "North Shroud",
                     French = "Forêt du nord",
                     German = "Nordwald",
@@ -214,7 +214,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 155)
                 {
-                    Chinese = "Coerthas Central Highlands",
+                    Chinese = "库尔扎斯中央高地",
                     English = "Coerthas Central Highlands",
                     French = "Hautes terres du Coerthas central",
                     German = "Zentrales Hochland von Coerthas",
@@ -222,7 +222,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 156)
                 {
-                    Chinese = "Mor Dhona",
+                    Chinese = "摩杜纳",
                     English = "Mor Dhona",
                     French = "Mor Dhona",
                     German = "Mor Dhona",
@@ -230,7 +230,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 157)
                 {
-                    Chinese = "Sastasha",
+                    Chinese = "沙斯塔夏溶洞",
                     English = "Sastasha",
                     French = "Sastasha",
                     German = "Sastasha-Höhle",
@@ -238,7 +238,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 158)
                 {
-                    Chinese = "Brayflox's Longstop",
+                    Chinese = "布雷福洛克斯野营地",
                     English = "Brayflox's Longstop",
                     French = "Bivouac de Brayflox",
                     German = "Brüllvolx' Langrast",
@@ -246,7 +246,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 159)
                 {
-                    Chinese = "The Wanderer's Palace",
+                    Chinese = "放浪神古神殿",
                     English = "The Wanderer's Palace",
                     French = "Palais du Vagabond",
                     German = "Palast des Wanderers",
@@ -254,7 +254,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 160)
                 {
-                    Chinese = "Pharos Sirius",
+                    Chinese = "天狼星灯塔",
                     English = "Pharos Sirius",
                     French = "Phare de Sirius",
                     German = "Pharos Sirius",
@@ -262,7 +262,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 161)
                 {
-                    Chinese = "Copperbell Mines",
+                    Chinese = "铜铃铜山",
                     English = "Copperbell Mines",
                     French = "Mines de Clochecuivre",
                     German = "Kupferglocken-Mine",
@@ -270,7 +270,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 162)
                 {
-                    Chinese = "Halatali",
+                    Chinese = "日影地修炼所",
                     English = "Halatali",
                     French = "Halatali",
                     German = "Halatali",
@@ -278,7 +278,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 163)
                 {
-                    Chinese = "The Sunken Temple of Qarn",
+                    Chinese = "喀恩淹没圣堂",
                     English = "The Sunken Temple of Qarn",
                     French = "Temple enseveli de Qarn",
                     German = "Versunkener Tempel von Qarn",
@@ -286,7 +286,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 164)
                 {
-                    Chinese = "The Tam-Tara Deepcroft",
+                    Chinese = "塔姆·塔拉墓园",
                     English = "The Tam-Tara Deepcroft",
                     French = "Hypogée de Tam-Tara",
                     German = "Totenacker Tam-Tara",
@@ -310,7 +310,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 168)
                 {
-                    Chinese = "Stone Vigil",
+                    Chinese = "石卫塔",
                     English = "Stone Vigil",
                     French = "Vigile de pierre",
                     German = "Steinerne Wacht",
@@ -318,7 +318,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 169)
                 {
-                    Chinese = "The Thousand Maws of Toto-Rak",
+                    Chinese = "托托·拉克千狱",
                     English = "The Thousand Maws of Toto-Rak",
                     French = "Mille Gueules de Toto-Rak",
                     German = "Tausend Löcher von Toto-Rak",
@@ -326,7 +326,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 170)
                 {
-                    Chinese = "Cutter's Cry",
+                    Chinese = "樵鸣洞",
                     English = "Cutter's Cry",
                     French = "Gouffre hurlant",
                     German = "Sägerschrei",
@@ -334,7 +334,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 171)
                 {
-                    Chinese = "Dzemael Darkhold",
+                    Chinese = "泽梅尔要塞",
                     English = "Dzemael Darkhold",
                     French = "Forteresse de Dzemael",
                     German = "Feste Dzemael",
@@ -342,7 +342,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 172)
                 {
-                    Chinese = "Aurum Vale",
+                    Chinese = "黄金谷",
                     English = "Aurum Vale",
                     French = "Val d'aurum",
                     German = "Goldklamm",
@@ -350,7 +350,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 174)
                 {
-                    Chinese = "Labyrinth of the Ancients",
+                    Chinese = "古代人迷宫",
                     English = "Labyrinth of the Ancients",
                     French = "Dédale antique",
                     German = "Labyrinth der Alten",
@@ -366,7 +366,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 177)
                 {
-                    Chinese = "Mizzenmast Inn",
+                    Chinese = "后桅旅店",
                     English = "Mizzenmast Inn",
                     French = "Auberge de l'Artimon",
                     German = "Gasthaus Gaffelschoner",
@@ -382,7 +382,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 179)
                 {
-                    Chinese = "The Roost",
+                    Chinese = "栖木旅馆",
                     English = "The Roost",
                     French = "Le Perchoir",
                     German = "Der Traumbaum",
@@ -390,7 +390,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 180)
                 {
-                    Chinese = "Outer La Noscea",
+                    Chinese = "拉诺西亚外地",
                     English = "Outer La Noscea",
                     French = "Noscea extérieure",
                     German = "Äußeres La Noscea",
@@ -486,7 +486,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 212)
                 {
-                    Chinese = "The Waking Sands",
+                    Chinese = "沙之家",
                     English = "The Waking Sands",
                     French = "Refuge des sables",
                     German = "Sonnenwind",
@@ -550,7 +550,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 250)
                 {
-                    Chinese = "Wolves' Den Pier",
+                    Chinese = "狼狱停船场",
                     English = "Wolves' Den Pier",
                     French = "Jetée de l'Antre des loups",
                     German = "Wolfshöhlen-Pier",
@@ -558,7 +558,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 282)
                 {
-                    Chinese = "Private Cottage - Mist",
+                    Chinese = "海雾村私人小屋",
                     English = "Private Cottage - Mist",
                     French = "Maisonnette - Brumée",
                     German = "Privathütte (Dorf des Nebels)",
@@ -566,7 +566,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 283)
                 {
-                    Chinese = "Private House - Mist",
+                    Chinese = "海雾村私人公馆",
                     English = "Private House - Mist",
                     French = "Pavillon - Brumée",
                     German = "Privathaus (Dorf des Nebels)",
@@ -574,7 +574,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 284)
                 {
-                    Chinese = "Private Mansion - Mist",
+                    Chinese = "海雾村私人别墅",
                     English = "Private Mansion - Mist",
                     French = "Villa - Brumée",
                     German = "Privatresidenz (Dorf des Nebels)",
@@ -590,7 +590,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 339)
                 {
-                    Chinese = "Mist",
+                    Chinese = "海雾村",
                     English = "Mist",
                     French = "Brumée",
                     German = "Dorf des Nebels",
@@ -598,7 +598,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 340)
                 {
-                    Chinese = "Lavender Beds",
+                    Chinese = "薰衣草苗圃",
                     English = "Lavender Beds",
                     French = "Lavandière",
                     German = "Lavendelbeete",
@@ -606,7 +606,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 341)
                 {
-                    Chinese = "The Goblet",
+                    Chinese = "高脚孤丘",
                     English = "The Goblet",
                     French = "La Coupe",
                     German = "Kelchkuppe",
@@ -614,7 +614,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 342)
                 {
-                    Chinese = "Private Cottage - Lavender Beds",
+                    Chinese = "薰衣草苗圃私人小屋",
                     English = "Private Cottage - Lavender Beds",
                     French = "Maisonnette - Lavandière",
                     German = "Privathütte (Lavendelbeete)",
@@ -622,7 +622,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 343)
                 {
-                    Chinese = "Private House - Lavender Beds",
+                    Chinese = "薰衣草苗圃私人公馆",
                     English = "Private House - Lavender Beds",
                     French = "Pavillon - Lavandière",
                     German = "Privathaus (Lavendelbeete)",
@@ -630,7 +630,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 344)
                 {
-                    Chinese = "Private Mansion - Lavender Beds",
+                    Chinese = "薰衣草苗圃私人别墅",
                     English = "Private Mansion - Lavender Beds",
                     French = "Villa - Lavandière",
                     German = "Privatresidenz (Lavendelbeete)",
@@ -638,7 +638,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 345)
                 {
-                    Chinese = "Private Cottage - The Goblet",
+                    Chinese = "高脚孤丘私人小屋",
                     English = "Private Cottage - The Goblet",
                     French = "Maisonnette - la Coupe",
                     German = "Privathütte (Kelchkuppe)",
@@ -646,7 +646,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 346)
                 {
-                    Chinese = "Private House - The Goblet",
+                    Chinese = "高脚孤丘私人公馆",
                     English = "Private House - The Goblet",
                     French = "Pavillon - la Coupe",
                     German = "Privathaus (Kelchkuppe)",
@@ -654,7 +654,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 347)
                 {
-                    Chinese = "Private Mansion - The Goblet",
+                    Chinese = "高脚孤丘私人别墅",
                     English = "Private Mansion - The Goblet",
                     French = "Villa - la Coupe",
                     German = "Privatresidenz (Kelchkuppe)",
@@ -670,7 +670,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 349)
                 {
-                    Chinese = "Copperbell Mines (Hard)",
+                    Chinese = "铜铃铜山（骚乱坑道）",
                     English = "Copperbell Mines (Hard)",
                     French = "Mines de Clochecuivre (brutal)",
                     German = "Kupferglocken-Mine (schwer)",
@@ -686,7 +686,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 351)
                 {
-                    Chinese = "The Rising Stones",
+                    Chinese = "石之家",
                     English = "The Rising Stones",
                     French = "Refuge des roches",
                     German = "Sonnenstein",
