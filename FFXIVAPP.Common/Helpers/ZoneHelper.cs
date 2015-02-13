@@ -430,7 +430,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 204)
                 {
-                    Chinese = "Seat of the First Bow",
+                    Chinese = "神勇队司令室",
                     English = "Seat of the First Bow",
                     French = "Salle de commandement du Carquois",
                     German = "Kommandozimmer von Nophicas Schar ",
@@ -446,7 +446,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 206)
                 {
-                    Chinese = "The Navel",
+                    Chinese = "奥・哥摩罗火口神殿",
                     English = "The Navel",
                     French = "Le Nombril",
                     German = "Der Nabel",
