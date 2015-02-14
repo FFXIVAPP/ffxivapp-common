@@ -1798,7 +1798,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
-                    Chinese = "Cleric Stance",
+                    Chinese = "站姿",
                     English = "Cleric Stance",
                     French = "Prestance du prêtre",
                     German = "Bußprediger",
@@ -2638,7 +2638,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
-                    Chinese = "Paralysis",
+                    Chinese = "麻痹",
                     English = "Paralysis",
                     French = "Paralysie",
                     German = "Paralyse",
@@ -2650,7 +2650,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
-                    Chinese = "Triangulate",
+                    Chinese = "三角测量",
                     English = "Triangulate",
                     French = "Forestier",
                     German = "Geodäsie",
@@ -2662,7 +2662,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
-                    Chinese = "Gathering Rate Up",
+                    Chinese = "采集获得率提升",
                     English = "Gathering Rate Up",
                     French = "Récolte améliorée",
                     German = "Sammelrate erhöht",
@@ -2674,7 +2674,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
-                    Chinese = "Gathering Yield Up",
+                    Chinese = "采集获得数增加",
                     English = "Gathering Yield Up",
                     French = "Récolte abondante",
                     German = "Sammelgewinn erhöht",

@@ -294,7 +294,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 166)
                 {
-                    Chinese = "Haukke Manor",
+                    Chinese = "静语庄园",
                     English = "Haukke Manor",
                     French = "Manoir des Haukke",
                     German = "Haukke-Herrenhaus",
@@ -302,7 +302,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 167)
                 {
-                    Chinese = "Amdapor Keep",
+                    Chinese = "无限城古堡",
                     English = "Amdapor Keep",
                     French = "Château d'Amdapor",
                     German = "Ruinen von Amdapor",
@@ -462,7 +462,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 208)
                 {
-                    Chinese = "The Howling Eye",
+                    Chinese = "呼啸眼石塔群",
                     English = "The Howling Eye",
                     French = "Hurlœil",
                     German = "Das Tosende Auge",
