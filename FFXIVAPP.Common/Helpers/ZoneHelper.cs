@@ -294,7 +294,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 166)
                 {
-                    Chinese = "Haukke Manor",
+                    Chinese = "静语庄园",
                     English = "Haukke Manor",
                     French = "Manoir des Haukke",
                     German = "Haukke-Herrenhaus",
@@ -302,7 +302,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 167)
                 {
-                    Chinese = "Amdapor Keep",
+                    Chinese = "无限城古堡",
                     English = "Amdapor Keep",
                     French = "Château d'Amdapor",
                     German = "Ruinen von Amdapor",
@@ -358,7 +358,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 175)
                 {
-                    Chinese = "The Wolves' Den",
+                    Chinese = "狼狱水上竞技场",
                     English = "The Wolves' Den",
                     French = "L'Antre des loups",
                     German = "Die Wolfshöhle",
@@ -374,7 +374,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 178)
                 {
-                    Chinese = "The Hourglass",
+                    Chinese = "沙钟旅亭",
                     English = "The Hourglass",
                     French = "Le Sablier",
                     German = "Die Sanduhr",
@@ -398,7 +398,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 198)
                 {
-                    Chinese = "Command Room",
+                    Chinese = "提督室",
                     English = "Command Room",
                     French = "Salle de l'Amiral",
                     German = "Admiralsbrücke",
@@ -406,7 +406,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 199)
                 {
-                    Chinese = "リムサ・ロミンサ会議部屋",
+                    Chinese = "利姆萨·罗敏萨会议室",
                     English = "リムサ・ロミンサ会議部屋",
                     French = "リムサ・ロミンサ会議部屋",
                     German = "Besprechungszimmer",
@@ -422,7 +422,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 202)
                 {
-                    Chinese = "Bowl of Embers",
+                    Chinese = "炎帝陵",
                     English = "Bowl of Embers",
                     French = "Cratère des tisons",
                     German = "Das Grab der Lohe",
@@ -430,7 +430,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 204)
                 {
-                    Chinese = "Seat of the First Bow",
+                    Chinese = "神勇队司令室",
                     English = "Seat of the First Bow",
                     French = "Salle de commandement du Carquois",
                     German = "Kommandozimmer von Nophicas Schar ",
@@ -446,7 +446,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 206)
                 {
-                    Chinese = "The Navel",
+                    Chinese = "奥・哥摩罗火口神殿",
                     English = "The Navel",
                     French = "Le Nombril",
                     German = "Der Nabel",
@@ -462,7 +462,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 208)
                 {
-                    Chinese = "The Howling Eye",
+                    Chinese = "呼啸眼石塔群",
                     English = "The Howling Eye",
                     French = "Hurlœil",
                     German = "Das Tosende Auge",
@@ -582,7 +582,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 331)
                 {
-                    Chinese = "The Howling Eye",
+                    Chinese = "呼啸眼石塔群",
                     English = "The Howling Eye",
                     French = "Hurlœil",
                     German = "Das Tosende Auge",
@@ -662,7 +662,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(false, 348)
                 {
-                    Chinese = "Porta Decumana",
+                    Chinese = "究极神兵",
                     English = "Porta Decumana",
                     French = "Porta decumana",
                     German = "Porta Decumana",
@@ -678,7 +678,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 new MapInfo(true, 350)
                 {
-                    Chinese = "Haukke Manor (Hard)",
+                    Chinese = "静语庄园（恶灵府邸）",
                     English = "Haukke Manor (Hard)",
                     French = "Manoir des Haukke (brutal)",
                     German = "Haukke-Herrenhaus (schwer)",
