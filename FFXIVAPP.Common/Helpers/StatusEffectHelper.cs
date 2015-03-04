@@ -35,7 +35,7 @@ namespace FFXIVAPP.Common.Helpers
     public static class StatusEffectHelper
     {
         private static Dictionary<short, StatusItem> _statusEffects;
-  
+
         private static Dictionary<short, StatusItem> StatusEffects
         {
             get { return _statusEffects ?? (_statusEffects = new Dictionary<short, StatusItem>()); }
@@ -58,7 +58,7 @@ namespace FFXIVAPP.Common.Helpers
                     Generate();
                 }
                 if (StatusEffects.ContainsKey(id))
-                {          
+                {
                     return StatusEffects[id];
                 }
                 return new StatusItem
