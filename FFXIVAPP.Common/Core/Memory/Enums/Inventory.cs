@@ -41,6 +41,14 @@ namespace FFXIVAPP.Common.Core.Memory.Enums
             EXTRA_EQ = 5,
             CRYSTALS = 6,
             QUESTS_KI = 9,
+            HIRE_1 = 18,
+            HIRE_2 = 19,
+            HIRE_3 = 20,
+            HIRE_4 = 21,
+            HIRE_5 = 22,
+            HIRE_6 = 23,
+            HIRE_7 = 24,
+
             AC_MH = 29,
             AC_OH = 30,
             AC_HEAD = 31,
@@ -53,7 +61,11 @@ namespace FFXIVAPP.Common.Core.Memory.Enums
             AC_NECK = 38,
             AC_WRISTS = 39,
             AC_RINGS = 40,
-            AC_SOULS = 41
+            AC_SOULS = 41,
+            COMPANY_1 = 42,
+            COMPANY_2 = 43,
+            COMPANY_3 = 44,
+            COMPANY_CRYSTALS = 45
         }
     }
 }

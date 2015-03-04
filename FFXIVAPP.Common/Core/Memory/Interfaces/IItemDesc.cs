@@ -1,7 +1,7 @@
 ﻿// FFXIVAPP.Common
-// ItemInfo.cs
+// IItemDesc.cs
 // 
-// Copyright © 2007 - 2015 Ryan Wilson - All Rights Reserved
+// Copyright @2015 Violet Cheng - All Rights Reserved
 // 
 // Redistribution and use in source and binary forms, with or without 
 // modification, are permitted provided that the following conditions are met: 
@@ -26,50 +26,14 @@
 // CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) 
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE. 
-
 using System;
-using FFXIVAPP.Common.Core.Memory.Interfaces;
-
-namespace FFXIVAPP.Common.Core.Memory
+namespace FFXIVAPP.Common.Core.Memory.Interfaces
 {
-    public class ItemInfo : IItemInfo
+    public interface IItemDesc
     {
-        public int Slot { get; set; }
-        public uint ID { get; set; }
-        public uint SB { get; set; }
-        public uint GlamourID { get; set; }
-        public uint Amount { get; set; }
-        public bool IsHQ { get; set; }
-        public decimal SBPercent
-        {
-            get
-            {
-                try
-                {
-                    return (decimal) (Convert.ToDouble(SB) / Convert.ToDouble(10000));
-                }
-                catch
-                {
-                    return 0;
-                }
-            }
-        }
-
-        public uint Durability { get; set; }
-
-        public decimal DurabilityPercent
-        {
-            get
-            {
-                try
-                {
-                    return (decimal) (Convert.ToDouble(Durability) / Convert.ToDouble(30000));
-                }
-                catch
-                {
-                    return 0;
-                }
-            }
-        }
+        uint ID { get; set; }
+        uint Offset { get; set; }
+        String Name { get; set; }
+        String Description { get; set; }
     }
 }
