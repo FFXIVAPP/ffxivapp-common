@@ -39,7 +39,7 @@ namespace FFXIVAPP.Common.Core.Memory
         public uint SB { get; set; }
         public uint GlamourID { get; set; }
         public uint Amount { get; set; }
-
+        public bool IsHQ { get; set; }
         public decimal SBPercent
         {
             get
