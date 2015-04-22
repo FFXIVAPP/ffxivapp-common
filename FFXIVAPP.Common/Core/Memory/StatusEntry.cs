@@ -37,6 +37,8 @@ namespace FFXIVAPP.Common.Core.Memory
         private string _targetName;
 
         public bool IsCompanyAction { get; set; }
+        public ActorEntity SourceEntity { get; set; }
+        public ActorEntity TargetEntity { get; set; }
 
         public string TargetName
         {

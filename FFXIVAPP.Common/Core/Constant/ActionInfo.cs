@@ -1,5 +1,5 @@
 ﻿// FFXIVAPP.Common
-// IConstantsEntity.cs
+// ActionInfo.cs
 // 
 // Copyright © 2007 - 2015 Ryan Wilson - All Rights Reserved
 // 
@@ -27,24 +27,21 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE. 
 
-using System.Collections.Generic;
-using System.Globalization;
+using FFXIVAPP.Common.Core.Constant.Interfaces;
 
-namespace FFXIVAPP.Common.Core.Constant.Interfaces
+namespace FFXIVAPP.Common.Core.Constant
 {
-    public interface IConstantsEntity
+    public class ActionInfo : IActionInfo
     {
-        string Theme { get; set; }
-        string UIScale { get; set; }
-        Dictionary<string, string> AutoTranslate { get; set; }
-        Dictionary<string, string> ChatCodes { get; set; }
-        Dictionary<string, ActionInfo> Actions { get; set; }
-        string ChatCodesXml { get; set; }
-        Dictionary<string, string[]> Colors { get; set; }
-        CultureInfo CultureInfo { get; set; }
-        string CharacterName { get; set; }
-        string ServerName { get; set; }
-        string GameLanguage { get; set; }
-        bool EnableHelpLabels { get; set; }
+        public string ZH { get; set; }
+        public string JA { get; set; }
+        public string EN { get; set; }
+        public string FR { get; set; }
+        public string DE { get; set; }
+        public string ZH_HelpLabel { get; set; }
+        public string JA_HelpLabel { get; set; }
+        public string EN_HelpLabel { get; set; }
+        public string FR_HelpLabel { get; set; }
+        public string DE_HelpLabel { get; set; }
     }
 }

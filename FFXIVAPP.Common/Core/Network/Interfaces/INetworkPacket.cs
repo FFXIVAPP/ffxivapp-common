@@ -1,5 +1,5 @@
 ﻿// FFXIVAPP.Common
-// IConstantsEntity.cs
+// INetworkPacket.cs
 // 
 // Copyright © 2007 - 2015 Ryan Wilson - All Rights Reserved
 // 
@@ -27,24 +27,16 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE. 
 
-using System.Collections.Generic;
-using System.Globalization;
+using System;
 
-namespace FFXIVAPP.Common.Core.Constant.Interfaces
+namespace FFXIVAPP.Common.Core.Network.Interfaces
 {
-    public interface IConstantsEntity
+    public interface INetworkPacket
     {
-        string Theme { get; set; }
-        string UIScale { get; set; }
-        Dictionary<string, string> AutoTranslate { get; set; }
-        Dictionary<string, string> ChatCodes { get; set; }
-        Dictionary<string, ActionInfo> Actions { get; set; }
-        string ChatCodesXml { get; set; }
-        Dictionary<string, string[]> Colors { get; set; }
-        CultureInfo CultureInfo { get; set; }
-        string CharacterName { get; set; }
-        string ServerName { get; set; }
-        string GameLanguage { get; set; }
-        bool EnableHelpLabels { get; set; }
+        uint Key { get; set; }
+        byte[] Buffer { get; set; }
+        int CurrentPosition { get; set; }
+        int MessageSize { get; set; }
+        DateTime PacketDate { get; set; }
     }
 }

@@ -82,6 +82,8 @@
     <Compile Include="Converters\StringToBrushConverter.cs" />
     <Compile Include="Converters\TabStripBorderConverter.cs" />
     <Compile Include="Converters\VisibilityConverter.cs" />
+    <Compile Include="Core\Constant\ActionInfo.cs" />
+    <Compile Include="Core\Constant\Interfaces\IActionInfo.cs" />
     <Compile Include="Core\Memory\Interfaces\IItemDesc.cs" />
     <Compile Include="Core\Memory\ItemDesc.cs" />
     <Compile Include="Core\Memory\ItemInfo.cs" />
@@ -108,6 +110,8 @@
     <Compile Include="Core\Memory\InventoryEntity.cs" />
     <Compile Include="Core\Memory\StatusEntry.cs" />
     <Compile Include="Core\Memory\TargetEntity.cs" />
+    <Compile Include="Core\Network\Interfaces\INetworkPacket.cs" />
+    <Compile Include="Core\Network\NetworkPacket.cs" />
     <Compile Include="Events\PopupResultEvent.cs" />
     <Compile Include="Helpers\AssemblyHelper.cs" />
     <Compile Include="Helpers\BindingHelper.cs" />

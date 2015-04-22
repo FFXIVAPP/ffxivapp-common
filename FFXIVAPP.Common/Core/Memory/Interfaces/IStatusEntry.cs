@@ -32,6 +32,8 @@ namespace FFXIVAPP.Common.Core.Memory.Interfaces
     public interface IStatusEntry
     {
         bool IsCompanyAction { get; set; }
+        ActorEntity SourceEntity { get; set; }
+        ActorEntity TargetEntity { get; set; }
         string TargetName { get; set; }
         string StatusName { get; set; }
         short StatusID { get; set; }

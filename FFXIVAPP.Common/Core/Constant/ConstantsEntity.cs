@@ -39,6 +39,7 @@ namespace FFXIVAPP.Common.Core.Constant
         public string UIScale { get; set; }
         public Dictionary<string, string> AutoTranslate { get; set; }
         public Dictionary<string, string> ChatCodes { get; set; }
+        public Dictionary<string, ActionInfo> Actions { get; set; }
         public string ChatCodesXml { get; set; }
         public Dictionary<string, string[]> Colors { get; set; }
         public CultureInfo CultureInfo { get; set; }
