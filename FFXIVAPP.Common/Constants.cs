@@ -94,6 +94,7 @@ namespace FFXIVAPP.Common
         #region Auto-Properties MAIN APPLICATION
 
         public static bool EnableNLog { get; set; }
+        public static bool EnableNetworkReading { get; set; }
 
         public static Guid DefaultAudioDevice { get; set; }
 
