@@ -27,6 +27,7 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE. 
 
+using System;
 using System.ComponentModel;
 using System.Linq;
 using System.Windows;
@@ -207,7 +208,7 @@ namespace FFXIVAPP.Common.Utilities
             if (headerClicked != null && headerClicked.Column != null)
             {
                 var propertyName = GetPropertyName(headerClicked.Column);
-                if (!string.IsNullOrEmpty(propertyName))
+                if (!String.IsNullOrEmpty(propertyName))
                 {
                     var listView = GetAncestor<ListView>(headerClicked);
                     if (listView != null)
@@ -279,7 +280,7 @@ namespace FFXIVAPP.Common.Utilities
                     RemoveSortGlyph(currentSortedColumnHeader);
                 }
             }
-            if (!string.IsNullOrEmpty(propertyName))
+            if (!String.IsNullOrEmpty(propertyName))
             {
                 view.SortDescriptions.Add(new SortDescription(propertyName, direction));
                 if (GetShowSortGlyph(listView))

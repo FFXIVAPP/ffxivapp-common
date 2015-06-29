@@ -192,7 +192,7 @@ namespace FFXIVAPP.Common.Helpers
                 {
                     Chinese = "减速",
                     English = "Slow",
-                    French = "Lenteur neurolienne",
+                    French = "Lenteur",
                     German = "Gemach",
                     Japanese = "拘束装置：スロウ"
                 },
@@ -1034,7 +1034,7 @@ namespace FFXIVAPP.Common.Helpers
                     English = "Covered",
                     French = "Couvert",
                     German = "Gedeckt",
-                    Japanese = "被かばう"
+                    Japanese = "かばう［被］"
                 },
                 CompanyAction = false,
             });
@@ -2280,7 +2280,7 @@ namespace FFXIVAPP.Common.Helpers
                 {
                     Chinese = "Eye for an Eye",
                     English = "Eye for an Eye",
-                    French = "Garde-corps",
+                    French = "Œil pour œil",
                     German = "Auge um Auge",
                     Japanese = "アイ・フォー・アイ"
                 },
@@ -2343,6 +2343,17 @@ namespace FFXIVAPP.Common.Helpers
                     French = "Éruption ténébreuse",
                     German = "Schattenflamme",
                     Japanese = "シャドウフレア"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(191, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Malady",
+                    French = "Infection",
+                    German = "Pestilenz",
+                    Japanese = "瘴気"
                 },
                 CompanyAction = false,
             });
@@ -5196,7 +5207,7 @@ namespace FFXIVAPP.Common.Helpers
                 {
                     Chinese = "Water Resistance Down",
                     English = "Water Resistance Down",
-                    French = "Vulnérabilité à l'eau",
+                    French = "Résistance à l'eau diminuée",
                     German = "Wasserresistenz -",
                     Japanese = "水属性耐性低下"
                 },
@@ -5878,13 +5889,13 @@ namespace FFXIVAPP.Common.Helpers
             {
                 Name = new StatusLocalization
                 {
-                    Chinese = "Perfect Dodge",
-                    English = "Perfect Dodge",
-                    French = "Esquive absolue",
+                    Chinese = "Shade Shift",
+                    English = "Shade Shift",
+                    French = "Décalage d'ombre",
                     German = "Superkniff",
                     Japanese = "残影"
                 },
-                CompanyAction = true,
+                CompanyAction = false,
             });
             StatusEffects.Add(489, new StatusItem
             {
@@ -6018,6 +6029,17 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
+            StatusEffects.Add(503, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Burns",
+                    French = "Brûlure",
+                    German = "Brandwunde",
+                    Japanese = "火傷"
+                },
+                CompanyAction = false,
+            });
             StatusEffects.Add(504, new StatusItem
             {
                 Name = new StatusLocalization
@@ -6085,7 +6107,7 @@ namespace FFXIVAPP.Common.Helpers
                     Chinese = "Aetherochemical Bomb",
                     English = "Aetherochemical Bomb",
                     French = "Magismobombe",
-                    German = "Magitek-Sprengkörper",
+                    German = "Ätherochemischer Sprengkörper",
                     Japanese = "魔爆弾"
                 },
                 CompanyAction = false,
@@ -7530,6 +7552,72 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
+            StatusEffects.Add(630, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Heavy",
+                    French = "Pesanteur",
+                    German = "Gewicht",
+                    Japanese = "ヘヴィ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(631, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Tireless",
+                    French = "Infatigable",
+                    German = "Beflügelt",
+                    Japanese = "体力消耗無効"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(632, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Frenzied",
+                    French = "Fébrilité",
+                    German = "Raserei",
+                    Japanese = "興奮"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(630, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Heavy",
+                    French = "Pesanteur",
+                    German = "Gewicht",
+                    Japanese = "ヘヴィ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(631, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Tireless",
+                    French = "Infatigable",
+                    German = "Beflügelt",
+                    Japanese = "体力消耗無効"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(632, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Frenzied",
+                    French = "Fébrilité",
+                    German = "Raserei",
+                    Japanese = "興奮"
+                },
+                CompanyAction = false,
+            });
             StatusEffects.Add(636, new StatusItem
             {
                 Name = new StatusLocalization
@@ -7587,6 +7675,17 @@ namespace FFXIVAPP.Common.Helpers
                     French = "Résistance au poison accrue",
                     German = "Giftresistenz +",
                     Japanese = "毒耐性向上"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(641, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Choco Reflect",
+                    French = "Chocoboomerang",
+                    German = "Chocobo-Reflektion",
+                    Japanese = "弱体効果反射"
                 },
                 CompanyAction = false,
             });
@@ -7842,6 +7941,17 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
+            StatusEffects.Add(641, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Choco Reflect",
+                    French = "Chocoboomerang",
+                    German = "Chocobo-Reflektion",
+                    Japanese = "弱体効果反射"
+                },
+                CompanyAction = false,
+            });
             StatusEffects.Add(664, new StatusItem
             {
                 Name = new StatusLocalization
@@ -7871,9 +7981,9 @@ namespace FFXIVAPP.Common.Helpers
                 Name = new StatusLocalization
                 {
                     Chinese = "感電",
-                    English = "感電",
-                    French = "感電",
-                    German = "感電",
+                    English = "Electrocution",
+                    French = "Électrocution",
+                    German = "Stromschlag",
                     Japanese = "感電"
                 },
                 CompanyAction = false,
@@ -7947,6 +8057,2393 @@ namespace FFXIVAPP.Common.Helpers
                     French = "Bonus de dégâts",
                     German = "Schaden +",
                     Japanese = "ダメージ上昇"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(676, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Concealed",
+                    French = "Camouflage",
+                    German = "Verborgen",
+                    Japanese = "潜伏"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(677, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Concentrated Poison",
+                    French = "Poison concentré",
+                    German = "Starkes Gift",
+                    Japanese = "劇毒"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(678, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Tailwind",
+                    French = "Vent arrière",
+                    German = "Rückenwind",
+                    Japanese = "帯風"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(679, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Windwall",
+                    French = "Mur de vent",
+                    German = "Windmauer",
+                    Japanese = "風壁"
+                },
+                CompanyAction = true,
+            });
+            StatusEffects.Add(680, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Directional Parry",
+                    French = "Parade directionnelle",
+                    German = "Gerichtete Parade",
+                    Japanese = "受け流し"
+                },
+                CompanyAction = true,
+            });
+            StatusEffects.Add(681, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Offensive Optimization",
+                    French = "Optimisation offensive",
+                    German = "Offensivhaltung",
+                    Japanese = "攻撃形態"
+                },
+                CompanyAction = true,
+            });
+            StatusEffects.Add(682, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Defensive Optimization",
+                    French = "Optimisation défensive",
+                    German = "Defensivhaltung",
+                    Japanese = "防御形態"
+                },
+                CompanyAction = true,
+            });
+            StatusEffects.Add(683, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Blessing of Earth",
+                    French = "Bénédiction de la terre",
+                    German = "Segen der Erde",
+                    Japanese = "土の加護"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(684, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Blessing of Fire",
+                    French = "Bénédiction du feu",
+                    German = "Segen des Feuers",
+                    Japanese = "火の加護"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(685, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Wind Resistance Down",
+                    French = "Résistance au vent diminuée",
+                    German = "Windresistenz -",
+                    Japanese = "風属性耐性低下"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(686, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Poison",
+                    French = "Poison",
+                    German = "Gift",
+                    Japanese = "毒"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(688, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Hypercharge",
+                    French = "Hypercharge",
+                    German = "Hyperladung",
+                    Japanese = "ハイパーチャージ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(689, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Mana Capacitor",
+                    French = "Condensateur d'éther",
+                    German = "Mana-Kondensator",
+                    Japanese = "マナキャパシター"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(690, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Muscle Activator",
+                    French = "Activateur de muscle",
+                    German = "Muskelaktivator",
+                    Japanese = "マッスルアクティベーター"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(695, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Physical Vulnerability Up",
+                    French = "Vulnérabilité physique augmentée",
+                    German = "Erhöhte physische Verwundbarkeit",
+                    Japanese = "被物理ダメージ増加"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(696, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Damage Down",
+                    French = "Malus de dégâts",
+                    German = "Schaden -",
+                    Japanese = "ダメージ低下"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(697, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Healing Magic Down",
+                    French = "Malus de soin",
+                    German = "Heilmagie -",
+                    Japanese = "回復魔法効果低下"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(701, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Battle Efficiency Down",
+                    French = "Efficacité de combat diminuée",
+                    German = "Verringerte Kampffähigkeit",
+                    Japanese = "戦闘能力低下"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(702, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Bloated",
+                    French = "Ballonnement",
+                    German = "Zyklonische Separation",
+                    Japanese = "ガス吸引"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(703, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Draconian Gaze",
+                    French = "Regard draconique",
+                    German = "Siegel des Auges",
+                    Japanese = "竜眼の封印"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(704, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Draconian Light",
+                    French = "Lumière draconique",
+                    German = "Schutz des Auges",
+                    Japanese = "竜眼の加護"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(705, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Transfiguration",
+                    French = "Transformation",
+                    German = "Verwandlung",
+                    Japanese = "変身"
+                },
+                CompanyAction = true,
+            });
+            StatusEffects.Add(714, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Vulnerability Up",
+                    French = "Vulnérabilité augmentée",
+                    German = "Erhöhte Verwundbarkeit",
+                    Japanese = "被ダメージ上昇"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(715, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Staggered",
+                    French = "Chancellement",
+                    German = "Schwankend",
+                    Japanese = "よろめき"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(716, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Turbulence",
+                    French = "Turbulence",
+                    German = "Turbulenzen",
+                    Japanese = "乱気流"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(717, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Will of the Wind",
+                    French = "Domination du vent",
+                    German = "Herrschaft des Windes",
+                    Japanese = "風の支配"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(718, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Will of the Water",
+                    French = "Domination de l'eau",
+                    German = "Herrschaft des Wassers",
+                    Japanese = "水の支配"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(719, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Whaleback",
+                    French = "Attaque directe",
+                    German = "In Schusslinie",
+                    Japanese = "直接攻撃"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(720, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Slashing Resistance Up",
+                    French = "Résistance au tranchant accrue",
+                    German = "Hiebresistenz +",
+                    Japanese = "斬属性耐性向上"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(721, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Piercing Resistance Up",
+                    French = "Résistance au perforant accrue",
+                    German = "Stichresistenz +",
+                    Japanese = "突属性耐性向上"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(722, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Blunt Resistance Up",
+                    French = "Résistance au contondant accrue",
+                    German = "Schlagresistenz +",
+                    Japanese = "打属性耐性向上"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(723, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Aetherochemical Bomb",
+                    French = "Magismobombe",
+                    German = "Ätherochemischer Sprengkörper",
+                    Japanese = "魔爆弾"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(725, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Goring Blade",
+                    French = "Lame étripante",
+                    German = "Ausweiden",
+                    Japanese = "ゴアブレード"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(726, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Divine Veil",
+                    French = "Voile divin",
+                    German = "Heiliger Quell",
+                    Japanese = "ディヴァインヴェール"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(727, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Divine Veil",
+                    French = "Voile divin",
+                    German = "Heiliger Quell",
+                    Japanese = "ディヴァインヴェール［バリア］"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(728, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Sheltron",
+                    French = "Schiltron",
+                    German = "Schiltron",
+                    Japanese = "シェルトロン"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(729, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Deliverance",
+                    French = "Délivrance",
+                    German = "Erlöser",
+                    Japanese = "デストロイヤー"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(730, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Abandon",
+                    French = "Abandonnement",
+                    German = "Abkehr",
+                    Japanese = "アバンドン"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(731, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Abandon II",
+                    French = "Abandonnement II",
+                    German = "Abkehr II",
+                    Japanese = "アバンドンII"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(732, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Abandon III",
+                    French = "Abandonnement III",
+                    German = "Abkehr III",
+                    Japanese = "アバンドンIII"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(733, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Abandon IV",
+                    French = "Abandonnement IV",
+                    German = "Abkehr IV",
+                    Japanese = "アバンドンIV"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(734, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Uncontrollable",
+                    French = "Abandonnement V",
+                    German = "Abkehr V",
+                    Japanese = "アバンドンV"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(735, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Raw Intuition",
+                    French = "Intuition pure",
+                    German = "Ur-Instinkt",
+                    Japanese = "原初の直感"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(736, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Blood of the Dragon",
+                    French = "Sang du dragon",
+                    German = "Drachenherz",
+                    Japanese = "蒼の竜血"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(737, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Ley Lines",
+                    French = "Manalignements",
+                    German = "Ley-Linien",
+                    Japanese = "黒魔紋"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(738, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Circle of Power",
+                    French = "Manalignements",
+                    German = "Ley-Linien",
+                    Japanese = "黒魔紋：効果"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(739, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Asylum",
+                    French = "Asile",
+                    German = "Refugium",
+                    Japanese = "アサイラム"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(740, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Shadowskin",
+                    French = "Peau d'ombre",
+                    German = "Schattenhaut",
+                    Japanese = "シャドウスキン"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(741, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Scourge",
+                    French = "Fatalité",
+                    German = "Geißel",
+                    Japanese = "スカージ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(742, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Blood Weapon",
+                    French = "Arme de sang",
+                    German = "Blutwaffe",
+                    Japanese = "ブラッドウェポン"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(743, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Grit",
+                    French = "Férocité",
+                    German = "Zähigkeit",
+                    Japanese = "グリットスタンス"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(744, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Dark Dance",
+                    French = "Danse ténébreuse",
+                    German = "Dunkler Tanz",
+                    Japanese = "ダークダンス"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(745, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Blood Price",
+                    French = "Prix du sang",
+                    German = "Blutzoll",
+                    Japanese = "ブラッドプライス"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(746, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Dark Mind",
+                    French = "Esprit ténébreux",
+                    German = "Dunkler Geist",
+                    Japanese = "ダークマインド"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(747, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Shadow Wall",
+                    French = "Mur d'ombre",
+                    German = "Schattenwand",
+                    Japanese = "シャドウウォール"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(748, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Delirium",
+                    French = "Délirium",
+                    German = "Delirium",
+                    Japanese = "デリリアムブレード"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(749, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Salted Earth",
+                    French = "Terre salée",
+                    German = "Salzige Erde",
+                    Japanese = "ソルトアース"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(750, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Another Victim",
+                    French = "Autre victime",
+                    German = "Einziger Überlebender",
+                    Japanese = "ソウルサバイバー"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(751, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Darkside",
+                    French = "Ténèbres intérieures",
+                    German = "Dunkle Seite",
+                    Japanese = "暗黒"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(752, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Dark Arts",
+                    French = "Arts ténébreux",
+                    German = "Dunkle Künste",
+                    Japanese = "ダークアーツ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(753, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Reprisal",
+                    French = "Rétorsion",
+                    German = "Reflexion",
+                    Japanese = "リプライザル"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(754, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Gathering Rate Up (Limited)",
+                    French = "Récolte améliorée (limitée)",
+                    German = "Sammelrate erhöht (Limit)",
+                    Japanese = "採集獲得率アップ：限定"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(755, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Gathering Fortune Up (Limited)",
+                    French = "Récolte de qualité (limitée)",
+                    German = "Sammelglück erhöht (Limit)",
+                    Japanese = "採集HQ獲得率アップ：限定"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(756, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Gathering Yield Up (Limited)",
+                    French = "Récolte abondante (limitée)",
+                    German = "Sammelgewinn erhöht (Limit)",
+                    Japanese = "採集獲得数アップ：限定"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(757, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Discerning Eye",
+                    French = "Œil perspicace",
+                    German = "Kennerblick",
+                    Japanese = "審美眼"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(758, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Utmost Caution",
+                    French = "Attention maximale",
+                    German = "Äußerste Sorgfalt",
+                    Japanese = "コーション"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(759, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Deep Breath",
+                    French = "Respiration profonde",
+                    German = "Tiefes Durchatmen",
+                    Japanese = "ディープブレス"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(760, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Single Mind",
+                    French = "Esprit résolu",
+                    German = "Fünf Sinne",
+                    Japanese = "シングルマインド"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(761, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Snagging",
+                    French = "Casaquage",
+                    German = "Reißen",
+                    Japanese = "引掛釣り"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(762, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Fish Eyes",
+                    French = "Yeux de poisson",
+                    German = "Fischaugen",
+                    Japanese = "フィッシュアイ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(763, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Chum",
+                    French = "Amorçage",
+                    German = "Streuköder",
+                    Japanese = "撒き餌"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(764, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Inefficient Hooking",
+                    French = "Chances de ferrage réduites",
+                    German = "Schlechter Anschlag",
+                    Japanese = "フッキング成功率低下"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(765, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Catch and Release",
+                    French = "Pêche et remise à l'eau",
+                    German = "Fangen und Freilassen",
+                    Japanese = "最小サイズ向上"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(769, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Burning Chains",
+                    French = "Chaînes brûlantes",
+                    German = "Brennende Ketten",
+                    Japanese = "炎の鎖"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(770, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Fetters",
+                    French = "Attache",
+                    German = "Gefesselt",
+                    Japanese = "拘束"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(783, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Down for the Count",
+                    French = "Au tapis",
+                    German = "Am Boden",
+                    Japanese = "ノックダウン"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(784, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Voidblood",
+                    French = "Sang du néant",
+                    German = "Nichtsblut",
+                    Japanese = "妖異の血"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(785, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Nymian Plague",
+                    French = "Lèpre du tomberry",
+                    German = "Nym-Pest",
+                    Japanese = "トンベリ病"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(786, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Battle Litany",
+                    French = "Litanie combattante",
+                    German = "Litanei der Schlacht",
+                    Japanese = "バトルリタニー"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(787, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Silhouette",
+                    French = "Silhouette",
+                    German = "Schattenwandler",
+                    Japanese = "影渡［被］"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(788, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Shadewalker",
+                    French = "Manipulateur d'ombre",
+                    German = "Schattenwandler",
+                    Japanese = "影渡"
+                },
+                CompanyAction = true,
+            });
+            StatusEffects.Add(789, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Smoke Screen",
+                    French = "Écran de fumée",
+                    German = "Rauchschwaden",
+                    Japanese = "煙玉"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(790, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Duality",
+                    French = "Dualité",
+                    German = "Dualität",
+                    Japanese = "一双"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(791, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Dissipation",
+                    French = "Dissipation",
+                    German = "Dissipation",
+                    Japanese = "転化"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(792, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Emergency Tactics",
+                    French = "Stratagème de l'urgence",
+                    German = "Apotropaion",
+                    Japanese = "応急戦術"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(793, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "First Chakra",
+                    French = "Premier chakra",
+                    German = "Erstes Schatten-Chakra",
+                    Japanese = "闘気"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(794, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Second Chakra",
+                    French = "Deuxième chakra",
+                    German = "Zweites Schatten-Chakra",
+                    Japanese = "闘気II"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(795, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Third Chakra",
+                    French = "Troisième chakra",
+                    German = "Drittes Schatten-Chakra",
+                    Japanese = "闘気III"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(796, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Fourth Chakra",
+                    French = "Quatrième chakra",
+                    German = "Viertes Schatten-Chakra",
+                    Japanese = "闘気IV"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(797, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Fifth Chakra",
+                    French = "Cinquième chakra",
+                    German = "Fünftes Schatten-Chakra",
+                    Japanese = "闘気V"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(798, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Aero III",
+                    French = "Méga Vent",
+                    German = "Windga",
+                    Japanese = "エアロガ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(799, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Fey Wind",
+                    French = "Vent féerique",
+                    German = "Feenwind",
+                    Japanese = "フェイウィンド"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(800, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Fetters",
+                    French = "Attache",
+                    German = "Gefesselt",
+                    Japanese = "拘束"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(801, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Poison",
+                    French = "Poison",
+                    German = "Gift",
+                    Japanese = "毒"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(802, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Sharper Fang and Claw",
+                    French = "Croc-et-griffe",
+                    German = "Fang und Klaue",
+                    Japanese = "竜牙竜爪効果アップ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(803, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Enhanced Wheeling Thrust",
+                    French = "Percée tournante",
+                    German = "Fächerstoß",
+                    Japanese = "竜尾大車輪効果アップ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(804, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Vulnerability Down",
+                    French = "Vulnérabilité diminuée",
+                    German = "Verringerte Verwundbarkeit",
+                    Japanese = "被ダメージ低下"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(805, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Collector's Glove",
+                    French = "Gant de collectionneur",
+                    German = "Sammlergespür",
+                    Japanese = "蒐集品採集"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(806, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Vulnerability Up",
+                    French = "Vulnérabilité augmentée",
+                    German = "Erhöhte Verwundbarkeit",
+                    Japanese = "被ダメージ上昇"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(807, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Aethertrail Attunement",
+                    French = "Éther de Bahamut",
+                    German = "Bahamut-Äther",
+                    Japanese = "バハムートエーテル"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(808, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Dreadwyrm Trance",
+                    French = "Transe-Bahamut",
+                    German = "Bahamut-Trance",
+                    Japanese = "トランス・バハムート"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(809, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Slime",
+                    French = "Mucus",
+                    German = "Schleim",
+                    Japanese = "粘液"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(810, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Living Dead",
+                    French = "Mort-vivant",
+                    German = "Totenerweckung",
+                    Japanese = "リビングデッド"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(811, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Walking Dead",
+                    French = "Marcheur des limbes",
+                    German = "Erweckter",
+                    Japanese = "ウォーキングデッド"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(812, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Magic Vulnerability Down",
+                    French = "Vulnérabilité magique diminuée",
+                    German = "Verringerte Magie-Verwundbarkeit",
+                    Japanese = "被魔法ダメージ軽減"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(813, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Dark Dance",
+                    French = "Danse ténébreuse",
+                    German = "Dunkler Tanz",
+                    Japanese = "ダークダンス"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(814, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Enhanced Unleash",
+                    French = "Déchaînement déchaîné",
+                    German = "Entfesselung",
+                    Japanese = "アンリーシュ効果アップ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(815, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Enhanced Benefic II",
+                    French = "Bienfaisance II bénéfique",
+                    German = "Harmonie",
+                    Japanese = "ベネフィラ効果アップ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(816, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Enhanced Royal Road",
+                    French = "Voie royale améliorée",
+                    German = "Königsweg der Stärke",
+                    Japanese = "ロイヤルロード：効果量増加"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(817, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Expanded Royal Road",
+                    French = "Voie royale élargie",
+                    German = "Königsweg der Umsicht",
+                    Japanese = "ロイヤルロード：効果範囲化"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(818, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Extended Royal Road",
+                    French = "Voie royale doublée",
+                    German = "Königsweg der Geduld",
+                    Japanese = "ロイヤルロード：効果時間増加"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(826, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Card Drawn",
+                    French = "Tirage",
+                    German = "Gezogene Karte",
+                    Japanese = "ドロー"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(827, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Royal Road",
+                    French = "Voie royale",
+                    German = "Königsweg",
+                    Japanese = "ロイヤルロード"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(828, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Card Held",
+                    French = "Ajout",
+                    German = "Abgelegte Karte",
+                    Japanese = "キープ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(829, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "The Balance",
+                    French = "La Balance",
+                    German = "Kraft der Waage",
+                    Japanese = "アーゼマの均衡"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(830, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "The Bole",
+                    French = "Le Tronc",
+                    German = "Kraft der Eiche",
+                    Japanese = "世界樹の幹"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(831, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "The Arrow",
+                    French = "La Flèche",
+                    German = "Kraft des Pfeils",
+                    Japanese = "オシュオンの矢"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(832, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "The Spear",
+                    French = "L'Épieu",
+                    German = "Kraft des Speers",
+                    Japanese = "ハルオーネの槍"
+                },
+                CompanyAction = true,
+            });
+            StatusEffects.Add(833, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "The Ewer",
+                    French = "L'Aiguière",
+                    German = "Kraft des Krugs",
+                    Japanese = "サリャクの水瓶"
+                },
+                CompanyAction = true,
+            });
+            StatusEffects.Add(834, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "The Spire",
+                    French = "La Tour",
+                    German = "Kraft des Turms",
+                    Japanese = "ビエルゴの塔"
+                },
+                CompanyAction = true,
+            });
+            StatusEffects.Add(835, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Aspected Benefic",
+                    French = "Bienfaisance aspect",
+                    German = "Harmonischer Orbis",
+                    Japanese = "アスペクト・ベネフィク"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(836, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Aspected Helios",
+                    French = "Hélios aspect",
+                    German = "Aspektierter Helios",
+                    Japanese = "アスペクト・ヘリオス"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(837, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Nocturnal Field",
+                    French = "Champ nocturne",
+                    German = "Nocturnales Feld",
+                    Japanese = "ノクターナルフィールド"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(838, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Combust",
+                    French = "Conjonction supérieure",
+                    German = "Konjunktion",
+                    Japanese = "コンバス"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(839, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Diurnal Sect",
+                    French = "Thème diurne",
+                    German = "Diurnal",
+                    Japanese = "ダイアーナルセクト"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(840, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Nocturnal Sect",
+                    French = "Thème nocturne",
+                    German = "Nocturnal",
+                    Japanese = "ノクターナルセクト"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(841, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Lightspeed",
+                    French = "Vitesse de la lumière",
+                    German = "Lichtgeschwindigkeit",
+                    Japanese = "ライトスピード"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(842, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Luminiferous Aether",
+                    French = "Éther luminifère",
+                    German = "Lichtäther",
+                    Japanese = "ルミナスエーテル"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(843, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Combust II",
+                    French = "Conjonction supérieure II",
+                    German = "Konjunktion II",
+                    Japanese = "コンバラ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(844, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Disabled",
+                    French = "Invalidation",
+                    German = "Inakt",
+                    Japanese = "ドンアク"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(845, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Synastry",
+                    French = "Synastrie",
+                    German = "Synastrie",
+                    Japanese = "シナストリー"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(846, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Synastry",
+                    French = "Synastrie",
+                    German = "Synastrie",
+                    Japanese = "シナストリー［被］"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(847, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Collective Unconscious",
+                    French = "Inconscient collectif",
+                    German = "Numinosum",
+                    Japanese = "運命の輪"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(848, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Collective Unconscious",
+                    French = "Inconscient collectif",
+                    German = "Numinosum",
+                    Japanese = "運命の輪"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(849, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Collective Unconscious",
+                    French = "Inconscient collectif",
+                    German = "Numinosum",
+                    Japanese = "運命の輪：効果"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(850, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Gathering Fortune Up",
+                    French = "Récolte de qualité",
+                    German = "Sammelglück erhöht",
+                    Japanese = "採集HQ獲得率アップ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(851, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Reassembled",
+                    French = "Réassemblage",
+                    German = "Justiert",
+                    Japanese = "整備"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(852, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Promotion",
+                    French = "Sous-promotion",
+                    German = "Umwandlung",
+                    Japanese = "プロモーション"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(853, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Rapid Fire",
+                    French = "Feu rapide",
+                    German = "Schnellfeuer",
+                    Japanese = "ラピッドファイア"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(854, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Lead Shot",
+                    French = "Tir de plombs",
+                    German = "Parabelschuss",
+                    Japanese = "レッドショット"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(855, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Hot Shot",
+                    French = "Tir déchaîné",
+                    German = "Explosivgeschoss",
+                    Japanese = "ホットショット"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(856, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Enhanced Slug Shot",
+                    French = "Tir de balle amélioré",
+                    German = "Verbessertes Flintenlaufgeschoss",
+                    Japanese = "スラッグショット効果アップ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(857, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Cleaner Shot",
+                    French = "Tir net amélioré",
+                    German = "Verbesserter Sauberer Schuss",
+                    Japanese = "クリーンショット効果アップ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(858, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Gauss Barrel",
+                    French = "Canon Gauss",
+                    German = "Gauß-Laufaufsatz",
+                    Japanese = "ガウスバレル"
+                },
+                CompanyAction = true,
+            });
+            StatusEffects.Add(859, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Rent Mind",
+                    French = "Brise-esprit",
+                    German = "Zerrüttet",
+                    Japanese = "マインドブレイク"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(860, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Dismantled",
+                    French = "Brise-arme",
+                    German = "Zerlegt",
+                    Japanese = "ウェポンブレイク"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(861, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Wildfire",
+                    French = "Flambée",
+                    German = "Wildfeuer",
+                    Japanese = "ワイルドファイア"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(862, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Ammunition Loaded",
+                    French = "Munitions spéciales",
+                    German = "Spezialprojektil geladen",
+                    Japanese = "特殊弾"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(863, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Land Waker",
+                    French = "Terre vierge",
+                    German = "Erdbrecher",
+                    Japanese = "原初の大地"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(864, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Dark Force",
+                    French = "Force des ténèbres",
+                    German = "Dunkle Macht",
+                    Japanese = "ダークフォース"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(865, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "The Wanderer's Minuet",
+                    French = "Menuet du Vagabond",
+                    German = "Menuett des Wanderers",
+                    Japanese = "旅神のメヌエット"
+                },
+                CompanyAction = true,
+            });
+            StatusEffects.Add(866, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "The Warden's Paean",
+                    French = "Péan du Contemplateur",
+                    German = "Päan des Hüters",
+                    Japanese = "時神のピーアン"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(867, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Sharpcast",
+                    French = "Dynamisation",
+                    German = "Augmentierung",
+                    Japanese = "激成魔"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(868, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Enochian",
+                    French = "Énochien",
+                    German = "Henochisch",
+                    Japanese = "エノキアン"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(869, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Carnal Chill",
+                    French = "Froideur charnelle",
+                    German = "Greifbares Grauen",
+                    Japanese = "カーナルチル"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(870, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Push Back",
+                    French = "Repoussée",
+                    German = "Abstoßung",
+                    Japanese = "プッシュバック"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(871, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Name of the Wind",
+                    French = "Nom de vent",
+                    German = "Name des Winds",
+                    Japanese = "アート・オブ・ウィンド"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(872, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Name of Fire",
+                    French = "Nom de feu",
+                    German = "Name des Feuers",
+                    Japanese = "アート・オブ・ファイア"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(873, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Name of Ice",
+                    French = "Nom de glace",
+                    German = "Name des Eises",
+                    Japanese = "アート・オブ・アイス"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(874, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Name of Earth",
+                    French = "Nom de terre",
+                    German = "Name der Erde",
+                    Japanese = "アート・オブ・アース"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(875, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Name of Lightning",
+                    French = "Nom de foudre",
+                    German = "Name des Blitzes",
+                    Japanese = "アート・オブ・ライトニング"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(876, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Name of Water",
+                    French = "Nom d'eau",
+                    German = "Name des Wassers",
+                    Japanese = "アート・オブ・ウォーター"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(877, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Nameless",
+                    French = "Sans nom",
+                    German = "Namenlos",
+                    Japanese = "アート不可"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(878, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Maker's Mark",
+                    French = "Marque du fabricant",
+                    German = "Kunst des Kundigen",
+                    Japanese = "堅実の心得"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(879, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Crafter's Soul",
+                    French = "Âme d'artisan",
+                    German = "Seele des Handwerkers",
+                    Japanese = "職人の魂"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(880, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Whistle",
+                    French = "Siffler en travaillant",
+                    German = "Trällern",
+                    Japanese = "仕事唄"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(881, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Traders' Favor (Coerthas Western Highlands)",
+                    French = "Talisman des Marchands (Coerthas occidental)",
+                    German = "Nald'thals Gunst (Westliches Hochland von Coerthas)",
+                    Japanese = "ナルザルの護符：クルザス西部高地"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(882, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Traders' Favor (Dravanian Hinterlands)",
+                    French = "Talisman des Marchands (Avant-pays dravanien)",
+                    German = "Nald'thals Gunst (Dravanisches Hinterland)",
+                    Japanese = "ナルザルの護符：高地ドラヴァニア"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(883, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Traders' Favor (Dravanian Forelands)",
+                    French = "Talisman des Marchands (Arrière-pays dravanien)",
+                    German = "Nald'thals Gunst (Dravanisches Vorland)",
+                    Japanese = "ナルザルの護符：低地ドラヴァニア"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(884, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Traders' Favor (The Churning Mists)",
+                    French = "Talisman des Marchands (Cieux de Dravania)",
+                    German = "Nald'thals Gunst (Wallende Nebel)",
+                    Japanese = "ナルザルの護符：ドラヴァニア雲海"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(885, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Traders' Favor (The Sea of Clouds)",
+                    French = "Talisman des Marchands (Cieux d'Abalathia)",
+                    German = "Nald'thals Gunst (Abalathisches Wolkenmeer)",
+                    Japanese = "ナルザルの護符：アバラシア雲海"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(886, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Traders' Favor (Azys Lla)",
+                    French = "Talisman des Marchands (Azys Lla)",
+                    German = "Nald'thals Gunst (Azys Lla)",
+                    Japanese = "ナルザルの護符：魔大陸アジス・ラー"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(887, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Matron's Favor (Coerthas Western Highlands)",
+                    French = "Talisman de la Mère (Coerthas occidental)",
+                    German = "Nophicas Gunst (Westliches Hochland von Coerthas)",
+                    Japanese = "ノフィカの護符：クルザス西部高地"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(888, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Matron's Favor (Dravanian Hinterlands)",
+                    French = "Talisman de la Mère (Avant-pays dravanien)",
+                    German = "Nophicas Gunst (Dravanisches Hinterland)",
+                    Japanese = "ノフィカの護符：高地ドラヴァニア"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(889, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Matron's Favor (Dravanian Forelands)",
+                    French = "Talisman de la Mère (Arrière-pays dravanien)",
+                    German = "Nophicas Gunst (Dravanisches Vorland)",
+                    Japanese = "ノフィカの護符：低地ドラヴァニア"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(890, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Matron's Favor (The Churning Mists)",
+                    French = "Talisman de la Mère (Cieux de Dravania)",
+                    German = "Nophicas Gunst (Wallende Nebel)",
+                    Japanese = "ノフィカの護符：ドラヴァニア雲海"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(891, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Matron's Favor (The Sea of Clouds)",
+                    French = "Talisman de la Mère (Cieux d'Abalathia)",
+                    German = "Nophicas Gunst (Abalathisches Wolkenmeer)",
+                    Japanese = "ノフィカの護符：アバラシア雲海"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(892, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Matron's Favor (Azys Lla)",
+                    French = "Talisman de la Mère (Azys Lla)",
+                    German = "Nophicas Gunst (Azys Lla)",
+                    Japanese = "ノフィカの護符：魔大陸アジス・ラー"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(893, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Vulnerability Up",
+                    French = "Vulnérabilité augmentée",
+                    German = "Erhöhte Verwundbarkeit",
+                    Japanese = "被ダメージ上昇"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(894, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Wind Resistance Down",
+                    French = "Résistance au vent diminuée",
+                    German = "Windresistenz -",
+                    Japanese = "風属性耐性低下"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(895, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Invincibility",
+                    French = "Invulnérable",
+                    German = "Unverwundbar",
+                    Japanese = "無敵"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(896, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Last Ditch",
+                    French = "Ultime effort",
+                    German = "Letzter Graben",
+                    Japanese = "ラストディッチ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(897, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Regen",
+                    French = "○削除予定",
+                    German = "○削除予定",
+                    Japanese = "○削除予定"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(898, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Lightning Resistance Down",
+                    French = "Résistance à la foudre réduite",
+                    German = "Blitzresistenz -",
+                    Japanese = "雷属性耐性低下"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(899, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Physical Vulnerability Down",
+                    French = "Vulnérabilité physique diminuée",
+                    German = "Verringerte physische Verwundbarkeit",
+                    Japanese = "被物理ダメージ軽減"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(900, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Temporal Displacement",
+                    French = "Arrêt du temps",
+                    German = "Zeitriss",
+                    Japanese = "時間停止"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(901, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Fetters",
+                    French = "Attache",
+                    German = "Gefesselt",
+                    Japanese = "拘束"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(902, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Jackpot",
+                    French = "Gros lot",
+                    German = "MGP-Bonus",
+                    Japanese = "カンパニーアクション：MGPアップ"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(903, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Collectable Synthesis",
+                    French = "Synthèse collectionnable",
+                    German = "Sammlerstück-Synthese",
+                    Japanese = "蒐集品製作"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(904, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Prey",
+                    French = "Marquage",
+                    German = "Markiert",
+                    Japanese = "マーキング"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(905, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Thin Ice",
+                    French = "Glaciation",
+                    German = "Überfroren",
+                    Japanese = "凍結"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(906, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Darkness",
+                    French = "Pouvoir des ténèbres",
+                    German = "Dunkelheit",
+                    Japanese = "暗黒の力"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(907, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Arcanum Blessing",
+                    French = "Bénédiction des arcanes",
+                    German = "Kraft der Arkana",
+                    Japanese = "アルカナの祝福"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(908, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Aethertrail Attunement",
+                    French = "Éther de Bahamut",
+                    German = "Bahamut-Äther",
+                    Japanese = "バハムートエーテル"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(909, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Refresh",
+                    French = "Recharge",
+                    German = "MP-Regeneration",
+                    Japanese = "MP持続回復"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(910, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Doom",
+                    French = "Glas",
+                    German = "Todesurteil",
+                    Japanese = "死の宣告"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(911, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Thin Ice",
+                    French = "Verglas",
+                    German = "Glatteis",
+                    Japanese = "氷床"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(913, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Balance Drawn",
+                    French = "Tirage: la Balance",
+                    German = "Waage gezogen",
+                    Japanese = "ドロー：アーゼマの均衡"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(914, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Bole Drawn",
+                    French = "Tirage: le Tronc",
+                    German = "Eiche gezogen",
+                    Japanese = "ドロー：世界樹の幹"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(915, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Arrow Drawn",
+                    French = "Tirage: la Flèche",
+                    German = "Pfeil gezogen",
+                    Japanese = "ドロー：オシュオンの矢"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(916, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Spear Drawn",
+                    French = "Tirage: l'Épieu",
+                    German = "Speer gezogen",
+                    Japanese = "ドロー：ハルオーネの槍"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(917, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Ewer Drawn",
+                    French = "Tirage: l'Aiguière",
+                    German = "Krug gezogen",
+                    Japanese = "ドロー：サリャクの水瓶"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(918, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Spire Drawn",
+                    French = "Tirage: la Tour",
+                    German = "Turm gezogen",
+                    Japanese = "ドロー：ビエルゴの塔"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(919, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Heightened Visibility",
+                    French = "Décèlement",
+                    German = "Durchblick",
+                    Japanese = "看破"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(920, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Balance Held",
+                    French = "Ajout: la Balance",
+                    German = "Waage abgelegt",
+                    Japanese = "キープ：アーゼマの均衡"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(921, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Bole Held",
+                    French = "Ajout: le Tronc",
+                    German = "Eiche abgelegt",
+                    Japanese = "キープ：世界樹の幹"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(922, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Arrow Held",
+                    French = "Ajout: la Flèche",
+                    German = "Pfeil abgelegt",
+                    Japanese = "キープ：オシュオンの矢"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(923, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Spear Held",
+                    French = "Ajout: l'Épieu",
+                    German = "Speer abgelegt",
+                    Japanese = "キープ：ハルオーネの槍"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(924, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Ewer Held",
+                    French = "Ajout: l'Aiguière",
+                    German = "Krug abgelegt",
+                    Japanese = "キープ：サリャクの水瓶"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(925, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Spire Held",
+                    French = "Ajout: la Tour",
+                    German = "Turm abgelegt",
+                    Japanese = "キープ：ビエルゴの塔"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(926, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Sleep",
+                    French = "Sommeil",
+                    German = "Schlaf",
+                    Japanese = "睡眠"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(927, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Nectar",
+                    French = "Nectar",
+                    German = "Blütenhonig",
+                    Japanese = "花蜜"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(928, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Black Menace",
+                    French = "Menace fulgurante",
+                    German = "Dunkle Drohung",
+                    Japanese = "ブラックメナス"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(929, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Vulnerability Down",
+                    French = "Vulnérabilité diminuée",
+                    German = "Verringerte Verwundbarkeit",
+                    Japanese = "被ダメージ低下"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(930, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Fetters",
+                    French = "Attache",
+                    German = "Gefesselt",
+                    Japanese = "拘束"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(931, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Blunt Resistance Down",
+                    French = "Résistance au contondant réduite",
+                    German = "Schlagresistenz -",
+                    Japanese = "打属性耐性低下"
+                },
+                CompanyAction = false,
+            });
+            StatusEffects.Add(934, new StatusItem
+            {
+                Name = new StatusLocalization
+                {
+                    English = "Physical Vulnerability Up",
+                    French = "Vulnérabilité physique augmentée",
+                    German = "Erhöhte physische Verwundbarkeit",
+                    Japanese = "被物理ダメージ増加"
                 },
                 CompanyAction = false,
             });
