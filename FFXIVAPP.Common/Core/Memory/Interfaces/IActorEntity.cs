@@ -49,6 +49,7 @@ namespace FFXIVAPP.Common.Core.Memory.Interfaces
         double Z { get; set; }
         double Y { get; set; }
         float Heading { get; set; }
+        float HitBoxRadius { get; set; }
         byte GatheringInvisible { get; set; }
         uint Fate { get; set; }
         uint ModelID { get; set; }
@@ -80,6 +81,5 @@ namespace FFXIVAPP.Common.Core.Memory.Interfaces
         uint CastingTargetID { get; set; }
         float CastingProgress { get; set; }
         float CastingTime { get; set; }
-        int HitBoxRadius { get; }
     }
 }
