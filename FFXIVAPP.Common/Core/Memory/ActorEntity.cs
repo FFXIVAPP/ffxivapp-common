@@ -207,6 +207,7 @@ namespace FFXIVAPP.Common.Core.Memory
         public double Z { get; set; }
         public double Y { get; set; }
         public float Heading { get; set; }
+        public float HitBoxRadius { get; set; }
         public byte GatheringInvisible { get; set; }
         public uint Fate { get; set; }
         public uint ModelID { get; set; }
@@ -252,21 +253,6 @@ namespace FFXIVAPP.Common.Core.Memory
         public float CastingProgress { get; set; }
         public float CastingTime { get; set; }
 
-        public int HitBoxRadius
-        {
-            get
-            {
-                if (CurrentUser != null)
-                {
-                    if (CurrentUser.ID == ID)
-                    {
-                        return 1;
-                    }
-                    return (int) Math.Floor(GetHorizontalDistanceTo(CurrentUser) - 0.0001) - Distance;
-                }
-                return 0;
-            }
-        }
 
         public float GetDistanceTo(ActorEntity compare)
         {
