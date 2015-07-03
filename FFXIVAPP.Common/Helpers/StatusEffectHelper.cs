@@ -7585,39 +7585,6 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(630, new StatusItem
-            {
-                Name = new StatusLocalization
-                {
-                    English = "Heavy",
-                    French = "Pesanteur",
-                    German = "Gewicht",
-                    Japanese = "ヘヴィ"
-                },
-                CompanyAction = false,
-            });
-            StatusEffects.Add(631, new StatusItem
-            {
-                Name = new StatusLocalization
-                {
-                    English = "Tireless",
-                    French = "Infatigable",
-                    German = "Beflügelt",
-                    Japanese = "体力消耗無効"
-                },
-                CompanyAction = false,
-            });
-            StatusEffects.Add(632, new StatusItem
-            {
-                Name = new StatusLocalization
-                {
-                    English = "Frenzied",
-                    French = "Fébrilité",
-                    German = "Raserei",
-                    Japanese = "興奮"
-                },
-                CompanyAction = false,
-            });
             StatusEffects.Add(636, new StatusItem
             {
                 Name = new StatusLocalization
@@ -7938,17 +7905,6 @@ namespace FFXIVAPP.Common.Helpers
                     French = "Triple",
                     German = "Tripel",
                     Japanese = "トリプル"
-                },
-                CompanyAction = false,
-            });
-            StatusEffects.Add(641, new StatusItem
-            {
-                Name = new StatusLocalization
-                {
-                    English = "Choco Reflect",
-                    French = "Chocoboomerang",
-                    German = "Chocobo-Reflektion",
-                    Japanese = "弱体効果反射"
                 },
                 CompanyAction = false,
             });
