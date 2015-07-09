@@ -34,12 +34,13 @@ namespace FFXIVAPP.Common.Core.Memory
 {
     public class ItemInfo : IItemInfo
     {
+        public bool IsHQ { get; set; }
         public int Slot { get; set; }
         public uint ID { get; set; }
         public uint SB { get; set; }
         public uint GlamourID { get; set; }
         public uint Amount { get; set; }
-        public bool IsHQ { get; set; }
+
         public decimal SBPercent
         {
             get
