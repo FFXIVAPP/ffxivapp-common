@@ -48,6 +48,5 @@ namespace FFXIVAPP.Common.Core.Constant.Interfaces
         bool EnableHelpLabels { get; set; }
         bool EnableNLog { get; set; }
         bool EnableNetworkReading { get; set; }
-
     }
 }
