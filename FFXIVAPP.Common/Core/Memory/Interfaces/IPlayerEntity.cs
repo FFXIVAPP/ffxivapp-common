@@ -63,6 +63,12 @@ namespace FFXIVAPP.Common.Core.Memory.Interfaces
 
         byte ROG { get; set; }
 
+        byte AST { get; set; }
+
+        byte DRK { get; set; }
+
+        byte MCH { get; set; }
+
         byte CPT { get; set; }
 
         byte BSM { get; set; }
@@ -107,19 +113,25 @@ namespace FFXIVAPP.Common.Core.Memory.Interfaces
 
         int ROG_CurrentEXP { get; set; }
 
-        int BSM_CurrentEXP { get; set; }
+        int AST_CurrentEXP { get; set; }
+
+        int DRK_CurrentEXP { get; set; }
+
+        int MCH_CurrentEXP { get; set; }
 
         int CPT_CurrentEXP { get; set; }
 
-        int GSM_CurrentEXP { get; set; }
+        int BSM_CurrentEXP { get; set; }
 
         int ARM_CurrentEXP { get; set; }
+
+        int GSM_CurrentEXP { get; set; }
+
+        int LTW_CurrentEXP { get; set; }
 
         int WVR_CurrentEXP { get; set; }
 
         int ALC_CurrentEXP { get; set; }
-
-        int LTW_CurrentEXP { get; set; }
 
         int CUL_CurrentEXP { get; set; }
 
@@ -163,7 +175,7 @@ namespace FFXIVAPP.Common.Core.Memory.Interfaces
 
         #endregion
 
-        #region Basic infos
+        #region Basic Infos
 
         int HPMax { get; set; }
 

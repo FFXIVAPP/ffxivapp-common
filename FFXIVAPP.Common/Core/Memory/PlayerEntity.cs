@@ -69,6 +69,9 @@ namespace FFXIVAPP.Common.Core.Memory
         public byte CNJ { get; set; }
         public byte ACN { get; set; }
         public byte ROG { get; set; }
+        public byte AST { get; set; }
+        public byte DRK { get; set; }
+        public byte MCH { get; set; }
         public byte CPT { get; set; }
         public byte BSM { get; set; }
         public byte ARM { get; set; }
@@ -89,13 +92,16 @@ namespace FFXIVAPP.Common.Core.Memory
         public int CNJ_CurrentEXP { get; set; }
         public int ACN_CurrentEXP { get; set; }
         public int ROG_CurrentEXP { get; set; }
-        public int BSM_CurrentEXP { get; set; }
+        public int AST_CurrentEXP { get; set; }
+        public int DRK_CurrentEXP { get; set; }
+        public int MCH_CurrentEXP { get; set; }
         public int CPT_CurrentEXP { get; set; }
-        public int GSM_CurrentEXP { get; set; }
+        public int BSM_CurrentEXP { get; set; }
         public int ARM_CurrentEXP { get; set; }
+        public int GSM_CurrentEXP { get; set; }
+        public int LTW_CurrentEXP { get; set; }
         public int WVR_CurrentEXP { get; set; }
         public int ALC_CurrentEXP { get; set; }
-        public int LTW_CurrentEXP { get; set; }
         public int CUL_CurrentEXP { get; set; }
         public int MIN_CurrentEXP { get; set; }
         public int BTN_CurrentEXP { get; set; }
