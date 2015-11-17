@@ -57,7 +57,7 @@ namespace FFXIVAPP.Common.Helpers
                 var original = CultureInfo.CurrentCulture.TextInfo.ToTitleCase(replace.ToLower());
                 result = result.Replace(original, replace.ToUpper());
             }
-            var titles = Regex.Matches(result, @"(?<num>\d+)(?<designator>\w+)", RegexOptions.IgnoreCase);
+            var titles = SharedRegEx.Titles.Matches(result);
             foreach (Match title in titles)
             {
                 var num = Convert.ToString(title.Groups["num"].Value);
@@ -73,8 +73,8 @@ namespace FFXIVAPP.Common.Helpers
         /// <returns></returns>
         public static string TrimAndCleanSpaces(string name)
         {
-            return Regex.Replace(name, @"[ ]+", " ")
-                        .Trim();
+            return SharedRegEx.CleanSpaces.Replace(name, "")
+                              .Trim();
         }
 
         /// <summary>

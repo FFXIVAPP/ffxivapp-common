@@ -45,6 +45,10 @@ namespace FFXIVAPP.Common.RegularExpressions
 
         public static readonly Regex Romans = new Regex(@"(?<roman>\b[IVXLCDM]+\b)", DefaultOptions);
 
+        public static readonly Regex Titles = new Regex(@"(?<num>\d+)(?<designator>\w+)", DefaultOptions | RegexOptions.IgnoreCase);
+
+        public static readonly Regex CleanSpaces = new Regex(@"[ ]+", RegexOptions.Compiled);
+
         /// <summary>
         /// </summary>
         /// <param name="pattern"> </param>
