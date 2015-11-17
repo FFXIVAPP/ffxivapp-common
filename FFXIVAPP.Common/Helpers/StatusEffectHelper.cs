@@ -27,23 +27,23 @@
 // ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE 
 // POSSIBILITY OF SUCH DAMAGE. 
 
-using System.Collections.Generic;
+using System.Collections.Concurrent;
 using System.Linq;
 
 namespace FFXIVAPP.Common.Helpers
 {
     public static class StatusEffectHelper
     {
-        private static Dictionary<short, StatusItem> _statusEffects;
+        private static ConcurrentDictionary<short, StatusItem> _statusEffects;
 
-        private static Dictionary<short, StatusItem> StatusEffects
+        private static ConcurrentDictionary<short, StatusItem> StatusEffects
         {
-            get { return _statusEffects ?? (_statusEffects = new Dictionary<short, StatusItem>()); }
+            get { return _statusEffects ?? (_statusEffects = new ConcurrentDictionary<short, StatusItem>()); }
             set
             {
                 if (_statusEffects == null)
                 {
-                    _statusEffects = new Dictionary<short, StatusItem>();
+                    _statusEffects = new ConcurrentDictionary<short, StatusItem>();
                 }
                 _statusEffects = value;
             }
@@ -78,7 +78,7 @@ namespace FFXIVAPP.Common.Helpers
 
         private static void Generate()
         {
-            StatusEffects.Add(1, new StatusItem
+            StatusEffects.TryAdd(1, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -90,7 +90,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(2, new StatusItem
+            StatusEffects.TryAdd(2, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -102,7 +102,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(3, new StatusItem
+            StatusEffects.TryAdd(3, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -114,7 +114,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(4, new StatusItem
+            StatusEffects.TryAdd(4, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -126,7 +126,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(5, new StatusItem
+            StatusEffects.TryAdd(5, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -138,7 +138,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(6, new StatusItem
+            StatusEffects.TryAdd(6, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -150,7 +150,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(7, new StatusItem
+            StatusEffects.TryAdd(7, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -162,7 +162,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(8, new StatusItem
+            StatusEffects.TryAdd(8, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -174,7 +174,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(9, new StatusItem
+            StatusEffects.TryAdd(9, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -186,7 +186,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(10, new StatusItem
+            StatusEffects.TryAdd(10, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -198,7 +198,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(11, new StatusItem
+            StatusEffects.TryAdd(11, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -210,7 +210,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(12, new StatusItem
+            StatusEffects.TryAdd(12, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -222,7 +222,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(13, new StatusItem
+            StatusEffects.TryAdd(13, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -234,7 +234,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(14, new StatusItem
+            StatusEffects.TryAdd(14, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -246,7 +246,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(15, new StatusItem
+            StatusEffects.TryAdd(15, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -258,7 +258,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(17, new StatusItem
+            StatusEffects.TryAdd(17, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -270,7 +270,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(18, new StatusItem
+            StatusEffects.TryAdd(18, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -282,7 +282,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(19, new StatusItem
+            StatusEffects.TryAdd(19, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -294,7 +294,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(20, new StatusItem
+            StatusEffects.TryAdd(20, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -306,7 +306,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(21, new StatusItem
+            StatusEffects.TryAdd(21, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -318,7 +318,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(22, new StatusItem
+            StatusEffects.TryAdd(22, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -330,7 +330,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(23, new StatusItem
+            StatusEffects.TryAdd(23, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -342,7 +342,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(24, new StatusItem
+            StatusEffects.TryAdd(24, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -354,7 +354,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(25, new StatusItem
+            StatusEffects.TryAdd(25, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -366,7 +366,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(26, new StatusItem
+            StatusEffects.TryAdd(26, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -378,7 +378,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(27, new StatusItem
+            StatusEffects.TryAdd(27, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -390,7 +390,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(28, new StatusItem
+            StatusEffects.TryAdd(28, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -402,7 +402,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(29, new StatusItem
+            StatusEffects.TryAdd(29, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -414,7 +414,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(30, new StatusItem
+            StatusEffects.TryAdd(30, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -426,7 +426,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(31, new StatusItem
+            StatusEffects.TryAdd(31, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -438,7 +438,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(32, new StatusItem
+            StatusEffects.TryAdd(32, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -450,7 +450,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(33, new StatusItem
+            StatusEffects.TryAdd(33, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -462,7 +462,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(34, new StatusItem
+            StatusEffects.TryAdd(34, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -474,7 +474,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(35, new StatusItem
+            StatusEffects.TryAdd(35, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -486,7 +486,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(36, new StatusItem
+            StatusEffects.TryAdd(36, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -498,7 +498,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(37, new StatusItem
+            StatusEffects.TryAdd(37, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -510,7 +510,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(38, new StatusItem
+            StatusEffects.TryAdd(38, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -522,7 +522,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(39, new StatusItem
+            StatusEffects.TryAdd(39, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -534,7 +534,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(40, new StatusItem
+            StatusEffects.TryAdd(40, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -546,7 +546,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(41, new StatusItem
+            StatusEffects.TryAdd(41, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -558,7 +558,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(42, new StatusItem
+            StatusEffects.TryAdd(42, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -570,7 +570,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(43, new StatusItem
+            StatusEffects.TryAdd(43, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -582,7 +582,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(44, new StatusItem
+            StatusEffects.TryAdd(44, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -594,7 +594,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(45, new StatusItem
+            StatusEffects.TryAdd(45, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -606,7 +606,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(46, new StatusItem
+            StatusEffects.TryAdd(46, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -618,7 +618,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(47, new StatusItem
+            StatusEffects.TryAdd(47, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -630,7 +630,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(48, new StatusItem
+            StatusEffects.TryAdd(48, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -642,7 +642,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(49, new StatusItem
+            StatusEffects.TryAdd(49, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -654,7 +654,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(50, new StatusItem
+            StatusEffects.TryAdd(50, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -666,7 +666,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(51, new StatusItem
+            StatusEffects.TryAdd(51, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -678,7 +678,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(52, new StatusItem
+            StatusEffects.TryAdd(52, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -690,7 +690,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(53, new StatusItem
+            StatusEffects.TryAdd(53, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -702,7 +702,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(54, new StatusItem
+            StatusEffects.TryAdd(54, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -714,7 +714,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(55, new StatusItem
+            StatusEffects.TryAdd(55, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -726,7 +726,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(56, new StatusItem
+            StatusEffects.TryAdd(56, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -738,7 +738,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(57, new StatusItem
+            StatusEffects.TryAdd(57, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -750,7 +750,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(58, new StatusItem
+            StatusEffects.TryAdd(58, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -762,7 +762,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(59, new StatusItem
+            StatusEffects.TryAdd(59, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -774,7 +774,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(60, new StatusItem
+            StatusEffects.TryAdd(60, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -786,7 +786,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(61, new StatusItem
+            StatusEffects.TryAdd(61, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -798,7 +798,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(62, new StatusItem
+            StatusEffects.TryAdd(62, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -810,7 +810,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(63, new StatusItem
+            StatusEffects.TryAdd(63, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -822,7 +822,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(64, new StatusItem
+            StatusEffects.TryAdd(64, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -834,7 +834,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(65, new StatusItem
+            StatusEffects.TryAdd(65, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -846,7 +846,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(66, new StatusItem
+            StatusEffects.TryAdd(66, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -858,7 +858,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(67, new StatusItem
+            StatusEffects.TryAdd(67, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -870,7 +870,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(68, new StatusItem
+            StatusEffects.TryAdd(68, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -882,7 +882,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(69, new StatusItem
+            StatusEffects.TryAdd(69, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -894,7 +894,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(70, new StatusItem
+            StatusEffects.TryAdd(70, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -906,7 +906,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(71, new StatusItem
+            StatusEffects.TryAdd(71, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -918,7 +918,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(72, new StatusItem
+            StatusEffects.TryAdd(72, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -930,7 +930,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(73, new StatusItem
+            StatusEffects.TryAdd(73, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -942,7 +942,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(74, new StatusItem
+            StatusEffects.TryAdd(74, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -954,7 +954,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(75, new StatusItem
+            StatusEffects.TryAdd(75, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -966,7 +966,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(76, new StatusItem
+            StatusEffects.TryAdd(76, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -978,7 +978,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(77, new StatusItem
+            StatusEffects.TryAdd(77, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -990,7 +990,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(78, new StatusItem
+            StatusEffects.TryAdd(78, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1002,7 +1002,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(79, new StatusItem
+            StatusEffects.TryAdd(79, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1014,7 +1014,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(80, new StatusItem
+            StatusEffects.TryAdd(80, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1026,7 +1026,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(81, new StatusItem
+            StatusEffects.TryAdd(81, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1038,7 +1038,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(82, new StatusItem
+            StatusEffects.TryAdd(82, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1050,7 +1050,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(83, new StatusItem
+            StatusEffects.TryAdd(83, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1062,7 +1062,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(84, new StatusItem
+            StatusEffects.TryAdd(84, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1074,7 +1074,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(85, new StatusItem
+            StatusEffects.TryAdd(85, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1086,7 +1086,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(86, new StatusItem
+            StatusEffects.TryAdd(86, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1098,7 +1098,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(87, new StatusItem
+            StatusEffects.TryAdd(87, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1110,7 +1110,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(88, new StatusItem
+            StatusEffects.TryAdd(88, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1122,7 +1122,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(89, new StatusItem
+            StatusEffects.TryAdd(89, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1134,7 +1134,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(90, new StatusItem
+            StatusEffects.TryAdd(90, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1146,7 +1146,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(91, new StatusItem
+            StatusEffects.TryAdd(91, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1158,7 +1158,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(92, new StatusItem
+            StatusEffects.TryAdd(92, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1170,7 +1170,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(93, new StatusItem
+            StatusEffects.TryAdd(93, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1182,7 +1182,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(94, new StatusItem
+            StatusEffects.TryAdd(94, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1194,7 +1194,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(95, new StatusItem
+            StatusEffects.TryAdd(95, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1206,7 +1206,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(96, new StatusItem
+            StatusEffects.TryAdd(96, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1218,7 +1218,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(97, new StatusItem
+            StatusEffects.TryAdd(97, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1230,7 +1230,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(98, new StatusItem
+            StatusEffects.TryAdd(98, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1242,7 +1242,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(99, new StatusItem
+            StatusEffects.TryAdd(99, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1254,7 +1254,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(100, new StatusItem
+            StatusEffects.TryAdd(100, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1266,7 +1266,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(101, new StatusItem
+            StatusEffects.TryAdd(101, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1278,7 +1278,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(102, new StatusItem
+            StatusEffects.TryAdd(102, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1290,7 +1290,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(103, new StatusItem
+            StatusEffects.TryAdd(103, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1302,7 +1302,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(104, new StatusItem
+            StatusEffects.TryAdd(104, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1314,7 +1314,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(105, new StatusItem
+            StatusEffects.TryAdd(105, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1326,7 +1326,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(106, new StatusItem
+            StatusEffects.TryAdd(106, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1338,7 +1338,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(107, new StatusItem
+            StatusEffects.TryAdd(107, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1350,7 +1350,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(108, new StatusItem
+            StatusEffects.TryAdd(108, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1362,7 +1362,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(109, new StatusItem
+            StatusEffects.TryAdd(109, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1374,7 +1374,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(110, new StatusItem
+            StatusEffects.TryAdd(110, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1386,7 +1386,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(111, new StatusItem
+            StatusEffects.TryAdd(111, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1398,7 +1398,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(112, new StatusItem
+            StatusEffects.TryAdd(112, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1410,7 +1410,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(113, new StatusItem
+            StatusEffects.TryAdd(113, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1422,7 +1422,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(114, new StatusItem
+            StatusEffects.TryAdd(114, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1434,7 +1434,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(115, new StatusItem
+            StatusEffects.TryAdd(115, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1446,7 +1446,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(116, new StatusItem
+            StatusEffects.TryAdd(116, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1458,7 +1458,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(117, new StatusItem
+            StatusEffects.TryAdd(117, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1470,7 +1470,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(118, new StatusItem
+            StatusEffects.TryAdd(118, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1482,7 +1482,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(119, new StatusItem
+            StatusEffects.TryAdd(119, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1494,7 +1494,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(120, new StatusItem
+            StatusEffects.TryAdd(120, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1506,7 +1506,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(121, new StatusItem
+            StatusEffects.TryAdd(121, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1518,7 +1518,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(122, new StatusItem
+            StatusEffects.TryAdd(122, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1530,7 +1530,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(123, new StatusItem
+            StatusEffects.TryAdd(123, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1542,7 +1542,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(124, new StatusItem
+            StatusEffects.TryAdd(124, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1554,7 +1554,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(125, new StatusItem
+            StatusEffects.TryAdd(125, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1566,7 +1566,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(126, new StatusItem
+            StatusEffects.TryAdd(126, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1578,7 +1578,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(127, new StatusItem
+            StatusEffects.TryAdd(127, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1590,7 +1590,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(128, new StatusItem
+            StatusEffects.TryAdd(128, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1602,7 +1602,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(129, new StatusItem
+            StatusEffects.TryAdd(129, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1614,7 +1614,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(130, new StatusItem
+            StatusEffects.TryAdd(130, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1626,7 +1626,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(131, new StatusItem
+            StatusEffects.TryAdd(131, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1638,7 +1638,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(132, new StatusItem
+            StatusEffects.TryAdd(132, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1650,7 +1650,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(133, new StatusItem
+            StatusEffects.TryAdd(133, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1662,7 +1662,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(134, new StatusItem
+            StatusEffects.TryAdd(134, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1674,7 +1674,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(135, new StatusItem
+            StatusEffects.TryAdd(135, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1686,7 +1686,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(136, new StatusItem
+            StatusEffects.TryAdd(136, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1698,7 +1698,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(137, new StatusItem
+            StatusEffects.TryAdd(137, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1710,7 +1710,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(138, new StatusItem
+            StatusEffects.TryAdd(138, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1722,7 +1722,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(139, new StatusItem
+            StatusEffects.TryAdd(139, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1734,7 +1734,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(140, new StatusItem
+            StatusEffects.TryAdd(140, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1746,7 +1746,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(141, new StatusItem
+            StatusEffects.TryAdd(141, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1758,7 +1758,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(142, new StatusItem
+            StatusEffects.TryAdd(142, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1770,7 +1770,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(143, new StatusItem
+            StatusEffects.TryAdd(143, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1782,7 +1782,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(144, new StatusItem
+            StatusEffects.TryAdd(144, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1794,7 +1794,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(145, new StatusItem
+            StatusEffects.TryAdd(145, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1806,7 +1806,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(146, new StatusItem
+            StatusEffects.TryAdd(146, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1818,7 +1818,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(147, new StatusItem
+            StatusEffects.TryAdd(147, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1830,7 +1830,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(148, new StatusItem
+            StatusEffects.TryAdd(148, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1842,7 +1842,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(149, new StatusItem
+            StatusEffects.TryAdd(149, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1854,7 +1854,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(150, new StatusItem
+            StatusEffects.TryAdd(150, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1866,7 +1866,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(151, new StatusItem
+            StatusEffects.TryAdd(151, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1878,7 +1878,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(152, new StatusItem
+            StatusEffects.TryAdd(152, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1890,7 +1890,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(153, new StatusItem
+            StatusEffects.TryAdd(153, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1902,7 +1902,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(154, new StatusItem
+            StatusEffects.TryAdd(154, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1914,7 +1914,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(155, new StatusItem
+            StatusEffects.TryAdd(155, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1926,7 +1926,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(156, new StatusItem
+            StatusEffects.TryAdd(156, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1938,7 +1938,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(157, new StatusItem
+            StatusEffects.TryAdd(157, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1950,7 +1950,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(158, new StatusItem
+            StatusEffects.TryAdd(158, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1962,7 +1962,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(159, new StatusItem
+            StatusEffects.TryAdd(159, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1974,7 +1974,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(160, new StatusItem
+            StatusEffects.TryAdd(160, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1986,7 +1986,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(161, new StatusItem
+            StatusEffects.TryAdd(161, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -1998,7 +1998,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(162, new StatusItem
+            StatusEffects.TryAdd(162, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2010,7 +2010,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(163, new StatusItem
+            StatusEffects.TryAdd(163, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2022,7 +2022,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(164, new StatusItem
+            StatusEffects.TryAdd(164, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2034,7 +2034,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(165, new StatusItem
+            StatusEffects.TryAdd(165, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2046,7 +2046,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(166, new StatusItem
+            StatusEffects.TryAdd(166, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2058,7 +2058,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(167, new StatusItem
+            StatusEffects.TryAdd(167, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2070,7 +2070,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(168, new StatusItem
+            StatusEffects.TryAdd(168, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2082,7 +2082,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(169, new StatusItem
+            StatusEffects.TryAdd(169, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2094,7 +2094,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(170, new StatusItem
+            StatusEffects.TryAdd(170, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2106,7 +2106,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(171, new StatusItem
+            StatusEffects.TryAdd(171, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2118,7 +2118,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(172, new StatusItem
+            StatusEffects.TryAdd(172, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2130,7 +2130,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(173, new StatusItem
+            StatusEffects.TryAdd(173, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2142,7 +2142,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(174, new StatusItem
+            StatusEffects.TryAdd(174, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2154,7 +2154,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(175, new StatusItem
+            StatusEffects.TryAdd(175, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2166,7 +2166,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(176, new StatusItem
+            StatusEffects.TryAdd(176, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2178,7 +2178,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(177, new StatusItem
+            StatusEffects.TryAdd(177, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2190,7 +2190,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(178, new StatusItem
+            StatusEffects.TryAdd(178, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2202,7 +2202,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(179, new StatusItem
+            StatusEffects.TryAdd(179, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2214,7 +2214,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(180, new StatusItem
+            StatusEffects.TryAdd(180, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2226,7 +2226,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(181, new StatusItem
+            StatusEffects.TryAdd(181, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2238,7 +2238,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(182, new StatusItem
+            StatusEffects.TryAdd(182, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2250,7 +2250,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(183, new StatusItem
+            StatusEffects.TryAdd(183, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2262,7 +2262,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(184, new StatusItem
+            StatusEffects.TryAdd(184, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2274,7 +2274,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(185, new StatusItem
+            StatusEffects.TryAdd(185, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2286,7 +2286,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(186, new StatusItem
+            StatusEffects.TryAdd(186, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2298,7 +2298,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(187, new StatusItem
+            StatusEffects.TryAdd(187, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2310,7 +2310,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(188, new StatusItem
+            StatusEffects.TryAdd(188, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2322,7 +2322,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(189, new StatusItem
+            StatusEffects.TryAdd(189, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2334,7 +2334,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(190, new StatusItem
+            StatusEffects.TryAdd(190, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2346,7 +2346,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(191, new StatusItem
+            StatusEffects.TryAdd(191, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2357,7 +2357,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(192, new StatusItem
+            StatusEffects.TryAdd(192, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2369,7 +2369,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(193, new StatusItem
+            StatusEffects.TryAdd(193, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2381,7 +2381,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(194, new StatusItem
+            StatusEffects.TryAdd(194, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2393,7 +2393,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(195, new StatusItem
+            StatusEffects.TryAdd(195, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2405,7 +2405,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(196, new StatusItem
+            StatusEffects.TryAdd(196, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2417,7 +2417,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(197, new StatusItem
+            StatusEffects.TryAdd(197, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2429,7 +2429,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(198, new StatusItem
+            StatusEffects.TryAdd(198, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2441,7 +2441,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(199, new StatusItem
+            StatusEffects.TryAdd(199, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2453,7 +2453,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(200, new StatusItem
+            StatusEffects.TryAdd(200, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2465,7 +2465,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(201, new StatusItem
+            StatusEffects.TryAdd(201, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2477,7 +2477,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(202, new StatusItem
+            StatusEffects.TryAdd(202, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2489,7 +2489,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(203, new StatusItem
+            StatusEffects.TryAdd(203, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2501,7 +2501,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(204, new StatusItem
+            StatusEffects.TryAdd(204, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2513,7 +2513,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(205, new StatusItem
+            StatusEffects.TryAdd(205, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2525,7 +2525,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(206, new StatusItem
+            StatusEffects.TryAdd(206, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2537,7 +2537,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(207, new StatusItem
+            StatusEffects.TryAdd(207, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2549,7 +2549,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(208, new StatusItem
+            StatusEffects.TryAdd(208, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2561,7 +2561,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(209, new StatusItem
+            StatusEffects.TryAdd(209, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2573,7 +2573,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(210, new StatusItem
+            StatusEffects.TryAdd(210, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2585,7 +2585,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(211, new StatusItem
+            StatusEffects.TryAdd(211, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2597,7 +2597,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(212, new StatusItem
+            StatusEffects.TryAdd(212, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2609,7 +2609,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(213, new StatusItem
+            StatusEffects.TryAdd(213, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2621,7 +2621,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(214, new StatusItem
+            StatusEffects.TryAdd(214, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2633,7 +2633,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(215, new StatusItem
+            StatusEffects.TryAdd(215, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2645,7 +2645,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(216, new StatusItem
+            StatusEffects.TryAdd(216, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2657,7 +2657,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(217, new StatusItem
+            StatusEffects.TryAdd(217, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2669,7 +2669,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(218, new StatusItem
+            StatusEffects.TryAdd(218, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2681,7 +2681,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(219, new StatusItem
+            StatusEffects.TryAdd(219, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2693,7 +2693,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(220, new StatusItem
+            StatusEffects.TryAdd(220, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2705,7 +2705,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(221, new StatusItem
+            StatusEffects.TryAdd(221, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2717,7 +2717,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(222, new StatusItem
+            StatusEffects.TryAdd(222, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2729,7 +2729,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(223, new StatusItem
+            StatusEffects.TryAdd(223, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2741,7 +2741,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(224, new StatusItem
+            StatusEffects.TryAdd(224, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2753,7 +2753,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(225, new StatusItem
+            StatusEffects.TryAdd(225, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2765,7 +2765,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(226, new StatusItem
+            StatusEffects.TryAdd(226, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2777,7 +2777,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(227, new StatusItem
+            StatusEffects.TryAdd(227, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2789,7 +2789,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(228, new StatusItem
+            StatusEffects.TryAdd(228, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2801,7 +2801,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(229, new StatusItem
+            StatusEffects.TryAdd(229, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2813,7 +2813,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(230, new StatusItem
+            StatusEffects.TryAdd(230, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2825,7 +2825,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(231, new StatusItem
+            StatusEffects.TryAdd(231, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2837,7 +2837,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(232, new StatusItem
+            StatusEffects.TryAdd(232, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2849,7 +2849,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(233, new StatusItem
+            StatusEffects.TryAdd(233, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2861,7 +2861,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(234, new StatusItem
+            StatusEffects.TryAdd(234, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2873,7 +2873,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(235, new StatusItem
+            StatusEffects.TryAdd(235, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2885,7 +2885,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(236, new StatusItem
+            StatusEffects.TryAdd(236, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2897,7 +2897,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(237, new StatusItem
+            StatusEffects.TryAdd(237, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2909,7 +2909,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(238, new StatusItem
+            StatusEffects.TryAdd(238, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2921,7 +2921,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(239, new StatusItem
+            StatusEffects.TryAdd(239, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2933,7 +2933,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(240, new StatusItem
+            StatusEffects.TryAdd(240, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2945,7 +2945,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(241, new StatusItem
+            StatusEffects.TryAdd(241, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2957,7 +2957,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(242, new StatusItem
+            StatusEffects.TryAdd(242, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2969,7 +2969,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(243, new StatusItem
+            StatusEffects.TryAdd(243, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2981,7 +2981,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(244, new StatusItem
+            StatusEffects.TryAdd(244, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -2993,7 +2993,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(245, new StatusItem
+            StatusEffects.TryAdd(245, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3005,7 +3005,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(246, new StatusItem
+            StatusEffects.TryAdd(246, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3017,7 +3017,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(247, new StatusItem
+            StatusEffects.TryAdd(247, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3029,7 +3029,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(248, new StatusItem
+            StatusEffects.TryAdd(248, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3041,7 +3041,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(249, new StatusItem
+            StatusEffects.TryAdd(249, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3053,7 +3053,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(250, new StatusItem
+            StatusEffects.TryAdd(250, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3065,7 +3065,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(251, new StatusItem
+            StatusEffects.TryAdd(251, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3077,7 +3077,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(252, new StatusItem
+            StatusEffects.TryAdd(252, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3089,7 +3089,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(253, new StatusItem
+            StatusEffects.TryAdd(253, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3101,7 +3101,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(254, new StatusItem
+            StatusEffects.TryAdd(254, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3113,7 +3113,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(255, new StatusItem
+            StatusEffects.TryAdd(255, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3125,7 +3125,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(256, new StatusItem
+            StatusEffects.TryAdd(256, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3137,7 +3137,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(257, new StatusItem
+            StatusEffects.TryAdd(257, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3149,7 +3149,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(258, new StatusItem
+            StatusEffects.TryAdd(258, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3161,7 +3161,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(259, new StatusItem
+            StatusEffects.TryAdd(259, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3173,7 +3173,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(260, new StatusItem
+            StatusEffects.TryAdd(260, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3185,7 +3185,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(261, new StatusItem
+            StatusEffects.TryAdd(261, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3197,7 +3197,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(262, new StatusItem
+            StatusEffects.TryAdd(262, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3209,7 +3209,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(263, new StatusItem
+            StatusEffects.TryAdd(263, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3221,7 +3221,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(264, new StatusItem
+            StatusEffects.TryAdd(264, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3233,7 +3233,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(265, new StatusItem
+            StatusEffects.TryAdd(265, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3245,7 +3245,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(266, new StatusItem
+            StatusEffects.TryAdd(266, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3257,7 +3257,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(267, new StatusItem
+            StatusEffects.TryAdd(267, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3269,7 +3269,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(268, new StatusItem
+            StatusEffects.TryAdd(268, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3281,7 +3281,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(269, new StatusItem
+            StatusEffects.TryAdd(269, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3293,7 +3293,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(270, new StatusItem
+            StatusEffects.TryAdd(270, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3305,7 +3305,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(271, new StatusItem
+            StatusEffects.TryAdd(271, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3317,7 +3317,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(272, new StatusItem
+            StatusEffects.TryAdd(272, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3329,7 +3329,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(273, new StatusItem
+            StatusEffects.TryAdd(273, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3341,7 +3341,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(274, new StatusItem
+            StatusEffects.TryAdd(274, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3353,7 +3353,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(275, new StatusItem
+            StatusEffects.TryAdd(275, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3365,7 +3365,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(276, new StatusItem
+            StatusEffects.TryAdd(276, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3377,7 +3377,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(277, new StatusItem
+            StatusEffects.TryAdd(277, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3389,7 +3389,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(278, new StatusItem
+            StatusEffects.TryAdd(278, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3401,7 +3401,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(279, new StatusItem
+            StatusEffects.TryAdd(279, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3413,7 +3413,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(280, new StatusItem
+            StatusEffects.TryAdd(280, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3425,7 +3425,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(281, new StatusItem
+            StatusEffects.TryAdd(281, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3437,7 +3437,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(282, new StatusItem
+            StatusEffects.TryAdd(282, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3449,7 +3449,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(283, new StatusItem
+            StatusEffects.TryAdd(283, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3461,7 +3461,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(284, new StatusItem
+            StatusEffects.TryAdd(284, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3473,7 +3473,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(285, new StatusItem
+            StatusEffects.TryAdd(285, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3485,7 +3485,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(286, new StatusItem
+            StatusEffects.TryAdd(286, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3497,7 +3497,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(287, new StatusItem
+            StatusEffects.TryAdd(287, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3509,7 +3509,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(288, new StatusItem
+            StatusEffects.TryAdd(288, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3521,7 +3521,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(289, new StatusItem
+            StatusEffects.TryAdd(289, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3533,7 +3533,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(290, new StatusItem
+            StatusEffects.TryAdd(290, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3545,7 +3545,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(291, new StatusItem
+            StatusEffects.TryAdd(291, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3557,7 +3557,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(292, new StatusItem
+            StatusEffects.TryAdd(292, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3569,7 +3569,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(293, new StatusItem
+            StatusEffects.TryAdd(293, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3581,7 +3581,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(294, new StatusItem
+            StatusEffects.TryAdd(294, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3593,7 +3593,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(295, new StatusItem
+            StatusEffects.TryAdd(295, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3605,7 +3605,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(296, new StatusItem
+            StatusEffects.TryAdd(296, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3617,7 +3617,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(297, new StatusItem
+            StatusEffects.TryAdd(297, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3629,7 +3629,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(298, new StatusItem
+            StatusEffects.TryAdd(298, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3641,7 +3641,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(299, new StatusItem
+            StatusEffects.TryAdd(299, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3653,7 +3653,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(300, new StatusItem
+            StatusEffects.TryAdd(300, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3665,7 +3665,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(301, new StatusItem
+            StatusEffects.TryAdd(301, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3677,7 +3677,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(302, new StatusItem
+            StatusEffects.TryAdd(302, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3689,7 +3689,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(303, new StatusItem
+            StatusEffects.TryAdd(303, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3701,7 +3701,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(304, new StatusItem
+            StatusEffects.TryAdd(304, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3713,7 +3713,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(305, new StatusItem
+            StatusEffects.TryAdd(305, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3725,7 +3725,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(306, new StatusItem
+            StatusEffects.TryAdd(306, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3737,7 +3737,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(307, new StatusItem
+            StatusEffects.TryAdd(307, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3749,7 +3749,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(308, new StatusItem
+            StatusEffects.TryAdd(308, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3761,7 +3761,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(309, new StatusItem
+            StatusEffects.TryAdd(309, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3773,7 +3773,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(310, new StatusItem
+            StatusEffects.TryAdd(310, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3785,7 +3785,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(311, new StatusItem
+            StatusEffects.TryAdd(311, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3797,7 +3797,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(312, new StatusItem
+            StatusEffects.TryAdd(312, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3809,7 +3809,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(313, new StatusItem
+            StatusEffects.TryAdd(313, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3821,7 +3821,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(314, new StatusItem
+            StatusEffects.TryAdd(314, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3833,7 +3833,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(315, new StatusItem
+            StatusEffects.TryAdd(315, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3845,7 +3845,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(316, new StatusItem
+            StatusEffects.TryAdd(316, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3857,7 +3857,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(317, new StatusItem
+            StatusEffects.TryAdd(317, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3869,7 +3869,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(318, new StatusItem
+            StatusEffects.TryAdd(318, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3881,7 +3881,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(319, new StatusItem
+            StatusEffects.TryAdd(319, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3893,7 +3893,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(320, new StatusItem
+            StatusEffects.TryAdd(320, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3905,7 +3905,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(321, new StatusItem
+            StatusEffects.TryAdd(321, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3917,7 +3917,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(322, new StatusItem
+            StatusEffects.TryAdd(322, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3929,7 +3929,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(323, new StatusItem
+            StatusEffects.TryAdd(323, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3941,7 +3941,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(324, new StatusItem
+            StatusEffects.TryAdd(324, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3953,7 +3953,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(325, new StatusItem
+            StatusEffects.TryAdd(325, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3965,7 +3965,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(326, new StatusItem
+            StatusEffects.TryAdd(326, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3977,7 +3977,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(327, new StatusItem
+            StatusEffects.TryAdd(327, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -3989,7 +3989,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(328, new StatusItem
+            StatusEffects.TryAdd(328, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4001,7 +4001,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(329, new StatusItem
+            StatusEffects.TryAdd(329, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4013,7 +4013,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(330, new StatusItem
+            StatusEffects.TryAdd(330, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4025,7 +4025,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(331, new StatusItem
+            StatusEffects.TryAdd(331, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4037,7 +4037,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(332, new StatusItem
+            StatusEffects.TryAdd(332, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4049,7 +4049,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(333, new StatusItem
+            StatusEffects.TryAdd(333, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4061,7 +4061,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(334, new StatusItem
+            StatusEffects.TryAdd(334, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4073,7 +4073,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(335, new StatusItem
+            StatusEffects.TryAdd(335, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4085,7 +4085,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(336, new StatusItem
+            StatusEffects.TryAdd(336, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4097,7 +4097,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(337, new StatusItem
+            StatusEffects.TryAdd(337, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4109,7 +4109,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(338, new StatusItem
+            StatusEffects.TryAdd(338, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4121,7 +4121,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(339, new StatusItem
+            StatusEffects.TryAdd(339, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4133,7 +4133,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(340, new StatusItem
+            StatusEffects.TryAdd(340, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4145,7 +4145,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(341, new StatusItem
+            StatusEffects.TryAdd(341, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4157,7 +4157,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(342, new StatusItem
+            StatusEffects.TryAdd(342, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4169,7 +4169,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(343, new StatusItem
+            StatusEffects.TryAdd(343, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4181,7 +4181,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(344, new StatusItem
+            StatusEffects.TryAdd(344, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4193,7 +4193,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(345, new StatusItem
+            StatusEffects.TryAdd(345, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4205,7 +4205,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(346, new StatusItem
+            StatusEffects.TryAdd(346, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4217,7 +4217,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(347, new StatusItem
+            StatusEffects.TryAdd(347, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4229,7 +4229,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(348, new StatusItem
+            StatusEffects.TryAdd(348, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4241,7 +4241,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(349, new StatusItem
+            StatusEffects.TryAdd(349, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4253,7 +4253,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(350, new StatusItem
+            StatusEffects.TryAdd(350, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4265,7 +4265,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(351, new StatusItem
+            StatusEffects.TryAdd(351, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4277,7 +4277,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(352, new StatusItem
+            StatusEffects.TryAdd(352, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4289,7 +4289,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(353, new StatusItem
+            StatusEffects.TryAdd(353, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4301,7 +4301,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(354, new StatusItem
+            StatusEffects.TryAdd(354, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4313,7 +4313,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(355, new StatusItem
+            StatusEffects.TryAdd(355, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4325,7 +4325,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(356, new StatusItem
+            StatusEffects.TryAdd(356, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4337,7 +4337,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(357, new StatusItem
+            StatusEffects.TryAdd(357, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4349,7 +4349,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(358, new StatusItem
+            StatusEffects.TryAdd(358, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4361,7 +4361,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(359, new StatusItem
+            StatusEffects.TryAdd(359, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4373,7 +4373,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(360, new StatusItem
+            StatusEffects.TryAdd(360, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4385,7 +4385,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(361, new StatusItem
+            StatusEffects.TryAdd(361, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4397,7 +4397,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(362, new StatusItem
+            StatusEffects.TryAdd(362, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4409,7 +4409,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(363, new StatusItem
+            StatusEffects.TryAdd(363, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4421,7 +4421,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(364, new StatusItem
+            StatusEffects.TryAdd(364, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4433,7 +4433,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(365, new StatusItem
+            StatusEffects.TryAdd(365, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4445,7 +4445,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(366, new StatusItem
+            StatusEffects.TryAdd(366, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4457,7 +4457,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(367, new StatusItem
+            StatusEffects.TryAdd(367, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4469,7 +4469,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(368, new StatusItem
+            StatusEffects.TryAdd(368, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4481,7 +4481,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(369, new StatusItem
+            StatusEffects.TryAdd(369, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4493,7 +4493,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(370, new StatusItem
+            StatusEffects.TryAdd(370, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4505,7 +4505,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(371, new StatusItem
+            StatusEffects.TryAdd(371, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4517,7 +4517,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(372, new StatusItem
+            StatusEffects.TryAdd(372, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4529,7 +4529,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(373, new StatusItem
+            StatusEffects.TryAdd(373, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4541,7 +4541,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(374, new StatusItem
+            StatusEffects.TryAdd(374, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4553,7 +4553,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(375, new StatusItem
+            StatusEffects.TryAdd(375, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4565,7 +4565,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(376, new StatusItem
+            StatusEffects.TryAdd(376, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4577,7 +4577,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(377, new StatusItem
+            StatusEffects.TryAdd(377, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4589,7 +4589,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(378, new StatusItem
+            StatusEffects.TryAdd(378, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4601,7 +4601,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(379, new StatusItem
+            StatusEffects.TryAdd(379, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4613,7 +4613,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(380, new StatusItem
+            StatusEffects.TryAdd(380, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4625,7 +4625,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(381, new StatusItem
+            StatusEffects.TryAdd(381, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4637,7 +4637,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(384, new StatusItem
+            StatusEffects.TryAdd(384, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4649,7 +4649,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(385, new StatusItem
+            StatusEffects.TryAdd(385, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4661,7 +4661,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(386, new StatusItem
+            StatusEffects.TryAdd(386, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4673,7 +4673,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(387, new StatusItem
+            StatusEffects.TryAdd(387, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4685,7 +4685,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(388, new StatusItem
+            StatusEffects.TryAdd(388, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4697,7 +4697,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(389, new StatusItem
+            StatusEffects.TryAdd(389, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4709,7 +4709,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(390, new StatusItem
+            StatusEffects.TryAdd(390, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4721,7 +4721,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(391, new StatusItem
+            StatusEffects.TryAdd(391, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4733,7 +4733,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(392, new StatusItem
+            StatusEffects.TryAdd(392, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4745,7 +4745,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(393, new StatusItem
+            StatusEffects.TryAdd(393, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4757,7 +4757,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(394, new StatusItem
+            StatusEffects.TryAdd(394, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4769,7 +4769,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(395, new StatusItem
+            StatusEffects.TryAdd(395, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4781,7 +4781,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(396, new StatusItem
+            StatusEffects.TryAdd(396, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4793,7 +4793,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(397, new StatusItem
+            StatusEffects.TryAdd(397, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4805,7 +4805,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(398, new StatusItem
+            StatusEffects.TryAdd(398, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4817,7 +4817,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(399, new StatusItem
+            StatusEffects.TryAdd(399, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4829,7 +4829,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(400, new StatusItem
+            StatusEffects.TryAdd(400, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4841,7 +4841,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(401, new StatusItem
+            StatusEffects.TryAdd(401, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4853,7 +4853,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(402, new StatusItem
+            StatusEffects.TryAdd(402, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4865,7 +4865,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(403, new StatusItem
+            StatusEffects.TryAdd(403, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4877,7 +4877,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(404, new StatusItem
+            StatusEffects.TryAdd(404, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4889,7 +4889,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(405, new StatusItem
+            StatusEffects.TryAdd(405, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4901,7 +4901,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(406, new StatusItem
+            StatusEffects.TryAdd(406, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4913,7 +4913,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(407, new StatusItem
+            StatusEffects.TryAdd(407, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4925,7 +4925,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(408, new StatusItem
+            StatusEffects.TryAdd(408, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4937,7 +4937,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(409, new StatusItem
+            StatusEffects.TryAdd(409, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4949,7 +4949,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(410, new StatusItem
+            StatusEffects.TryAdd(410, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4961,7 +4961,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(411, new StatusItem
+            StatusEffects.TryAdd(411, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4973,7 +4973,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(412, new StatusItem
+            StatusEffects.TryAdd(412, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4985,7 +4985,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(413, new StatusItem
+            StatusEffects.TryAdd(413, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -4997,7 +4997,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(414, new StatusItem
+            StatusEffects.TryAdd(414, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5009,7 +5009,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(415, new StatusItem
+            StatusEffects.TryAdd(415, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5021,7 +5021,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(416, new StatusItem
+            StatusEffects.TryAdd(416, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5033,7 +5033,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(417, new StatusItem
+            StatusEffects.TryAdd(417, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5045,7 +5045,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(418, new StatusItem
+            StatusEffects.TryAdd(418, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5057,7 +5057,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(419, new StatusItem
+            StatusEffects.TryAdd(419, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5069,7 +5069,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(420, new StatusItem
+            StatusEffects.TryAdd(420, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5081,7 +5081,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(421, new StatusItem
+            StatusEffects.TryAdd(421, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5093,7 +5093,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(422, new StatusItem
+            StatusEffects.TryAdd(422, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5105,7 +5105,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(423, new StatusItem
+            StatusEffects.TryAdd(423, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5117,7 +5117,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(424, new StatusItem
+            StatusEffects.TryAdd(424, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5129,7 +5129,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(425, new StatusItem
+            StatusEffects.TryAdd(425, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5141,7 +5141,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(426, new StatusItem
+            StatusEffects.TryAdd(426, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5153,7 +5153,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(427, new StatusItem
+            StatusEffects.TryAdd(427, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5165,7 +5165,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(428, new StatusItem
+            StatusEffects.TryAdd(428, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5177,7 +5177,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(429, new StatusItem
+            StatusEffects.TryAdd(429, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5189,7 +5189,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(430, new StatusItem
+            StatusEffects.TryAdd(430, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5201,7 +5201,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(431, new StatusItem
+            StatusEffects.TryAdd(431, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5213,7 +5213,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(432, new StatusItem
+            StatusEffects.TryAdd(432, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5225,7 +5225,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(433, new StatusItem
+            StatusEffects.TryAdd(433, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5237,7 +5237,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(434, new StatusItem
+            StatusEffects.TryAdd(434, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5249,7 +5249,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(435, new StatusItem
+            StatusEffects.TryAdd(435, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5261,7 +5261,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(436, new StatusItem
+            StatusEffects.TryAdd(436, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5273,7 +5273,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(437, new StatusItem
+            StatusEffects.TryAdd(437, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5285,7 +5285,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(438, new StatusItem
+            StatusEffects.TryAdd(438, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5297,7 +5297,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(439, new StatusItem
+            StatusEffects.TryAdd(439, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5309,7 +5309,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(440, new StatusItem
+            StatusEffects.TryAdd(440, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5321,7 +5321,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(441, new StatusItem
+            StatusEffects.TryAdd(441, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5333,7 +5333,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(442, new StatusItem
+            StatusEffects.TryAdd(442, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5345,7 +5345,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(443, new StatusItem
+            StatusEffects.TryAdd(443, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5357,7 +5357,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(444, new StatusItem
+            StatusEffects.TryAdd(444, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5369,7 +5369,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(445, new StatusItem
+            StatusEffects.TryAdd(445, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5381,7 +5381,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(446, new StatusItem
+            StatusEffects.TryAdd(446, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5393,7 +5393,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(447, new StatusItem
+            StatusEffects.TryAdd(447, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5405,7 +5405,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(448, new StatusItem
+            StatusEffects.TryAdd(448, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5417,7 +5417,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(449, new StatusItem
+            StatusEffects.TryAdd(449, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5429,7 +5429,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(450, new StatusItem
+            StatusEffects.TryAdd(450, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5441,7 +5441,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(451, new StatusItem
+            StatusEffects.TryAdd(451, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5453,7 +5453,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(452, new StatusItem
+            StatusEffects.TryAdd(452, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5465,7 +5465,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(453, new StatusItem
+            StatusEffects.TryAdd(453, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5477,7 +5477,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(454, new StatusItem
+            StatusEffects.TryAdd(454, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5489,7 +5489,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(455, new StatusItem
+            StatusEffects.TryAdd(455, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5501,7 +5501,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(456, new StatusItem
+            StatusEffects.TryAdd(456, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5513,7 +5513,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(457, new StatusItem
+            StatusEffects.TryAdd(457, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5525,7 +5525,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(458, new StatusItem
+            StatusEffects.TryAdd(458, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5537,7 +5537,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(459, new StatusItem
+            StatusEffects.TryAdd(459, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5549,7 +5549,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(460, new StatusItem
+            StatusEffects.TryAdd(460, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5561,7 +5561,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(461, new StatusItem
+            StatusEffects.TryAdd(461, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5573,7 +5573,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(462, new StatusItem
+            StatusEffects.TryAdd(462, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5585,7 +5585,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(463, new StatusItem
+            StatusEffects.TryAdd(463, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5597,7 +5597,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(464, new StatusItem
+            StatusEffects.TryAdd(464, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5609,7 +5609,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(465, new StatusItem
+            StatusEffects.TryAdd(465, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5621,7 +5621,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(466, new StatusItem
+            StatusEffects.TryAdd(466, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5633,7 +5633,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(467, new StatusItem
+            StatusEffects.TryAdd(467, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5645,7 +5645,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(468, new StatusItem
+            StatusEffects.TryAdd(468, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5657,7 +5657,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(469, new StatusItem
+            StatusEffects.TryAdd(469, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5669,7 +5669,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(470, new StatusItem
+            StatusEffects.TryAdd(470, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5681,7 +5681,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(471, new StatusItem
+            StatusEffects.TryAdd(471, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5693,7 +5693,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(472, new StatusItem
+            StatusEffects.TryAdd(472, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5705,7 +5705,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(473, new StatusItem
+            StatusEffects.TryAdd(473, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5717,7 +5717,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(474, new StatusItem
+            StatusEffects.TryAdd(474, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5729,7 +5729,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(475, new StatusItem
+            StatusEffects.TryAdd(475, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5741,7 +5741,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(476, new StatusItem
+            StatusEffects.TryAdd(476, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5753,7 +5753,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(477, new StatusItem
+            StatusEffects.TryAdd(477, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5765,7 +5765,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(478, new StatusItem
+            StatusEffects.TryAdd(478, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5777,7 +5777,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(479, new StatusItem
+            StatusEffects.TryAdd(479, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5789,7 +5789,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(480, new StatusItem
+            StatusEffects.TryAdd(480, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5801,7 +5801,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(481, new StatusItem
+            StatusEffects.TryAdd(481, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5813,7 +5813,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(482, new StatusItem
+            StatusEffects.TryAdd(482, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5825,7 +5825,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(483, new StatusItem
+            StatusEffects.TryAdd(483, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5837,7 +5837,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(484, new StatusItem
+            StatusEffects.TryAdd(484, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5849,7 +5849,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(485, new StatusItem
+            StatusEffects.TryAdd(485, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5861,7 +5861,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(486, new StatusItem
+            StatusEffects.TryAdd(486, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5873,7 +5873,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(487, new StatusItem
+            StatusEffects.TryAdd(487, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5885,7 +5885,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(488, new StatusItem
+            StatusEffects.TryAdd(488, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5897,7 +5897,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(489, new StatusItem
+            StatusEffects.TryAdd(489, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5909,7 +5909,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(490, new StatusItem
+            StatusEffects.TryAdd(490, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5921,7 +5921,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(491, new StatusItem
+            StatusEffects.TryAdd(491, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5933,7 +5933,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(492, new StatusItem
+            StatusEffects.TryAdd(492, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5945,7 +5945,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(494, new StatusItem
+            StatusEffects.TryAdd(494, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5957,7 +5957,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(495, new StatusItem
+            StatusEffects.TryAdd(495, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5969,7 +5969,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(496, new StatusItem
+            StatusEffects.TryAdd(496, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5981,7 +5981,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(497, new StatusItem
+            StatusEffects.TryAdd(497, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -5993,7 +5993,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(500, new StatusItem
+            StatusEffects.TryAdd(500, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6005,7 +6005,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(501, new StatusItem
+            StatusEffects.TryAdd(501, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6017,7 +6017,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(502, new StatusItem
+            StatusEffects.TryAdd(502, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6029,7 +6029,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(503, new StatusItem
+            StatusEffects.TryAdd(503, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6040,7 +6040,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(504, new StatusItem
+            StatusEffects.TryAdd(504, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6052,7 +6052,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(505, new StatusItem
+            StatusEffects.TryAdd(505, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6064,7 +6064,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(506, new StatusItem
+            StatusEffects.TryAdd(506, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6076,7 +6076,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(507, new StatusItem
+            StatusEffects.TryAdd(507, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6088,7 +6088,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(508, new StatusItem
+            StatusEffects.TryAdd(508, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6100,7 +6100,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(509, new StatusItem
+            StatusEffects.TryAdd(509, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6112,7 +6112,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(510, new StatusItem
+            StatusEffects.TryAdd(510, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6124,7 +6124,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(511, new StatusItem
+            StatusEffects.TryAdd(511, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6136,7 +6136,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(512, new StatusItem
+            StatusEffects.TryAdd(512, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6148,7 +6148,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(513, new StatusItem
+            StatusEffects.TryAdd(513, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6160,7 +6160,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(514, new StatusItem
+            StatusEffects.TryAdd(514, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6172,7 +6172,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(515, new StatusItem
+            StatusEffects.TryAdd(515, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6184,7 +6184,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(516, new StatusItem
+            StatusEffects.TryAdd(516, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6196,7 +6196,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(517, new StatusItem
+            StatusEffects.TryAdd(517, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6208,7 +6208,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(518, new StatusItem
+            StatusEffects.TryAdd(518, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6220,7 +6220,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(519, new StatusItem
+            StatusEffects.TryAdd(519, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6232,7 +6232,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(520, new StatusItem
+            StatusEffects.TryAdd(520, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6244,7 +6244,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(521, new StatusItem
+            StatusEffects.TryAdd(521, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6256,7 +6256,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(522, new StatusItem
+            StatusEffects.TryAdd(522, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6268,7 +6268,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(523, new StatusItem
+            StatusEffects.TryAdd(523, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6280,7 +6280,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(524, new StatusItem
+            StatusEffects.TryAdd(524, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6292,7 +6292,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(525, new StatusItem
+            StatusEffects.TryAdd(525, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6304,7 +6304,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(526, new StatusItem
+            StatusEffects.TryAdd(526, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6316,7 +6316,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(527, new StatusItem
+            StatusEffects.TryAdd(527, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6328,7 +6328,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(528, new StatusItem
+            StatusEffects.TryAdd(528, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6340,7 +6340,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(529, new StatusItem
+            StatusEffects.TryAdd(529, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6352,7 +6352,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(530, new StatusItem
+            StatusEffects.TryAdd(530, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6364,7 +6364,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(531, new StatusItem
+            StatusEffects.TryAdd(531, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6376,7 +6376,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(532, new StatusItem
+            StatusEffects.TryAdd(532, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6388,7 +6388,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(533, new StatusItem
+            StatusEffects.TryAdd(533, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6400,7 +6400,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(534, new StatusItem
+            StatusEffects.TryAdd(534, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6412,7 +6412,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(535, new StatusItem
+            StatusEffects.TryAdd(535, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6424,7 +6424,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(536, new StatusItem
+            StatusEffects.TryAdd(536, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6436,7 +6436,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(537, new StatusItem
+            StatusEffects.TryAdd(537, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6448,7 +6448,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(538, new StatusItem
+            StatusEffects.TryAdd(538, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6460,7 +6460,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(539, new StatusItem
+            StatusEffects.TryAdd(539, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6472,7 +6472,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(540, new StatusItem
+            StatusEffects.TryAdd(540, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6484,7 +6484,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(541, new StatusItem
+            StatusEffects.TryAdd(541, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6496,7 +6496,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(542, new StatusItem
+            StatusEffects.TryAdd(542, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6508,7 +6508,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(543, new StatusItem
+            StatusEffects.TryAdd(543, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6520,7 +6520,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(544, new StatusItem
+            StatusEffects.TryAdd(544, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6532,7 +6532,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(545, new StatusItem
+            StatusEffects.TryAdd(545, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6544,7 +6544,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(546, new StatusItem
+            StatusEffects.TryAdd(546, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6556,7 +6556,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(547, new StatusItem
+            StatusEffects.TryAdd(547, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6568,7 +6568,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(548, new StatusItem
+            StatusEffects.TryAdd(548, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6580,7 +6580,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(549, new StatusItem
+            StatusEffects.TryAdd(549, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6592,7 +6592,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(550, new StatusItem
+            StatusEffects.TryAdd(550, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6604,7 +6604,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(551, new StatusItem
+            StatusEffects.TryAdd(551, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6616,7 +6616,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(552, new StatusItem
+            StatusEffects.TryAdd(552, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6628,7 +6628,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(553, new StatusItem
+            StatusEffects.TryAdd(553, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6640,7 +6640,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(554, new StatusItem
+            StatusEffects.TryAdd(554, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6652,7 +6652,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(555, new StatusItem
+            StatusEffects.TryAdd(555, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6664,7 +6664,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(556, new StatusItem
+            StatusEffects.TryAdd(556, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6676,7 +6676,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(557, new StatusItem
+            StatusEffects.TryAdd(557, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6688,7 +6688,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(558, new StatusItem
+            StatusEffects.TryAdd(558, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6700,7 +6700,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(559, new StatusItem
+            StatusEffects.TryAdd(559, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6712,7 +6712,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(560, new StatusItem
+            StatusEffects.TryAdd(560, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6724,7 +6724,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(561, new StatusItem
+            StatusEffects.TryAdd(561, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6736,7 +6736,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(562, new StatusItem
+            StatusEffects.TryAdd(562, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6748,7 +6748,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(563, new StatusItem
+            StatusEffects.TryAdd(563, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6760,7 +6760,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(564, new StatusItem
+            StatusEffects.TryAdd(564, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6772,7 +6772,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(565, new StatusItem
+            StatusEffects.TryAdd(565, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6784,7 +6784,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(566, new StatusItem
+            StatusEffects.TryAdd(566, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6796,7 +6796,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(567, new StatusItem
+            StatusEffects.TryAdd(567, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6808,7 +6808,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(568, new StatusItem
+            StatusEffects.TryAdd(568, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6820,7 +6820,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(569, new StatusItem
+            StatusEffects.TryAdd(569, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6832,7 +6832,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(570, new StatusItem
+            StatusEffects.TryAdd(570, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6844,7 +6844,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(571, new StatusItem
+            StatusEffects.TryAdd(571, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6856,7 +6856,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(572, new StatusItem
+            StatusEffects.TryAdd(572, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6868,7 +6868,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(573, new StatusItem
+            StatusEffects.TryAdd(573, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6880,7 +6880,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(574, new StatusItem
+            StatusEffects.TryAdd(574, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6892,7 +6892,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(575, new StatusItem
+            StatusEffects.TryAdd(575, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6904,7 +6904,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(576, new StatusItem
+            StatusEffects.TryAdd(576, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6916,7 +6916,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(577, new StatusItem
+            StatusEffects.TryAdd(577, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6928,7 +6928,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(578, new StatusItem
+            StatusEffects.TryAdd(578, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6940,7 +6940,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(579, new StatusItem
+            StatusEffects.TryAdd(579, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6952,7 +6952,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(580, new StatusItem
+            StatusEffects.TryAdd(580, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6964,7 +6964,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(581, new StatusItem
+            StatusEffects.TryAdd(581, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6976,7 +6976,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(582, new StatusItem
+            StatusEffects.TryAdd(582, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -6988,7 +6988,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(583, new StatusItem
+            StatusEffects.TryAdd(583, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7000,7 +7000,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(584, new StatusItem
+            StatusEffects.TryAdd(584, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7012,7 +7012,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(585, new StatusItem
+            StatusEffects.TryAdd(585, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7024,7 +7024,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(586, new StatusItem
+            StatusEffects.TryAdd(586, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7036,7 +7036,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(587, new StatusItem
+            StatusEffects.TryAdd(587, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7048,7 +7048,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(588, new StatusItem
+            StatusEffects.TryAdd(588, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7060,7 +7060,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(589, new StatusItem
+            StatusEffects.TryAdd(589, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7072,7 +7072,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(590, new StatusItem
+            StatusEffects.TryAdd(590, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7084,7 +7084,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(591, new StatusItem
+            StatusEffects.TryAdd(591, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7096,7 +7096,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(592, new StatusItem
+            StatusEffects.TryAdd(592, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7108,7 +7108,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(593, new StatusItem
+            StatusEffects.TryAdd(593, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7120,7 +7120,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(594, new StatusItem
+            StatusEffects.TryAdd(594, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7132,7 +7132,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(595, new StatusItem
+            StatusEffects.TryAdd(595, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7144,7 +7144,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(596, new StatusItem
+            StatusEffects.TryAdd(596, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7156,7 +7156,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(597, new StatusItem
+            StatusEffects.TryAdd(597, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7168,7 +7168,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(598, new StatusItem
+            StatusEffects.TryAdd(598, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7180,7 +7180,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(599, new StatusItem
+            StatusEffects.TryAdd(599, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7192,7 +7192,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(600, new StatusItem
+            StatusEffects.TryAdd(600, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7204,7 +7204,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(601, new StatusItem
+            StatusEffects.TryAdd(601, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7216,7 +7216,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(602, new StatusItem
+            StatusEffects.TryAdd(602, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7228,7 +7228,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(603, new StatusItem
+            StatusEffects.TryAdd(603, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7240,7 +7240,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(604, new StatusItem
+            StatusEffects.TryAdd(604, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7252,7 +7252,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(605, new StatusItem
+            StatusEffects.TryAdd(605, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7264,7 +7264,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(606, new StatusItem
+            StatusEffects.TryAdd(606, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7276,7 +7276,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(607, new StatusItem
+            StatusEffects.TryAdd(607, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7288,7 +7288,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(608, new StatusItem
+            StatusEffects.TryAdd(608, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7300,7 +7300,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(609, new StatusItem
+            StatusEffects.TryAdd(609, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7312,7 +7312,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(610, new StatusItem
+            StatusEffects.TryAdd(610, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7324,7 +7324,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(611, new StatusItem
+            StatusEffects.TryAdd(611, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7336,7 +7336,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(612, new StatusItem
+            StatusEffects.TryAdd(612, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7348,7 +7348,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(613, new StatusItem
+            StatusEffects.TryAdd(613, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7360,7 +7360,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(614, new StatusItem
+            StatusEffects.TryAdd(614, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7372,7 +7372,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(615, new StatusItem
+            StatusEffects.TryAdd(615, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7384,7 +7384,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(616, new StatusItem
+            StatusEffects.TryAdd(616, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7396,7 +7396,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(617, new StatusItem
+            StatusEffects.TryAdd(617, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7408,7 +7408,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(618, new StatusItem
+            StatusEffects.TryAdd(618, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7420,7 +7420,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(619, new StatusItem
+            StatusEffects.TryAdd(619, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7432,7 +7432,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(620, new StatusItem
+            StatusEffects.TryAdd(620, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7444,7 +7444,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(621, new StatusItem
+            StatusEffects.TryAdd(621, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7456,7 +7456,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(622, new StatusItem
+            StatusEffects.TryAdd(622, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7468,7 +7468,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(623, new StatusItem
+            StatusEffects.TryAdd(623, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7480,7 +7480,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(624, new StatusItem
+            StatusEffects.TryAdd(624, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7492,7 +7492,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(625, new StatusItem
+            StatusEffects.TryAdd(625, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7504,7 +7504,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(626, new StatusItem
+            StatusEffects.TryAdd(626, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7516,7 +7516,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(627, new StatusItem
+            StatusEffects.TryAdd(627, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7528,7 +7528,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(628, new StatusItem
+            StatusEffects.TryAdd(628, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7540,7 +7540,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(629, new StatusItem
+            StatusEffects.TryAdd(629, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7552,7 +7552,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(630, new StatusItem
+            StatusEffects.TryAdd(630, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7563,7 +7563,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(631, new StatusItem
+            StatusEffects.TryAdd(631, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7574,7 +7574,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(632, new StatusItem
+            StatusEffects.TryAdd(632, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7585,7 +7585,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(636, new StatusItem
+            StatusEffects.TryAdd(636, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7597,7 +7597,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(637, new StatusItem
+            StatusEffects.TryAdd(637, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7609,7 +7609,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(638, new StatusItem
+            StatusEffects.TryAdd(638, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7621,7 +7621,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(639, new StatusItem
+            StatusEffects.TryAdd(639, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7633,7 +7633,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(640, new StatusItem
+            StatusEffects.TryAdd(640, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7645,7 +7645,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(641, new StatusItem
+            StatusEffects.TryAdd(641, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7656,7 +7656,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(642, new StatusItem
+            StatusEffects.TryAdd(642, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7668,7 +7668,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(643, new StatusItem
+            StatusEffects.TryAdd(643, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7680,7 +7680,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(644, new StatusItem
+            StatusEffects.TryAdd(644, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7692,7 +7692,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(645, new StatusItem
+            StatusEffects.TryAdd(645, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7704,7 +7704,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(646, new StatusItem
+            StatusEffects.TryAdd(646, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7716,7 +7716,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(647, new StatusItem
+            StatusEffects.TryAdd(647, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7728,7 +7728,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(648, new StatusItem
+            StatusEffects.TryAdd(648, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7740,7 +7740,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(649, new StatusItem
+            StatusEffects.TryAdd(649, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7752,7 +7752,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(650, new StatusItem
+            StatusEffects.TryAdd(650, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7764,7 +7764,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(651, new StatusItem
+            StatusEffects.TryAdd(651, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7776,7 +7776,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(652, new StatusItem
+            StatusEffects.TryAdd(652, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7788,7 +7788,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(653, new StatusItem
+            StatusEffects.TryAdd(653, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7800,7 +7800,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(654, new StatusItem
+            StatusEffects.TryAdd(654, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7812,7 +7812,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(655, new StatusItem
+            StatusEffects.TryAdd(655, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7824,7 +7824,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(656, new StatusItem
+            StatusEffects.TryAdd(656, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7836,7 +7836,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(657, new StatusItem
+            StatusEffects.TryAdd(657, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7848,7 +7848,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(658, new StatusItem
+            StatusEffects.TryAdd(658, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7860,7 +7860,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(659, new StatusItem
+            StatusEffects.TryAdd(659, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7872,7 +7872,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(660, new StatusItem
+            StatusEffects.TryAdd(660, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7884,7 +7884,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(661, new StatusItem
+            StatusEffects.TryAdd(661, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7896,7 +7896,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(662, new StatusItem
+            StatusEffects.TryAdd(662, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7908,7 +7908,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(664, new StatusItem
+            StatusEffects.TryAdd(664, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7920,7 +7920,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(665, new StatusItem
+            StatusEffects.TryAdd(665, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7932,7 +7932,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(666, new StatusItem
+            StatusEffects.TryAdd(666, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7944,7 +7944,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(667, new StatusItem
+            StatusEffects.TryAdd(667, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7956,7 +7956,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(668, new StatusItem
+            StatusEffects.TryAdd(668, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7968,7 +7968,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(669, new StatusItem
+            StatusEffects.TryAdd(669, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7980,7 +7980,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(670, new StatusItem
+            StatusEffects.TryAdd(670, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -7992,7 +7992,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(671, new StatusItem
+            StatusEffects.TryAdd(671, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8004,7 +8004,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(672, new StatusItem
+            StatusEffects.TryAdd(672, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8016,7 +8016,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(676, new StatusItem
+            StatusEffects.TryAdd(676, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8027,7 +8027,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(677, new StatusItem
+            StatusEffects.TryAdd(677, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8038,7 +8038,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(678, new StatusItem
+            StatusEffects.TryAdd(678, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8049,7 +8049,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(679, new StatusItem
+            StatusEffects.TryAdd(679, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8060,7 +8060,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(680, new StatusItem
+            StatusEffects.TryAdd(680, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8071,7 +8071,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(681, new StatusItem
+            StatusEffects.TryAdd(681, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8082,7 +8082,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(682, new StatusItem
+            StatusEffects.TryAdd(682, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8093,7 +8093,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(683, new StatusItem
+            StatusEffects.TryAdd(683, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8104,7 +8104,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(684, new StatusItem
+            StatusEffects.TryAdd(684, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8115,7 +8115,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(685, new StatusItem
+            StatusEffects.TryAdd(685, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8126,7 +8126,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(686, new StatusItem
+            StatusEffects.TryAdd(686, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8137,7 +8137,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(688, new StatusItem
+            StatusEffects.TryAdd(688, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8148,7 +8148,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(689, new StatusItem
+            StatusEffects.TryAdd(689, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8159,7 +8159,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(690, new StatusItem
+            StatusEffects.TryAdd(690, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8170,7 +8170,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(695, new StatusItem
+            StatusEffects.TryAdd(695, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8181,7 +8181,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(696, new StatusItem
+            StatusEffects.TryAdd(696, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8192,7 +8192,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(697, new StatusItem
+            StatusEffects.TryAdd(697, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8203,7 +8203,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(701, new StatusItem
+            StatusEffects.TryAdd(701, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8214,7 +8214,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(702, new StatusItem
+            StatusEffects.TryAdd(702, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8225,7 +8225,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(703, new StatusItem
+            StatusEffects.TryAdd(703, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8236,7 +8236,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(704, new StatusItem
+            StatusEffects.TryAdd(704, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8247,7 +8247,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(705, new StatusItem
+            StatusEffects.TryAdd(705, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8258,7 +8258,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(714, new StatusItem
+            StatusEffects.TryAdd(714, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8269,7 +8269,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(715, new StatusItem
+            StatusEffects.TryAdd(715, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8280,7 +8280,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(716, new StatusItem
+            StatusEffects.TryAdd(716, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8291,7 +8291,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(717, new StatusItem
+            StatusEffects.TryAdd(717, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8302,7 +8302,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(718, new StatusItem
+            StatusEffects.TryAdd(718, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8313,7 +8313,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(719, new StatusItem
+            StatusEffects.TryAdd(719, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8324,7 +8324,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(720, new StatusItem
+            StatusEffects.TryAdd(720, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8335,7 +8335,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(721, new StatusItem
+            StatusEffects.TryAdd(721, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8346,7 +8346,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(722, new StatusItem
+            StatusEffects.TryAdd(722, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8357,7 +8357,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(723, new StatusItem
+            StatusEffects.TryAdd(723, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8368,7 +8368,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(725, new StatusItem
+            StatusEffects.TryAdd(725, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8379,7 +8379,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(726, new StatusItem
+            StatusEffects.TryAdd(726, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8390,7 +8390,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(727, new StatusItem
+            StatusEffects.TryAdd(727, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8401,7 +8401,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(728, new StatusItem
+            StatusEffects.TryAdd(728, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8412,7 +8412,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(729, new StatusItem
+            StatusEffects.TryAdd(729, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8423,7 +8423,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(730, new StatusItem
+            StatusEffects.TryAdd(730, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8434,7 +8434,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(731, new StatusItem
+            StatusEffects.TryAdd(731, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8445,7 +8445,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(732, new StatusItem
+            StatusEffects.TryAdd(732, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8456,7 +8456,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(733, new StatusItem
+            StatusEffects.TryAdd(733, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8467,7 +8467,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(734, new StatusItem
+            StatusEffects.TryAdd(734, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8478,7 +8478,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(735, new StatusItem
+            StatusEffects.TryAdd(735, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8489,7 +8489,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(736, new StatusItem
+            StatusEffects.TryAdd(736, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8500,7 +8500,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(737, new StatusItem
+            StatusEffects.TryAdd(737, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8511,7 +8511,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(738, new StatusItem
+            StatusEffects.TryAdd(738, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8522,7 +8522,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(739, new StatusItem
+            StatusEffects.TryAdd(739, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8533,7 +8533,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(740, new StatusItem
+            StatusEffects.TryAdd(740, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8544,7 +8544,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(741, new StatusItem
+            StatusEffects.TryAdd(741, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8555,7 +8555,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(742, new StatusItem
+            StatusEffects.TryAdd(742, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8566,7 +8566,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(743, new StatusItem
+            StatusEffects.TryAdd(743, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8577,7 +8577,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(744, new StatusItem
+            StatusEffects.TryAdd(744, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8588,7 +8588,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(745, new StatusItem
+            StatusEffects.TryAdd(745, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8599,7 +8599,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(746, new StatusItem
+            StatusEffects.TryAdd(746, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8610,7 +8610,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(747, new StatusItem
+            StatusEffects.TryAdd(747, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8621,7 +8621,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(748, new StatusItem
+            StatusEffects.TryAdd(748, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8632,7 +8632,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(749, new StatusItem
+            StatusEffects.TryAdd(749, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8643,7 +8643,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(750, new StatusItem
+            StatusEffects.TryAdd(750, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8654,7 +8654,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(751, new StatusItem
+            StatusEffects.TryAdd(751, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8665,7 +8665,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(752, new StatusItem
+            StatusEffects.TryAdd(752, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8676,7 +8676,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(753, new StatusItem
+            StatusEffects.TryAdd(753, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8687,7 +8687,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(754, new StatusItem
+            StatusEffects.TryAdd(754, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8698,7 +8698,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(755, new StatusItem
+            StatusEffects.TryAdd(755, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8709,7 +8709,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(756, new StatusItem
+            StatusEffects.TryAdd(756, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8720,7 +8720,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(757, new StatusItem
+            StatusEffects.TryAdd(757, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8731,7 +8731,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(758, new StatusItem
+            StatusEffects.TryAdd(758, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8742,7 +8742,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(759, new StatusItem
+            StatusEffects.TryAdd(759, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8753,7 +8753,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(760, new StatusItem
+            StatusEffects.TryAdd(760, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8764,7 +8764,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(761, new StatusItem
+            StatusEffects.TryAdd(761, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8775,7 +8775,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(762, new StatusItem
+            StatusEffects.TryAdd(762, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8786,7 +8786,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(763, new StatusItem
+            StatusEffects.TryAdd(763, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8797,7 +8797,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(764, new StatusItem
+            StatusEffects.TryAdd(764, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8808,7 +8808,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(765, new StatusItem
+            StatusEffects.TryAdd(765, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8819,7 +8819,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(769, new StatusItem
+            StatusEffects.TryAdd(769, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8830,7 +8830,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(770, new StatusItem
+            StatusEffects.TryAdd(770, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8841,7 +8841,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(783, new StatusItem
+            StatusEffects.TryAdd(783, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8852,7 +8852,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(784, new StatusItem
+            StatusEffects.TryAdd(784, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8863,7 +8863,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(785, new StatusItem
+            StatusEffects.TryAdd(785, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8874,7 +8874,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(786, new StatusItem
+            StatusEffects.TryAdd(786, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8885,7 +8885,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(787, new StatusItem
+            StatusEffects.TryAdd(787, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8896,7 +8896,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(788, new StatusItem
+            StatusEffects.TryAdd(788, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8907,7 +8907,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(789, new StatusItem
+            StatusEffects.TryAdd(789, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8918,7 +8918,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(790, new StatusItem
+            StatusEffects.TryAdd(790, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8929,7 +8929,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(791, new StatusItem
+            StatusEffects.TryAdd(791, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8940,7 +8940,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(792, new StatusItem
+            StatusEffects.TryAdd(792, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8951,7 +8951,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(793, new StatusItem
+            StatusEffects.TryAdd(793, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8962,7 +8962,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(794, new StatusItem
+            StatusEffects.TryAdd(794, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8973,7 +8973,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(795, new StatusItem
+            StatusEffects.TryAdd(795, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8984,7 +8984,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(796, new StatusItem
+            StatusEffects.TryAdd(796, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -8995,7 +8995,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(797, new StatusItem
+            StatusEffects.TryAdd(797, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9006,7 +9006,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(798, new StatusItem
+            StatusEffects.TryAdd(798, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9017,7 +9017,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(799, new StatusItem
+            StatusEffects.TryAdd(799, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9028,7 +9028,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(800, new StatusItem
+            StatusEffects.TryAdd(800, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9039,7 +9039,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(801, new StatusItem
+            StatusEffects.TryAdd(801, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9050,7 +9050,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(802, new StatusItem
+            StatusEffects.TryAdd(802, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9061,7 +9061,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(803, new StatusItem
+            StatusEffects.TryAdd(803, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9072,7 +9072,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(804, new StatusItem
+            StatusEffects.TryAdd(804, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9083,7 +9083,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(805, new StatusItem
+            StatusEffects.TryAdd(805, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9094,7 +9094,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(806, new StatusItem
+            StatusEffects.TryAdd(806, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9105,7 +9105,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(807, new StatusItem
+            StatusEffects.TryAdd(807, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9116,7 +9116,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(808, new StatusItem
+            StatusEffects.TryAdd(808, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9127,7 +9127,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(809, new StatusItem
+            StatusEffects.TryAdd(809, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9138,7 +9138,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(810, new StatusItem
+            StatusEffects.TryAdd(810, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9149,7 +9149,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(811, new StatusItem
+            StatusEffects.TryAdd(811, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9160,7 +9160,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(812, new StatusItem
+            StatusEffects.TryAdd(812, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9171,7 +9171,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(813, new StatusItem
+            StatusEffects.TryAdd(813, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9182,7 +9182,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(814, new StatusItem
+            StatusEffects.TryAdd(814, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9193,7 +9193,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(815, new StatusItem
+            StatusEffects.TryAdd(815, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9204,7 +9204,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(816, new StatusItem
+            StatusEffects.TryAdd(816, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9215,7 +9215,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(817, new StatusItem
+            StatusEffects.TryAdd(817, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9226,7 +9226,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(818, new StatusItem
+            StatusEffects.TryAdd(818, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9237,7 +9237,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(826, new StatusItem
+            StatusEffects.TryAdd(826, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9248,7 +9248,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(827, new StatusItem
+            StatusEffects.TryAdd(827, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9259,7 +9259,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(828, new StatusItem
+            StatusEffects.TryAdd(828, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9270,7 +9270,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(829, new StatusItem
+            StatusEffects.TryAdd(829, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9281,7 +9281,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(830, new StatusItem
+            StatusEffects.TryAdd(830, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9292,7 +9292,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(831, new StatusItem
+            StatusEffects.TryAdd(831, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9303,7 +9303,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(832, new StatusItem
+            StatusEffects.TryAdd(832, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9314,7 +9314,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(833, new StatusItem
+            StatusEffects.TryAdd(833, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9325,7 +9325,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(834, new StatusItem
+            StatusEffects.TryAdd(834, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9336,7 +9336,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(835, new StatusItem
+            StatusEffects.TryAdd(835, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9347,7 +9347,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(836, new StatusItem
+            StatusEffects.TryAdd(836, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9358,7 +9358,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(837, new StatusItem
+            StatusEffects.TryAdd(837, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9369,7 +9369,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(838, new StatusItem
+            StatusEffects.TryAdd(838, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9380,7 +9380,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(839, new StatusItem
+            StatusEffects.TryAdd(839, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9391,7 +9391,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(840, new StatusItem
+            StatusEffects.TryAdd(840, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9402,7 +9402,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(841, new StatusItem
+            StatusEffects.TryAdd(841, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9413,7 +9413,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(842, new StatusItem
+            StatusEffects.TryAdd(842, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9424,7 +9424,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(843, new StatusItem
+            StatusEffects.TryAdd(843, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9435,7 +9435,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(844, new StatusItem
+            StatusEffects.TryAdd(844, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9446,7 +9446,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(845, new StatusItem
+            StatusEffects.TryAdd(845, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9457,7 +9457,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(846, new StatusItem
+            StatusEffects.TryAdd(846, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9468,7 +9468,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(847, new StatusItem
+            StatusEffects.TryAdd(847, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9479,7 +9479,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(848, new StatusItem
+            StatusEffects.TryAdd(848, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9490,7 +9490,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(849, new StatusItem
+            StatusEffects.TryAdd(849, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9501,7 +9501,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(850, new StatusItem
+            StatusEffects.TryAdd(850, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9512,7 +9512,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(851, new StatusItem
+            StatusEffects.TryAdd(851, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9523,7 +9523,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(852, new StatusItem
+            StatusEffects.TryAdd(852, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9534,7 +9534,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(853, new StatusItem
+            StatusEffects.TryAdd(853, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9545,7 +9545,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(854, new StatusItem
+            StatusEffects.TryAdd(854, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9556,7 +9556,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(855, new StatusItem
+            StatusEffects.TryAdd(855, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9567,7 +9567,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(856, new StatusItem
+            StatusEffects.TryAdd(856, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9578,7 +9578,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(857, new StatusItem
+            StatusEffects.TryAdd(857, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9589,7 +9589,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(858, new StatusItem
+            StatusEffects.TryAdd(858, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9600,7 +9600,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(859, new StatusItem
+            StatusEffects.TryAdd(859, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9611,7 +9611,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(860, new StatusItem
+            StatusEffects.TryAdd(860, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9622,7 +9622,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(861, new StatusItem
+            StatusEffects.TryAdd(861, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9633,7 +9633,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(862, new StatusItem
+            StatusEffects.TryAdd(862, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9644,7 +9644,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(863, new StatusItem
+            StatusEffects.TryAdd(863, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9655,7 +9655,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(864, new StatusItem
+            StatusEffects.TryAdd(864, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9666,7 +9666,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(865, new StatusItem
+            StatusEffects.TryAdd(865, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9677,7 +9677,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = true,
             });
-            StatusEffects.Add(866, new StatusItem
+            StatusEffects.TryAdd(866, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9688,7 +9688,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(867, new StatusItem
+            StatusEffects.TryAdd(867, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9699,7 +9699,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(868, new StatusItem
+            StatusEffects.TryAdd(868, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9710,7 +9710,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(869, new StatusItem
+            StatusEffects.TryAdd(869, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9721,7 +9721,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(870, new StatusItem
+            StatusEffects.TryAdd(870, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9732,7 +9732,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(871, new StatusItem
+            StatusEffects.TryAdd(871, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9743,7 +9743,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(872, new StatusItem
+            StatusEffects.TryAdd(872, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9754,7 +9754,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(873, new StatusItem
+            StatusEffects.TryAdd(873, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9765,7 +9765,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(874, new StatusItem
+            StatusEffects.TryAdd(874, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9776,7 +9776,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(875, new StatusItem
+            StatusEffects.TryAdd(875, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9787,7 +9787,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(876, new StatusItem
+            StatusEffects.TryAdd(876, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9798,7 +9798,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(877, new StatusItem
+            StatusEffects.TryAdd(877, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9809,7 +9809,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(878, new StatusItem
+            StatusEffects.TryAdd(878, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9820,7 +9820,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(879, new StatusItem
+            StatusEffects.TryAdd(879, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9831,7 +9831,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(880, new StatusItem
+            StatusEffects.TryAdd(880, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9842,7 +9842,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(881, new StatusItem
+            StatusEffects.TryAdd(881, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9853,7 +9853,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(882, new StatusItem
+            StatusEffects.TryAdd(882, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9864,7 +9864,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(883, new StatusItem
+            StatusEffects.TryAdd(883, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9875,7 +9875,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(884, new StatusItem
+            StatusEffects.TryAdd(884, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9886,7 +9886,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(885, new StatusItem
+            StatusEffects.TryAdd(885, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9897,7 +9897,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(886, new StatusItem
+            StatusEffects.TryAdd(886, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9908,7 +9908,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(887, new StatusItem
+            StatusEffects.TryAdd(887, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9919,7 +9919,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(888, new StatusItem
+            StatusEffects.TryAdd(888, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9930,7 +9930,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(889, new StatusItem
+            StatusEffects.TryAdd(889, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9941,7 +9941,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(890, new StatusItem
+            StatusEffects.TryAdd(890, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9952,7 +9952,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(891, new StatusItem
+            StatusEffects.TryAdd(891, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9963,7 +9963,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(892, new StatusItem
+            StatusEffects.TryAdd(892, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9974,7 +9974,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(893, new StatusItem
+            StatusEffects.TryAdd(893, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9985,7 +9985,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(894, new StatusItem
+            StatusEffects.TryAdd(894, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -9996,7 +9996,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(895, new StatusItem
+            StatusEffects.TryAdd(895, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10007,7 +10007,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(896, new StatusItem
+            StatusEffects.TryAdd(896, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10018,7 +10018,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(897, new StatusItem
+            StatusEffects.TryAdd(897, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10029,7 +10029,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(898, new StatusItem
+            StatusEffects.TryAdd(898, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10040,7 +10040,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(899, new StatusItem
+            StatusEffects.TryAdd(899, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10051,7 +10051,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(900, new StatusItem
+            StatusEffects.TryAdd(900, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10062,7 +10062,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(901, new StatusItem
+            StatusEffects.TryAdd(901, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10073,7 +10073,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(902, new StatusItem
+            StatusEffects.TryAdd(902, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10084,7 +10084,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(903, new StatusItem
+            StatusEffects.TryAdd(903, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10095,7 +10095,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(904, new StatusItem
+            StatusEffects.TryAdd(904, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10106,7 +10106,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(905, new StatusItem
+            StatusEffects.TryAdd(905, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10117,7 +10117,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(906, new StatusItem
+            StatusEffects.TryAdd(906, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10128,7 +10128,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(907, new StatusItem
+            StatusEffects.TryAdd(907, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10139,7 +10139,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(908, new StatusItem
+            StatusEffects.TryAdd(908, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10150,7 +10150,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(909, new StatusItem
+            StatusEffects.TryAdd(909, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10161,7 +10161,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(910, new StatusItem
+            StatusEffects.TryAdd(910, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10172,7 +10172,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(911, new StatusItem
+            StatusEffects.TryAdd(911, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10183,7 +10183,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(913, new StatusItem
+            StatusEffects.TryAdd(913, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10194,7 +10194,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(914, new StatusItem
+            StatusEffects.TryAdd(914, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10205,7 +10205,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(915, new StatusItem
+            StatusEffects.TryAdd(915, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10216,7 +10216,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(916, new StatusItem
+            StatusEffects.TryAdd(916, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10227,7 +10227,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(917, new StatusItem
+            StatusEffects.TryAdd(917, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10238,7 +10238,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(918, new StatusItem
+            StatusEffects.TryAdd(918, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10249,7 +10249,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(919, new StatusItem
+            StatusEffects.TryAdd(919, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10260,7 +10260,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(920, new StatusItem
+            StatusEffects.TryAdd(920, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10271,7 +10271,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(921, new StatusItem
+            StatusEffects.TryAdd(921, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10282,7 +10282,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(922, new StatusItem
+            StatusEffects.TryAdd(922, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10293,7 +10293,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(923, new StatusItem
+            StatusEffects.TryAdd(923, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10304,7 +10304,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(924, new StatusItem
+            StatusEffects.TryAdd(924, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10315,7 +10315,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(925, new StatusItem
+            StatusEffects.TryAdd(925, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10326,7 +10326,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(926, new StatusItem
+            StatusEffects.TryAdd(926, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10337,7 +10337,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(927, new StatusItem
+            StatusEffects.TryAdd(927, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10348,7 +10348,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(928, new StatusItem
+            StatusEffects.TryAdd(928, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10359,7 +10359,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(929, new StatusItem
+            StatusEffects.TryAdd(929, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10370,7 +10370,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(930, new StatusItem
+            StatusEffects.TryAdd(930, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10381,7 +10381,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(931, new StatusItem
+            StatusEffects.TryAdd(931, new StatusItem
             {
                 Name = new StatusLocalization
                 {
@@ -10392,7 +10392,7 @@ namespace FFXIVAPP.Common.Helpers
                 },
                 CompanyAction = false,
             });
-            StatusEffects.Add(934, new StatusItem
+            StatusEffects.TryAdd(934, new StatusItem
             {
                 Name = new StatusLocalization
                 {
