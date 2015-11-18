@@ -73,7 +73,7 @@ namespace FFXIVAPP.Common.Helpers
         /// <returns></returns>
         public static string TrimAndCleanSpaces(string name)
         {
-            return SharedRegEx.CleanSpaces.Replace(name, "")
+            return SharedRegEx.CleanSpaces.Replace(name, " ")
                               .Trim();
         }
 
