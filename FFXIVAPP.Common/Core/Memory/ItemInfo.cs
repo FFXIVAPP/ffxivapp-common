@@ -43,34 +43,14 @@ namespace FFXIVAPP.Common.Core.Memory
 
         public double SBPercent
         {
-            get
-            {
-                try
-                {
-                    return SB / 10000;
-                }
-                catch
-                {
-                    return 0;
-                }
-            }
+            get { return SB / 10000; }
         }
 
         public uint Durability { get; set; }
 
         public double DurabilityPercent
         {
-            get
-            {
-                try
-                {
-                    return Durability / 30000;
-                }
-                catch
-                {
-                    return 0;
-                }
-            }
+            get { return Durability / 30000; }
         }
     }
 }

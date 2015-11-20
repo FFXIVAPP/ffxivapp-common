@@ -120,20 +120,7 @@ namespace FFXIVAPP.Common.Core.Memory
 
         public double CastingPercentage
         {
-            get
-            {
-                try
-                {
-                    if (IsCasting && CastingTime > 0)
-                    {
-                        return CastingProgress / CastingTime;
-                    }
-                }
-                catch (Exception ex)
-                {
-                }
-                return 0;
-            }
+            get { return IsCasting && CastingTime > 0 ? CastingProgress / CastingTime : 0; }
         }
 
         public byte GatheringStatus { get; set; }
