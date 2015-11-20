@@ -35,7 +35,6 @@ namespace FFXIVAPP.Common.Core.Memory
     public class TargetEntity : ITargetEntity
     {
         private List<EnmityEntry> _enmityEntries;
-
         public ActorEntity CurrentTarget { get; set; }
         public ActorEntity MouseOverTarget { get; set; }
         public ActorEntity FocusTarget { get; set; }

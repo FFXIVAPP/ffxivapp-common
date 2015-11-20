@@ -57,6 +57,6 @@ namespace FFXIVAPP.Common.Audio
             return read;
         }
 
-        public WaveFormat WaveFormat { get; private set; }
+        public WaveFormat WaveFormat { get; }
     }
 }

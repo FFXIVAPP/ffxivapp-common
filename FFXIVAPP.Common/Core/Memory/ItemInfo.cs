@@ -41,13 +41,13 @@ namespace FFXIVAPP.Common.Core.Memory
         public uint GlamourID { get; set; }
         public uint Amount { get; set; }
 
-        public decimal SBPercent
+        public double SBPercent
         {
             get
             {
                 try
                 {
-                    return (decimal) (Convert.ToDouble(SB) / Convert.ToDouble(10000));
+                    return SB / 10000;
                 }
                 catch
                 {
@@ -58,13 +58,13 @@ namespace FFXIVAPP.Common.Core.Memory
 
         public uint Durability { get; set; }
 
-        public decimal DurabilityPercent
+        public double DurabilityPercent
         {
             get
             {
                 try
                 {
-                    return (decimal) (Convert.ToDouble(Durability) / Convert.ToDouble(30000));
+                    return Durability / 30000;
                 }
                 catch
                 {

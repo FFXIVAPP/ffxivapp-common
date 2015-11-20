@@ -40,19 +40,9 @@ namespace FFXIVAPP.Common.Core.Memory
         private string _name;
         private List<StatusEntry> _statusEntries;
 
-        public decimal HPPercent
+        public double HPPercent
         {
-            get
-            {
-                try
-                {
-                    return (decimal) (Convert.ToDouble(HPCurrent) / Convert.ToDouble(HPMax));
-                }
-                catch
-                {
-                    return 0;
-                }
-            }
+            get { return HPMax == 0 ? 0 : HPCurrent / HPMax; }
         }
 
         public string HPString
@@ -60,19 +50,9 @@ namespace FFXIVAPP.Common.Core.Memory
             get { return String.Format("{0}/{1} [{2:P2}]", HPCurrent, HPMax, HPPercent); }
         }
 
-        public decimal MPPercent
+        public double MPPercent
         {
-            get
-            {
-                try
-                {
-                    return (decimal) (Convert.ToDouble(MPCurrent) / Convert.ToDouble(MPMax));
-                }
-                catch
-                {
-                    return 0;
-                }
-            }
+            get { return MPMax == 0 ? 0 : MPCurrent / MPMax; }
         }
 
         public string MPString

@@ -726,7 +726,6 @@ namespace FFXIVAPP.Common.Helpers
             }
 
             public uint Index { get; set; }
-
             public bool IsDungeonInstance { get; set; }
 
             public string English

@@ -45,6 +45,10 @@ namespace FFXIVAPP.Common.Utilities
 
         #endregion
 
+        private static string _baseUrl = "http://translate.google.ca/translate_t?hl=&ie=UTF-8&text=";
+        private static HttpWebRequest _httpWReq;
+        private static HttpWebResponse _httpWResp;
+
         #region Property Backings
 
         private static Hashtable _offsets;
@@ -55,10 +59,6 @@ namespace FFXIVAPP.Common.Utilities
         }
 
         #endregion
-
-        private static string _baseUrl = "http://translate.google.ca/translate_t?hl=&ie=UTF-8&text=";
-        private static HttpWebRequest _httpWReq;
-        private static HttpWebResponse _httpWResp;
 
         #region Translation
 

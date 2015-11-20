@@ -37,6 +37,12 @@ namespace FFXIVAPP.Common.Controls
     /// </summary>
     public partial class xFlowDocument : INotifyPropertyChanged
     {
+        public xFlowDocument()
+        {
+            InitializeComponent();
+            ZoomLevel = "100";
+        }
+
         #region Property Bindings
 
         private string _zoomLevel;
@@ -52,12 +58,6 @@ namespace FFXIVAPP.Common.Controls
         }
 
         #endregion
-
-        public xFlowDocument()
-        {
-            InitializeComponent();
-            ZoomLevel = "100";
-        }
 
         #region Implementation of INotifyPropertyChanged
 

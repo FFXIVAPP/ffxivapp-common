@@ -34,10 +34,10 @@ namespace FFXIVAPP.Common.Core.Memory.Interfaces
         int Slot { get; set; }
         uint Amount { get; set; }
         uint Durability { get; set; }
-        decimal DurabilityPercent { get; }
+        double DurabilityPercent { get; }
         uint GlamourID { get; set; }
         uint ID { get; set; }
         uint SB { get; set; }
-        decimal SBPercent { get; }
+        double SBPercent { get; }
     }
 }

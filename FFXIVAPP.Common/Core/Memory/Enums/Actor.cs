@@ -138,7 +138,7 @@ namespace FFXIVAPP.Common.Core.Memory.Enums
             Unknown = 0x0,
             Own = 0x1,
             True = 0x2,
-            False = 0x4,
+            False = 0x4
         }
 
         public enum Type : byte

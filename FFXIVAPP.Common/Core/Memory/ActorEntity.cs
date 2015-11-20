@@ -40,19 +40,9 @@ namespace FFXIVAPP.Common.Core.Memory
         private string _name;
         private List<StatusEntry> _statusEntries;
 
-        public decimal HPPercent
+        public double HPPercent
         {
-            get
-            {
-                try
-                {
-                    return (decimal) (Convert.ToDouble(HPCurrent) / Convert.ToDouble(HPMax));
-                }
-                catch
-                {
-                    return 0;
-                }
-            }
+            get { return HPMax == 0 ? 0 : HPCurrent / HPMax; }
         }
 
         public string HPString
@@ -60,19 +50,9 @@ namespace FFXIVAPP.Common.Core.Memory
             get { return String.Format("{0}/{1} [{2:P2}]", HPCurrent, HPMax, HPPercent); }
         }
 
-        public decimal MPPercent
+        public double MPPercent
         {
-            get
-            {
-                try
-                {
-                    return (decimal) (Convert.ToDouble(MPCurrent) / Convert.ToDouble(MPMax));
-                }
-                catch
-                {
-                    return 0;
-                }
-            }
+            get { return MPMax == 0 ? 0 : MPCurrent / MPMax; }
         }
 
         public string MPString
@@ -82,19 +62,9 @@ namespace FFXIVAPP.Common.Core.Memory
 
         public int TPMax { get; set; }
 
-        public decimal TPPercent
+        public double TPPercent
         {
-            get
-            {
-                try
-                {
-                    return (decimal) (Convert.ToDouble(TPCurrent) / Convert.ToDouble(TPMax));
-                }
-                catch
-                {
-                    return 0;
-                }
-            }
+            get { return TPMax == 0 ? 0 : TPCurrent / TPMax; }
         }
 
         public string TPString
@@ -102,19 +72,9 @@ namespace FFXIVAPP.Common.Core.Memory
             get { return String.Format("{0}/{1} [{2:P2}]", TPCurrent, TPMax, TPPercent); }
         }
 
-        public decimal GPPercent
+        public double GPPercent
         {
-            get
-            {
-                try
-                {
-                    return (decimal) (Convert.ToDouble(GPCurrent) / Convert.ToDouble(GPMax));
-                }
-                catch
-                {
-                    return 0;
-                }
-            }
+            get { return GPMax == 0 ? 0 : GPCurrent / GPMax; }
         }
 
         public string GPString
@@ -122,19 +82,9 @@ namespace FFXIVAPP.Common.Core.Memory
             get { return String.Format("{0}/{1} [{2:P2}]", GPCurrent, GPMax, GPPercent); }
         }
 
-        public decimal CPPercent
+        public double CPPercent
         {
-            get
-            {
-                try
-                {
-                    return (decimal) Math.Ceiling((Convert.ToDouble(CPCurrent) / Convert.ToDouble(CPMax)));
-                }
-                catch
-                {
-                    return 0;
-                }
-            }
+            get { return CPMax == 0 ? 0 : CPCurrent / CPMax; }
         }
 
         public string CPString
@@ -168,7 +118,7 @@ namespace FFXIVAPP.Common.Core.Memory
 
         public Coordinate Coordinate { get; set; }
 
-        public decimal CastingPercentage
+        public double CastingPercentage
         {
             get
             {
@@ -176,7 +126,7 @@ namespace FFXIVAPP.Common.Core.Memory
                 {
                     if (IsCasting && CastingTime > 0)
                     {
-                        return (decimal) (CastingProgress / CastingTime);
+                        return CastingProgress / CastingTime;
                     }
                 }
                 catch (Exception ex)
@@ -252,7 +202,6 @@ namespace FFXIVAPP.Common.Core.Memory
         public uint CastingTargetID { get; set; }
         public float CastingProgress { get; set; }
         public float CastingTime { get; set; }
-
 
         public float GetDistanceTo(ActorEntity compare)
         {

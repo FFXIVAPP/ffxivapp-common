@@ -37,17 +37,16 @@ namespace FFXIVAPP.Common.WPF
     {
         // Variables
         public static DependencyProperty VisibleProperty;
-
         // Properties
 
         // Constructors
         static ColumnDefinitionExtended()
         {
-            VisibleProperty = DependencyProperty.Register("Visible", typeof (Boolean), typeof (ColumnDefinitionExtended), new PropertyMetadata(true, new PropertyChangedCallback(OnVisibleChanged)));
+            VisibleProperty = DependencyProperty.Register("Visible", typeof (Boolean), typeof (ColumnDefinitionExtended), new PropertyMetadata(true, OnVisibleChanged));
 
-            WidthProperty.OverrideMetadata(typeof (ColumnDefinitionExtended), new FrameworkPropertyMetadata(new GridLength(1, GridUnitType.Star), null, new CoerceValueCallback(CoerceWidth)));
+            WidthProperty.OverrideMetadata(typeof (ColumnDefinitionExtended), new FrameworkPropertyMetadata(new GridLength(1, GridUnitType.Star), null, CoerceWidth));
 
-            MinWidthProperty.OverrideMetadata(typeof (ColumnDefinitionExtended), new FrameworkPropertyMetadata((Double) 0, null, new CoerceValueCallback(CoerceMinWidth)));
+            MinWidthProperty.OverrideMetadata(typeof (ColumnDefinitionExtended), new FrameworkPropertyMetadata((Double) 0, null, CoerceMinWidth));
         }
 
         public Boolean Visible

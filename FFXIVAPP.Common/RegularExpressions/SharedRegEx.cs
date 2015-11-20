@@ -35,18 +35,16 @@ namespace FFXIVAPP.Common.RegularExpressions
 {
     public static class SharedRegEx
     {
+        public const RegexOptions DefaultOptions = RegexOptions.Compiled | RegexOptions.ExplicitCapture;
+
         #region Logger
 
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
         #endregion
 
-        public const RegexOptions DefaultOptions = RegexOptions.Compiled | RegexOptions.ExplicitCapture;
-
         public static readonly Regex Romans = new Regex(@"(?<roman>\b[IVXLCDM]+\b)", DefaultOptions);
-
         public static readonly Regex Titles = new Regex(@"(?<num>\d+)(?<designator>\w+)", DefaultOptions | RegexOptions.IgnoreCase);
-
         public static readonly Regex CleanSpaces = new Regex(@"[ ]+", RegexOptions.Compiled);
 
         /// <summary>

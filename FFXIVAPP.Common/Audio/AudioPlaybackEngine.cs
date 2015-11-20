@@ -35,18 +35,6 @@ namespace FFXIVAPP.Common.Audio
 {
     public class AudioPlaybackEngine : IDisposable
     {
-        #region Property Backings
-
-        private static AudioPlaybackEngine _instance;
-
-        public static AudioPlaybackEngine Instance
-        {
-            get { return _instance ?? (_instance = new AudioPlaybackEngine()); }
-            set { _instance = value; }
-        }
-
-        #endregion
-
         private int ChannelCount = 2;
         private MixingSampleProvider Mixer;
         private IWavePlayer OutputDevice;
@@ -97,5 +85,17 @@ namespace FFXIVAPP.Common.Audio
             }
             Mixer.AddMixerInput(new CachedSoundSampleProvider(sound, (float) volume / 100));
         }
+
+        #region Property Backings
+
+        private static AudioPlaybackEngine _instance;
+
+        public static AudioPlaybackEngine Instance
+        {
+            get { return _instance ?? (_instance = new AudioPlaybackEngine()); }
+            set { _instance = value; }
+        }
+
+        #endregion
     }
 }

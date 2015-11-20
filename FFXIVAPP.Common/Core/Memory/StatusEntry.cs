@@ -35,7 +35,6 @@ namespace FFXIVAPP.Common.Core.Memory
     public class StatusEntry : IStatusEntry
     {
         private string _targetName;
-
         public bool IsCompanyAction { get; set; }
         public ActorEntity SourceEntity { get; set; }
         public ActorEntity TargetEntity { get; set; }

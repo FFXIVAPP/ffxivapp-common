@@ -38,7 +38,6 @@ namespace FFXIVAPP.Common
         public const string AppPack = "pack://application:,,,/FFXIVAPP.Client;component/";
         public const string DefaultIcon = AppPack + "Resources/Media/Images/DefaultIcon.jpg";
         public const string DefaultAvatar = AppPack + "Resources/Media/Images/DefaultAvatar.jpg";
-
         public static readonly FlowDocHelper FD = new FlowDocHelper();
 
         public static string CachePath

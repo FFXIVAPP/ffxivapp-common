@@ -88,7 +88,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stein",
                     Japanese = "石化"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(2, new StatusItem
             {
@@ -100,7 +100,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Betäubung",
                     Japanese = "スタン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(3, new StatusItem
             {
@@ -112,7 +112,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schlaf",
                     Japanese = "睡眠"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(4, new StatusItem
             {
@@ -124,7 +124,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Benommenheit",
                     Japanese = "気絶"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(5, new StatusItem
             {
@@ -136,7 +136,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Amnesie",
                     Japanese = "アビリティ不可"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(6, new StatusItem
             {
@@ -148,7 +148,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Pacem",
                     Japanese = "ＷＳ不可"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(7, new StatusItem
             {
@@ -160,7 +160,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stumm",
                     Japanese = "沈黙"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(8, new StatusItem
             {
@@ -172,7 +172,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Hast",
                     Japanese = "ヘイスト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(9, new StatusItem
             {
@@ -184,7 +184,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gemach",
                     Japanese = "スロウ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(10, new StatusItem
             {
@@ -196,7 +196,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gemach",
                     Japanese = "拘束装置：スロウ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(11, new StatusItem
             {
@@ -208,7 +208,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Konfus",
                     Japanese = "混乱"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(12, new StatusItem
             {
@@ -220,7 +220,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Levitation",
                     Japanese = "レビテト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(13, new StatusItem
             {
@@ -232,7 +232,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fessel",
                     Japanese = "バインド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(14, new StatusItem
             {
@@ -244,7 +244,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gewicht",
                     Japanese = "ヘヴィ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(15, new StatusItem
             {
@@ -256,7 +256,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blind",
                     Japanese = "暗闇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(17, new StatusItem
             {
@@ -268,7 +268,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Paralyse",
                     Japanese = "麻痺"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(18, new StatusItem
             {
@@ -280,7 +280,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gift",
                     Japanese = "毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(19, new StatusItem
             {
@@ -292,7 +292,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Giftpollen",
                     Japanese = "猛毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(20, new StatusItem
             {
@@ -304,7 +304,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "TP-Verlust",
                     Japanese = "ＴＰ継続ダメージ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(21, new StatusItem
             {
@@ -316,7 +316,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "LP-Bonus",
                     Japanese = "最大ＨＰアップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(22, new StatusItem
             {
@@ -328,7 +328,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "LP-Malus",
                     Japanese = "最大ＨＰダウン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(23, new StatusItem
             {
@@ -340,7 +340,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "MP-Bonus",
                     Japanese = "最大ＭＰアップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(24, new StatusItem
             {
@@ -352,7 +352,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "MP-Malus",
                     Japanese = "最大ＭＰダウン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(25, new StatusItem
             {
@@ -364,7 +364,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Attacke-Bonus",
                     Japanese = "物理攻撃力アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(26, new StatusItem
             {
@@ -376,7 +376,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Attacke-Malus",
                     Japanese = "物理攻撃力ダウン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(27, new StatusItem
             {
@@ -388,7 +388,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Präzisions-Bonus",
                     Japanese = "命中率アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(28, new StatusItem
             {
@@ -400,7 +400,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Präzisions-Malus",
                     Japanese = "命中率ダウン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(29, new StatusItem
             {
@@ -412,7 +412,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verteidigungs-Bonus",
                     Japanese = "物理防御力アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(30, new StatusItem
             {
@@ -424,7 +424,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verteidigungs-Malus",
                     Japanese = "物理防御力ダウン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(31, new StatusItem
             {
@@ -436,7 +436,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ausweich-Bonus",
                     Japanese = "回避力アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(32, new StatusItem
             {
@@ -448,7 +448,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ausweich-Malus",
                     Japanese = "回避力ダウン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(33, new StatusItem
             {
@@ -460,7 +460,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Offensivmagie-Bonus",
                     Japanese = "魔法攻撃力アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(34, new StatusItem
             {
@@ -472,7 +472,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Offensivmagie-Malus",
                     Japanese = "魔法攻撃力ダウン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(35, new StatusItem
             {
@@ -484,7 +484,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Heilmagie-Bonus",
                     Japanese = "魔法回復力アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(36, new StatusItem
             {
@@ -496,7 +496,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Heilmagie-Malus",
                     Japanese = "魔法回復力ダウン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(37, new StatusItem
             {
@@ -508,7 +508,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Magieabwehr-Bonus",
                     Japanese = "魔法防御力アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(38, new StatusItem
             {
@@ -520,7 +520,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Magieabwehr-Malus",
                     Japanese = "魔法防御力ダウン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(39, new StatusItem
             {
@@ -532,7 +532,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Betäubungsresistenz",
                     Japanese = "スタン無効"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(40, new StatusItem
             {
@@ -544,7 +544,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stumm-Resistenz",
                     Japanese = "沈黙無効"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(41, new StatusItem
             {
@@ -556,7 +556,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Werkstattstimmung",
                     Japanese = "製作設備"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(42, new StatusItem
             {
@@ -568,7 +568,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kraft des Transzendierens",
                     Japanese = "超える力"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(43, new StatusItem
             {
@@ -580,7 +580,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schwäche",
                     Japanese = "衰弱"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(44, new StatusItem
             {
@@ -592,7 +592,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sterbenselend",
                     Japanese = "衰弱［強］"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(45, new StatusItem
             {
@@ -604,7 +604,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sternstunde der Handwerker",
                     Japanese = "経験値アップ（クラフター専用）"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(46, new StatusItem
             {
@@ -616,7 +616,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sternstunde der Sammler",
                     Japanese = "経験値アップ（ギャザラー専用）"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(47, new StatusItem
             {
@@ -628,7 +628,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Coeurl-Pfoten",
                     Japanese = "ステルス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(48, new StatusItem
             {
@@ -640,7 +640,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gut gesättigt",
                     Japanese = "食事"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(49, new StatusItem
             {
@@ -652,7 +652,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stärkung",
                     Japanese = "強化薬"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(50, new StatusItem
             {
@@ -664,7 +664,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sprint",
                     Japanese = "スプリント"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(51, new StatusItem
             {
@@ -676,7 +676,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stärke-Malus",
                     Japanese = "ＳＴＲダウン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(52, new StatusItem
             {
@@ -688,7 +688,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Konstitutions-Malus",
                     Japanese = "ＶＩＴダウン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(53, new StatusItem
             {
@@ -700,7 +700,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schadenswert +",
                     Japanese = "物理ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(54, new StatusItem
             {
@@ -712,7 +712,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schadenswert -",
                     Japanese = "物理ダメージ低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(55, new StatusItem
             {
@@ -724,7 +724,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte physische Verwundbarkeit",
                     Japanese = "被物理ダメージ軽減"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(56, new StatusItem
             {
@@ -736,7 +736,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte physische Verwundbarkeit",
                     Japanese = "被物理ダメージ増加"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(57, new StatusItem
             {
@@ -748,7 +748,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Magieschaden +",
                     Japanese = "魔法ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(58, new StatusItem
             {
@@ -760,7 +760,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Magieschaden -",
                     Japanese = "魔法ダメージ低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(59, new StatusItem
             {
@@ -772,7 +772,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte Magie-Verwundbarkeit",
                     Japanese = "被魔法ダメージ軽減"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(60, new StatusItem
             {
@@ -784,7 +784,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte Magie-Verwundbarkeit",
                     Japanese = "被魔法ダメージ増加"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(61, new StatusItem
             {
@@ -796,7 +796,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schaden +",
                     Japanese = "ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(62, new StatusItem
             {
@@ -808,7 +808,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schaden -",
                     Japanese = "ダメージ低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(63, new StatusItem
             {
@@ -820,7 +820,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte Verwundbarkeit",
                     Japanese = "被ダメージ低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(64, new StatusItem
             {
@@ -832,7 +832,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte Verwundbarkeit",
                     Japanese = "被ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(65, new StatusItem
             {
@@ -844,7 +844,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kritisches Potenzial",
                     Japanese = "ウェポンスキル強化：クリティカル"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(66, new StatusItem
             {
@@ -856,7 +856,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Terror",
                     Japanese = "恐怖"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(67, new StatusItem
             {
@@ -868,7 +868,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Bleischwere",
                     Japanese = "ヘヴィ[強]"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(68, new StatusItem
             {
@@ -880,7 +880,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Auszehren",
                     Japanese = "オートアタック強化：ＨＰ吸収"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(69, new StatusItem
             {
@@ -892,7 +892,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Auslaugen",
                     Japanese = "オートアタック強化：ＴＰ吸収"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(70, new StatusItem
             {
@@ -904,7 +904,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ausschalten",
                     Japanese = "オートアタック強化：スタン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(71, new StatusItem
             {
@@ -916,7 +916,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schutzwall",
                     Japanese = "ランパート"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(72, new StatusItem
             {
@@ -928,7 +928,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Konvaleszenz",
                     Japanese = "コンバレセンス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(73, new StatusItem
             {
@@ -940,7 +940,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Achtsamkeit",
                     Japanese = "アウェアネス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(74, new StatusItem
             {
@@ -952,7 +952,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sentinel",
                     Japanese = "センチネル"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(75, new StatusItem
             {
@@ -964,7 +964,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Eherner Wille",
                     Japanese = "鋼の意志"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(76, new StatusItem
             {
@@ -976,7 +976,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verwegenheit",
                     Japanese = "ファイト・オア・フライト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(77, new StatusItem
             {
@@ -988,7 +988,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Bollwerk",
                     Japanese = "ブルワーク"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(78, new StatusItem
             {
@@ -1000,7 +1000,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schwert-Eid",
                     Japanese = "忠義の剣"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(79, new StatusItem
             {
@@ -1012,7 +1012,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schild-Eid",
                     Japanese = "忠義の盾"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(80, new StatusItem
             {
@@ -1024,7 +1024,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Deckung",
                     Japanese = "かばう"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(81, new StatusItem
             {
@@ -1036,7 +1036,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gedeckt",
                     Japanese = "かばう［被］"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(82, new StatusItem
             {
@@ -1048,7 +1048,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Heiliger Boden",
                     Japanese = "インビンシブル"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(83, new StatusItem
             {
@@ -1060,7 +1060,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Vorahnung",
                     Japanese = "フォーサイト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(84, new StatusItem
             {
@@ -1072,7 +1072,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blutbad",
                     Japanese = "ブラッドバス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(85, new StatusItem
             {
@@ -1084,7 +1084,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verstümmelung",
                     Japanese = "メイム"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(86, new StatusItem
             {
@@ -1096,7 +1096,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Tollwut",
                     Japanese = "バーサク"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(87, new StatusItem
             {
@@ -1108,7 +1108,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kampfrausch",
                     Japanese = "スリル・オブ・バトル"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(88, new StatusItem
             {
@@ -1120,7 +1120,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Holmgang",
                     Japanese = "ホルムギャング"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(89, new StatusItem
             {
@@ -1132,7 +1132,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Rache",
                     Japanese = "ヴェンジェンス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(90, new StatusItem
             {
@@ -1144,7 +1144,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sturmbrecher",
                     Japanese = "シュトルムブレハ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(91, new StatusItem
             {
@@ -1156,7 +1156,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verteidiger",
                     Japanese = "ディフェンダー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(92, new StatusItem
             {
@@ -1168,7 +1168,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Entfesselt",
                     Japanese = "アンチェインド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(93, new StatusItem
             {
@@ -1180,7 +1180,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Zorn",
                     Japanese = "ラース"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(94, new StatusItem
             {
@@ -1192,7 +1192,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Zorn II",
                     Japanese = "ラースII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(95, new StatusItem
             {
@@ -1204,7 +1204,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Zorn III",
                     Japanese = "ラースIII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(96, new StatusItem
             {
@@ -1216,7 +1216,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Zorn IV",
                     Japanese = "ラースIV"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(97, new StatusItem
             {
@@ -1228,7 +1228,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Zorn V",
                     Japanese = "ラースV"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(98, new StatusItem
             {
@@ -1240,7 +1240,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Drachentritt",
                     Japanese = "双竜脚"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(99, new StatusItem
             {
@@ -1252,7 +1252,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Leichtfuß",
                     Japanese = "フェザーステップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(100, new StatusItem
             {
@@ -1264,7 +1264,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Innere Gelöstheit",
                     Japanese = "発勁"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(101, new StatusItem
             {
@@ -1276,7 +1276,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Doppelviper",
                     Japanese = "双掌打"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(102, new StatusItem
             {
@@ -1288,7 +1288,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mantra",
                     Japanese = "マントラ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(103, new StatusItem
             {
@@ -1300,7 +1300,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sengende Aura",
                     Japanese = "紅蓮の構え"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(104, new StatusItem
             {
@@ -1312,7 +1312,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Steinerne Aura",
                     Japanese = "金剛の構え"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(105, new StatusItem
             {
@@ -1324,7 +1324,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Beflügelnde Aura",
                     Japanese = "疾風の構え"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(106, new StatusItem
             {
@@ -1336,7 +1336,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Hauch des Todes",
                     Japanese = "秘孔拳"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(107, new StatusItem
             {
@@ -1348,7 +1348,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Opo-Opo-Form",
                     Japanese = "壱の型：魔猿"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(108, new StatusItem
             {
@@ -1360,7 +1360,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Raptor-Form",
                     Japanese = "弐の型：走竜"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(109, new StatusItem
             {
@@ -1372,7 +1372,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Coeurl-Form",
                     Japanese = "参の型：猛虎"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(110, new StatusItem
             {
@@ -1384,7 +1384,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Improvisation",
                     Japanese = "踏鳴"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(111, new StatusItem
             {
@@ -1396,7 +1396,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Geölter Blitz",
                     Japanese = "疾風迅雷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(112, new StatusItem
             {
@@ -1408,7 +1408,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Geölter Blitz II",
                     Japanese = "疾風迅雷II"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(113, new StatusItem
             {
@@ -1420,7 +1420,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Geölter Blitz III",
                     Japanese = "疾風迅雷III"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(114, new StatusItem
             {
@@ -1432,7 +1432,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Auge des Sturms",
                     Japanese = "キーンフラーリ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(115, new StatusItem
             {
@@ -1444,7 +1444,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gewaltiger Stoß",
                     Japanese = "ヘヴィスラスト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(116, new StatusItem
             {
@@ -1456,7 +1456,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Vitalwallung",
                     Japanese = "ライフサージ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(117, new StatusItem
             {
@@ -1468,7 +1468,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Zahn um Zahn",
                     Japanese = "捨身"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(118, new StatusItem
             {
@@ -1480,7 +1480,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Chaotischer Tjost",
                     Japanese = "桜華狂咲"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(119, new StatusItem
             {
@@ -1492,7 +1492,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Phlebotomie",
                     Japanese = "二段突き"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(120, new StatusItem
             {
@@ -1504,7 +1504,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Drachenklaue",
                     Japanese = "竜槍"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(121, new StatusItem
             {
@@ -1516,7 +1516,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Drachengriff",
                     Japanese = "ディセムボウル"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(122, new StatusItem
             {
@@ -1528,7 +1528,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Direkter Schuss +",
                     Japanese = "ストレートショット効果アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(123, new StatusItem
             {
@@ -1540,7 +1540,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Falkenauge",
                     Japanese = "ホークアイ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(124, new StatusItem
             {
@@ -1552,7 +1552,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Infizierte Wunde",
                     Japanese = "ベノムバイト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(125, new StatusItem
             {
@@ -1564,7 +1564,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wütende Attacke",
                     Japanese = "猛者の撃"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(126, new StatusItem
             {
@@ -1576,7 +1576,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte physische Verwundbarkeit",
                     Japanese = "被物理ダメージ増加"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(127, new StatusItem
             {
@@ -1588,7 +1588,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Heimliche Attacke",
                     Japanese = "静者の撃"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(128, new StatusItem
             {
@@ -1600,7 +1600,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sperrfeuer",
                     Japanese = "乱れ撃ち"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(129, new StatusItem
             {
@@ -1612,7 +1612,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Beißender Wind",
                     Japanese = "ウィンドバイト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(130, new StatusItem
             {
@@ -1624,7 +1624,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Direkter Schuss",
                     Japanese = "ストレートショット"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(131, new StatusItem
             {
@@ -1636,7 +1636,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Tödlicher Regen +",
                     Japanese = "レイン・オブ・デス効果アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(132, new StatusItem
             {
@@ -1648,7 +1648,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Pfeilsalve +",
                     Japanese = "クイックノック効果アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(133, new StatusItem
             {
@@ -1660,7 +1660,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schmissiger Song",
                     Japanese = "スウィフトソング"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(134, new StatusItem
             {
@@ -1672,7 +1672,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schmissiger Song",
                     Japanese = "スウィフトソング：効果"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(135, new StatusItem
             {
@@ -1684,7 +1684,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ballade des Weisen",
                     Japanese = "賢人のバラード"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(136, new StatusItem
             {
@@ -1696,7 +1696,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ballade des Weisen",
                     Japanese = "賢人のバラード：効果"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(137, new StatusItem
             {
@@ -1708,7 +1708,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Hymne der Krieger",
                     Japanese = "軍神のパイオン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(138, new StatusItem
             {
@@ -1720,7 +1720,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Hymne der Krieger",
                     Japanese = "軍神のパイオン：効果"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(139, new StatusItem
             {
@@ -1732,7 +1732,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Requiem der Feinde",
                     Japanese = "魔人のレクイエム"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(140, new StatusItem
             {
@@ -1744,7 +1744,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Requiem der Feinde",
                     Japanese = "魔人のレクイエム：効果"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(141, new StatusItem
             {
@@ -1756,7 +1756,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ode an die Seele",
                     Japanese = "バトルボイス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(142, new StatusItem
             {
@@ -1768,7 +1768,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Chamäleon",
                     Japanese = "カメレオン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(143, new StatusItem
             {
@@ -1780,7 +1780,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wind",
                     Japanese = "エアロ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(144, new StatusItem
             {
@@ -1792,7 +1792,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Windra",
                     Japanese = "エアロラ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(145, new StatusItem
             {
@@ -1804,7 +1804,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Bußprediger",
                     Japanese = "クルセードスタンス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(146, new StatusItem
             {
@@ -1816,7 +1816,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Protes",
                     Japanese = "プロテス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(147, new StatusItem
             {
@@ -1828,7 +1828,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Protes",
                     Japanese = "プロテス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(148, new StatusItem
             {
@@ -1840,7 +1840,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wiederbeleben",
                     Japanese = "蘇生"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(149, new StatusItem
             {
@@ -1852,7 +1852,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Betäubung",
                     Japanese = "スタン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(150, new StatusItem
             {
@@ -1864,7 +1864,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Resedra",
                     Japanese = "メディカラ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(151, new StatusItem
             {
@@ -1876,7 +1876,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Steinhaut",
                     Japanese = "ストンスキン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(152, new StatusItem
             {
@@ -1888,7 +1888,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Steinhaut (physisch)",
                     Japanese = "ストンスキン（物理攻撃）"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(153, new StatusItem
             {
@@ -1900,7 +1900,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Steinhaut (magisch)",
                     Japanese = "ストンスキン（魔法攻撃）"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(154, new StatusItem
             {
@@ -1912,7 +1912,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fispelstimme",
                     Japanese = "女神の加護"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(155, new StatusItem
             {
@@ -1924,7 +1924,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Vitra +",
                     Japanese = "ケアルラ効果アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(156, new StatusItem
             {
@@ -1936,7 +1936,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Vitaga +",
                     Japanese = "ケアルガ効果アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(157, new StatusItem
             {
@@ -1948,7 +1948,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Geistesgegenwart",
                     Japanese = "神速魔"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(158, new StatusItem
             {
@@ -1960,7 +1960,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Regena",
                     Japanese = "リジェネ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(159, new StatusItem
             {
@@ -1972,7 +1972,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Göttliches Siegel",
                     Japanese = "ディヴァインシール"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(160, new StatusItem
             {
@@ -1984,7 +1984,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Unbeirrbarkeit",
                     Japanese = "堅実魔"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(161, new StatusItem
             {
@@ -1996,7 +1996,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blitz",
                     Japanese = "サンダー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(162, new StatusItem
             {
@@ -2008,7 +2008,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blitzra",
                     Japanese = "サンダラ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(163, new StatusItem
             {
@@ -2020,7 +2020,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blitzga",
                     Japanese = "サンダガ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(164, new StatusItem
             {
@@ -2032,7 +2032,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blitz +",
                     Japanese = "サンダー系魔法効果アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(165, new StatusItem
             {
@@ -2044,7 +2044,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Feuga +",
                     Japanese = "ファイガ効果アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(166, new StatusItem
             {
@@ -2056,7 +2056,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kurieren +",
                     Japanese = "士気高揚の策効果アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(167, new StatusItem
             {
@@ -2068,7 +2068,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Spontaneität",
                     Japanese = "迅速魔"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(168, new StatusItem
             {
@@ -2080,7 +2080,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mana-Schild",
                     Japanese = "マバリア"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(169, new StatusItem
             {
@@ -2092,7 +2092,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mana-Wand",
                     Japanese = "ウォール"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(170, new StatusItem
             {
@@ -2104,7 +2104,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Apokatastasis",
                     Japanese = "アポカタスタシス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(171, new StatusItem
             {
@@ -2116,7 +2116,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ekpyrosis",
                     Japanese = "アポカタスタシス不可"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(172, new StatusItem
             {
@@ -2128,7 +2128,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gebrechlichkeit",
                     Japanese = "虚弱"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(173, new StatusItem
             {
@@ -2140,7 +2140,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Lichtfeuer",
                     Japanese = "アストラルファイア"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(174, new StatusItem
             {
@@ -2152,7 +2152,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Lichtfeuer II",
                     Japanese = "アストラルファイアII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(175, new StatusItem
             {
@@ -2164,7 +2164,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Lichtfeuer III",
                     Japanese = "アストラルファイアIII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(176, new StatusItem
             {
@@ -2176,7 +2176,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schatteneis",
                     Japanese = "アンブラルブリザード"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(177, new StatusItem
             {
@@ -2188,7 +2188,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schatteneis II",
                     Japanese = "アンブラルブリザードII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(178, new StatusItem
             {
@@ -2200,7 +2200,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schatteneis III",
                     Japanese = "アンブラルブリザードIII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(179, new StatusItem
             {
@@ -2212,7 +2212,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Bio",
                     Japanese = "バイオ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(180, new StatusItem
             {
@@ -2224,7 +2224,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Miasma",
                     Japanese = "ミアズマ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(181, new StatusItem
             {
@@ -2236,7 +2236,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Krankheit",
                     Japanese = "病気"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(182, new StatusItem
             {
@@ -2248,7 +2248,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Virus",
                     Japanese = "ウイルス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(183, new StatusItem
             {
@@ -2260,7 +2260,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Geistesvirus",
                     Japanese = "マインドウイルス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(184, new StatusItem
             {
@@ -2272,7 +2272,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhaltung",
                     Japanese = "サステイン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(185, new StatusItem
             {
@@ -2284,7 +2284,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Auge um Auge",
                     Japanese = "アイ・フォー・アイ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(186, new StatusItem
             {
@@ -2296,7 +2296,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Auge um Auge",
                     Japanese = "アイ・フォー・アイ：効果"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(187, new StatusItem
             {
@@ -2308,7 +2308,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Aufmuntern",
                     Japanese = "ラウズ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(188, new StatusItem
             {
@@ -2320,7 +2320,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Miasra",
                     Japanese = "ミアズラ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(189, new StatusItem
             {
@@ -2332,7 +2332,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Biora",
                     Japanese = "バイオラ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(190, new StatusItem
             {
@@ -2344,7 +2344,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schattenflamme",
                     Japanese = "シャドウフレア"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(191, new StatusItem
             {
@@ -2355,7 +2355,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Pestilenz",
                     Japanese = "瘴気"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(192, new StatusItem
             {
@@ -2367,7 +2367,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ansporn",
                     Japanese = "スパー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(193, new StatusItem
             {
@@ -2379,7 +2379,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gemach",
                     Japanese = "スロウ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(194, new StatusItem
             {
@@ -2391,7 +2391,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schutzschild",
                     Japanese = "シールドウォール"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(195, new StatusItem
             {
@@ -2403,7 +2403,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Totalabwehr",
                     Japanese = "マイティガード"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(196, new StatusItem
             {
@@ -2415,7 +2415,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Letzte Bastion",
                     Japanese = "ラストバスティオン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(197, new StatusItem
             {
@@ -2427,7 +2427,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Feuerstachel",
                     Japanese = "ブレイズスパイク"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(198, new StatusItem
             {
@@ -2439,7 +2439,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Eisstachel",
                     Japanese = "アイススパイク"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(199, new StatusItem
             {
@@ -2451,7 +2451,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schockstachel",
                     Japanese = "ショックスパイク"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(200, new StatusItem
             {
@@ -2463,7 +2463,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte physische Verwundbarkeit",
                     Japanese = "被物理ダメージ増加"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(201, new StatusItem
             {
@@ -2475,7 +2475,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Betäubung",
                     Japanese = "スタン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(202, new StatusItem
             {
@@ -2487,7 +2487,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte Verwundbarkeit",
                     Japanese = "被ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(203, new StatusItem
             {
@@ -2499,7 +2499,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Akkumulation",
                     Japanese = "力溜め"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(204, new StatusItem
             {
@@ -2511,7 +2511,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Runenwaffe: Feuer",
                     Japanese = "魔法剣・火"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(205, new StatusItem
             {
@@ -2523,7 +2523,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Runenwaffe: Eis",
                     Japanese = "魔法剣・氷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(206, new StatusItem
             {
@@ -2535,7 +2535,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Runenwaffe: Wind",
                     Japanese = "魔法剣・風"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(207, new StatusItem
             {
@@ -2547,7 +2547,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Runenwaffe: Erde",
                     Japanese = "魔法剣・土"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(208, new StatusItem
             {
@@ -2559,7 +2559,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Runenwaffe: Blitz",
                     Japanese = "魔法剣・雷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(209, new StatusItem
             {
@@ -2571,7 +2571,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Runenwaffe: Wasser",
                     Japanese = "魔法剣・水"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(210, new StatusItem
             {
@@ -2583,7 +2583,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Todesurteil",
                     Japanese = "死の宣告"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(211, new StatusItem
             {
@@ -2595,7 +2595,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gewetztes Messer",
                     Japanese = "研がれた包丁"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(212, new StatusItem
             {
@@ -2607,7 +2607,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wahre Gestalt",
                     Japanese = "見破り"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(213, new StatusItem
             {
@@ -2619,7 +2619,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Besänftigung",
                     Japanese = "懐柔状態"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(214, new StatusItem
             {
@@ -2631,7 +2631,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Aufstachelung",
                     Japanese = "懐柔失敗"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(215, new StatusItem
             {
@@ -2643,7 +2643,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schaden -",
                     Japanese = "ダメージ低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(216, new StatusItem
             {
@@ -2655,7 +2655,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Paralyse",
                     Japanese = "麻痺"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(217, new StatusItem
             {
@@ -2667,7 +2667,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Geodäsie",
                     Japanese = "トライアングレート"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(218, new StatusItem
             {
@@ -2679,7 +2679,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sammelrate erhöht",
                     Japanese = "採集獲得率アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(219, new StatusItem
             {
@@ -2691,7 +2691,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sammelgewinn erhöht",
                     Japanese = "採集獲得数アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(220, new StatusItem
             {
@@ -2703,7 +2703,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sammelglück erhöht",
                     Japanese = "採集HQ獲得率アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(221, new StatusItem
             {
@@ -2715,7 +2715,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Flurenthüllung",
                     Japanese = "トゥルー・オブ・フォレスト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(222, new StatusItem
             {
@@ -2727,7 +2727,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Tellurische Enthüllung",
                     Japanese = "トゥルー・オブ・ミネラル"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(223, new StatusItem
             {
@@ -2739,7 +2739,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Byregots Segen",
                     Japanese = "ビエルゴの加護"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(224, new StatusItem
             {
@@ -2751,7 +2751,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nophicas Segen",
                     Japanese = "ノフィカの加護"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(225, new StatusItem
             {
@@ -2763,7 +2763,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Prospektion",
                     Japanese = "プロスペクト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(226, new StatusItem
             {
@@ -2775,7 +2775,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Hast",
                     Japanese = "ヘイスト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(227, new StatusItem
             {
@@ -2787,7 +2787,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Versuchung",
                     Japanese = "誘惑"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(228, new StatusItem
             {
@@ -2799,7 +2799,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Menphinas Segen",
                     Japanese = "メネフィナの加護"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(229, new StatusItem
             {
@@ -2811,7 +2811,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nald'thals Segen",
                     Japanese = "ナルザルの加護"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(230, new StatusItem
             {
@@ -2823,7 +2823,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Llymlaens Segen",
                     Japanese = "リムレーンの加護"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(231, new StatusItem
             {
@@ -2835,7 +2835,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Thaliaks Segen",
                     Japanese = "サリャクの加護"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(232, new StatusItem
             {
@@ -2847,7 +2847,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Vorausplanung",
                     Japanese = "プレパレーション"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(233, new StatusItem
             {
@@ -2859,7 +2859,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ruf des Waldes",
                     Japanese = "アーバーコール"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(234, new StatusItem
             {
@@ -2871,7 +2871,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Bodenbefund",
                     Japanese = "ランドサーベイ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(235, new StatusItem
             {
@@ -2883,7 +2883,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Beißender Wind",
                     Japanese = "裂傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(236, new StatusItem
             {
@@ -2895,7 +2895,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Chocobo-Schnabel",
                     Japanese = "チョコビーク"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(237, new StatusItem
             {
@@ -2907,7 +2907,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Chocobo-Regena",
                     Japanese = "チョコリジェネ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(238, new StatusItem
             {
@@ -2919,7 +2919,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Chocobo-Quelle",
                     Japanese = "チョコサージ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(239, new StatusItem
             {
@@ -2931,7 +2931,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kraft des Transzendierens",
                     Japanese = "超える力"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(240, new StatusItem
             {
@@ -2943,7 +2943,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gewicht",
                     Japanese = "ヘヴィ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(241, new StatusItem
             {
@@ -2955,7 +2955,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gnade des Lichts",
                     Japanese = "光の加護"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(242, new StatusItem
             {
@@ -2967,7 +2967,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ruf des Waldes II",
                     Japanese = "アーバーコールII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(243, new StatusItem
             {
@@ -2979,7 +2979,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Bodenbefund II",
                     Japanese = "ランドサーベイII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(244, new StatusItem
             {
@@ -2991,7 +2991,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Knochenbrecher",
                     Japanese = "フラクチャー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(245, new StatusItem
             {
@@ -3003,7 +3003,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ermächtigung",
                     Japanese = "サンクション"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(246, new StatusItem
             {
@@ -3015,7 +3015,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Demolieren",
                     Japanese = "破砕拳"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(247, new StatusItem
             {
@@ -3027,7 +3027,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Tödlicher Regen",
                     Japanese = "レイン・オブ・デス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(248, new StatusItem
             {
@@ -3039,7 +3039,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kreis der Verachtung",
                     Japanese = "サークル・オブ・ドゥーム"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(249, new StatusItem
             {
@@ -3051,7 +3051,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Flammenpfeil",
                     Japanese = "フレイミングアロー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(250, new StatusItem
             {
@@ -3063,7 +3063,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Brandwunde",
                     Japanese = "火傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(251, new StatusItem
             {
@@ -3075,7 +3075,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Innere Ruhe",
                     Japanese = "インナークワイエット"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(252, new StatusItem
             {
@@ -3087,7 +3087,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nachhaltigkeit",
                     Japanese = "倹約"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(253, new StatusItem
             {
@@ -3099,7 +3099,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ruhige Hand",
                     Japanese = "ステディハンド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(254, new StatusItem
             {
@@ -3111,7 +3111,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Große Schritte",
                     Japanese = "グレートストライド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(255, new StatusItem
             {
@@ -3123,7 +3123,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Einfallsreichtum",
                     Japanese = "工面算段"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(256, new StatusItem
             {
@@ -3135,7 +3135,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Einfallsreichtum II",
                     Japanese = "工面算段II"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(257, new StatusItem
             {
@@ -3147,7 +3147,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nachhaltigkeit II",
                     Japanese = "倹約II"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(258, new StatusItem
             {
@@ -3159,7 +3159,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Manipulation",
                     Japanese = "マニピュレーション"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(259, new StatusItem
             {
@@ -3171,7 +3171,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Innovation",
                     Japanese = "イノベーション"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(260, new StatusItem
             {
@@ -3183,7 +3183,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Reklamation",
                     Japanese = "リクレイム"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(261, new StatusItem
             {
@@ -3195,7 +3195,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Komfortzone",
                     Japanese = "コンファートゾーン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(262, new StatusItem
             {
@@ -3207,7 +3207,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ruhige Hand II",
                     Japanese = "ステディハンドII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(263, new StatusItem
             {
@@ -3219,7 +3219,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schaden +",
                     Japanese = "ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(264, new StatusItem
             {
@@ -3231,7 +3231,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fleischwunde",
                     Japanese = "切傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(265, new StatusItem
             {
@@ -3243,7 +3243,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stichwunde",
                     Japanese = "刺傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(266, new StatusItem
             {
@@ -3255,7 +3255,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Prellung",
                     Japanese = "打撲傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(267, new StatusItem
             {
@@ -3267,7 +3267,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Brandwunde",
                     Japanese = "火傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(268, new StatusItem
             {
@@ -3279,7 +3279,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erfrierung",
                     Japanese = "凍傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(269, new StatusItem
             {
@@ -3291,7 +3291,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Beißender Wind",
                     Japanese = "裂傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(270, new StatusItem
             {
@@ -3303,7 +3303,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schlamm",
                     Japanese = "汚泥"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(271, new StatusItem
             {
@@ -3315,7 +3315,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stromschlag",
                     Japanese = "感電"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(272, new StatusItem
             {
@@ -3327,7 +3327,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wassersucht",
                     Japanese = "水毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(273, new StatusItem
             {
@@ -3339,7 +3339,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blutung",
                     Japanese = "ペイン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(274, new StatusItem
             {
@@ -3351,7 +3351,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Segnung",
                     Japanese = "治癒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(275, new StatusItem
             {
@@ -3363,7 +3363,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gift +1",
                     Japanese = "毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(276, new StatusItem
             {
@@ -3375,7 +3375,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Lob des Kämpen",
                     Japanese = "勇戦の誉れ：効果"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(277, new StatusItem
             {
@@ -3387,7 +3387,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stimme der Stärke",
                     Japanese = "堅忍の誉れ：効果"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(278, new StatusItem
             {
@@ -3399,7 +3399,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "無敵の進撃マーチ：効果",
                     Japanese = "無敵の進撃マーチ：効果"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(279, new StatusItem
             {
@@ -3411,7 +3411,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Rehabilitation",
                     Japanese = "徐々にＨＰ回復"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(280, new StatusItem
             {
@@ -3423,7 +3423,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fessel",
                     Japanese = "バインド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(281, new StatusItem
             {
@@ -3435,7 +3435,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schadenswert -",
                     Japanese = "物理ダメージ低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(282, new StatusItem
             {
@@ -3447,7 +3447,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Magieschaden -",
                     Japanese = "魔力変調"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(283, new StatusItem
             {
@@ -3459,7 +3459,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wassersucht",
                     Japanese = "水毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(284, new StatusItem
             {
@@ -3471,7 +3471,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Brandwunde",
                     Japanese = "火傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(285, new StatusItem
             {
@@ -3483,7 +3483,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erfrierung",
                     Japanese = "凍傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(286, new StatusItem
             {
@@ -3495,7 +3495,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Beißender Wind",
                     Japanese = "裂傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(287, new StatusItem
             {
@@ -3507,7 +3507,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schlamm",
                     Japanese = "汚泥"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(288, new StatusItem
             {
@@ -3519,7 +3519,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stromschlag",
                     Japanese = "感電"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(289, new StatusItem
             {
@@ -3531,7 +3531,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wassersucht",
                     Japanese = "水毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(290, new StatusItem
             {
@@ -3543,7 +3543,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schaden +",
                     Japanese = "ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(291, new StatusItem
             {
@@ -3555,7 +3555,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "100 Fäuste",
                     Japanese = "百烈拳"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(292, new StatusItem
             {
@@ -3567,7 +3567,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Granitgefängnis",
                     Japanese = "拘束"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(293, new StatusItem
             {
@@ -3579,7 +3579,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schnelligkeit +",
                     Japanese = "スキルスピード上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(294, new StatusItem
             {
@@ -3591,7 +3591,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Zaubertempo +",
                     Japanese = "スペルスピード上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(295, new StatusItem
             {
@@ -3603,7 +3603,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Goldlunge",
                     Japanese = "黄毒沼"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(296, new StatusItem
             {
@@ -3615,7 +3615,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Panik",
                     Japanese = "恐慌"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(297, new StatusItem
             {
@@ -3627,7 +3627,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Adloquium",
                     Japanese = "鼓舞"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(298, new StatusItem
             {
@@ -3639,7 +3639,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Geweihte Erde",
                     Japanese = "野戦治療の陣"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(299, new StatusItem
             {
@@ -3651,7 +3651,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Geweihte Erde",
                     Japanese = "野戦治療の陣：効果"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(300, new StatusItem
             {
@@ -3663,7 +3663,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schaden +",
                     Japanese = "ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(301, new StatusItem
             {
@@ -3675,7 +3675,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kritische Attacke",
                     Japanese = "クリティカル攻撃"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(302, new StatusItem
             {
@@ -3687,7 +3687,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Galle",
                     Japanese = "黄毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(303, new StatusItem
             {
@@ -3699,7 +3699,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Klettenpilz",
                     Japanese = "粘菌"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(304, new StatusItem
             {
@@ -3711,7 +3711,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ätherfluss",
                     Japanese = "エーテルフロー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(305, new StatusItem
             {
@@ -3723,7 +3723,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Bann des Drachen",
                     Japanese = "竜の呪縛"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(306, new StatusItem
             {
@@ -3735,7 +3735,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kraft des Drachen",
                     Japanese = "竜の力"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(307, new StatusItem
             {
@@ -3747,7 +3747,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Lob des Kämpen",
                     Japanese = "勇戦の誉れ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(308, new StatusItem
             {
@@ -3759,7 +3759,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stimme der Stärke",
                     Japanese = "堅忍の誉れ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(309, new StatusItem
             {
@@ -3771,7 +3771,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Marsch ohne Rücksicht",
                     Japanese = "無敵の進撃マーチ（仮）"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(310, new StatusItem
             {
@@ -3783,7 +3783,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Einrollen",
                     Japanese = "かたまり"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(311, new StatusItem
             {
@@ -3795,7 +3795,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erdengewahrsam",
                     Japanese = "大地の守り"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(312, new StatusItem
             {
@@ -3807,7 +3807,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gaias Zorn",
                     Japanese = "大地の怒り"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(313, new StatusItem
             {
@@ -3819,7 +3819,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Glühender Schild",
                     Japanese = "光輝の盾"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(314, new StatusItem
             {
@@ -3831,7 +3831,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Inferno",
                     Japanese = "地獄の火炎"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(315, new StatusItem
             {
@@ -3843,7 +3843,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhebendes Flüstern",
                     Japanese = "光の囁き"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(316, new StatusItem
             {
@@ -3855,7 +3855,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Feenverheißung",
                     Japanese = "フェイコヴナント"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(317, new StatusItem
             {
@@ -3867,7 +3867,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Illumination",
                     Japanese = "フェイイルミネーション"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(318, new StatusItem
             {
@@ -3879,7 +3879,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sprühender Glanz",
                     Japanese = "フェイグロウ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(319, new StatusItem
             {
@@ -3891,7 +3891,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Feenlicht",
                     Japanese = "フェイライト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(320, new StatusItem
             {
@@ -3903,7 +3903,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blutung",
                     Japanese = "ペイン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(321, new StatusItem
             {
@@ -3915,7 +3915,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gugnir",
                     Japanese = "グングニルの槍"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(322, new StatusItem
             {
@@ -3927,7 +3927,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kristallschleier",
                     Japanese = "クリスタルヴェール"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(323, new StatusItem
             {
@@ -3939,7 +3939,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schwache Immunabwehr",
                     Japanese = "免疫低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(324, new StatusItem
             {
@@ -3951,7 +3951,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sintmal",
                     Japanese = "森の悲憤"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(325, new StatusItem
             {
@@ -3963,7 +3963,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Unverwundbar",
                     Japanese = "無敵"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(326, new StatusItem
             {
@@ -3975,7 +3975,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Statische Ladung",
                     Japanese = "帯電"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(327, new StatusItem
             {
@@ -3987,7 +3987,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Eisige Ladung",
                     Japanese = "帯氷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(328, new StatusItem
             {
@@ -3999,7 +3999,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Herz des Felsgotts",
                     Japanese = "岩神の心石"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(329, new StatusItem
             {
@@ -4011,7 +4011,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fortifikationsprogramm 1",
                     Japanese = "自己強化プログラム"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(330, new StatusItem
             {
@@ -4023,7 +4023,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Hast",
                     Japanese = "ヘイスト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(331, new StatusItem
             {
@@ -4035,7 +4035,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte Magie-Verwundbarkeit",
                     Japanese = "被魔法ダメージ軽減"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(332, new StatusItem
             {
@@ -4047,7 +4047,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schaden +",
                     Japanese = "ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(333, new StatusItem
             {
@@ -4059,7 +4059,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Allagische Fäulnis",
                     Japanese = "アラガンロット"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(334, new StatusItem
             {
@@ -4071,7 +4071,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Allagische Immunität",
                     Japanese = "アラガンロット抗体"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(335, new StatusItem
             {
@@ -4083,7 +4083,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Feuerstrahlen",
                     Japanese = "ファイアストリーム"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(336, new StatusItem
             {
@@ -4095,7 +4095,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sequenz AB1",
                     Japanese = "対打撃プログラム"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(337, new StatusItem
             {
@@ -4107,7 +4107,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sequenz AP1",
                     Japanese = "対突撃プログラム"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(338, new StatusItem
             {
@@ -4119,7 +4119,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sequenz AS1",
                     Japanese = "対斬撃プログラム"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(339, new StatusItem
             {
@@ -4131,7 +4131,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blutung",
                     Japanese = "ペイン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(340, new StatusItem
             {
@@ -4143,7 +4143,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Physisches Feld",
                     Japanese = "対物理障壁"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(341, new StatusItem
             {
@@ -4155,7 +4155,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Magisches Feld",
                     Japanese = "対魔法障壁"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(342, new StatusItem
             {
@@ -4167,7 +4167,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Reflektorschild",
                     Japanese = "応射"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(343, new StatusItem
             {
@@ -4179,7 +4179,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blutung",
                     Japanese = "ペイン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(344, new StatusItem
             {
@@ -4191,7 +4191,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Neurolink",
                     Japanese = "拘束装置"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(345, new StatusItem
             {
@@ -4203,7 +4203,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Aufladung",
                     Japanese = "魔力供給"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(346, new StatusItem
             {
@@ -4215,7 +4215,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wächserne Haut",
                     Japanese = "帯炎"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(347, new StatusItem
             {
@@ -4227,7 +4227,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Pocken",
                     Japanese = "ポックス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(348, new StatusItem
             {
@@ -4239,7 +4239,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Aussäen",
                     Japanese = "ディスセミネイト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(349, new StatusItem
             {
@@ -4251,7 +4251,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stahlschuppen",
                     Japanese = "スチールスケール"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(350, new StatusItem
             {
@@ -4263,7 +4263,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte Verwundbarkeit",
                     Japanese = "被ダメージ低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(351, new StatusItem
             {
@@ -4275,7 +4275,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Groll",
                     Japanese = "怨み"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(352, new StatusItem
             {
@@ -4287,7 +4287,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gugnirs Zauber",
                     Japanese = "グングニルの魔力"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(353, new StatusItem
             {
@@ -4299,7 +4299,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Startbonus",
                     Japanese = "カンパニーアクション：ビギナーボーナス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(354, new StatusItem
             {
@@ -4311,7 +4311,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sammelgeschick-Bonus",
                     Japanese = "カンパニーアクション：獲得力アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(355, new StatusItem
             {
@@ -4323,7 +4323,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wahrnehmungsbonus",
                     Japanese = "カンパニーアクション：識質力アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(356, new StatusItem
             {
@@ -4335,7 +4335,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kunstfertigkeits-Bonus",
                     Japanese = "カンパニーアクション：作業精度アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(357, new StatusItem
             {
@@ -4347,7 +4347,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kontrolle-Bonus",
                     Japanese = "カンパニーアクション：加工精度アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(358, new StatusItem
             {
@@ -4359,7 +4359,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schneemann",
                     Japanese = "雪だるま"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(359, new StatusItem
             {
@@ -4371,7 +4371,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Feenfeuer",
                     Japanese = "妖炎"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(360, new StatusItem
             {
@@ -4383,7 +4383,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Längere Nahrungseffekte",
                     Japanese = "カンパニーアクション：食事効果時間延長"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(361, new StatusItem
             {
@@ -4395,7 +4395,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Bindungsbonus",
                     Japanese = "カンパニーアクション：錬精度上昇量アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(362, new StatusItem
             {
@@ -4407,7 +4407,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verminderter Verschleiß",
                     Japanese = "カンパニーアクション：装備品劣化低減"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(363, new StatusItem
             {
@@ -4419,7 +4419,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verkürzte Schwäche",
                     Japanese = "カンパニーアクション：衰弱時間短縮"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(364, new StatusItem
             {
@@ -4431,7 +4431,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Vergünstigter Teleport",
                     Japanese = "カンパニーアクション：テレポ割引"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(365, new StatusItem
             {
@@ -4443,7 +4443,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kampfroutine-Bonus",
                     Japanese = "カンパニーアクション：討伐経験値アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(366, new StatusItem
             {
@@ -4455,7 +4455,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mitstreiterroutine-Bonus",
                     Japanese = "カンパニーアクション：バディ経験値アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(367, new StatusItem
             {
@@ -4467,7 +4467,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sammelroutine-Bonus",
                     Japanese = "カンパニーアクション：採集経験値アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(368, new StatusItem
             {
@@ -4479,7 +4479,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Syntheseroutine-Bonus",
                     Japanese = "カンパニーアクション：製作経験値アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(369, new StatusItem
             {
@@ -4491,7 +4491,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ätheroplasma",
                     Japanese = "吸着爆雷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(370, new StatusItem
             {
@@ -4503,7 +4503,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sirenengesang",
                     Japanese = "セイレーンの歌声"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(371, new StatusItem
             {
@@ -4515,7 +4515,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Zombie",
                     Japanese = "ゾンビー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(372, new StatusItem
             {
@@ -4527,7 +4527,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Brutrage",
                     Japanese = "母鳥の怒り"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(373, new StatusItem
             {
@@ -4539,7 +4539,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Unheilbar",
                     Japanese = "被回復無効"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(374, new StatusItem
             {
@@ -4551,7 +4551,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Denaturierter Kristall",
                     Japanese = "偏属性クリスタル"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(375, new StatusItem
             {
@@ -4563,7 +4563,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verbrennung",
                     Japanese = "熱傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(376, new StatusItem
             {
@@ -4575,7 +4575,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gluthitze",
                     Japanese = "灼熱"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(377, new StatusItem
             {
@@ -4587,7 +4587,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Infernofesseln",
                     Japanese = "炎獄の鎖"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(378, new StatusItem
             {
@@ -4599,7 +4599,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Agonales Klammern",
                     Japanese = "道連れ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(379, new StatusItem
             {
@@ -4611,7 +4611,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Tiefdruck",
                     Japanese = "低気圧"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(380, new StatusItem
             {
@@ -4623,7 +4623,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Hochdruck",
                     Japanese = "高気圧"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(381, new StatusItem
             {
@@ -4635,7 +4635,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Testudo",
                     Japanese = "テストゥド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(384, new StatusItem
             {
@@ -4647,7 +4647,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schlachtrausch",
                     Japanese = "スリル・オブ・ウォー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(385, new StatusItem
             {
@@ -4659,7 +4659,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Voller Schwinger",
                     Japanese = "フルスイング"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(386, new StatusItem
             {
@@ -4671,7 +4671,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Salto",
                     Japanese = "サマーソルト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(387, new StatusItem
             {
@@ -4683,7 +4683,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Obhut",
                     Japanese = "フェターウォード"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(388, new StatusItem
             {
@@ -4695,7 +4695,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Impuls-Ansturm",
                     Japanese = "インパルスラッシュ"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(389, new StatusItem
             {
@@ -4707,7 +4707,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Spieß",
                     Japanese = "スキュアー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(390, new StatusItem
             {
@@ -4719,7 +4719,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Barmherzigkeit",
                     Japanese = "女神の慈悲"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(391, new StatusItem
             {
@@ -4731,7 +4731,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Phantompfeil",
                     Japanese = "ファントムダート"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(392, new StatusItem
             {
@@ -4743,7 +4743,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nebelschleier",
                     Japanese = "ミスティヴェール"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(393, new StatusItem
             {
@@ -4755,7 +4755,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Entkräften",
                     Japanese = "ウィザー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(394, new StatusItem
             {
@@ -4767,7 +4767,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Lege Artis",
                     Japanese = "精神統一の策"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(395, new StatusItem
             {
@@ -4779,7 +4779,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ätherschub",
                     Japanese = "エーテルバースト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(396, new StatusItem
             {
@@ -4791,7 +4791,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gleichmut",
                     Japanese = "専心"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(397, new StatusItem
             {
@@ -4803,7 +4803,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Einstimmung",
                     Japanese = "調和"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(398, new StatusItem
             {
@@ -4815,7 +4815,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Astralkörper",
                     Japanese = "アストラル体"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(399, new StatusItem
             {
@@ -4827,7 +4827,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wiederkunft",
                     Japanese = "生還"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(400, new StatusItem
             {
@@ -4839,7 +4839,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Laden",
                     Japanese = "蓄電"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(401, new StatusItem
             {
@@ -4851,7 +4851,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Umklammert",
                     Japanese = "捕獲"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(402, new StatusItem
             {
@@ -4863,7 +4863,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blinde Wut",
                     Japanese = "有頂天"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(403, new StatusItem
             {
@@ -4875,7 +4875,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schaden +",
                     Japanese = "ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(404, new StatusItem
             {
@@ -4887,7 +4887,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Transport",
                     Japanese = "運搬"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(405, new StatusItem
             {
@@ -4899,7 +4899,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Bezaubert",
                     Japanese = "幻惑"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(406, new StatusItem
             {
@@ -4911,7 +4911,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte Verwundbarkeit",
                     Japanese = "被ダメージ低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(407, new StatusItem
             {
@@ -4923,7 +4923,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Staubvergiftung",
                     Japanese = "粉塵中毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(408, new StatusItem
             {
@@ -4935,7 +4935,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sturmkeil",
                     Japanese = "シュトルムヴィント"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(409, new StatusItem
             {
@@ -4947,7 +4947,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Holmgang",
                     Japanese = "ホルムギャング"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(410, new StatusItem
             {
@@ -4959,7 +4959,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Antikörper",
                     Japanese = "ウイルス抗体"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(411, new StatusItem
             {
@@ -4971,7 +4971,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Tier in dir",
                     Japanese = "原初の魂"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(412, new StatusItem
             {
@@ -4983,7 +4983,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schweben",
                     Japanese = "滞空"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(413, new StatusItem
             {
@@ -4995,7 +4995,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wolfsmarken-Bonus",
                     Japanese = "カンパニーアクション：対人戦績アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(414, new StatusItem
             {
@@ -5007,7 +5007,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Staatstaler-Bonus",
                     Japanese = "カンパニーアクション：軍票アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(415, new StatusItem
             {
@@ -5019,7 +5019,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erholen",
                     Japanese = "ＴＰ継続回復"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(416, new StatusItem
             {
@@ -5031,7 +5031,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Transparenz",
                     Japanese = "透明"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(417, new StatusItem
             {
@@ -5043,7 +5043,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Protes",
                     Japanese = "プロテス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(418, new StatusItem
             {
@@ -5055,7 +5055,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte physische Verwundbarkeit",
                     Japanese = "被物理ダメージ軽減"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(419, new StatusItem
             {
@@ -5067,7 +5067,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nebelschleier",
                     Japanese = "ミスティヴェール"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(420, new StatusItem
             {
@@ -5079,7 +5079,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Markiert",
                     Japanese = "マーキング"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(421, new StatusItem
             {
@@ -5091,7 +5091,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Halbverschlungen",
                     Japanese = "捕食"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(422, new StatusItem
             {
@@ -5103,7 +5103,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Heilmagie -",
                     Japanese = "回復魔法効果低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(423, new StatusItem
             {
@@ -5115,7 +5115,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Albtraum",
                     Japanese = "悪夢"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(424, new StatusItem
             {
@@ -5127,7 +5127,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Diabolischer Fluch",
                     Japanese = "ヴォイドの呪詛"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(425, new StatusItem
             {
@@ -5139,7 +5139,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Diabolische Aura",
                     Japanese = "ヴォイドの妖気"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(426, new StatusItem
             {
@@ -5151,7 +5151,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nachtschild",
                     Japanese = "ノクトシールド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(427, new StatusItem
             {
@@ -5163,7 +5163,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gemach +",
                     Japanese = "スロウ＋"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(428, new StatusItem
             {
@@ -5175,7 +5175,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Hast +",
                     Japanese = "ヘイスト＋"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(429, new StatusItem
             {
@@ -5187,7 +5187,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erosionsstaub",
                     Japanese = "妖鱗粉"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(430, new StatusItem
             {
@@ -5199,7 +5199,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kummer",
                     Japanese = "悲嘆"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(431, new StatusItem
             {
@@ -5211,7 +5211,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wasserresistenz -",
                     Japanese = "水属性耐性低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(432, new StatusItem
             {
@@ -5223,7 +5223,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wassermembran",
                     Japanese = "水鏡飛散"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(433, new StatusItem
             {
@@ -5235,7 +5235,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wasserspiegelung",
                     Japanese = "水鏡"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(434, new StatusItem
             {
@@ -5247,7 +5247,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Absoluter Bann",
                     Japanese = "完全呪縛"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(435, new StatusItem
             {
@@ -5259,7 +5259,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Dämonenauge",
                     Japanese = "悪魔の瞳"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(436, new StatusItem
             {
@@ -5271,7 +5271,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Dorngestrüpp",
                     Japanese = "野茨"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(437, new StatusItem
             {
@@ -5283,7 +5283,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Steinfluch",
                     Japanese = "石化の呪い"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(438, new StatusItem
             {
@@ -5295,7 +5295,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wicht",
                     Japanese = "ミニマム"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(439, new StatusItem
             {
@@ -5307,7 +5307,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Frosch",
                     Japanese = "トード"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(440, new StatusItem
             {
@@ -5319,7 +5319,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wicht",
                     Japanese = "ミニマム"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(441, new StatusItem
             {
@@ -5331,7 +5331,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Frosch",
                     Japanese = "トード"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(442, new StatusItem
             {
@@ -5343,7 +5343,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gemach",
                     Japanese = "スロウ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(443, new StatusItem
             {
@@ -5355,7 +5355,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schaden +",
                     Japanese = "ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(444, new StatusItem
             {
@@ -5367,7 +5367,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte Verwundbarkeit",
                     Japanese = "被ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(445, new StatusItem
             {
@@ -5379,7 +5379,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Dornenranken",
                     Japanese = "茨の蔓"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(446, new StatusItem
             {
@@ -5391,7 +5391,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Honigsüß",
                     Japanese = "蜂蜜"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(447, new StatusItem
             {
@@ -5403,7 +5403,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Konzentrierte Säure",
                     Japanese = "強酸"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(448, new StatusItem
             {
@@ -5415,7 +5415,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Umschwärmt",
                     Japanese = "スウォーム"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(449, new StatusItem
             {
@@ -5427,7 +5427,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gestochen",
                     Japanese = "蜂刺症"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(450, new StatusItem
             {
@@ -5439,7 +5439,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Steinresistenz",
                     Japanese = "石化無効"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(451, new StatusItem
             {
@@ -5451,7 +5451,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stimme der Verwünschung",
                     Japanese = "呪詛の声"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(452, new StatusItem
             {
@@ -5463,7 +5463,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schrei der Verwünschung",
                     Japanese = "呪詛の叫声"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(453, new StatusItem
             {
@@ -5475,7 +5475,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Allagisches Gift",
                     Japanese = "アラガンポイズン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(454, new StatusItem
             {
@@ -5487,7 +5487,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Allagisches Feld",
                     Japanese = "アラガンフィールド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(455, new StatusItem
             {
@@ -5499,7 +5499,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ermattung",
                     Japanese = "生気減退"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(456, new StatusItem
             {
@@ -5511,7 +5511,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "LP-Malus",
                     Japanese = "最大ＨＰダウン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(457, new StatusItem
             {
@@ -5523,7 +5523,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fessel +",
                     Japanese = "バインド＋"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(458, new StatusItem
             {
@@ -5535,7 +5535,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Pestschwinge",
                     Japanese = "凶鳥毒気"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(459, new StatusItem
             {
@@ -5547,7 +5547,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Normales Verhalten",
                     Japanese = "ノーマルスタンス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(460, new StatusItem
             {
@@ -5559,7 +5559,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Aggressives Verhalten",
                     Japanese = "アタッカースタンス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(461, new StatusItem
             {
@@ -5571,7 +5571,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Hemmendes Verhalten",
                     Japanese = "ジャマースタンス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(462, new StatusItem
             {
@@ -5583,7 +5583,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Leicht fixierbar",
                     Japanese = "拘束加速"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(463, new StatusItem
             {
@@ -5595,7 +5595,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fixierungsfessel",
                     Japanese = "拘束"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(464, new StatusItem
             {
@@ -5607,7 +5607,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Feuerhorn",
                     Japanese = "ファイアホーン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(465, new StatusItem
             {
@@ -5619,7 +5619,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Eisklaue",
                     Japanese = "アイスクロウ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(466, new StatusItem
             {
@@ -5631,7 +5631,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Donnerschwinge",
                     Japanese = "サンダーウィング"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(467, new StatusItem
             {
@@ -5643,7 +5643,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wasserspiegelung",
                     Japanese = "水鏡"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(468, new StatusItem
             {
@@ -5655,7 +5655,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nichtsgebunden",
                     Japanese = "異界の狭間"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(469, new StatusItem
             {
@@ -5667,7 +5667,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Absoluter Herrscher",
                     Japanese = "極王"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(470, new StatusItem
             {
@@ -5679,7 +5679,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Pombination",
                     Japanese = "モグビネーション"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(471, new StatusItem
             {
@@ -5691,7 +5691,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mogryschatten-Aversion",
                     Japanese = "モグ闇過敏症"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(472, new StatusItem
             {
@@ -5703,7 +5703,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Moglicht-Empfindlichkeit",
                     Japanese = "モグ光過敏症"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(473, new StatusItem
             {
@@ -5715,7 +5715,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Tohuwabohu-Wahn",
                     Japanese = "モグルグル"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(474, new StatusItem
             {
@@ -5727,7 +5727,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mogul-Fanfare",
                     Japanese = "闘魂"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(475, new StatusItem
             {
@@ -5739,7 +5739,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Unmarkierbar",
                     Japanese = "マーキング対象外"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(476, new StatusItem
             {
@@ -5751,7 +5751,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Dämmerlicht",
                     Japanese = "薄闇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(477, new StatusItem
             {
@@ -5763,7 +5763,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wogenmantel",
                     Japanese = "水神のマント"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(478, new StatusItem
             {
@@ -5775,7 +5775,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wogenschleier",
                     Japanese = "水神のヴェール"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(479, new StatusItem
             {
@@ -5787,7 +5787,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Rehabilitation",
                     Japanese = "徐々にＨＰ回復"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(480, new StatusItem
             {
@@ -5799,7 +5799,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Hast +",
                     Japanese = "ヘイスト＋"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(481, new StatusItem
             {
@@ -5811,7 +5811,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sprint",
                     Japanese = "スプリント"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(482, new StatusItem
             {
@@ -5823,7 +5823,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Paralyse",
                     Japanese = "麻痺"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(483, new StatusItem
             {
@@ -5835,7 +5835,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "LP-Bonus",
                     Japanese = "最大ＨＰアップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(484, new StatusItem
             {
@@ -5847,7 +5847,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Toxische Tinte",
                     Japanese = "毒墨"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(485, new StatusItem
             {
@@ -5859,7 +5859,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wassersucht",
                     Japanese = "水毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(486, new StatusItem
             {
@@ -5871,7 +5871,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wasserkäfig",
                     Japanese = "水牢"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(487, new StatusItem
             {
@@ -5883,7 +5883,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Tiefkühlung",
                     Japanese = "氷結"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(488, new StatusItem
             {
@@ -5895,7 +5895,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Superkniff",
                     Japanese = "残影"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(489, new StatusItem
             {
@@ -5907,7 +5907,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wespenkuss",
                     Japanese = "蜂毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(490, new StatusItem
             {
@@ -5919,7 +5919,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Vipernkuss",
                     Japanese = "蛇毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(491, new StatusItem
             {
@@ -5931,7 +5931,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Tanzende Schneide",
                     Japanese = "舞踏刃"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(492, new StatusItem
             {
@@ -5943,7 +5943,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verstümmeln",
                     Japanese = "無双旋"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(494, new StatusItem
             {
@@ -5955,7 +5955,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schattenfang",
                     Japanese = "一閃"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(495, new StatusItem
             {
@@ -5967,7 +5967,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Dampf",
                     Japanese = "叱咤"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(496, new StatusItem
             {
@@ -5979,7 +5979,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mudra",
                     Japanese = "印"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(497, new StatusItem
             {
@@ -5991,7 +5991,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kassatsu",
                     Japanese = "活殺自在"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(500, new StatusItem
             {
@@ -6003,7 +6003,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Huton",
                     Japanese = "風遁の術"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(501, new StatusItem
             {
@@ -6015,7 +6015,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Doton",
                     Japanese = "土遁の術"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(502, new StatusItem
             {
@@ -6027,7 +6027,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gewicht",
                     Japanese = "ヘヴィ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(503, new StatusItem
             {
@@ -6038,7 +6038,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Brandwunde",
                     Japanese = "火傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(504, new StatusItem
             {
@@ -6050,7 +6050,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gefesselt",
                     Japanese = "拘束"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(505, new StatusItem
             {
@@ -6062,7 +6062,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schaden +",
                     Japanese = "ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(506, new StatusItem
             {
@@ -6074,7 +6074,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schwindel",
                     Japanese = "目眩"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(507, new StatusItem
             {
@@ -6086,7 +6086,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Suiton",
                     Japanese = "水遁の術"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(508, new StatusItem
             {
@@ -6098,7 +6098,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schattenfang",
                     Japanese = "影牙"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(509, new StatusItem
             {
@@ -6110,7 +6110,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ätherochemischer Sprengkörper",
                     Japanese = "魔爆弾"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(510, new StatusItem
             {
@@ -6122,7 +6122,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gefesselt",
                     Japanese = "拘束"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(511, new StatusItem
             {
@@ -6134,7 +6134,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Knallfrosch",
                     Japanese = "ファイアトード"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(512, new StatusItem
             {
@@ -6146,7 +6146,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Elektrokonduktivität",
                     Japanese = "導電"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(513, new StatusItem
             {
@@ -6158,7 +6158,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Statische Ladung",
                     Japanese = "蓄電"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(514, new StatusItem
             {
@@ -6170,7 +6170,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kausalität",
                     Japanese = "因果"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(515, new StatusItem
             {
@@ -6182,7 +6182,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Rollender Donner",
                     Japanese = "雷鼓"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(516, new StatusItem
             {
@@ -6194,7 +6194,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Chaos",
                     Japanese = "混沌"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(517, new StatusItem
             {
@@ -6206,7 +6206,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Überspannungsschutz",
                     Japanese = "避雷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(518, new StatusItem
             {
@@ -6218,7 +6218,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Reflektion",
                     Japanese = "リフレク"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(519, new StatusItem
             {
@@ -6230,7 +6230,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Konter",
                     Japanese = "カウンター"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(520, new StatusItem
             {
@@ -6242,7 +6242,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Feuerresistenz +",
                     Japanese = "火属性耐性向上"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(521, new StatusItem
             {
@@ -6254,7 +6254,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wasserresistenz +",
                     Japanese = "水属性耐性向上"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(522, new StatusItem
             {
@@ -6266,7 +6266,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Windresistenz +",
                     Japanese = "風属性耐性向上"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(523, new StatusItem
             {
@@ -6278,7 +6278,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blitzresistenz +",
                     Japanese = "雷属性耐性向上"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(524, new StatusItem
             {
@@ -6290,7 +6290,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erdresistenz +",
                     Japanese = "土属性耐性向上"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(525, new StatusItem
             {
@@ -6302,7 +6302,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Eisresistenz +",
                     Japanese = "氷属性耐性向上"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(526, new StatusItem
             {
@@ -6314,7 +6314,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Frostklinge",
                     Japanese = "凍てつく剣"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(527, new StatusItem
             {
@@ -6326,7 +6326,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Froststab",
                     Japanese = "凍てつく杖"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(528, new StatusItem
             {
@@ -6338,7 +6338,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Frostbogen",
                     Japanese = "凍てつく弓"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(529, new StatusItem
             {
@@ -6350,7 +6350,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Unverwundbar",
                     Japanese = "無敵"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(530, new StatusItem
             {
@@ -6362,7 +6362,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Brandwunde",
                     Japanese = "火傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(531, new StatusItem
             {
@@ -6374,7 +6374,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wassersucht",
                     Japanese = "水毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(532, new StatusItem
             {
@@ -6386,7 +6386,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Beißender Wind",
                     Japanese = "裂傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(533, new StatusItem
             {
@@ -6398,7 +6398,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stromschlag",
                     Japanese = "感電"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(534, new StatusItem
             {
@@ -6410,7 +6410,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schlamm",
                     Japanese = "汚泥"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(535, new StatusItem
             {
@@ -6422,7 +6422,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erfrierung",
                     Japanese = "凍傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(536, new StatusItem
             {
@@ -6434,7 +6434,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sternstunde der Mitstreiter",
                     Japanese = "バディ強化：経験値アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(537, new StatusItem
             {
@@ -6446,7 +6446,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sternstunde der Mitstreiter II",
                     Japanese = "バディ強化：経験値アップII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(538, new StatusItem
             {
@@ -6458,7 +6458,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mitstreiter-Attackebonus",
                     Japanese = "バディ強化：攻撃力アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(539, new StatusItem
             {
@@ -6470,7 +6470,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mitstreiter-Attackebonus II",
                     Japanese = "バディ強化：攻撃力アップII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(540, new StatusItem
             {
@@ -6482,7 +6482,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mitstreiter-Heilmagiebonus",
                     Japanese = "バディ強化：魔法回復力アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(541, new StatusItem
             {
@@ -6494,7 +6494,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mitstreiter-Heilmagiebonus II",
                     Japanese = "バディ強化：魔法回復力アップII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(542, new StatusItem
             {
@@ -6506,7 +6506,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mitstreiter-LP-Bonus",
                     Japanese = "バディ強化：最大ＨＰアップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(543, new StatusItem
             {
@@ -6518,7 +6518,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mitstreiter-LP-Bonus II",
                     Japanese = "バディ強化：最大ＨＰアップII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(544, new StatusItem
             {
@@ -6530,7 +6530,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Provokativer Mitstreiter",
                     Japanese = "バディ強化：敵視アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(545, new StatusItem
             {
@@ -6542,7 +6542,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Provokativer Mitstreiter II",
                     Japanese = "バディ強化：敵視アップII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(546, new StatusItem
             {
@@ -6554,7 +6554,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schöner Salat",
                     Japanese = "攻防低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(547, new StatusItem
             {
@@ -6566,7 +6566,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Arbeitsstätte: Herstellung",
                     Japanese = "製作施設：部材工作"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(548, new StatusItem
             {
@@ -6578,7 +6578,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Arbeitsstätte: Veredelung",
                     Japanese = "製作施設：精密工作"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(549, new StatusItem
             {
@@ -6590,7 +6590,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Arbeitsstätte: Feinarbeit",
                     Japanese = "製作施設：難関工作"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(550, new StatusItem
             {
@@ -6602,7 +6602,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Arbeitsstätte: Herstellung II",
                     Japanese = "製作施設：部材工作II"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(551, new StatusItem
             {
@@ -6614,7 +6614,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Arbeitsstätte: Spezialisierung",
                     Japanese = "製作施設：専門工作"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(552, new StatusItem
             {
@@ -6626,7 +6626,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Arbeitsstätte: Spezialisierung II",
                     Japanese = "製作施設：専門工作II"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(553, new StatusItem
             {
@@ -6638,7 +6638,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Arbeitsstätte: Feinarbeit II",
                     Japanese = "製作施設：難関工作II"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(554, new StatusItem
             {
@@ -6650,7 +6650,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Arbeitsstätte: Veredelung II",
                     Japanese = "製作施設：精密工作II"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(555, new StatusItem
             {
@@ -6662,7 +6662,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Reflektorschild",
                     Japanese = "応射"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(556, new StatusItem
             {
@@ -6674,7 +6674,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Reflektorschild",
                     Japanese = "応射"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(557, new StatusItem
             {
@@ -6686,7 +6686,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Reflektorschild",
                     Japanese = "応射"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(558, new StatusItem
             {
@@ -6698,7 +6698,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Reflektorschild",
                     Japanese = "応射"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(559, new StatusItem
             {
@@ -6710,7 +6710,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gift",
                     Japanese = "毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(560, new StatusItem
             {
@@ -6722,7 +6722,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gift",
                     Japanese = "毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(561, new StatusItem
             {
@@ -6734,7 +6734,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gemach",
                     Japanese = "スロウ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(562, new StatusItem
             {
@@ -6746,7 +6746,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Markiert",
                     Japanese = "マーキング"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(563, new StatusItem
             {
@@ -6758,7 +6758,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte Verwundbarkeit",
                     Japanese = "被ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(564, new StatusItem
             {
@@ -6770,7 +6770,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fessel",
                     Japanese = "バインド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(565, new StatusItem
             {
@@ -6782,7 +6782,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verwandlung",
                     Japanese = "変身"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(566, new StatusItem
             {
@@ -6794,7 +6794,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schaden +",
                     Japanese = "ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(567, new StatusItem
             {
@@ -6806,7 +6806,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Treibsand",
                     Japanese = "流砂"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(568, new StatusItem
             {
@@ -6818,7 +6818,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Petri Heil",
                     Japanese = "漁師の直感"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(569, new StatusItem
             {
@@ -6830,7 +6830,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schleim",
                     Japanese = "粘液"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(570, new StatusItem
             {
@@ -6842,7 +6842,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "In der Schusslinie",
                     Japanese = "エイム"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(571, new StatusItem
             {
@@ -6854,7 +6854,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blind",
                     Japanese = "暗闇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(572, new StatusItem
             {
@@ -6866,7 +6866,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Hiebresistenz -",
                     Japanese = "斬属性耐性低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(573, new StatusItem
             {
@@ -6878,7 +6878,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schlagresistenz -",
                     Japanese = "打属性耐性低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(574, new StatusItem
             {
@@ -6890,7 +6890,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erratischer Puls",
                     Japanese = "エラティックブラスター"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(575, new StatusItem
             {
@@ -6902,7 +6902,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Statische Ladung",
                     Japanese = "帯電"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(576, new StatusItem
             {
@@ -6914,7 +6914,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blitzresistenz -",
                     Japanese = "雷属性耐性低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(577, new StatusItem
             {
@@ -6926,7 +6926,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Baro-Feld",
                     Japanese = "バロフィールド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(578, new StatusItem
             {
@@ -6938,7 +6938,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Hauptkopf",
                     Japanese = "メインヘッド耐性低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(579, new StatusItem
             {
@@ -6950,7 +6950,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kritische Attacke",
                     Japanese = "クリティカル攻撃"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(580, new StatusItem
             {
@@ -6962,7 +6962,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nanosporen α",
                     Japanese = "魔科学粒子α"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(581, new StatusItem
             {
@@ -6974,7 +6974,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nanosporen β",
                     Japanese = "魔科学粒子β"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(582, new StatusItem
             {
@@ -6986,7 +6986,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte Magie-Verwundbarkeit",
                     Japanese = "被魔法ダメージ軽減"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(583, new StatusItem
             {
@@ -6998,7 +6998,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte physische Verwundbarkeit",
                     Japanese = "被物理ダメージ軽減"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(584, new StatusItem
             {
@@ -7010,7 +7010,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Abwehrfeld",
                     Japanese = "防御フィールド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(585, new StatusItem
             {
@@ -7022,7 +7022,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Anti-Abwehrfeld",
                     Japanese = "対防御フィールド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(586, new StatusItem
             {
@@ -7034,7 +7034,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "LP-Bonus",
                     Japanese = "最大ＨＰアップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(587, new StatusItem
             {
@@ -7046,7 +7046,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gabelblitz",
                     Japanese = "フォークライトニング"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(588, new StatusItem
             {
@@ -7058,7 +7058,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Offenbarungs-Resistenz -",
                     Japanese = "リヴァレーション耐性低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(589, new StatusItem
             {
@@ -7070,7 +7070,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kette der Purgation",
                     Japanese = "誘爆"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(590, new StatusItem
             {
@@ -7082,7 +7082,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Arm der Purgation",
                     Japanese = "延焼"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(591, new StatusItem
             {
@@ -7094,7 +7094,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blaufeuer",
                     Japanese = "青碧の炎"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(592, new StatusItem
             {
@@ -7106,7 +7106,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Flammenwand",
                     Japanese = "炎渦"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(593, new StatusItem
             {
@@ -7118,7 +7118,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Feuervogel",
                     Japanese = "不死鳥"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(594, new StatusItem
             {
@@ -7130,7 +7130,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Seelensog",
                     Japanese = "吸魂"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(595, new StatusItem
             {
@@ -7142,7 +7142,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sog der Verzehrung",
                     Japanese = "霊泉禍"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(596, new StatusItem
             {
@@ -7154,7 +7154,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Drachenopfer",
                     Japanese = "龍圧"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(597, new StatusItem
             {
@@ -7166,7 +7166,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Neurolink",
                     Japanese = "拘束装置"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(598, new StatusItem
             {
@@ -7178,7 +7178,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "(仮)物理シールド(ストンスキン)",
                     Japanese = "(仮)物理シールド(ストンスキン)"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(599, new StatusItem
             {
@@ -7190,7 +7190,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "(仮)魔法シールド(ストンスキン)",
                     Japanese = "(仮)魔法シールド(ストンスキン)"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(600, new StatusItem
             {
@@ -7202,7 +7202,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte Magie-Verwundbarkeit",
                     Japanese = "被魔法ダメージ軽減"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(601, new StatusItem
             {
@@ -7214,7 +7214,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte physische Verwundbarkeit",
                     Japanese = "被物理ダメージ軽減"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(602, new StatusItem
             {
@@ -7226,7 +7226,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Azeymas Fluch",
                     Japanese = "アーゼマの呪い"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(603, new StatusItem
             {
@@ -7238,7 +7238,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Azeymas Jünger",
                     Japanese = "アーゼマの使徒"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(604, new StatusItem
             {
@@ -7250,7 +7250,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Glatteis",
                     Japanese = "氷床"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(605, new StatusItem
             {
@@ -7262,7 +7262,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erfrierung",
                     Japanese = "凍傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(606, new StatusItem
             {
@@ -7274,7 +7274,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Überfroren",
                     Japanese = "凍結"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(607, new StatusItem
             {
@@ -7286,7 +7286,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schneeball",
                     Japanese = "雪玉"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(608, new StatusItem
             {
@@ -7298,7 +7298,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Agonales Klammern",
                     Japanese = "道連れ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(609, new StatusItem
             {
@@ -7310,7 +7310,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Umschlungen",
                     Japanese = "捕獲"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(610, new StatusItem
             {
@@ -7322,7 +7322,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stein",
                     Japanese = "石化"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(611, new StatusItem
             {
@@ -7334,7 +7334,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schwippdischwapp",
                     Japanese = "気分上々"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(612, new StatusItem
             {
@@ -7346,7 +7346,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Vollgelaufen",
                     Japanese = "うるおい"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(613, new StatusItem
             {
@@ -7358,7 +7358,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Flusskobold",
                     Japanese = "カッパ"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(614, new StatusItem
             {
@@ -7370,7 +7370,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Versteckt",
                     Japanese = "かくれる"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(615, new StatusItem
             {
@@ -7382,7 +7382,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Versteckt",
                     Japanese = "かくれる"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(616, new StatusItem
             {
@@ -7394,7 +7394,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Unsichtbar",
                     Japanese = "インビジブル"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(617, new StatusItem
             {
@@ -7406,7 +7406,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erstrahlend",
                     Japanese = "帯光"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(618, new StatusItem
             {
@@ -7418,7 +7418,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erweiterter Radius",
                     Japanese = "アクション効果範囲拡大"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(619, new StatusItem
             {
@@ -7430,7 +7430,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Brandwunde",
                     Japanese = "火傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(620, new StatusItem
             {
@@ -7442,7 +7442,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Pacem",
                     Japanese = "ＷＳ不可"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(621, new StatusItem
             {
@@ -7454,7 +7454,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Feuerresistenz -",
                     Japanese = "火属性耐性低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(622, new StatusItem
             {
@@ -7466,7 +7466,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verrottende Lunge",
                     Japanese = "ロットガス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(623, new StatusItem
             {
@@ -7478,7 +7478,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Krankheit",
                     Japanese = "病気"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(624, new StatusItem
             {
@@ -7490,7 +7490,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fleischwunde",
                     Japanese = "切傷"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(625, new StatusItem
             {
@@ -7502,7 +7502,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Am Boden",
                     Japanese = "ノックダウン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(626, new StatusItem
             {
@@ -7514,7 +7514,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Außer Gefecht",
                     Japanese = "アクション実行不可"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(627, new StatusItem
             {
@@ -7526,7 +7526,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Regena",
                     Japanese = "リジェネ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(628, new StatusItem
             {
@@ -7538,7 +7538,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Resedra",
                     Japanese = "メディカラ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(629, new StatusItem
             {
@@ -7550,7 +7550,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fiebrig",
                     Japanese = "虚弱"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(630, new StatusItem
             {
@@ -7561,7 +7561,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gewicht",
                     Japanese = "ヘヴィ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(631, new StatusItem
             {
@@ -7572,7 +7572,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Beflügelt",
                     Japanese = "体力消耗無効"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(632, new StatusItem
             {
@@ -7583,7 +7583,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Raserei",
                     Japanese = "興奮"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(636, new StatusItem
             {
@@ -7595,7 +7595,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mal des Leids",
                     Japanese = "悲嘆の烙印"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(637, new StatusItem
             {
@@ -7607,7 +7607,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mal des Zorns",
                     Japanese = "憤怒の烙印"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(638, new StatusItem
             {
@@ -7619,7 +7619,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte Verwundbarkeit",
                     Japanese = "被ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(639, new StatusItem
             {
@@ -7631,7 +7631,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Pyretisch",
                     Japanese = "ヒート"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(640, new StatusItem
             {
@@ -7643,7 +7643,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Giftresistenz +",
                     Japanese = "毒耐性向上"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(641, new StatusItem
             {
@@ -7654,7 +7654,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Chocobo-Reflektion",
                     Japanese = "弱体効果反射"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(642, new StatusItem
             {
@@ -7666,7 +7666,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blutung",
                     Japanese = "ペイン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(643, new StatusItem
             {
@@ -7678,7 +7678,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blutung",
                     Japanese = "ペイン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(644, new StatusItem
             {
@@ -7690,7 +7690,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Huhn",
                     Japanese = "ニワトリ"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(645, new StatusItem
             {
@@ -7702,7 +7702,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verdauung",
                     Japanese = "消化中"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(646, new StatusItem
             {
@@ -7714,7 +7714,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verlassen",
                     Japanese = "孤独感"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(647, new StatusItem
             {
@@ -7726,7 +7726,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Atrophie",
                     Japanese = "フィジカルダウン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(648, new StatusItem
             {
@@ -7738,7 +7738,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Rehabilitation",
                     Japanese = "徐々にＨＰ回復"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(649, new StatusItem
             {
@@ -7750,7 +7750,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Attacke-Bonus",
                     Japanese = "物理攻撃力アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(650, new StatusItem
             {
@@ -7762,7 +7762,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Offensivmagie-Bonus",
                     Japanese = "魔法攻撃力アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(651, new StatusItem
             {
@@ -7774,7 +7774,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Hast",
                     Japanese = "ヘイスト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(652, new StatusItem
             {
@@ -7786,7 +7786,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "LP-/MP-Bonus",
                     Japanese = "最大ＨＰアップ＆最大ＭＰアップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(653, new StatusItem
             {
@@ -7798,7 +7798,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Euphorie",
                     Japanese = "戦意高揚"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(654, new StatusItem
             {
@@ -7810,7 +7810,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Raserei",
                     Japanese = "戦意高揚［強］"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(655, new StatusItem
             {
@@ -7822,7 +7822,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ägidensegen",
                     Japanese = "イージスブーン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(656, new StatusItem
             {
@@ -7834,7 +7834,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Unverwundbar",
                     Japanese = "無敵"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(657, new StatusItem
             {
@@ -7846,7 +7846,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte physische Verwundbarkeit",
                     Japanese = "被物理ダメージ増加"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(658, new StatusItem
             {
@@ -7858,7 +7858,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte Magie-Verwundbarkeit",
                     Japanese = "被魔法ダメージ増加"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(659, new StatusItem
             {
@@ -7870,7 +7870,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Pesthauch",
                     Japanese = "クラウダ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(660, new StatusItem
             {
@@ -7882,7 +7882,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Zeitdehnung",
                     Japanese = "エテンド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(661, new StatusItem
             {
@@ -7894,7 +7894,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Doppel",
                     Japanese = "ダブル"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(662, new StatusItem
             {
@@ -7906,7 +7906,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Tripel",
                     Japanese = "トリプル"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(664, new StatusItem
             {
@@ -7918,7 +7918,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Markiert",
                     Japanese = "マーキング"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(665, new StatusItem
             {
@@ -7930,7 +7930,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Unmarkierbar",
                     Japanese = "マーキング対象外"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(666, new StatusItem
             {
@@ -7942,7 +7942,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stromschlag",
                     Japanese = "感電"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(667, new StatusItem
             {
@@ -7954,7 +7954,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gefesselt",
                     Japanese = "拘束"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(668, new StatusItem
             {
@@ -7966,7 +7966,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gefesselt",
                     Japanese = "拘束"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(669, new StatusItem
             {
@@ -7978,7 +7978,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Geschwindigkeit +",
                     Japanese = "移動速度上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(670, new StatusItem
             {
@@ -7990,7 +7990,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Feuerresistenz -",
                     Japanese = "火属性耐性低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(671, new StatusItem
             {
@@ -8002,7 +8002,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Unverwundbar",
                     Japanese = "無敵"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(672, new StatusItem
             {
@@ -8014,7 +8014,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schaden +",
                     Japanese = "ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(676, new StatusItem
             {
@@ -8025,7 +8025,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verborgen",
                     Japanese = "潜伏"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(677, new StatusItem
             {
@@ -8036,7 +8036,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Starkes Gift",
                     Japanese = "劇毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(678, new StatusItem
             {
@@ -8047,7 +8047,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Rückenwind",
                     Japanese = "帯風"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(679, new StatusItem
             {
@@ -8058,7 +8058,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Windmauer",
                     Japanese = "風壁"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(680, new StatusItem
             {
@@ -8069,7 +8069,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gerichtete Parade",
                     Japanese = "受け流し"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(681, new StatusItem
             {
@@ -8080,7 +8080,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Offensivhaltung",
                     Japanese = "攻撃形態"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(682, new StatusItem
             {
@@ -8091,7 +8091,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Defensivhaltung",
                     Japanese = "防御形態"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(683, new StatusItem
             {
@@ -8102,7 +8102,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Segen der Erde",
                     Japanese = "土の加護"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(684, new StatusItem
             {
@@ -8113,7 +8113,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Segen des Feuers",
                     Japanese = "火の加護"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(685, new StatusItem
             {
@@ -8124,7 +8124,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Windresistenz -",
                     Japanese = "風属性耐性低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(686, new StatusItem
             {
@@ -8135,7 +8135,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gift",
                     Japanese = "毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(688, new StatusItem
             {
@@ -8146,7 +8146,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Hyperladung",
                     Japanese = "ハイパーチャージ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(689, new StatusItem
             {
@@ -8157,7 +8157,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Mana-Kondensator",
                     Japanese = "マナキャパシター"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(690, new StatusItem
             {
@@ -8168,7 +8168,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Muskelaktivator",
                     Japanese = "マッスルアクティベーター"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(695, new StatusItem
             {
@@ -8179,7 +8179,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte physische Verwundbarkeit",
                     Japanese = "被物理ダメージ増加"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(696, new StatusItem
             {
@@ -8190,7 +8190,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schaden -",
                     Japanese = "ダメージ低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(697, new StatusItem
             {
@@ -8201,7 +8201,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Heilmagie -",
                     Japanese = "回復魔法効果低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(701, new StatusItem
             {
@@ -8212,7 +8212,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte Kampffähigkeit",
                     Japanese = "戦闘能力低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(702, new StatusItem
             {
@@ -8223,7 +8223,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Zyklonische Separation",
                     Japanese = "ガス吸引"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(703, new StatusItem
             {
@@ -8234,7 +8234,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Siegel des Auges",
                     Japanese = "竜眼の封印"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(704, new StatusItem
             {
@@ -8245,7 +8245,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schutz des Auges",
                     Japanese = "竜眼の加護"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(705, new StatusItem
             {
@@ -8256,7 +8256,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verwandlung",
                     Japanese = "変身"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(714, new StatusItem
             {
@@ -8267,7 +8267,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte Verwundbarkeit",
                     Japanese = "被ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(715, new StatusItem
             {
@@ -8278,7 +8278,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schwankend",
                     Japanese = "よろめき"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(716, new StatusItem
             {
@@ -8289,7 +8289,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Turbulenzen",
                     Japanese = "乱気流"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(717, new StatusItem
             {
@@ -8300,7 +8300,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Herrschaft des Windes",
                     Japanese = "風の支配"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(718, new StatusItem
             {
@@ -8311,7 +8311,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Herrschaft des Wassers",
                     Japanese = "水の支配"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(719, new StatusItem
             {
@@ -8322,7 +8322,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "In Schusslinie",
                     Japanese = "直接攻撃"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(720, new StatusItem
             {
@@ -8333,7 +8333,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Hiebresistenz +",
                     Japanese = "斬属性耐性向上"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(721, new StatusItem
             {
@@ -8344,7 +8344,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Stichresistenz +",
                     Japanese = "突属性耐性向上"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(722, new StatusItem
             {
@@ -8355,7 +8355,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schlagresistenz +",
                     Japanese = "打属性耐性向上"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(723, new StatusItem
             {
@@ -8366,7 +8366,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ätherochemischer Sprengkörper",
                     Japanese = "魔爆弾"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(725, new StatusItem
             {
@@ -8377,7 +8377,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ausweiden",
                     Japanese = "ゴアブレード"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(726, new StatusItem
             {
@@ -8388,7 +8388,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Heiliger Quell",
                     Japanese = "ディヴァインヴェール"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(727, new StatusItem
             {
@@ -8399,7 +8399,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Heiliger Quell",
                     Japanese = "ディヴァインヴェール［バリア］"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(728, new StatusItem
             {
@@ -8410,7 +8410,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schiltron",
                     Japanese = "シェルトロン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(729, new StatusItem
             {
@@ -8421,7 +8421,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erlöser",
                     Japanese = "デストロイヤー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(730, new StatusItem
             {
@@ -8432,7 +8432,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Abkehr",
                     Japanese = "アバンドン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(731, new StatusItem
             {
@@ -8443,7 +8443,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Abkehr II",
                     Japanese = "アバンドンII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(732, new StatusItem
             {
@@ -8454,7 +8454,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Abkehr III",
                     Japanese = "アバンドンIII"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(733, new StatusItem
             {
@@ -8465,7 +8465,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Abkehr IV",
                     Japanese = "アバンドンIV"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(734, new StatusItem
             {
@@ -8476,7 +8476,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Abkehr V",
                     Japanese = "アバンドンV"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(735, new StatusItem
             {
@@ -8487,7 +8487,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ur-Instinkt",
                     Japanese = "原初の直感"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(736, new StatusItem
             {
@@ -8498,7 +8498,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Drachenherz",
                     Japanese = "蒼の竜血"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(737, new StatusItem
             {
@@ -8509,7 +8509,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ley-Linien",
                     Japanese = "黒魔紋"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(738, new StatusItem
             {
@@ -8520,7 +8520,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Ley-Linien",
                     Japanese = "黒魔紋：効果"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(739, new StatusItem
             {
@@ -8531,7 +8531,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Refugium",
                     Japanese = "アサイラム"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(740, new StatusItem
             {
@@ -8542,7 +8542,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schattenhaut",
                     Japanese = "シャドウスキン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(741, new StatusItem
             {
@@ -8553,7 +8553,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Geißel",
                     Japanese = "スカージ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(742, new StatusItem
             {
@@ -8564,7 +8564,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blutwaffe",
                     Japanese = "ブラッドウェポン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(743, new StatusItem
             {
@@ -8575,7 +8575,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Zähigkeit",
                     Japanese = "グリットスタンス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(744, new StatusItem
             {
@@ -8586,7 +8586,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Dunkler Tanz",
                     Japanese = "ダークダンス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(745, new StatusItem
             {
@@ -8597,7 +8597,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blutzoll",
                     Japanese = "ブラッドプライス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(746, new StatusItem
             {
@@ -8608,7 +8608,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Dunkler Geist",
                     Japanese = "ダークマインド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(747, new StatusItem
             {
@@ -8619,7 +8619,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schattenwand",
                     Japanese = "シャドウウォール"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(748, new StatusItem
             {
@@ -8630,7 +8630,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Delirium",
                     Japanese = "デリリアムブレード"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(749, new StatusItem
             {
@@ -8641,7 +8641,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Salzige Erde",
                     Japanese = "ソルトアース"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(750, new StatusItem
             {
@@ -8652,7 +8652,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Einziger Überlebender",
                     Japanese = "ソウルサバイバー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(751, new StatusItem
             {
@@ -8663,7 +8663,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Dunkle Seite",
                     Japanese = "暗黒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(752, new StatusItem
             {
@@ -8674,7 +8674,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Dunkle Künste",
                     Japanese = "ダークアーツ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(753, new StatusItem
             {
@@ -8685,7 +8685,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Reflexion",
                     Japanese = "リプライザル"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(754, new StatusItem
             {
@@ -8696,7 +8696,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sammelrate erhöht (Limit)",
                     Japanese = "採集獲得率アップ：限定"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(755, new StatusItem
             {
@@ -8707,7 +8707,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sammelglück erhöht (Limit)",
                     Japanese = "採集HQ獲得率アップ：限定"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(756, new StatusItem
             {
@@ -8718,7 +8718,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sammelgewinn erhöht (Limit)",
                     Japanese = "採集獲得数アップ：限定"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(757, new StatusItem
             {
@@ -8729,7 +8729,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kennerblick",
                     Japanese = "審美眼"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(758, new StatusItem
             {
@@ -8740,7 +8740,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Äußerste Sorgfalt",
                     Japanese = "コーション"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(759, new StatusItem
             {
@@ -8751,7 +8751,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Tiefes Durchatmen",
                     Japanese = "ディープブレス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(760, new StatusItem
             {
@@ -8762,7 +8762,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fünf Sinne",
                     Japanese = "シングルマインド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(761, new StatusItem
             {
@@ -8773,7 +8773,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Reißen",
                     Japanese = "引掛釣り"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(762, new StatusItem
             {
@@ -8784,7 +8784,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fischaugen",
                     Japanese = "フィッシュアイ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(763, new StatusItem
             {
@@ -8795,7 +8795,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Streuköder",
                     Japanese = "撒き餌"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(764, new StatusItem
             {
@@ -8806,7 +8806,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schlechter Anschlag",
                     Japanese = "フッキング成功率低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(765, new StatusItem
             {
@@ -8817,7 +8817,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fangen und Freilassen",
                     Japanese = "最小サイズ向上"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(769, new StatusItem
             {
@@ -8828,7 +8828,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Brennende Ketten",
                     Japanese = "炎の鎖"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(770, new StatusItem
             {
@@ -8839,7 +8839,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gefesselt",
                     Japanese = "拘束"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(783, new StatusItem
             {
@@ -8850,7 +8850,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Am Boden",
                     Japanese = "ノックダウン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(784, new StatusItem
             {
@@ -8861,7 +8861,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nichtsblut",
                     Japanese = "妖異の血"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(785, new StatusItem
             {
@@ -8872,7 +8872,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nym-Pest",
                     Japanese = "トンベリ病"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(786, new StatusItem
             {
@@ -8883,7 +8883,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Litanei der Schlacht",
                     Japanese = "バトルリタニー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(787, new StatusItem
             {
@@ -8894,7 +8894,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schattenwandler",
                     Japanese = "影渡［被］"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(788, new StatusItem
             {
@@ -8905,7 +8905,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schattenwandler",
                     Japanese = "影渡"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(789, new StatusItem
             {
@@ -8916,7 +8916,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Rauchschwaden",
                     Japanese = "煙玉"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(790, new StatusItem
             {
@@ -8927,7 +8927,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Dualität",
                     Japanese = "一双"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(791, new StatusItem
             {
@@ -8938,7 +8938,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Dissipation",
                     Japanese = "転化"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(792, new StatusItem
             {
@@ -8949,7 +8949,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Apotropaion",
                     Japanese = "応急戦術"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(793, new StatusItem
             {
@@ -8960,7 +8960,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erstes Schatten-Chakra",
                     Japanese = "闘気"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(794, new StatusItem
             {
@@ -8971,7 +8971,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Zweites Schatten-Chakra",
                     Japanese = "闘気II"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(795, new StatusItem
             {
@@ -8982,7 +8982,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Drittes Schatten-Chakra",
                     Japanese = "闘気III"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(796, new StatusItem
             {
@@ -8993,7 +8993,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Viertes Schatten-Chakra",
                     Japanese = "闘気IV"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(797, new StatusItem
             {
@@ -9004,7 +9004,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fünftes Schatten-Chakra",
                     Japanese = "闘気V"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(798, new StatusItem
             {
@@ -9015,7 +9015,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Windga",
                     Japanese = "エアロガ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(799, new StatusItem
             {
@@ -9026,7 +9026,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Feenwind",
                     Japanese = "フェイウィンド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(800, new StatusItem
             {
@@ -9037,7 +9037,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gefesselt",
                     Japanese = "拘束"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(801, new StatusItem
             {
@@ -9048,7 +9048,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gift",
                     Japanese = "毒"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(802, new StatusItem
             {
@@ -9059,7 +9059,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fang und Klaue",
                     Japanese = "竜牙竜爪効果アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(803, new StatusItem
             {
@@ -9070,7 +9070,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Fächerstoß",
                     Japanese = "竜尾大車輪効果アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(804, new StatusItem
             {
@@ -9081,7 +9081,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte Verwundbarkeit",
                     Japanese = "被ダメージ低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(805, new StatusItem
             {
@@ -9092,7 +9092,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sammlergespür",
                     Japanese = "蒐集品採集"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(806, new StatusItem
             {
@@ -9103,7 +9103,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte Verwundbarkeit",
                     Japanese = "被ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(807, new StatusItem
             {
@@ -9114,7 +9114,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Bahamut-Äther",
                     Japanese = "バハムートエーテル"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(808, new StatusItem
             {
@@ -9125,7 +9125,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Bahamut-Trance",
                     Japanese = "トランス・バハムート"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(809, new StatusItem
             {
@@ -9136,7 +9136,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schleim",
                     Japanese = "粘液"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(810, new StatusItem
             {
@@ -9147,7 +9147,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Totenerweckung",
                     Japanese = "リビングデッド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(811, new StatusItem
             {
@@ -9158,7 +9158,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erweckter",
                     Japanese = "ウォーキングデッド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(812, new StatusItem
             {
@@ -9169,7 +9169,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte Magie-Verwundbarkeit",
                     Japanese = "被魔法ダメージ軽減"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(813, new StatusItem
             {
@@ -9180,7 +9180,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Dunkler Tanz",
                     Japanese = "ダークダンス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(814, new StatusItem
             {
@@ -9191,7 +9191,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Entfesselung",
                     Japanese = "アンリーシュ効果アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(815, new StatusItem
             {
@@ -9202,7 +9202,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Harmonie",
                     Japanese = "ベネフィラ効果アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(816, new StatusItem
             {
@@ -9213,7 +9213,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Königsweg der Stärke",
                     Japanese = "ロイヤルロード：効果量増加"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(817, new StatusItem
             {
@@ -9224,7 +9224,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Königsweg der Umsicht",
                     Japanese = "ロイヤルロード：効果範囲化"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(818, new StatusItem
             {
@@ -9235,7 +9235,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Königsweg der Geduld",
                     Japanese = "ロイヤルロード：効果時間増加"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(826, new StatusItem
             {
@@ -9246,7 +9246,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gezogene Karte",
                     Japanese = "ドロー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(827, new StatusItem
             {
@@ -9257,7 +9257,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Königsweg",
                     Japanese = "ロイヤルロード"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(828, new StatusItem
             {
@@ -9268,7 +9268,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Abgelegte Karte",
                     Japanese = "キープ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(829, new StatusItem
             {
@@ -9279,7 +9279,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kraft der Waage",
                     Japanese = "アーゼマの均衡"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(830, new StatusItem
             {
@@ -9290,7 +9290,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kraft der Eiche",
                     Japanese = "世界樹の幹"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(831, new StatusItem
             {
@@ -9301,7 +9301,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kraft des Pfeils",
                     Japanese = "オシュオンの矢"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(832, new StatusItem
             {
@@ -9312,7 +9312,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kraft des Speers",
                     Japanese = "ハルオーネの槍"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(833, new StatusItem
             {
@@ -9323,7 +9323,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kraft des Krugs",
                     Japanese = "サリャクの水瓶"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(834, new StatusItem
             {
@@ -9334,7 +9334,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kraft des Turms",
                     Japanese = "ビエルゴの塔"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(835, new StatusItem
             {
@@ -9345,7 +9345,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Harmonischer Orbis",
                     Japanese = "アスペクト・ベネフィク"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(836, new StatusItem
             {
@@ -9356,7 +9356,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Aspektierter Helios",
                     Japanese = "アスペクト・ヘリオス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(837, new StatusItem
             {
@@ -9367,7 +9367,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nocturnales Feld",
                     Japanese = "ノクターナルフィールド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(838, new StatusItem
             {
@@ -9378,7 +9378,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Konjunktion",
                     Japanese = "コンバス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(839, new StatusItem
             {
@@ -9389,7 +9389,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Diurnal",
                     Japanese = "ダイアーナルセクト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(840, new StatusItem
             {
@@ -9400,7 +9400,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nocturnal",
                     Japanese = "ノクターナルセクト"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(841, new StatusItem
             {
@@ -9411,7 +9411,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Lichtgeschwindigkeit",
                     Japanese = "ライトスピード"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(842, new StatusItem
             {
@@ -9422,7 +9422,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Lichtäther",
                     Japanese = "ルミナスエーテル"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(843, new StatusItem
             {
@@ -9433,7 +9433,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Konjunktion II",
                     Japanese = "コンバラ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(844, new StatusItem
             {
@@ -9444,7 +9444,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Inakt",
                     Japanese = "ドンアク"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(845, new StatusItem
             {
@@ -9455,7 +9455,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Synastrie",
                     Japanese = "シナストリー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(846, new StatusItem
             {
@@ -9466,7 +9466,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Synastrie",
                     Japanese = "シナストリー［被］"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(847, new StatusItem
             {
@@ -9477,7 +9477,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Numinosum",
                     Japanese = "運命の輪"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(848, new StatusItem
             {
@@ -9488,7 +9488,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Numinosum",
                     Japanese = "運命の輪"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(849, new StatusItem
             {
@@ -9499,7 +9499,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Numinosum",
                     Japanese = "運命の輪：効果"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(850, new StatusItem
             {
@@ -9510,7 +9510,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sammelglück erhöht",
                     Japanese = "採集HQ獲得率アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(851, new StatusItem
             {
@@ -9521,7 +9521,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Justiert",
                     Japanese = "整備"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(852, new StatusItem
             {
@@ -9532,7 +9532,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Umwandlung",
                     Japanese = "プロモーション"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(853, new StatusItem
             {
@@ -9543,7 +9543,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schnellfeuer",
                     Japanese = "ラピッドファイア"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(854, new StatusItem
             {
@@ -9554,7 +9554,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Parabelschuss",
                     Japanese = "レッドショット"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(855, new StatusItem
             {
@@ -9565,7 +9565,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Explosivgeschoss",
                     Japanese = "ホットショット"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(856, new StatusItem
             {
@@ -9576,7 +9576,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verbessertes Flintenlaufgeschoss",
                     Japanese = "スラッグショット効果アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(857, new StatusItem
             {
@@ -9587,7 +9587,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verbesserter Sauberer Schuss",
                     Japanese = "クリーンショット効果アップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(858, new StatusItem
             {
@@ -9598,7 +9598,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gauß-Laufaufsatz",
                     Japanese = "ガウスバレル"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(859, new StatusItem
             {
@@ -9609,7 +9609,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Zerrüttet",
                     Japanese = "マインドブレイク"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(860, new StatusItem
             {
@@ -9620,7 +9620,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Zerlegt",
                     Japanese = "ウェポンブレイク"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(861, new StatusItem
             {
@@ -9631,7 +9631,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Wildfeuer",
                     Japanese = "ワイルドファイア"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(862, new StatusItem
             {
@@ -9642,7 +9642,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Spezialprojektil geladen",
                     Japanese = "特殊弾"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(863, new StatusItem
             {
@@ -9653,7 +9653,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erdbrecher",
                     Japanese = "原初の大地"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(864, new StatusItem
             {
@@ -9664,7 +9664,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Dunkle Macht",
                     Japanese = "ダークフォース"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(865, new StatusItem
             {
@@ -9675,7 +9675,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Menuett des Wanderers",
                     Japanese = "旅神のメヌエット"
                 },
-                CompanyAction = true,
+                CompanyAction = true
             });
             StatusEffects.TryAdd(866, new StatusItem
             {
@@ -9686,7 +9686,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Päan des Hüters",
                     Japanese = "時神のピーアン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(867, new StatusItem
             {
@@ -9697,7 +9697,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Augmentierung",
                     Japanese = "激成魔"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(868, new StatusItem
             {
@@ -9708,7 +9708,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Henochisch",
                     Japanese = "エノキアン"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(869, new StatusItem
             {
@@ -9719,7 +9719,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Greifbares Grauen",
                     Japanese = "カーナルチル"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(870, new StatusItem
             {
@@ -9730,7 +9730,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Abstoßung",
                     Japanese = "プッシュバック"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(871, new StatusItem
             {
@@ -9741,7 +9741,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Name des Winds",
                     Japanese = "アート・オブ・ウィンド"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(872, new StatusItem
             {
@@ -9752,7 +9752,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Name des Feuers",
                     Japanese = "アート・オブ・ファイア"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(873, new StatusItem
             {
@@ -9763,7 +9763,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Name des Eises",
                     Japanese = "アート・オブ・アイス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(874, new StatusItem
             {
@@ -9774,7 +9774,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Name der Erde",
                     Japanese = "アート・オブ・アース"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(875, new StatusItem
             {
@@ -9785,7 +9785,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Name des Blitzes",
                     Japanese = "アート・オブ・ライトニング"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(876, new StatusItem
             {
@@ -9796,7 +9796,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Name des Wassers",
                     Japanese = "アート・オブ・ウォーター"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(877, new StatusItem
             {
@@ -9807,7 +9807,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Namenlos",
                     Japanese = "アート不可"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(878, new StatusItem
             {
@@ -9818,7 +9818,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kunst des Kundigen",
                     Japanese = "堅実の心得"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(879, new StatusItem
             {
@@ -9829,7 +9829,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Seele des Handwerkers",
                     Japanese = "職人の魂"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(880, new StatusItem
             {
@@ -9840,7 +9840,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Trällern",
                     Japanese = "仕事唄"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(881, new StatusItem
             {
@@ -9851,7 +9851,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nald'thals Gunst (Westliches Hochland von Coerthas)",
                     Japanese = "ナルザルの護符：クルザス西部高地"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(882, new StatusItem
             {
@@ -9862,7 +9862,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nald'thals Gunst (Dravanisches Hinterland)",
                     Japanese = "ナルザルの護符：高地ドラヴァニア"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(883, new StatusItem
             {
@@ -9873,7 +9873,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nald'thals Gunst (Dravanisches Vorland)",
                     Japanese = "ナルザルの護符：低地ドラヴァニア"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(884, new StatusItem
             {
@@ -9884,7 +9884,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nald'thals Gunst (Wallende Nebel)",
                     Japanese = "ナルザルの護符：ドラヴァニア雲海"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(885, new StatusItem
             {
@@ -9895,7 +9895,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nald'thals Gunst (Abalathisches Wolkenmeer)",
                     Japanese = "ナルザルの護符：アバラシア雲海"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(886, new StatusItem
             {
@@ -9906,7 +9906,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nald'thals Gunst (Azys Lla)",
                     Japanese = "ナルザルの護符：魔大陸アジス・ラー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(887, new StatusItem
             {
@@ -9917,7 +9917,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nophicas Gunst (Westliches Hochland von Coerthas)",
                     Japanese = "ノフィカの護符：クルザス西部高地"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(888, new StatusItem
             {
@@ -9928,7 +9928,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nophicas Gunst (Dravanisches Hinterland)",
                     Japanese = "ノフィカの護符：高地ドラヴァニア"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(889, new StatusItem
             {
@@ -9939,7 +9939,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nophicas Gunst (Dravanisches Vorland)",
                     Japanese = "ノフィカの護符：低地ドラヴァニア"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(890, new StatusItem
             {
@@ -9950,7 +9950,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nophicas Gunst (Wallende Nebel)",
                     Japanese = "ノフィカの護符：ドラヴァニア雲海"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(891, new StatusItem
             {
@@ -9961,7 +9961,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nophicas Gunst (Abalathisches Wolkenmeer)",
                     Japanese = "ノフィカの護符：アバラシア雲海"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(892, new StatusItem
             {
@@ -9972,7 +9972,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Nophicas Gunst (Azys Lla)",
                     Japanese = "ノフィカの護符：魔大陸アジス・ラー"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(893, new StatusItem
             {
@@ -9983,7 +9983,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte Verwundbarkeit",
                     Japanese = "被ダメージ上昇"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(894, new StatusItem
             {
@@ -9994,7 +9994,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Windresistenz -",
                     Japanese = "風属性耐性低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(895, new StatusItem
             {
@@ -10005,7 +10005,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Unverwundbar",
                     Japanese = "無敵"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(896, new StatusItem
             {
@@ -10016,7 +10016,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Letzter Graben",
                     Japanese = "ラストディッチ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(897, new StatusItem
             {
@@ -10027,7 +10027,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "○削除予定",
                     Japanese = "○削除予定"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(898, new StatusItem
             {
@@ -10038,7 +10038,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blitzresistenz -",
                     Japanese = "雷属性耐性低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(899, new StatusItem
             {
@@ -10049,7 +10049,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte physische Verwundbarkeit",
                     Japanese = "被物理ダメージ軽減"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(900, new StatusItem
             {
@@ -10060,7 +10060,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Zeitriss",
                     Japanese = "時間停止"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(901, new StatusItem
             {
@@ -10071,7 +10071,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gefesselt",
                     Japanese = "拘束"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(902, new StatusItem
             {
@@ -10082,7 +10082,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "MGP-Bonus",
                     Japanese = "カンパニーアクション：MGPアップ"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(903, new StatusItem
             {
@@ -10093,7 +10093,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Sammlerstück-Synthese",
                     Japanese = "蒐集品製作"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(904, new StatusItem
             {
@@ -10104,7 +10104,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Markiert",
                     Japanese = "マーキング"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(905, new StatusItem
             {
@@ -10115,7 +10115,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Überfroren",
                     Japanese = "凍結"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(906, new StatusItem
             {
@@ -10126,7 +10126,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Dunkelheit",
                     Japanese = "暗黒の力"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(907, new StatusItem
             {
@@ -10137,7 +10137,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Kraft der Arkana",
                     Japanese = "アルカナの祝福"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(908, new StatusItem
             {
@@ -10148,7 +10148,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Bahamut-Äther",
                     Japanese = "バハムートエーテル"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(909, new StatusItem
             {
@@ -10159,7 +10159,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "MP-Regeneration",
                     Japanese = "MP持続回復"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(910, new StatusItem
             {
@@ -10170,7 +10170,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Todesurteil",
                     Japanese = "死の宣告"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(911, new StatusItem
             {
@@ -10181,7 +10181,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Glatteis",
                     Japanese = "氷床"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(913, new StatusItem
             {
@@ -10192,7 +10192,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Waage gezogen",
                     Japanese = "ドロー：アーゼマの均衡"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(914, new StatusItem
             {
@@ -10203,7 +10203,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Eiche gezogen",
                     Japanese = "ドロー：世界樹の幹"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(915, new StatusItem
             {
@@ -10214,7 +10214,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Pfeil gezogen",
                     Japanese = "ドロー：オシュオンの矢"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(916, new StatusItem
             {
@@ -10225,7 +10225,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Speer gezogen",
                     Japanese = "ドロー：ハルオーネの槍"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(917, new StatusItem
             {
@@ -10236,7 +10236,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Krug gezogen",
                     Japanese = "ドロー：サリャクの水瓶"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(918, new StatusItem
             {
@@ -10247,7 +10247,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Turm gezogen",
                     Japanese = "ドロー：ビエルゴの塔"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(919, new StatusItem
             {
@@ -10258,7 +10258,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Durchblick",
                     Japanese = "看破"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(920, new StatusItem
             {
@@ -10269,7 +10269,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Waage abgelegt",
                     Japanese = "キープ：アーゼマの均衡"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(921, new StatusItem
             {
@@ -10280,7 +10280,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Eiche abgelegt",
                     Japanese = "キープ：世界樹の幹"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(922, new StatusItem
             {
@@ -10291,7 +10291,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Pfeil abgelegt",
                     Japanese = "キープ：オシュオンの矢"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(923, new StatusItem
             {
@@ -10302,7 +10302,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Speer abgelegt",
                     Japanese = "キープ：ハルオーネの槍"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(924, new StatusItem
             {
@@ -10313,7 +10313,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Krug abgelegt",
                     Japanese = "キープ：サリャクの水瓶"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(925, new StatusItem
             {
@@ -10324,7 +10324,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Turm abgelegt",
                     Japanese = "キープ：ビエルゴの塔"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(926, new StatusItem
             {
@@ -10335,7 +10335,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schlaf",
                     Japanese = "睡眠"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(927, new StatusItem
             {
@@ -10346,7 +10346,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Blütenhonig",
                     Japanese = "花蜜"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(928, new StatusItem
             {
@@ -10357,7 +10357,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Dunkle Drohung",
                     Japanese = "ブラックメナス"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(929, new StatusItem
             {
@@ -10368,7 +10368,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Verringerte Verwundbarkeit",
                     Japanese = "被ダメージ低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(930, new StatusItem
             {
@@ -10379,7 +10379,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Gefesselt",
                     Japanese = "拘束"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(931, new StatusItem
             {
@@ -10390,7 +10390,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Schlagresistenz -",
                     Japanese = "打属性耐性低下"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
             StatusEffects.TryAdd(934, new StatusItem
             {
@@ -10401,7 +10401,7 @@ namespace FFXIVAPP.Common.Helpers
                     German = "Erhöhte physische Verwundbarkeit",
                     Japanese = "被物理ダメージ増加"
                 },
-                CompanyAction = false,
+                CompanyAction = false
             });
         }
     }

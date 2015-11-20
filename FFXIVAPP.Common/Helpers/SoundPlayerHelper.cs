@@ -47,57 +47,6 @@ namespace FFXIVAPP.Common.Helpers
 
         #endregion
 
-        #region SoundFiles Storage - Getters & Setters
-
-        private static readonly Dictionary<string, CachedSound> SoundFiles = new Dictionary<string, CachedSound>();
-
-        /// <summary>
-        /// </summary>
-        /// <param name="refreshCache"></param>
-        /// <returns></returns>
-        public static List<string> SoundFileKeys(bool refreshCache = true)
-        {
-            if (refreshCache)
-            {
-                CacheSoundFiles();
-            }
-            lock (SoundFiles)
-            {
-                if (SoundFiles.Any())
-                {
-                    return SoundFiles.Select(soundFile => soundFile.Key)
-                                     .OrderBy(key => key)
-                                     .ToList();
-                }
-                return new List<string>();
-            }
-        }
-
-        public static CachedSound TryGetSetSoundFile(string soundFile, int volume = 100)
-        {
-            var fileName = Regex.Replace(soundFile, @"[\\/]+", "\\", SharedRegEx.DefaultOptions);
-            lock (SoundFiles)
-            {
-                try
-                {
-                    CachedSound value;
-                    if (SoundFiles.TryGetValue(fileName, out value))
-                    {
-                        return value;
-                    }
-                    value = new CachedSound(Path.Combine(Constants.SoundsPath, fileName));
-                    SoundFiles.Add(fileName, value);
-                    return value;
-                }
-                catch (Exception ex)
-                {
-                    return null;
-                }
-            }
-        }
-
-        #endregion
-
         public static bool PlayCached(string soundFile, int volume = 100)
         {
             var success = true;
@@ -167,5 +116,56 @@ namespace FFXIVAPP.Common.Helpers
                 Logging.Log(Logger, "", ex);
             }
         }
+
+        #region SoundFiles Storage - Getters & Setters
+
+        private static readonly Dictionary<string, CachedSound> SoundFiles = new Dictionary<string, CachedSound>();
+
+        /// <summary>
+        /// </summary>
+        /// <param name="refreshCache"></param>
+        /// <returns></returns>
+        public static List<string> SoundFileKeys(bool refreshCache = true)
+        {
+            if (refreshCache)
+            {
+                CacheSoundFiles();
+            }
+            lock (SoundFiles)
+            {
+                if (SoundFiles.Any())
+                {
+                    return SoundFiles.Select(soundFile => soundFile.Key)
+                                     .OrderBy(key => key)
+                                     .ToList();
+                }
+                return new List<string>();
+            }
+        }
+
+        public static CachedSound TryGetSetSoundFile(string soundFile, int volume = 100)
+        {
+            var fileName = Regex.Replace(soundFile, @"[\\/]+", "\\", SharedRegEx.DefaultOptions);
+            lock (SoundFiles)
+            {
+                try
+                {
+                    CachedSound value;
+                    if (SoundFiles.TryGetValue(fileName, out value))
+                    {
+                        return value;
+                    }
+                    value = new CachedSound(Path.Combine(Constants.SoundsPath, fileName));
+                    SoundFiles.Add(fileName, value);
+                    return value;
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+        }
+
+        #endregion
     }
 }

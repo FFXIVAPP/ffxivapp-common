@@ -33,15 +33,15 @@ namespace FFXIVAPP.Common.Events
 {
     public class PopupResultEvent : EventArgs
     {
+        public PopupResultEvent(object newValue)
+        {
+            NewValue = newValue;
+        }
+
         #region Property Bindings
 
         public object NewValue { get; private set; }
 
         #endregion
-
-        public PopupResultEvent(object newValue)
-        {
-            NewValue = newValue;
-        }
     }
 }

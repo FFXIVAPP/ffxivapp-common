@@ -41,6 +41,107 @@ namespace FFXIVAPP.Common.Utilities
 {
     public class GridViewSort
     {
+        #region Column Header Click Event Handler
+
+        /// <summary>
+        /// </summary>
+        /// <param name="sender"> </param>
+        /// <param name="e"> </param>
+        private static void ColumnHeaderClick(object sender, RoutedEventArgs e)
+        {
+            var headerClicked = e.OriginalSource as GridViewColumnHeader;
+            if (headerClicked != null && headerClicked.Column != null)
+            {
+                var propertyName = GetPropertyName(headerClicked.Column);
+                if (!String.IsNullOrEmpty(propertyName))
+                {
+                    var listView = GetAncestor<ListView>(headerClicked);
+                    if (listView != null)
+                    {
+                        var command = GetCommand(listView);
+                        if (command != null)
+                        {
+                            if (command.CanExecute(propertyName))
+                            {
+                                command.Execute(propertyName);
+                            }
+                        }
+                        else if (GetAutoSort(listView))
+                        {
+                            ApplySort(listView.Items, propertyName, listView, headerClicked);
+                        }
+                    }
+                }
+            }
+        }
+
+        #endregion
+
+        #region SortGlyphAdorner Nested Class
+
+        /// <summary>
+        /// </summary>
+        private class SortGlyphAdorner : Adorner
+        {
+            private readonly GridViewColumnHeader _columnHeader;
+            private readonly ListSortDirection _direction;
+            private readonly ImageSource _sortGlyph;
+
+            public SortGlyphAdorner(GridViewColumnHeader columnHeader, ListSortDirection direction, ImageSource sortGlyph) : base(columnHeader)
+            {
+                _columnHeader = columnHeader;
+                _direction = direction;
+                _sortGlyph = sortGlyph;
+            }
+
+            private Geometry GetDefaultGlyph()
+            {
+                var x1 = _columnHeader.ActualWidth - 13;
+                var x2 = x1 + 10;
+                var x3 = x1 + 5;
+                var y1 = _columnHeader.ActualHeight / 2 - 3;
+                var y2 = y1 + 5;
+
+                if (_direction == ListSortDirection.Ascending)
+                {
+                    var tmp = y1;
+                    y1 = y2;
+                    y2 = tmp;
+                }
+
+                var pathSegmentCollection = new PathSegmentCollection();
+                pathSegmentCollection.Add(new LineSegment(new Point(x2, y1), true));
+                pathSegmentCollection.Add(new LineSegment(new Point(x3, y2), true));
+
+                var pathFigure = new PathFigure(new Point(x1, y1), pathSegmentCollection, true);
+
+                var pathFigureCollection = new PathFigureCollection();
+                pathFigureCollection.Add(pathFigure);
+
+                var pathGeometry = new PathGeometry(pathFigureCollection);
+                return pathGeometry;
+            }
+
+            protected override void OnRender(DrawingContext drawingContext)
+            {
+                base.OnRender(drawingContext);
+
+                if (_sortGlyph != null)
+                {
+                    var x = _columnHeader.ActualWidth - 13;
+                    var y = _columnHeader.ActualHeight / 2 - 5;
+                    var rect = new Rect(x, y, 10, 10);
+                    drawingContext.DrawImage(_sortGlyph, rect);
+                }
+                else
+                {
+                    drawingContext.DrawGeometry(Brushes.LightGray, new Pen(Brushes.Gray, 1.0), GetDefaultGlyph());
+                }
+            }
+        }
+
+        #endregion
+
         #region Public Attached Properties
 
         public static readonly DependencyProperty CommandProperty = DependencyProperty.RegisterAttached("Command", typeof (ICommand), typeof (GridViewSort), new UIPropertyMetadata(null, (source, e) =>
@@ -196,42 +297,6 @@ namespace FFXIVAPP.Common.Utilities
 
         #endregion
 
-        #region Column Header Click Event Handler
-
-        /// <summary>
-        /// </summary>
-        /// <param name="sender"> </param>
-        /// <param name="e"> </param>
-        private static void ColumnHeaderClick(object sender, RoutedEventArgs e)
-        {
-            var headerClicked = e.OriginalSource as GridViewColumnHeader;
-            if (headerClicked != null && headerClicked.Column != null)
-            {
-                var propertyName = GetPropertyName(headerClicked.Column);
-                if (!String.IsNullOrEmpty(propertyName))
-                {
-                    var listView = GetAncestor<ListView>(headerClicked);
-                    if (listView != null)
-                    {
-                        var command = GetCommand(listView);
-                        if (command != null)
-                        {
-                            if (command.CanExecute(propertyName))
-                            {
-                                command.Execute(propertyName);
-                            }
-                        }
-                        else if (GetAutoSort(listView))
-                        {
-                            ApplySort(listView.Items, propertyName, listView, headerClicked);
-                        }
-                    }
-                }
-            }
-        }
-
-        #endregion
-
         #region Helper Methods
 
         /// <summary>
@@ -314,71 +379,6 @@ namespace FFXIVAPP.Common.Utilities
                 foreach (var adorner in adorners.OfType<SortGlyphAdorner>())
                 {
                     adornerLayer.Remove(adorner);
-                }
-            }
-        }
-
-        #endregion
-
-        #region SortGlyphAdorner Nested Class
-
-        /// <summary>
-        /// </summary>
-        private class SortGlyphAdorner : Adorner
-        {
-            private readonly GridViewColumnHeader _columnHeader;
-            private readonly ListSortDirection _direction;
-            private readonly ImageSource _sortGlyph;
-
-            public SortGlyphAdorner(GridViewColumnHeader columnHeader, ListSortDirection direction, ImageSource sortGlyph) : base(columnHeader)
-            {
-                _columnHeader = columnHeader;
-                _direction = direction;
-                _sortGlyph = sortGlyph;
-            }
-
-            private Geometry GetDefaultGlyph()
-            {
-                var x1 = _columnHeader.ActualWidth - 13;
-                var x2 = x1 + 10;
-                var x3 = x1 + 5;
-                var y1 = _columnHeader.ActualHeight / 2 - 3;
-                var y2 = y1 + 5;
-
-                if (_direction == ListSortDirection.Ascending)
-                {
-                    var tmp = y1;
-                    y1 = y2;
-                    y2 = tmp;
-                }
-
-                var pathSegmentCollection = new PathSegmentCollection();
-                pathSegmentCollection.Add(new LineSegment(new Point(x2, y1), true));
-                pathSegmentCollection.Add(new LineSegment(new Point(x3, y2), true));
-
-                var pathFigure = new PathFigure(new Point(x1, y1), pathSegmentCollection, true);
-
-                var pathFigureCollection = new PathFigureCollection();
-                pathFigureCollection.Add(pathFigure);
-
-                var pathGeometry = new PathGeometry(pathFigureCollection);
-                return pathGeometry;
-            }
-
-            protected override void OnRender(DrawingContext drawingContext)
-            {
-                base.OnRender(drawingContext);
-
-                if (_sortGlyph != null)
-                {
-                    var x = _columnHeader.ActualWidth - 13;
-                    var y = _columnHeader.ActualHeight / 2 - 5;
-                    var rect = new Rect(x, y, 10, 10);
-                    drawingContext.DrawImage(_sortGlyph, rect);
-                }
-                else
-                {
-                    drawingContext.DrawGeometry(Brushes.LightGray, new Pen(Brushes.Gray, 1.0), GetDefaultGlyph());
                 }
             }
         }
