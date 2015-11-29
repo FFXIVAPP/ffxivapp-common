@@ -16,7 +16,7 @@
     <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
-    <PlatformTarget>x86</PlatformTarget>
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -94,32 +94,8 @@
     <Compile Include="Converters\VisibilityConverter.cs" />
     <Compile Include="Core\Constant\ActionInfo.cs" />
     <Compile Include="Core\Constant\Interfaces\IActionInfo.cs" />
-    <Compile Include="Core\Memory\Interfaces\IItemDesc.cs" />
-    <Compile Include="Core\Memory\ItemDesc.cs" />
-    <Compile Include="Core\Memory\ItemInfo.cs" />
-    <Compile Include="Core\Memory\Enums\Inventory.cs" />
-    <Compile Include="Core\Memory\Interfaces\IItemInfo.cs" />
-    <Compile Include="Core\Memory\Interfaces\IInventoryEntity.cs" />
-    <Compile Include="Core\Memory\PartyEntity.cs" />
-    <Compile Include="Core\Memory\Enums\Actor.cs" />
-    <Compile Include="Core\Memory\Interfaces\IPartyEntity.cs" />
-    <Compile Include="Core\Memory\Coordinate.cs" />
-    <Compile Include="Core\Memory\EnmityEntry.cs" />
-    <Compile Include="Core\Memory\Interfaces\IActorEntity.cs" />
-    <Compile Include="Core\Memory\Interfaces\ICoordinate.cs" />
-    <Compile Include="Core\Memory\ActorEntity.cs" />
-    <Compile Include="Core\Memory\Interfaces\IEnmityEntry.cs" />
-    <Compile Include="Core\Memory\Interfaces\IStatusEntry.cs" />
-    <Compile Include="Core\Memory\Interfaces\ITargetEntity.cs" />
-    <Compile Include="Core\Memory\ChatLogEntry.cs" />
-    <Compile Include="Core\Memory\Interfaces\IChatLogEntry.cs" />
     <Compile Include="Core\Constant\ConstantsEntity.cs" />
     <Compile Include="Core\Constant\Interfaces\IConstantsEntity.cs" />
-    <Compile Include="Core\Memory\Interfaces\IPlayerEntity.cs" />
-    <Compile Include="Core\Memory\PlayerEntity.cs" />
-    <Compile Include="Core\Memory\InventoryEntity.cs" />
-    <Compile Include="Core\Memory\StatusEntry.cs" />
-    <Compile Include="Core\Memory\TargetEntity.cs" />
     <Compile Include="Core\Network\Interfaces\INetworkPacket.cs" />
     <Compile Include="Core\Network\NetworkPacket.cs" />
     <Compile Include="Events\PopupResultEvent.cs" />
@@ -129,12 +105,7 @@
     <Compile Include="Helpers\FlowDocHelper.cs" />
     <Compile Include="Helpers\ResourceHelper.cs" />
     <Compile Include="Helpers\SoundPlayerHelper.cs" />
-    <Compile Include="Helpers\StatusEffectHelper.cs" />
-    <Compile Include="Helpers\StatusItem.cs" />
-    <Compile Include="Helpers\StatusLocalization.cs" />
-    <Compile Include="Helpers\StringHelper.cs" />
     <Compile Include="Helpers\ThemeHelper.cs" />
-    <Compile Include="Helpers\ZoneHelper.cs" />
     <Compile Include="Models\GoogleTranslateResult.cs" />
     <Compile Include="Models\LogItem.cs" />
     <Compile Include="Models\PopupContent.cs" />
