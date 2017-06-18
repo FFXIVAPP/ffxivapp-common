@@ -1,6 +1,6 @@
 ﻿// FFXIVAPP.Common ~ GridViewSort.cs
 // 
-// Copyright © 2007 - 2016 Ryan Wilson - All Rights Reserved
+// Copyright © 2007 - 2017 Ryan Wilson - All Rights Reserved
 // 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -132,7 +132,7 @@ namespace FFXIVAPP.Common.Utilities
 
         #region Public Attached Properties
 
-        public static readonly DependencyProperty CommandProperty = DependencyProperty.RegisterAttached("Command", typeof (ICommand), typeof (GridViewSort), new UIPropertyMetadata(null, (source, e) =>
+        public static readonly DependencyProperty CommandProperty = DependencyProperty.RegisterAttached("Command", typeof(ICommand), typeof(GridViewSort), new UIPropertyMetadata(null, (source, e) =>
         {
             var listView = source as ItemsControl;
             if (listView != null)
@@ -151,7 +151,7 @@ namespace FFXIVAPP.Common.Utilities
             }
         }));
 
-        public static readonly DependencyProperty AutoSortProperty = DependencyProperty.RegisterAttached("AutoSort", typeof (bool), typeof (GridViewSort), new UIPropertyMetadata(false, (source, e) =>
+        public static readonly DependencyProperty AutoSortProperty = DependencyProperty.RegisterAttached("AutoSort", typeof(bool), typeof(GridViewSort), new UIPropertyMetadata(false, (source, e) =>
         {
             var listView = source as ListView;
             if (listView != null)
@@ -172,10 +172,10 @@ namespace FFXIVAPP.Common.Utilities
             }
         }));
 
-        public static readonly DependencyProperty PropertyNameProperty = DependencyProperty.RegisterAttached("PropertyName", typeof (string), typeof (GridViewSort), new UIPropertyMetadata(null));
-        public static readonly DependencyProperty ShowSortGlyphProperty = DependencyProperty.RegisterAttached("ShowSortGlyph", typeof (bool), typeof (GridViewSort), new UIPropertyMetadata(true));
-        public static readonly DependencyProperty SortGlyphAscendingProperty = DependencyProperty.RegisterAttached("SortGlyphAscending", typeof (ImageSource), typeof (GridViewSort), new UIPropertyMetadata(null));
-        public static readonly DependencyProperty SortGlyphDescendingProperty = DependencyProperty.RegisterAttached("SortGlyphDescending", typeof (ImageSource), typeof (GridViewSort), new UIPropertyMetadata(null));
+        public static readonly DependencyProperty PropertyNameProperty = DependencyProperty.RegisterAttached("PropertyName", typeof(string), typeof(GridViewSort), new UIPropertyMetadata(null));
+        public static readonly DependencyProperty ShowSortGlyphProperty = DependencyProperty.RegisterAttached("ShowSortGlyph", typeof(bool), typeof(GridViewSort), new UIPropertyMetadata(true));
+        public static readonly DependencyProperty SortGlyphAscendingProperty = DependencyProperty.RegisterAttached("SortGlyphAscending", typeof(ImageSource), typeof(GridViewSort), new UIPropertyMetadata(null));
+        public static readonly DependencyProperty SortGlyphDescendingProperty = DependencyProperty.RegisterAttached("SortGlyphDescending", typeof(ImageSource), typeof(GridViewSort), new UIPropertyMetadata(null));
 
         /// <summary>
         /// </summary>
@@ -261,7 +261,7 @@ namespace FFXIVAPP.Common.Utilities
 
         #region Private Attached Properties
 
-        private static readonly DependencyProperty SortedColumnHeaderProperty = DependencyProperty.RegisterAttached("SortedColumnHeader", typeof (GridViewColumnHeader), typeof (GridViewSort), new UIPropertyMetadata(null));
+        private static readonly DependencyProperty SortedColumnHeaderProperty = DependencyProperty.RegisterAttached("SortedColumnHeader", typeof(GridViewColumnHeader), typeof(GridViewSort), new UIPropertyMetadata(null));
 
         /// <summary>
         /// </summary>

@@ -1,6 +1,6 @@
 ﻿// FFXIVAPP.Common ~ AssemblyHelper.cs
 // 
-// Copyright © 2007 - 2016 Ryan Wilson - All Rights Reserved
+// Copyright © 2007 - 2017 Ryan Wilson - All Rights Reserved
 // 
 // This program is free software: you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -33,7 +33,7 @@ namespace FFXIVAPP.Common.Helpers
             get
             {
                 var att = Assembly.GetCallingAssembly()
-                                  .GetCustomAttributes(typeof (AssemblyTitleAttribute), false);
+                                  .GetCustomAttributes(typeof(AssemblyTitleAttribute), false);
                 return att.Length == 0 ? "" : ((AssemblyTitleAttribute) att[0]).Title;
             }
         }
@@ -43,7 +43,7 @@ namespace FFXIVAPP.Common.Helpers
             get
             {
                 var att = Assembly.GetCallingAssembly()
-                                  .GetCustomAttributes(typeof (AssemblyDescriptionAttribute), false);
+                                  .GetCustomAttributes(typeof(AssemblyDescriptionAttribute), false);
                 return att.Length == 0 ? "" : ((AssemblyDescriptionAttribute) att[0]).Description;
             }
         }
@@ -53,7 +53,7 @@ namespace FFXIVAPP.Common.Helpers
             get
             {
                 var att = Assembly.GetCallingAssembly()
-                                  .GetCustomAttributes(typeof (AssemblyCopyrightAttribute), false);
+                                  .GetCustomAttributes(typeof(AssemblyCopyrightAttribute), false);
                 return att.Length == 0 ? "" : ((AssemblyCopyrightAttribute) att[0]).Copyright;
             }
         }
@@ -73,7 +73,7 @@ namespace FFXIVAPP.Common.Helpers
             get
             {
                 var att = Assembly.GetCallingAssembly()
-                                  .GetCustomAttributes(typeof (GuidAttribute), true);
+                                  .GetCustomAttributes(typeof(GuidAttribute), true);
                 return att.Length == 0 ? "" : ((GuidAttribute) att[0]).Value;
             }
         }
