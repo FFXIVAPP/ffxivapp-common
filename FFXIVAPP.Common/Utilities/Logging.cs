@@ -45,7 +45,7 @@ namespace FFXIVAPP.Common.Utilities
                     {
                         return;
                     }
-                    logger.LogException(logItem.LogLevel, logItem.Exception.Message, logItem.Exception);
+                    logger.Log(logItem.LogLevel, logItem.Exception, logItem.Exception.Message);
                     break;
                 case false:
                     if (logItem.Exception == null)
@@ -54,7 +54,7 @@ namespace FFXIVAPP.Common.Utilities
                     }
                     else
                     {
-                        logger.LogException(logItem.LogLevel, logItem.Message, logItem.Exception);
+                        logger.Log(logItem.LogLevel, logItem.Exception, logItem.Exception.Message);
                     }
                     break;
             }
