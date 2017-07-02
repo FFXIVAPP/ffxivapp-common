@@ -17,7 +17,8 @@
 
 using System;
 using System.Collections;
-using System.Net;
+using System.Net.Http;
+using System.Text;
 using System.Web;
 using FFXIVAPP.Common.Models;
 using HtmlAgilityPack;
@@ -33,9 +34,9 @@ namespace FFXIVAPP.Common.Utilities
 
         #endregion
 
-        private static string _baseUrl = "http://translate.google.ca/translate_t?hl=&ie=UTF-8&text=";
-        private static HttpWebRequest _httpWReq;
-        private static HttpWebResponse _httpWResp;
+        private static string _baseUrl = "http://translate.google.com/translate_t?hl=&ie=UTF-8&text={0}&sl={1}&tl={2}";
+
+        private static HttpClient HTTPClient = new HttpClient();
 
         #region Property Backings
 
@@ -59,46 +60,44 @@ namespace FFXIVAPP.Common.Utilities
         /// <returns> </returns>
         public static GoogleTranslateResult Translate(string textToTranslate, string inLang, string outLang, bool jpOnly)
         {
+            Logging.Log(Logger, "Calling Google");
+
             var result = new GoogleTranslateResult
             {
                 Original = textToTranslate
             };
             try
             {
-                if (jpOnly)
+                var url = string.Format(_baseUrl, textToTranslate, jpOnly ? inLang : "auto", outLang);
+
+                Logging.Log(Logger, $"Resolved URL: {url}");
+
+                HTTPClient.DefaultRequestHeaders.TryAddWithoutValidation("User-Agent", "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/5.0.375.70 Safari/533.4");
+
+                using (var response = HTTPClient.GetStreamAsync(new Uri(url)))
                 {
-                    var url = String.Format("{0}{1}&sl={2}&tl={3}#", _baseUrl, textToTranslate, inLang, outLang);
-                    _httpWReq = (HttpWebRequest) WebRequest.Create(url);
-                }
-                else
-                {
-                    var url = String.Format("{0}{1}&sl=auto&tl={2}#auto|{2}|{1}", _baseUrl, textToTranslate, outLang);
-                    _httpWReq = (HttpWebRequest) WebRequest.Create(url);
-                }
-                _httpWReq.UserAgent = "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/5.0.375.70 Safari/533.4";
-                _httpWResp = (HttpWebResponse) _httpWReq.GetResponse();
-                var stream = _httpWResp.GetResponseStream();
-                if (_httpWResp.StatusCode != HttpStatusCode.OK || stream == null)
-                {
-                }
-                else
-                {
+                    var stream = response.Result;
+
                     var doc = new HtmlDocument();
-                    doc.Load(stream, true);
+                    doc.Load(stream, Encoding.UTF8);
+
                     var translated = doc.DocumentNode.SelectSingleNode("//span[@id='result_box']");
                     if (translated != null)
                     {
+                        Logging.Log(Logger, $"Translated: {translated.InnerText}");
                         result.Translated = HttpUtility.HtmlDecode(translated.InnerText);
                     }
                     var romanization = doc.DocumentNode.SelectSingleNode("//div[@id='res-translit']");
                     if (romanization != null)
                     {
+                        Logging.Log(Logger, $"Romanized: {romanization.InnerText}");
                         result.Romanization = HttpUtility.HtmlDecode(romanization.InnerText);
                     }
                 }
             }
             catch (Exception ex)
             {
+                Logging.Log(Logger, ex.Message, ex);
             }
             return result;
         }

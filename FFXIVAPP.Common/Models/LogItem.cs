@@ -27,6 +27,10 @@ namespace FFXIVAPP.Common.Models
             LogLevel = logLevel ?? LogLevel.Trace;
             Message = message;
             Exception = exception;
+            if (Exception != null && logLevel == null)
+            {
+                LogLevel = LogLevel.Error;
+            }
         }
 
         public LogLevel LogLevel { get; set; }
