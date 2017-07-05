@@ -40,7 +40,7 @@ namespace FFXIVAPP.Common.Converters
             }
             catch
             {
-                return (Regex.IsMatch(value.ToString(), "([Tt]rue|1)")) ? Visibility.Visible : Visibility.Collapsed;
+                return Regex.IsMatch(value.ToString(), "([Tt]rue|1)") ? Visibility.Visible : Visibility.Collapsed;
             }
         }
 
@@ -53,7 +53,7 @@ namespace FFXIVAPP.Common.Converters
         /// <returns> </returns>
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return ((Visibility) value == Visibility.Visible);
+            return (Visibility) value == Visibility.Visible;
         }
     }
 }

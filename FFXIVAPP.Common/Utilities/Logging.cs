@@ -23,9 +23,9 @@ namespace FFXIVAPP.Common.Utilities
 {
     public static class Logging
     {
-        public static void Log(Logger logger, string message = "", Exception exception = null)
+        public static void Log(Logger logger, string message, Exception exception = null, bool levelIsError = false)
         {
-            Log(logger, new LogItem(message, exception));
+            Log(logger, new LogItem(message, exception, levelIsError));
         }
 
         /// <summary>
@@ -38,25 +38,13 @@ namespace FFXIVAPP.Common.Utilities
             {
                 return;
             }
-            switch (String.IsNullOrWhiteSpace(logItem.Message))
+            if (logItem.Exception == null)
             {
-                case true:
-                    if (logItem.Exception == null)
-                    {
-                        return;
-                    }
-                    logger.Log(logItem.LogLevel, logItem.Exception, logItem.Exception.Message);
-                    break;
-                case false:
-                    if (logItem.Exception == null)
-                    {
-                        logger.Log(logItem.LogLevel, logItem.Message);
-                    }
-                    else
-                    {
-                        logger.Log(logItem.LogLevel, logItem.Exception, logItem.Exception.Message);
-                    }
-                    break;
+                logger.Log(logItem.LogLevel, logItem.Message);
+            }
+            else
+            {
+                logger.Log(logItem.LogLevel, logItem.Exception, logItem.Message);
             }
         }
     }

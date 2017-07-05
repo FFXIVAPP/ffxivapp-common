@@ -32,7 +32,7 @@ namespace FFXIVAPP.Common.Converters
             }
             catch
             {
-                return (Regex.IsMatch(value.ToString(), "([Tt]rue|1)")) ? Double.NaN : 0;
+                return Regex.IsMatch(value.ToString(), "([Tt]rue|1)") ? Double.NaN : 0;
             }
         }
 

@@ -34,7 +34,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 var att = Assembly.GetCallingAssembly()
                                   .GetCustomAttributes(typeof(AssemblyTitleAttribute), false);
-                return att.Length == 0 ? "" : ((AssemblyTitleAttribute) att[0]).Title;
+                return att.Length == 0 ? string.Empty : ((AssemblyTitleAttribute) att[0]).Title;
             }
         }
 
@@ -44,7 +44,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 var att = Assembly.GetCallingAssembly()
                                   .GetCustomAttributes(typeof(AssemblyDescriptionAttribute), false);
-                return att.Length == 0 ? "" : ((AssemblyDescriptionAttribute) att[0]).Description;
+                return att.Length == 0 ? string.Empty : ((AssemblyDescriptionAttribute) att[0]).Description;
             }
         }
 
@@ -54,7 +54,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 var att = Assembly.GetCallingAssembly()
                                   .GetCustomAttributes(typeof(AssemblyCopyrightAttribute), false);
-                return att.Length == 0 ? "" : ((AssemblyCopyrightAttribute) att[0]).Copyright;
+                return att.Length == 0 ? string.Empty : ((AssemblyCopyrightAttribute) att[0]).Copyright;
             }
         }
 
@@ -74,7 +74,7 @@ namespace FFXIVAPP.Common.Helpers
             {
                 var att = Assembly.GetCallingAssembly()
                                   .GetCustomAttributes(typeof(GuidAttribute), true);
-                return att.Length == 0 ? "" : ((GuidAttribute) att[0]).Value;
+                return att.Length == 0 ? string.Empty : ((GuidAttribute) att[0]).Value;
             }
         }
 
@@ -84,7 +84,7 @@ namespace FFXIVAPP.Common.Helpers
             var message = ue.GetBytes(prefix + salt + suffix);
             var hashString = new SHA512Managed();
             var hashValue = hashString.ComputeHash(message);
-            return hashValue.Aggregate("", (current, x) => current + String.Format("{0:x2}", x));
+            return hashValue.Aggregate("", (current, x) => current + $"{x:x2}");
         }
 
         #endregion

@@ -22,18 +22,32 @@ namespace FFXIVAPP.Common.Models
 {
     public class LogItem
     {
-        public LogItem(string message = "", Exception exception = null, LogLevel logLevel = null)
+        public LogItem(string message)
         {
-            LogLevel = logLevel ?? LogLevel.Trace;
-            Message = message;
+            Message = string.IsNullOrWhiteSpace(message) ? "LogItem: Called Without Message" : message;
+        }
+
+        public LogItem(Exception exception, bool levelIsError = false)
+        {
+            Message = exception?.Message ?? "LogItem: Called Without Exception";
             Exception = exception;
-            if (Exception != null && logLevel == null)
+            if (levelIsError)
             {
                 LogLevel = LogLevel.Error;
             }
         }
 
-        public LogLevel LogLevel { get; set; }
+        public LogItem(string message, Exception exception, bool levelIsError = false)
+        {
+            Message = string.IsNullOrWhiteSpace(message) ? exception?.Message ?? "LogItem: Called Without Message" : message;
+            Exception = exception;
+            if (Exception != null && levelIsError)
+            {
+                LogLevel = LogLevel.Error;
+            }
+        }
+
+        public LogLevel LogLevel { get; set; } = LogLevel.Trace;
         public Exception Exception { get; set; }
         public string Message { get; set; }
     }

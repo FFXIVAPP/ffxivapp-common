@@ -202,7 +202,7 @@ namespace FFXIVAPP.Common.ViewModelBase
         {
             if (executeMethod == null)
             {
-                throw new ArgumentNullException("executeMethod");
+                throw new ArgumentNullException(nameof(executeMethod));
             }
             _executeMethod = executeMethod;
             _canExecuteMethod = canExecuteMethod;
@@ -303,7 +303,7 @@ namespace FFXIVAPP.Common.ViewModelBase
         {
             if (parameter == null && typeof(T).IsValueType)
             {
-                return (_canExecuteMethod == null);
+                return _canExecuteMethod == null;
             }
             return CanExecute((T) parameter);
         }

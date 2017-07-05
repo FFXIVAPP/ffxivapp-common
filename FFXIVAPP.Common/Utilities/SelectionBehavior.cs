@@ -47,11 +47,11 @@ namespace FFXIVAPP.Common.Utilities
             {
                 throw new InvalidOperationException("This behavior can be attached to Selector item only.");
             }
-            if ((e.NewValue != null) && (e.OldValue == null))
+            if (e.NewValue != null && e.OldValue == null)
             {
                 element.SelectionChanged += SelectionChanged;
             }
-            else if ((e.NewValue == null) && (e.OldValue != null))
+            else if (e.NewValue == null && e.OldValue != null)
             {
                 element.SelectionChanged -= SelectionChanged;
             }

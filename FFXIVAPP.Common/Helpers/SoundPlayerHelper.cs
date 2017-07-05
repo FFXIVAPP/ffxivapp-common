@@ -21,6 +21,7 @@ using System.IO;
 using System.Linq;
 using System.Text.RegularExpressions;
 using FFXIVAPP.Common.Audio;
+using FFXIVAPP.Common.Models;
 using FFXIVAPP.Common.RegularExpressions;
 using FFXIVAPP.Common.Utilities;
 using NLog;
@@ -50,7 +51,7 @@ namespace FFXIVAPP.Common.Helpers
             }
             catch (Exception ex)
             {
-                Logging.Log(Logger, "", ex);
+                Logging.Log(Logger, new LogItem(ex, true));
                 success = false;
             }
             return success;
@@ -86,8 +87,8 @@ namespace FFXIVAPP.Common.Helpers
                         {
                             continue;
                         }
-                        var baseKey = soundFile.DirectoryName.Replace(Constants.SoundsPath, "");
-                        var key = String.IsNullOrWhiteSpace(baseKey) ? soundFile.Name : String.Format("{0}\\{1}", baseKey.Substring(1), soundFile.Name);
+                        var baseKey = soundFile.DirectoryName.Replace(Constants.SoundsPath, string.Empty);
+                        var key = String.IsNullOrWhiteSpace(baseKey) ? soundFile.Name : $"{baseKey.Substring(1)}\\{soundFile.Name}";
                         if (SoundFileKeys(false)
                             .Contains(key))
                         {
@@ -101,7 +102,7 @@ namespace FFXIVAPP.Common.Helpers
             }
             catch (Exception ex)
             {
-                Logging.Log(Logger, "", ex);
+                Logging.Log(Logger, new LogItem(ex, true));
             }
         }
 
@@ -147,7 +148,7 @@ namespace FFXIVAPP.Common.Helpers
                     SoundFiles.Add(fileName, value);
                     return value;
                 }
-                catch (Exception ex)
+                catch (Exception)
                 {
                     return null;
                 }

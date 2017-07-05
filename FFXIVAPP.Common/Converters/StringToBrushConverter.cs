@@ -19,6 +19,8 @@ using System;
 using System.Globalization;
 using System.Windows.Data;
 using System.Windows.Media;
+using FFXIVAPP.Common.Models;
+using FFXIVAPP.Common.Utilities;
 using NLog;
 
 namespace FFXIVAPP.Common.Converters
@@ -41,8 +43,8 @@ namespace FFXIVAPP.Common.Converters
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             var brushConverter = new BrushConverter();
-            value = (value.ToString()
-                          .StartsWith("#")) ? value : "#" + value;
+            value = value.ToString()
+                         .StartsWith("#") ? value : "#" + value;
             var result = (Brush) brushConverter.ConvertFrom("#FFFFFFFF");
             try
             {
@@ -50,6 +52,7 @@ namespace FFXIVAPP.Common.Converters
             }
             catch (Exception ex)
             {
+                Logging.Log(Logger, new LogItem(ex, true));
             }
             return result;
         }
@@ -73,8 +76,8 @@ namespace FFXIVAPP.Common.Converters
         public object Convert(object value)
         {
             var brushConverter = new BrushConverter();
-            value = (value.ToString()
-                          .Substring(0, 1) == "#") ? value : "#" + value;
+            value = value.ToString()
+                         .Substring(0, 1) == "#" ? value : "#" + value;
             var result = (Brush) brushConverter.ConvertFrom("#FFFFFFFF");
             try
             {
@@ -82,6 +85,7 @@ namespace FFXIVAPP.Common.Converters
             }
             catch (Exception ex)
             {
+                Logging.Log(Logger, new LogItem(ex, true));
             }
             return result;
         }

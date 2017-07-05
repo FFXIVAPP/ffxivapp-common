@@ -39,7 +39,7 @@ namespace FFXIVAPP.Common.RegularExpressions
             {
                 result = Regex.IsMatch("", pattern);
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 return result;
             }

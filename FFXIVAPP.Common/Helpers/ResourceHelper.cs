@@ -61,7 +61,7 @@ namespace FFXIVAPP.Common.Helpers
         public static XDocument XDocResource(string path)
         {
             var resource = StreamResource(path);
-            return (resource == null) ? null : new XDocument(XElement.Load(resource.Stream));
+            return resource == null ? null : new XDocument(XElement.Load(resource.Stream));
         }
     }
 }

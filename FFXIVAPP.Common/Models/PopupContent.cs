@@ -27,7 +27,7 @@ namespace FFXIVAPP.Common.Models
 
         public string PluginName
         {
-            get { return (String.IsNullOrWhiteSpace(_pluginName) ? "UnknownPlugin" : _pluginName); }
+            get { return String.IsNullOrWhiteSpace(_pluginName) ? "UnknownPlugin" : _pluginName; }
             set { _pluginName = value; }
         }
 
@@ -36,7 +36,7 @@ namespace FFXIVAPP.Common.Models
             get
             {
                 const string title = "Undefined!";
-                return (String.IsNullOrWhiteSpace(_title) ? title : _title);
+                return String.IsNullOrWhiteSpace(_title) ? title : _title;
             }
             set { _title = value; }
         }
@@ -46,7 +46,7 @@ namespace FFXIVAPP.Common.Models
             get
             {
                 const string message = "This message was not set by the developer.";
-                return (String.IsNullOrWhiteSpace(_message) ? message : _message);
+                return String.IsNullOrWhiteSpace(_message) ? message : _message;
             }
             set { _message = value; }
         }

@@ -19,6 +19,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows;
+using FFXIVAPP.Common.Models;
+using FFXIVAPP.Common.Utilities;
 using MahApps.Metro;
 using MahApps.Metro.Controls;
 using NLog;
@@ -53,6 +55,7 @@ namespace FFXIVAPP.Common.Helpers
             }
             catch (Exception ex)
             {
+                Logging.Log(Logger, new LogItem(ex, true));
             }
         }
 
@@ -65,7 +68,7 @@ namespace FFXIVAPP.Common.Helpers
             var split = theme.Split('|');
             var accent = split[0];
             var shade = split[1];
-            ThemeManager.ChangeAppStyle(window, ThemeManager.Accents.First(a => a.Name == accent), ThemeManager.AppThemes.First(t => t.Name == ("Base" + shade)));
+            ThemeManager.ChangeAppStyle(window, ThemeManager.Accents.First(a => a.Name == accent), ThemeManager.AppThemes.First(t => t.Name == "Base" + shade));
         }
     }
 }

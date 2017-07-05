@@ -34,7 +34,7 @@ namespace FFXIVAPP.Common.Audio
                     {
                         var resampledSampleProvider = resampled.ToSampleProvider();
                         WaveFormat = resampledSampleProvider.WaveFormat;
-                        var wholeFile = new List<float>((int) (resampled.Length));
+                        var wholeFile = new List<float>((int) resampled.Length);
                         var readBuffer = new float[resampled.WaveFormat.SampleRate * resampled.WaveFormat.Channels];
                         int samplesRead;
                         while ((samplesRead = resampledSampleProvider.Read(readBuffer, 0, readBuffer.Length)) > 0)

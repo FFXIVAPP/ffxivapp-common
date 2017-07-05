@@ -117,7 +117,7 @@ namespace FFXIVAPP.Common.ViewModelBase
         {
             if (handlers == null)
             {
-                handlers = (defaultListSize > 0 ? new List<WeakReference>(defaultListSize) : new List<WeakReference>());
+                handlers = defaultListSize > 0 ? new List<WeakReference>(defaultListSize) : new List<WeakReference>();
             }
 
             handlers.Add(new WeakReference(handler));
@@ -137,7 +137,7 @@ namespace FFXIVAPP.Common.ViewModelBase
             {
                 var reference = handlers[i];
                 var existingHandler = reference.Target as EventHandler;
-                if ((existingHandler == null) || (existingHandler == handler))
+                if (existingHandler == null || existingHandler == handler)
                 {
                     handlers.RemoveAt(i);
                 }

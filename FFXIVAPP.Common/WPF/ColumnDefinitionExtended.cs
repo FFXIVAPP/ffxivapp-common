@@ -62,12 +62,12 @@ namespace FFXIVAPP.Common.WPF
 
         private static Object CoerceWidth(DependencyObject obj, Object nValue)
         {
-            return (((ColumnDefinitionExtended) obj).Visible) ? nValue : new GridLength(0);
+            return ((ColumnDefinitionExtended) obj).Visible ? nValue : new GridLength(0);
         }
 
         private static Object CoerceMinWidth(DependencyObject obj, Object nValue)
         {
-            return (((ColumnDefinitionExtended) obj).Visible) ? nValue : (Double) 0;
+            return ((ColumnDefinitionExtended) obj).Visible ? nValue : (Double) 0;
         }
     }
 }
