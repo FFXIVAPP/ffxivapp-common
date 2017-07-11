@@ -1,0 +1,18 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title>$title$</title>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>https://github.com/Icehunter/FFXIVAPP.Common/blob/master/LICENSE.md</licenseUrl>
+    <projectUrl>https://github.com/Icehunter/FFXIVAPP.Common</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/Icehunter/FFXIVAPP.Common/master/Sharlayan/Logo.png</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes></releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>ffxiv ffxivapp common helpers</tags>
+  </metadata>
+</package>

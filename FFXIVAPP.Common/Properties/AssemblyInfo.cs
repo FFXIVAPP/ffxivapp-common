@@ -23,7 +23,7 @@ using System.Runtime.InteropServices;
 // associated with an assembly.
 
 [assembly: AssemblyTitle("FFXIVAPP.Common")]
-[assembly: AssemblyDescription("FFXIVAPP Common Controls & Helpers")]
+[assembly: AssemblyDescription("FFXIVAPP Common Controls and Helpers")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SyndicatedLife")]
 [assembly: AssemblyProduct("FFXIVAPP.Common")]
@@ -52,4 +52,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("2.0.*")]
 
-[assembly: AssemblyVersion("2.0.*")]
+[assembly: AssemblyVersion("3.0.0")]
