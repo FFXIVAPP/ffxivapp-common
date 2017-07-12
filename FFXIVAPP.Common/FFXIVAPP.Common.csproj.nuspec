@@ -12,6 +12,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>
+      3.0.2 remove logo from output
       3.0.1 lazy loading for instances, updated dependencies
     </releaseNotes>
     <copyright>$copyright$</copyright>
