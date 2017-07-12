@@ -11,7 +11,9 @@
     <iconUrl>https://raw.githubusercontent.com/Icehunter/ffxivapp-common/master/FFXIVAPP.Common/Logo.png</iconUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>$description$</description>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>
+      3.0.1 lazy loading for instances, updated dependencies
+    </releaseNotes>
     <copyright>$copyright$</copyright>
     <tags>ffxiv ffxivapp common helpers</tags>
   </metadata>

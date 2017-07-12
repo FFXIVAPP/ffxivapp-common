@@ -70,11 +70,14 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="FodyWeavers.xml" />
     <Content Include="Logo.png" />
     <Content Include="NLog.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <None Include="FFXIVAPP.Common.csproj.nuspec" />
+    <None Include="FFXIVAPP.Common.csproj.nuspec">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="NLog.xsd">
       <SubType>Designer</SubType>
     </None>

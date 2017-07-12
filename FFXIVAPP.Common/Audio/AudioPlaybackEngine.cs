@@ -76,12 +76,11 @@ namespace FFXIVAPP.Common.Audio
 
         #region Property Backings
 
-        private static AudioPlaybackEngine _instance;
+        private static Lazy<AudioPlaybackEngine> _instance = new Lazy<AudioPlaybackEngine>(() => new AudioPlaybackEngine());
 
         public static AudioPlaybackEngine Instance
         {
-            get { return _instance ?? (_instance = new AudioPlaybackEngine()); }
-            set { _instance = value; }
+            get { return _instance.Value; }
         }
 
         #endregion
