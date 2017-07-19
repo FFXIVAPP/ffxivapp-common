@@ -26,8 +26,7 @@ namespace FFXIVAPP.Common.Core.Constant.Interfaces
         string UIScale { get; set; }
         Dictionary<string, string> AutoTranslate { get; set; }
         Dictionary<string, string> ChatCodes { get; set; }
-        Dictionary<string, ActionInfo> Actions { get; set; }
-        string ChatCodesXml { get; set; }
+        string ChatCodesXML { get; set; }
         Dictionary<string, string[]> Colors { get; set; }
         CultureInfo CultureInfo { get; set; }
         string CharacterName { get; set; }

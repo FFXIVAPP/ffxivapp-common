@@ -21,6 +21,7 @@ using System.IO;
 using System.Windows.Data;
 using System.Windows.Media.Imaging;
 using FFXIVAPP.Common.Utilities;
+using FFXIVAPP.ResourceFiles;
 
 namespace FFXIVAPP.Common.Converters
 {
@@ -37,11 +38,10 @@ namespace FFXIVAPP.Common.Converters
         /// <returns> </returns>
         public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture)
         {
-            var source = new BitmapImage(new Uri(Constants.DefaultIcon));
             var folder = values[1];
             var name = values[2];
             var location = String.Format(AppDomain.CurrentDomain.BaseDirectory + IconPath, folder, name);
-            return File.Exists(location) ? ImageUtilities.LoadImageFromStream(location) : source;
+            return File.Exists(location) ? ImageUtilities.LoadImageFromStream(location) : Theme.DefaultPluginLogo;
         }
 
         /// <summary>
