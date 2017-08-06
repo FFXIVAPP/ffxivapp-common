@@ -79,7 +79,8 @@ namespace FFXIVAPP.Common.Helpers
                                          .Select(file => new FileInfo(file));
                     soundFiles.AddRange(files);
                 }
-                Func<bool> cacheSoundsFunc = delegate
+
+                Func<bool> cacheSounds = delegate
                 {
                     foreach (var soundFile in soundFiles)
                     {
@@ -98,7 +99,7 @@ namespace FFXIVAPP.Common.Helpers
                     }
                     return true;
                 };
-                cacheSoundsFunc.BeginInvoke(null, null);
+                cacheSounds.BeginInvoke(delegate { }, cacheSounds);
             }
             catch (Exception ex)
             {

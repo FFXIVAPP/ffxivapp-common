@@ -48,7 +48,7 @@ namespace FFXIVAPP.Common.Helpers
         /// <param name="flow"> </param>
         public void AppendFlow(string time, string playerName, string line, string[] colors, FlowDocumentReader flow)
         {
-            Func<bool> funcAppend = delegate
+            Func<bool> append = delegate
             {
                 DispatcherHelper.Invoke(delegate
                 {
@@ -85,7 +85,7 @@ namespace FFXIVAPP.Common.Helpers
                 });
                 return true;
             };
-            funcAppend.BeginInvoke(null, null);
+            append.BeginInvoke(delegate { }, append);
         }
     }
 }

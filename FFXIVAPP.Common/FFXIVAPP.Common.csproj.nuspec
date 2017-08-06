@@ -12,6 +12,7 @@
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <description>$description$</description>
     <releaseNotes>
+      4.0.3 Adjust assembly vs file version for spec imports
       4.0.2 Use new resources library
       4.0.1 Use new resources library
       4.0.0 Broke spec and removed "Actions", renamed ChatCodesXml -> ChatCodesXML
