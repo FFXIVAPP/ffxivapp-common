@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.13
+VisualStudioVersion = 15.0.26730.8
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFXIVAPP.Common", "FFXIVAPP.Common\FFXIVAPP.Common.csproj", "{8D6CDA64-78BE-4BF0-B613-0C9AFA225DF5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFXIVAPP.ResourceFiles", "..\ffxivapp-resourcefiles\FFXIVAPP.ResourceFiles\FFXIVAPP.ResourceFiles.csproj", "{38E2405F-58D4-411C-B1DF-6E2D6F14082E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{018623DE-9F44-4F9E-A77D-5D4931079D0F}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +30,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2AF21813-3183-4DB2-8504-5F477A73087D}
 	EndGlobalSection
 EndGlobal
