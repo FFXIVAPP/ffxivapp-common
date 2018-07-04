@@ -1,31 +1,27 @@
-﻿// FFXIVAPP.Common ~ NetworkPacket.cs
-// 
-// Copyright © 2007 - 2017 Ryan Wilson - All Rights Reserved
-// 
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// 
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-// 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="NetworkPacket.cs" company="SyndicatedLife">
+//   Copyright(c) 2018 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (http://syndicated.life/)
+//   Licensed under the MIT license. See LICENSE.md in the solution root for full license information.
+// </copyright>
+// <summary>
+//   NetworkPacket.cs Implementation
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
 
-using System;
-using FFXIVAPP.Common.Core.Network.Interfaces;
+namespace FFXIVAPP.Common.Core.Network {
+    using System;
 
-namespace FFXIVAPP.Common.Core.Network
-{
-    public class NetworkPacket : INetworkPacket
-    {
-        public uint Key { get; set; }
+    using FFXIVAPP.Common.Core.Network.Interfaces;
+
+    public class NetworkPacket : INetworkPacket {
         public byte[] Buffer { get; set; }
+
         public int CurrentPosition { get; set; }
+
+        public uint Key { get; set; }
+
         public int MessageSize { get; set; }
+
         public DateTime PacketDate { get; set; }
     }
 }

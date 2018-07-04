@@ -1,92 +1,70 @@
-﻿// FFXIVAPP.Common ~ AssemblyHelper.cs
-// 
-// Copyright © 2007 - 2017 Ryan Wilson - All Rights Reserved
-// 
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// 
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-// 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="AssemblyHelper.cs" company="SyndicatedLife">
+//   Copyright(c) 2018 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (http://syndicated.life/)
+//   Licensed under the MIT license. See LICENSE.md in the solution root for full license information.
+// </copyright>
+// <summary>
+//   AssemblyHelper.cs Implementation
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
 
-using System;
-using System.Linq;
-using System.Reflection;
-using System.Runtime.InteropServices;
-using System.Security.Cryptography;
-using System.Text;
+namespace FFXIVAPP.Common.Helpers {
+    using System;
+    using System.Linq;
+    using System.Reflection;
+    using System.Runtime.InteropServices;
+    using System.Security.Cryptography;
+    using System.Text;
 
-namespace FFXIVAPP.Common.Helpers
-{
-    public static class AssemblyHelper
-    {
-        #region Assembly Property Bindings
-
-        public static string Name
-        {
-            get
-            {
-                var att = Assembly.GetCallingAssembly()
-                                  .GetCustomAttributes(typeof(AssemblyTitleAttribute), false);
-                return att.Length == 0 ? string.Empty : ((AssemblyTitleAttribute) att[0]).Title;
+    public static class AssemblyHelper {
+        public static string Copyright {
+            get {
+                object[] att = Assembly.GetCallingAssembly().GetCustomAttributes(typeof(AssemblyCopyrightAttribute), false);
+                return att.Length == 0
+                           ? string.Empty
+                           : ((AssemblyCopyrightAttribute) att[0]).Copyright;
             }
         }
 
-        public static string Description
-        {
-            get
-            {
-                var att = Assembly.GetCallingAssembly()
-                                  .GetCustomAttributes(typeof(AssemblyDescriptionAttribute), false);
-                return att.Length == 0 ? string.Empty : ((AssemblyDescriptionAttribute) att[0]).Description;
+        public static string Description {
+            get {
+                object[] att = Assembly.GetCallingAssembly().GetCustomAttributes(typeof(AssemblyDescriptionAttribute), false);
+                return att.Length == 0
+                           ? string.Empty
+                           : ((AssemblyDescriptionAttribute) att[0]).Description;
             }
         }
 
-        public static string Copyright
-        {
-            get
-            {
-                var att = Assembly.GetCallingAssembly()
-                                  .GetCustomAttributes(typeof(AssemblyCopyrightAttribute), false);
-                return att.Length == 0 ? string.Empty : ((AssemblyCopyrightAttribute) att[0]).Copyright;
+        public static string Guid {
+            get {
+                object[] att = Assembly.GetCallingAssembly().GetCustomAttributes(typeof(GuidAttribute), true);
+                return att.Length == 0
+                           ? string.Empty
+                           : ((GuidAttribute) att[0]).Value;
             }
         }
 
-        public static Version Version
-        {
-            get
-            {
-                return Assembly.GetCallingAssembly()
-                               .GetName()
-                               .Version;
+        public static string Name {
+            get {
+                object[] att = Assembly.GetCallingAssembly().GetCustomAttributes(typeof(AssemblyTitleAttribute), false);
+                return att.Length == 0
+                           ? string.Empty
+                           : ((AssemblyTitleAttribute) att[0]).Title;
             }
         }
 
-        public static string Guid
-        {
-            get
-            {
-                var att = Assembly.GetCallingAssembly()
-                                  .GetCustomAttributes(typeof(GuidAttribute), true);
-                return att.Length == 0 ? string.Empty : ((GuidAttribute) att[0]).Value;
+        public static Version Version {
+            get {
+                return Assembly.GetCallingAssembly().GetName().Version;
             }
         }
 
-        public static string Hash(string prefix, string salt, string suffix)
-        {
+        public static string Hash(string prefix, string salt, string suffix) {
             var ue = new UnicodeEncoding();
-            var message = ue.GetBytes(prefix + salt + suffix);
+            byte[] message = ue.GetBytes(prefix + salt + suffix);
             var hashString = new SHA512Managed();
-            var hashValue = hashString.ComputeHash(message);
-            return hashValue.Aggregate("", (current, x) => current + $"{x:x2}");
+            byte[] hashValue = hashString.ComputeHash(message);
+            return hashValue.Aggregate(string.Empty, (current, x) => current + $"{x:x2}");
         }
-
-        #endregion
     }
 }

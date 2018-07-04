@@ -1,73 +1,66 @@
-﻿// FFXIVAPP.Common ~ ColumnDefinitionExtended.cs
-// 
-// Copyright © 2007 - 2017 Ryan Wilson - All Rights Reserved
-// 
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// 
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-// 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="ColumnDefinitionExtended.cs" company="SyndicatedLife">
+//   Copyright(c) 2018 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (http://syndicated.life/)
+//   Licensed under the MIT license. See LICENSE.md in the solution root for full license information.
+// </copyright>
+// <summary>
+//   ColumnDefinitionExtended.cs Implementation
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
 
-using System;
-using System.Windows;
-using System.Windows.Controls;
+namespace FFXIVAPP.Common.WPF {
+    using System.Windows;
+    using System.Windows.Controls;
 
-namespace FFXIVAPP.Common.WPF
-{
-    public class ColumnDefinitionExtended : ColumnDefinition
-    {
+    public class ColumnDefinitionExtended : ColumnDefinition {
         // Variables
         public static DependencyProperty VisibleProperty;
+
         // Properties
 
         // Constructors
-        static ColumnDefinitionExtended()
-        {
-            VisibleProperty = DependencyProperty.Register("Visible", typeof(Boolean), typeof(ColumnDefinitionExtended), new PropertyMetadata(true, OnVisibleChanged));
+        static ColumnDefinitionExtended() {
+            VisibleProperty = DependencyProperty.Register("Visible", typeof(bool), typeof(ColumnDefinitionExtended), new PropertyMetadata(true, OnVisibleChanged));
 
             WidthProperty.OverrideMetadata(typeof(ColumnDefinitionExtended), new FrameworkPropertyMetadata(new GridLength(1, GridUnitType.Star), null, CoerceWidth));
 
-            MinWidthProperty.OverrideMetadata(typeof(ColumnDefinitionExtended), new FrameworkPropertyMetadata((Double) 0, null, CoerceMinWidth));
+            MinWidthProperty.OverrideMetadata(typeof(ColumnDefinitionExtended), new FrameworkPropertyMetadata((double) 0, null, CoerceMinWidth));
         }
 
-        public Boolean Visible
-        {
-            get { return (Boolean) GetValue(VisibleProperty); }
-            set { SetValue(VisibleProperty, value); }
+        public bool Visible {
+            get {
+                return (bool) this.GetValue(VisibleProperty);
+            }
+
+            set {
+                this.SetValue(VisibleProperty, value);
+            }
+        }
+
+        public static bool GetVisible(DependencyObject obj) {
+            return (bool) obj.GetValue(VisibleProperty);
         }
 
         // Get/Set
-        public static void SetVisible(DependencyObject obj, Boolean nVisible)
-        {
+        public static void SetVisible(DependencyObject obj, bool nVisible) {
             obj.SetValue(VisibleProperty, nVisible);
         }
 
-        public static Boolean GetVisible(DependencyObject obj)
-        {
-            return (Boolean) obj.GetValue(VisibleProperty);
+        private static object CoerceMinWidth(DependencyObject obj, object nValue) {
+            return ((ColumnDefinitionExtended) obj).Visible
+                       ? nValue
+                       : (double) 0;
         }
 
-        private static void OnVisibleChanged(DependencyObject obj, DependencyPropertyChangedEventArgs e)
-        {
+        private static object CoerceWidth(DependencyObject obj, object nValue) {
+            return ((ColumnDefinitionExtended) obj).Visible
+                       ? nValue
+                       : new GridLength(0);
+        }
+
+        private static void OnVisibleChanged(DependencyObject obj, DependencyPropertyChangedEventArgs e) {
             obj.CoerceValue(WidthProperty);
             obj.CoerceValue(MinWidthProperty);
-        }
-
-        private static Object CoerceWidth(DependencyObject obj, Object nValue)
-        {
-            return ((ColumnDefinitionExtended) obj).Visible ? nValue : new GridLength(0);
-        }
-
-        private static Object CoerceMinWidth(DependencyObject obj, Object nValue)
-        {
-            return ((ColumnDefinitionExtended) obj).Visible ? nValue : (Double) 0;
         }
     }
 }

@@ -1,61 +1,43 @@
-﻿// FFXIVAPP.Common ~ xFlowDocument.xaml.cs
-// 
-// Copyright © 2007 - 2017 Ryan Wilson - All Rights Reserved
-// 
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// 
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-// 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="xFlowDocument.xaml.cs" company="SyndicatedLife">
+//   Copyright(c) 2018 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (http://syndicated.life/)
+//   Licensed under the MIT license. See LICENSE.md in the solution root for full license information.
+// </copyright>
+// <summary>
+//   xFlowDocument.xaml.cs Implementation
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
 
-using System.ComponentModel;
-using System.Runtime.CompilerServices;
+namespace FFXIVAPP.Common.Controls {
+    using System.ComponentModel;
+    using System.Runtime.CompilerServices;
 
-namespace FFXIVAPP.Common.Controls
-{
     /// <summary>
     ///     Interaction logic for xFlowDocument.xaml
     /// </summary>
-    public partial class xFlowDocument : INotifyPropertyChanged
-    {
-        public xFlowDocument()
-        {
-            InitializeComponent();
-            ZoomLevel = "100";
-        }
-
-        #region Property Bindings
-
+    public partial class xFlowDocument : INotifyPropertyChanged {
         private string _zoomLevel;
 
-        public string ZoomLevel
-        {
-            get { return _zoomLevel; }
-            set
-            {
-                _zoomLevel = value;
-                RaisePropertyChanged();
-            }
+        public xFlowDocument() {
+            this.InitializeComponent();
+            this.ZoomLevel = "100";
         }
-
-        #endregion
-
-        #region Implementation of INotifyPropertyChanged
 
         public event PropertyChangedEventHandler PropertyChanged = delegate { };
 
-        private void RaisePropertyChanged([CallerMemberName] string caller = "")
-        {
-            PropertyChanged(this, new PropertyChangedEventArgs(caller));
+        public string ZoomLevel {
+            get {
+                return this._zoomLevel;
+            }
+
+            set {
+                this._zoomLevel = value;
+                this.RaisePropertyChanged();
+            }
         }
 
-        #endregion
+        private void RaisePropertyChanged([CallerMemberName] string caller = "") {
+            this.PropertyChanged(this, new PropertyChangedEventArgs(caller));
+        }
     }
 }
