@@ -1,161 +1,130 @@
-﻿// FFXIVAPP.Common ~ SoundPlayerHelper.cs
-// 
-// Copyright © 2007 - 2017 Ryan Wilson - All Rights Reserved
-// 
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// 
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-// 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="SoundPlayerHelper.cs" company="SyndicatedLife">
+//   Copyright(c) 2018 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (http://syndicated.life/)
+//   Licensed under the MIT license. See LICENSE.md in the solution root for full license information.
+// </copyright>
+// <summary>
+//   SoundPlayerHelper.cs Implementation
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
 
-using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Text.RegularExpressions;
-using FFXIVAPP.Common.Audio;
-using FFXIVAPP.Common.Models;
-using FFXIVAPP.Common.RegularExpressions;
-using FFXIVAPP.Common.Utilities;
-using NLog;
+namespace FFXIVAPP.Common.Helpers {
+    using System;
+    using System.Collections.Generic;
+    using System.IO;
+    using System.Linq;
+    using System.Text.RegularExpressions;
 
-namespace FFXIVAPP.Common.Helpers
-{
-    public static class SoundPlayerHelper
-    {
-        #region Logger
+    using FFXIVAPP.Common.Audio;
+    using FFXIVAPP.Common.Models;
+    using FFXIVAPP.Common.RegularExpressions;
+    using FFXIVAPP.Common.Utilities;
 
+    using NLog;
+
+    public static class SoundPlayerHelper {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
-
-        #endregion
-
-        public static bool PlayCached(string soundFile, int volume = 100)
-        {
-            var success = true;
-            var fileName = Regex.Replace(soundFile, @"[\\/]+", "\\", SharedRegEx.DefaultOptions);
-            try
-            {
-                CachedSound value;
-                if (!SoundFiles.TryGetValue(fileName, out value))
-                {
-                    value = TryGetSetSoundFile(fileName, volume);
-                }
-                AudioPlaybackEngine.Instance.PlaySound(value, volume);
-            }
-            catch (Exception ex)
-            {
-                Logging.Log(Logger, new LogItem(ex, true));
-                success = false;
-            }
-            return success;
-        }
-
-        /// <summary>
-        /// </summary>
-        public static void CacheSoundFiles()
-        {
-            try
-            {
-                if (!Directory.Exists(Constants.SoundsPath))
-                {
-                    Directory.CreateDirectory(Constants.SoundsPath);
-                }
-                var soundFiles = new List<FileInfo>();
-                var filters = new List<string>
-                {
-                    "*.wav",
-                    "*.mp3"
-                };
-                foreach (var filter in filters)
-                {
-                    var files = Directory.GetFiles(Constants.SoundsPath, filter, SearchOption.AllDirectories)
-                                         .Select(file => new FileInfo(file));
-                    soundFiles.AddRange(files);
-                }
-
-                Func<bool> cacheSounds = delegate
-                {
-                    foreach (var soundFile in soundFiles)
-                    {
-                        if (soundFile.DirectoryName == null)
-                        {
-                            continue;
-                        }
-                        var baseKey = soundFile.DirectoryName.Replace(Constants.SoundsPath, string.Empty);
-                        var key = String.IsNullOrWhiteSpace(baseKey) ? soundFile.Name : $"{baseKey.Substring(1)}\\{soundFile.Name}";
-                        if (SoundFileKeys(false)
-                            .Contains(key))
-                        {
-                            continue;
-                        }
-                        TryGetSetSoundFile(key);
-                    }
-                    return true;
-                };
-                cacheSounds.BeginInvoke(delegate { }, cacheSounds);
-            }
-            catch (Exception ex)
-            {
-                Logging.Log(Logger, new LogItem(ex, true));
-            }
-        }
-
-        #region SoundFiles Storage - Getters & Setters
 
         private static readonly Dictionary<string, CachedSound> SoundFiles = new Dictionary<string, CachedSound>();
 
         /// <summary>
         /// </summary>
+        public static void CacheSoundFiles() {
+            try {
+                if (!Directory.Exists(Constants.SoundsPath)) {
+                    Directory.CreateDirectory(Constants.SoundsPath);
+                }
+
+                List<FileInfo> soundFiles = new List<FileInfo>();
+                List<string> filters = new List<string> {
+                    "*.wav",
+                    "*.mp3"
+                };
+                foreach (var filter in filters) {
+                    IEnumerable<FileInfo> files = Directory.GetFiles(Constants.SoundsPath, filter, SearchOption.AllDirectories).Select(file => new FileInfo(file));
+                    soundFiles.AddRange(files);
+                }
+
+                Func<bool> cacheSounds = delegate {
+                    foreach (FileInfo soundFile in soundFiles) {
+                        if (soundFile.DirectoryName == null) {
+                            continue;
+                        }
+
+                        var baseKey = soundFile.DirectoryName.Replace(Constants.SoundsPath, string.Empty);
+                        var key = string.IsNullOrWhiteSpace(baseKey)
+                                      ? soundFile.Name
+                                      : $"{baseKey.Substring(1)}\\{soundFile.Name}";
+                        if (SoundFileKeys(false).Contains(key)) {
+                            continue;
+                        }
+
+                        TryGetSetSoundFile(key);
+                    }
+
+                    return true;
+                };
+                cacheSounds.BeginInvoke(delegate { }, cacheSounds);
+            }
+            catch (Exception ex) {
+                Logging.Log(Logger, new LogItem(ex, true));
+            }
+        }
+
+        public static bool PlayCached(string soundFile, int volume = 100) {
+            var success = true;
+            var fileName = Regex.Replace(soundFile, @"[\\/]+", "\\", SharedRegEx.DefaultOptions);
+            try {
+                CachedSound value;
+                if (!SoundFiles.TryGetValue(fileName, out value)) {
+                    value = TryGetSetSoundFile(fileName, volume);
+                }
+
+                AudioPlaybackEngine.Instance.PlaySound(value, volume);
+            }
+            catch (Exception ex) {
+                Logging.Log(Logger, new LogItem(ex, true));
+                success = false;
+            }
+
+            return success;
+        }
+
+        /// <summary>
+        /// </summary>
         /// <param name="refreshCache"></param>
         /// <returns></returns>
-        public static List<string> SoundFileKeys(bool refreshCache = true)
-        {
-            if (refreshCache)
-            {
+        public static List<string> SoundFileKeys(bool refreshCache = true) {
+            if (refreshCache) {
                 CacheSoundFiles();
             }
-            lock (SoundFiles)
-            {
-                if (SoundFiles.Any())
-                {
-                    return SoundFiles.Select(soundFile => soundFile.Key)
-                                     .OrderBy(key => key)
-                                     .ToList();
+
+            lock (SoundFiles) {
+                if (SoundFiles.Any()) {
+                    return SoundFiles.Select(soundFile => soundFile.Key).OrderBy(key => key).ToList();
                 }
+
                 return new List<string>();
             }
         }
 
-        public static CachedSound TryGetSetSoundFile(string soundFile, int volume = 100)
-        {
+        public static CachedSound TryGetSetSoundFile(string soundFile, int volume = 100) {
             var fileName = Regex.Replace(soundFile, @"[\\/]+", "\\", SharedRegEx.DefaultOptions);
-            lock (SoundFiles)
-            {
-                try
-                {
+            lock (SoundFiles) {
+                try {
                     CachedSound value;
-                    if (SoundFiles.TryGetValue(fileName, out value))
-                    {
+                    if (SoundFiles.TryGetValue(fileName, out value)) {
                         return value;
                     }
+
                     value = new CachedSound(Path.Combine(Constants.SoundsPath, fileName));
                     SoundFiles.Add(fileName, value);
                     return value;
                 }
-                catch (Exception)
-                {
+                catch (Exception) {
                     return null;
                 }
             }
         }
-
-        #endregion
     }
 }

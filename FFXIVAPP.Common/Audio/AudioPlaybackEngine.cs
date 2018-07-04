@@ -1,88 +1,74 @@
-﻿// FFXIVAPP.Common ~ AudioPlaybackEngine.cs
-// 
-// Copyright © 2007 - 2017 Ryan Wilson - All Rights Reserved
-// 
-// This program is free software: you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation, either version 3 of the License, or
-// (at your option) any later version.
-// 
-// This program is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-// 
-// You should have received a copy of the GNU General Public License
-// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+﻿// --------------------------------------------------------------------------------------------------------------------
+// <copyright file="AudioPlaybackEngine.cs" company="SyndicatedLife">
+//   Copyright(c) 2018 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (http://syndicated.life/)
+//   Licensed under the MIT license. See LICENSE.md in the solution root for full license information.
+// </copyright>
+// <summary>
+//   AudioPlaybackEngine.cs Implementation
+// </summary>
+// --------------------------------------------------------------------------------------------------------------------
 
-using System;
-using NAudio.Wave;
-using NAudio.Wave.SampleProviders;
+namespace FFXIVAPP.Common.Audio {
+    using System;
 
-namespace FFXIVAPP.Common.Audio
-{
-    public class AudioPlaybackEngine : IDisposable
-    {
+    using NAudio.Wave;
+    using NAudio.Wave.SampleProviders;
+
+    public class AudioPlaybackEngine : IDisposable {
+        private static Lazy<AudioPlaybackEngine> _instance = new Lazy<AudioPlaybackEngine>(() => new AudioPlaybackEngine());
+
         private int ChannelCount = 2;
+
         private MixingSampleProvider Mixer;
+
         private IWavePlayer OutputDevice;
+
         private int SampleRate = 44100;
 
-        public AudioPlaybackEngine(int sampleRate = 44100, int channelCount = 2)
-        {
-            SampleRate = sampleRate;
-            ChannelCount = channelCount;
-            SetupEngine();
+        public AudioPlaybackEngine(int sampleRate = 44100, int channelCount = 2) {
+            this.SampleRate = sampleRate;
+            this.ChannelCount = channelCount;
+            this.SetupEngine();
+        }
+
+        public static AudioPlaybackEngine Instance {
+            get {
+                return _instance.Value;
+            }
         }
 
         private Guid LastAudioDevice { get; set; }
 
-        public void Dispose()
-        {
-            OutputDevice.Dispose();
+        public void Dispose() {
+            this.OutputDevice.Dispose();
         }
 
-        private void SetupEngine()
-        {
-            //OutputDevice = new WaveOutEvent();
-            //OutputDevice = new DirectSoundOut(40);
-            //OutputDevice = new WasapiOut(AudioClientShareMode.Shared, true, 40);
-            if (Constants.DefaultAudioDevice == Guid.Empty)
-            {
-                OutputDevice = new DirectSoundOut(100);
+        public void PlaySound(CachedSound sound, int volume = 100) {
+            if (this.LastAudioDevice != Constants.DefaultAudioDevice) {
+                this.OutputDevice.Stop();
+                this.SetupEngine();
             }
-            else
-            {
-                LastAudioDevice = Constants.DefaultAudioDevice;
-                OutputDevice = new DirectSoundOut(Constants.DefaultAudioDevice, 100);
+
+            this.Mixer.AddMixerInput(new CachedSoundSampleProvider(sound, (float) volume / 100));
+        }
+
+        private void SetupEngine() {
+            // OutputDevice = new WaveOutEvent();
+            // OutputDevice = new DirectSoundOut(40);
+            // OutputDevice = new WasapiOut(AudioClientShareMode.Shared, true, 40);
+            if (Constants.DefaultAudioDevice == Guid.Empty) {
+                this.OutputDevice = new DirectSoundOut(100);
             }
-            Mixer = new MixingSampleProvider(WaveFormat.CreateIeeeFloatWaveFormat(SampleRate, ChannelCount))
-            {
+            else {
+                this.LastAudioDevice = Constants.DefaultAudioDevice;
+                this.OutputDevice = new DirectSoundOut(Constants.DefaultAudioDevice, 100);
+            }
+
+            this.Mixer = new MixingSampleProvider(WaveFormat.CreateIeeeFloatWaveFormat(this.SampleRate, this.ChannelCount)) {
                 ReadFully = true
             };
-            OutputDevice.Init(Mixer);
-            OutputDevice.Play();
+            this.OutputDevice.Init(this.Mixer);
+            this.OutputDevice.Play();
         }
-
-        public void PlaySound(CachedSound sound, int volume = 100)
-        {
-            if (LastAudioDevice != Constants.DefaultAudioDevice)
-            {
-                OutputDevice.Stop();
-                SetupEngine();
-            }
-            Mixer.AddMixerInput(new CachedSoundSampleProvider(sound, (float) volume / 100));
-        }
-
-        #region Property Backings
-
-        private static Lazy<AudioPlaybackEngine> _instance = new Lazy<AudioPlaybackEngine>(() => new AudioPlaybackEngine());
-
-        public static AudioPlaybackEngine Instance
-        {
-            get { return _instance.Value; }
-        }
-
-        #endregion
     }
 }
