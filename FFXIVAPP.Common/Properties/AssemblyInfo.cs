@@ -19,7 +19,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("SyndicatedLife")]
 [assembly: AssemblyProduct("FFXIVAPP.Common")]
-[assembly: AssemblyCopyright("Copyright © 2007 - 2017 Ryan Wilson")]
+[assembly: AssemblyCopyright("Copyright © 2007 - 2018 Ryan Wilson")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -40,4 +40,4 @@ using System.Runtime.InteropServices;
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("2.0.*")]
 [assembly: AssemblyVersion("5.0.0")]
-[assembly: AssemblyInformationalVersion("5.0.0")]
+[assembly: AssemblyInformationalVersion("5.0.1")]
