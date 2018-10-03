@@ -1,131 +1,21 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\..\ffxivapp-props\Common.props" />
-  <Import Project="..\..\ffxivapp-props\FFXIVAPP.ResourceFiles.props" />
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{8D6CDA64-78BE-4BF0-B613-0C9AFA225DF5}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FFXIVAPP.Common</RootNamespace>
-    <AssemblyName>FFXIVAPP.Common</AssemblyName>
-    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
-    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
-    <RestorePackages>true</RestorePackages>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyInformationalVersionAttribute>false</GenerateAssemblyInformationalVersionAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FFXIVAPP.ResourceFiles, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\FFXIVAPP.ResourceFiles.2.0.1\lib\net462\FFXIVAPP.ResourceFiles.dll</HintPath>
-    </Reference>
-    <Reference Include="HtmlAgilityPack, Version=1.8.4.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
-      <HintPath>..\packages\HtmlAgilityPack.1.8.4\lib\Net45\HtmlAgilityPack.dll</HintPath>
-    </Reference>
-    <Reference Include="MahApps.Metro, Version=1.5.0.23, Culture=neutral, PublicKeyToken=f4fb5a3c4d1e5b4f, processorArchitecture=MSIL">
-      <HintPath>..\packages\MahApps.Metro.1.5.0\lib\net45\MahApps.Metro.dll</HintPath>
-    </Reference>
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="NAudio, Version=1.8.4.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NAudio.1.8.4\lib\net35\NAudio.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
-    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
-      <HintPath>..\packages\NLog.4.5.6\lib\net45\NLog.dll</HintPath>
-    </Reference>
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
-    <Reference Include="System" />
-    <Reference Include="System.Configuration" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.IO.Compression" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.ServiceModel" />
-    <Reference Include="System.Transactions" />
-    <Reference Include="System.Web" />
-    <Reference Include="System.Windows.Interactivity, Version=4.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
-      <HintPath>..\packages\MahApps.Metro.1.5.0\lib\net45\System.Windows.Interactivity.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Xaml" />
-    <Reference Include="System.Xml" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="WindowsBase" />
+    <PackageReference Include="NLog" Version="4.5.9"/>
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2"/>
+    <PackageReference Include="Avalonia" Version="0.6.2-build5756-beta"/>
+    <PackageReference Include="HtmlAgilityPack" Version="1.8.7"/>
   </ItemGroup>
   <ItemGroup>
-    <None Include="FFXIVAPP.Common.csproj.nuspec">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="NLog.xsd">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="packages.config" />
+    <ProjectReference Include="..\..\ffxivapp-resourcefiles\FFXIVAPP.ResourceFiles\FFXIVAPP.ResourceFiles.csproj"/>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="Audio\AudioPlaybackEngine.cs" />
-    <Compile Include="Audio\AutoDisposeFileReader.cs" />
-    <Compile Include="Audio\CachedSound.cs" />
-    <Compile Include="Audio\CachedSoundSampleProvider.cs" />
-    <Compile Include="Behaviors\IgnoreMouseWheelBehavior.cs" />
-    <Compile Include="Constants.cs" />
-    <Compile Include="Controls\xFlowDocument.xaml.cs">
-      <DependentUpon>xFlowDocument.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Converters\BooleanToWidthConverter.cs" />
-    <Compile Include="Converters\IconConverterFromModel.cs" />
-    <Compile Include="Converters\IconConverter.cs" />
-    <Compile Include="Converters\StringToBrushConverter.cs" />
-    <Compile Include="Converters\TabStripBorderConverter.cs" />
-    <Compile Include="Converters\VisibilityConverter.cs" />
-    <Compile Include="Core\Constant\ConstantsEntity.cs" />
-    <Compile Include="Core\Constant\Interfaces\IConstantsEntity.cs" />
-    <Compile Include="Core\Network\Interfaces\INetworkPacket.cs" />
-    <Compile Include="Core\Network\NetworkPacket.cs" />
-    <Compile Include="Events\PopupResultEvent.cs" />
-    <Compile Include="Helpers\AssemblyHelper.cs" />
-    <Compile Include="Helpers\BindingHelper.cs" />
-    <Compile Include="Helpers\DispatcherHelper.cs" />
-    <Compile Include="Helpers\FlowDocHelper.cs" />
-    <Compile Include="Helpers\ResourceHelper.cs" />
-    <Compile Include="Helpers\SoundPlayerHelper.cs" />
-    <Compile Include="Helpers\ThemeHelper.cs" />
-    <Compile Include="Models\GoogleTranslateResult.cs" />
-    <Compile Include="Models\LogItem.cs" />
-    <Compile Include="Models\PopupContent.cs" />
-    <Compile Include="Models\XValuePair.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegularExpressions\SharedRegEx.cs" />
-    <Compile Include="Utilities\GoogleTranslate.cs" />
-    <Compile Include="Utilities\GridViewSort.cs" />
-    <Compile Include="Utilities\ImageUtilities.cs" />
-    <Compile Include="Utilities\Logging.cs" />
-    <Compile Include="Utilities\ScreenCapture.cs" />
-    <Compile Include="Utilities\SelectionBehavior.cs" />
-    <Compile Include="ViewModelBase\CommandManagerHelper.cs" />
-    <Compile Include="ViewModelBase\DelegateCommand.cs" />
-    <Compile Include="Helpers\XmlHelper.cs" />
-    <Compile Include="WPF\ColumnDefinitionExtended.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Page Include="Controls\xFlowDocument.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>$(SolutionDir).nuget\nuget.exe pack $(ProjectPath) -Properties Configuration=$(ConfigurationName) -Properties Platform=$(PlatformName) -IncludeReferencedProjects -Symbols -OutputDirectory ..\packages\
-%25SYSTEMROOT%25\System32\WindowsPowerShell\v1.0\powershell.exe –NonInteractive –ExecutionPolicy Unrestricted –command "&amp; { &amp;'$(SolutionDir)RenameSymbolsToPackage.ps1' '$(TargetName)' }"</PostBuildEvent>
-  </PropertyGroup>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>

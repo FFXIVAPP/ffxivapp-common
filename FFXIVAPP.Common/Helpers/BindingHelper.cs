@@ -8,10 +8,11 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+/* TODO: BindingHelper
 namespace FFXIVAPP.Common.Helpers {
     using System.Windows;
     using System.Windows.Data;
-
+    using Avalonia.Data;
     using FFXIVAPP.Common.Converters;
 
     public static class BindingHelper {
@@ -41,3 +42,4 @@ namespace FFXIVAPP.Common.Helpers {
         }
     }
 }
+*/

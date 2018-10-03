@@ -7,13 +7,13 @@
 //   IconConverter.cs Implementation
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-
+/* TODO: IconConverter
 namespace FFXIVAPP.Common.Converters {
     using System;
+    using System.Collections.Generic;
     using System.Globalization;
     using System.IO;
-    using System.Windows.Data;
-
+    using Avalonia.Data.Converters;
     using FFXIVAPP.Common.Utilities;
     using FFXIVAPP.ResourceFiles;
 
@@ -27,7 +27,9 @@ namespace FFXIVAPP.Common.Converters {
         /// <param name="parameter"> </param>
         /// <param name="culture"> </param>
         /// <returns> </returns>
-        public object Convert(object[] values, Type targetType, object parameter, CultureInfo culture) {
+
+        public object Convert(IList<object> values, Type targetType, object parameter, CultureInfo culture)
+        {
             object folder = values[1];
             object name = values[2];
             var location = string.Format(AppDomain.CurrentDomain.BaseDirectory + IconPath, folder, name);
@@ -48,3 +50,4 @@ namespace FFXIVAPP.Common.Converters {
         }
     }
 }
+*/

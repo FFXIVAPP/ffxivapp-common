@@ -7,7 +7,7 @@
 //   IconConverterFromModel.cs Implementation
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-
+/* TODO: IconConverterFromModel
 namespace FFXIVAPP.Common.Converters {
     using System;
     using System.Globalization;
@@ -48,3 +48,4 @@ namespace FFXIVAPP.Common.Converters {
         }
     }
 }
+*/

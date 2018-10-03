@@ -7,7 +7,7 @@
 //   IgnoreMouseWheelBehavior.cs Implementation
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-
+/* TODO: Ignore mouse wheel
 namespace FFXIVAPP.Common.Behaviors {
     using System.Windows;
     using System.Windows.Input;
@@ -34,3 +34,4 @@ namespace FFXIVAPP.Common.Behaviors {
         }
     }
 }
+*/

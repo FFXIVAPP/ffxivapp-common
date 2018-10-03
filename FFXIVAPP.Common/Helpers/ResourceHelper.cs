@@ -10,19 +10,26 @@
 
 namespace FFXIVAPP.Common.Helpers {
     using System;
-    using System.Windows;
-    using System.Windows.Resources;
+    using System.IO;
+    using System.Reflection;
     using System.Xml.Linq;
 
     public static class ResourceHelper {
+        private static Stream GetResource(Assembly assembly, string path) => assembly.GetManifestResourceStream(path);
+
         /// <summary>
         /// </summary>
         /// <param name="path"> </param>
         /// <returns> </returns>
-        public static StreamResourceInfo StreamResource(string path) {
-            return Application.GetResourceStream(new Uri(path));
+        public static Stream StreamResource(string path) {
+            return StreamResource(System.Reflection.Assembly.GetCallingAssembly(), path);
         }
 
+        public static Stream StreamResource(Assembly assembly, string path) {
+            return GetResource(assembly, path);
+        }
+
+        /* TODO: StringResource
         /// <summary>
         /// </summary>
         /// <param name="key"> </param>
@@ -30,6 +37,7 @@ namespace FFXIVAPP.Common.Helpers {
         public static string StringResource(string key) {
             return (string) Application.Current.FindResource(key);
         }
+        */
 
         /// <summary>
         /// </summary>
@@ -45,10 +53,10 @@ namespace FFXIVAPP.Common.Helpers {
         /// <param name="path"> </param>
         /// <returns> </returns>
         public static XDocument XDocResource(string path) {
-            StreamResourceInfo resource = StreamResource(path);
+            var resource = GetResource(System.Reflection.Assembly.GetCallingAssembly(), path);
             return resource == null
                        ? null
-                       : new XDocument(XElement.Load(resource.Stream));
+                       : new XDocument(XElement.Load(resource));
         }
     }
 }

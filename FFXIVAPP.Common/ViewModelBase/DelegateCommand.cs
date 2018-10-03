@@ -10,7 +10,6 @@
 
 namespace FFXIVAPP.Common.ViewModelBase {
     using System;
-    using System.Collections.Generic;
     using System.Windows.Input;
 
     // ===================================================================================
@@ -24,14 +23,11 @@ namespace FFXIVAPP.Common.ViewModelBase {
     // This code is released under the terms of the MS-LPL license, 
     // http://microsoftnlayerapp.codeplex.com/license
     // ===================================================================================
+    // Modification done to remove CommandManager dependency (and probably make the code worse...)
     public class DelegateCommand : ICommand {
         private readonly Func<bool> _canExecuteMethod;
 
         private readonly Action _executeMethod;
-
-        private List<WeakReference> _canExecuteChangedHandlers;
-
-        private bool _isAutomaticRequeryDisabled;
 
         /// <summary>
         /// </summary>
@@ -58,92 +54,19 @@ namespace FFXIVAPP.Common.ViewModelBase {
 
             this._executeMethod = executeMethod;
             this._canExecuteMethod = canExecuteMethod;
-            this._isAutomaticRequeryDisabled = isAutomaticRequeryDisabled;
         }
 
-        /// <summary>
-        /// </summary>
-        public event EventHandler CanExecuteChanged {
-            add {
-                if (!this._isAutomaticRequeryDisabled) {
-                    CommandManager.RequerySuggested += value;
-                }
+        public event EventHandler CanExecuteChanged;
 
-                CommandManagerHelper.AddWeakReferenceHandler(ref this._canExecuteChangedHandlers, value, 2);
-            }
-
-            remove {
-                if (!this._isAutomaticRequeryDisabled) {
-                    CommandManager.RequerySuggested -= value;
-                }
-
-                CommandManagerHelper.RemoveWeakReferenceHandler(this._canExecuteChangedHandlers, value);
-            }
-        }
-
-        /// <summary>
-        /// </summary>
-        public bool IsAutomaticRequeryDisabled {
-            get {
-                return this._isAutomaticRequeryDisabled;
-            }
-
-            set {
-                if (this._isAutomaticRequeryDisabled == value) {
-                    return;
-                }
-
-                if (value) {
-                    CommandManagerHelper.RemoveHandlersFromRequerySuggested(this._canExecuteChangedHandlers);
-                }
-                else {
-                    CommandManagerHelper.AddHandlersToRequerySuggested(this._canExecuteChangedHandlers);
-                }
-
-                this._isAutomaticRequeryDisabled = value;
-            }
-        }
-
-        /// <summary>
-        /// </summary>
-        public void RaiseCanExecuteChanged() {
-            this.OnCanExecuteChanged();
-        }
-
-        /// <summary>
-        /// </summary>
-        /// <param name="parameter"> </param>
-        /// <returns> </returns>
-        bool ICommand.CanExecute(object parameter) {
-            return this.CanExecute();
-        }
-
-        /// <summary>
-        /// </summary>
-        /// <param name="parameter"> </param>
-        void ICommand.Execute(object parameter) {
-            this.Execute();
-        }
-
-        /// <summary>
-        /// </summary>
-        /// <returns> </returns>
-        private bool CanExecute() {
+        public bool CanExecute(object parameter)
+        {
             return this._canExecuteMethod == null || this._canExecuteMethod();
         }
 
-        /// <summary>
-        /// </summary>
-        private void Execute() {
+        public void Execute(object parameter) {
             if (this._executeMethod != null) {
                 this._executeMethod();
             }
-        }
-
-        /// <summary>
-        /// </summary>
-        private void OnCanExecuteChanged() {
-            CommandManagerHelper.CallWeakReferenceHandlers(this._canExecuteChangedHandlers);
         }
     }
 
@@ -151,10 +74,6 @@ namespace FFXIVAPP.Common.ViewModelBase {
         private readonly Func<T, bool> _canExecuteMethod;
 
         private readonly Action<T> _executeMethod;
-
-        private List<WeakReference> _canExecuteChangedHandlers;
-
-        private bool _isAutomaticRequeryDisabled;
 
         /// <summary>
         /// </summary>
@@ -175,55 +94,11 @@ namespace FFXIVAPP.Common.ViewModelBase {
 
             this._executeMethod = executeMethod;
             this._canExecuteMethod = canExecuteMethod;
-            this._isAutomaticRequeryDisabled = isAutomaticRequeryDisabled;
         }
 
         /// <summary>
         /// </summary>
-        public event EventHandler CanExecuteChanged {
-            add {
-                if (!this._isAutomaticRequeryDisabled) {
-                    CommandManager.RequerySuggested += value;
-                }
-
-                CommandManagerHelper.AddWeakReferenceHandler(ref this._canExecuteChangedHandlers, value, 2);
-            }
-
-            remove {
-                if (!this._isAutomaticRequeryDisabled) {
-                    CommandManager.RequerySuggested -= value;
-                }
-
-                CommandManagerHelper.RemoveWeakReferenceHandler(this._canExecuteChangedHandlers, value);
-            }
-        }
-
-        /// <summary>
-        /// </summary>
-        public bool IsAutomaticRequeryDisabled {
-            get {
-                return this._isAutomaticRequeryDisabled;
-            }
-
-            set {
-                if (this._isAutomaticRequeryDisabled != value) {
-                    if (value) {
-                        CommandManagerHelper.RemoveHandlersFromRequerySuggested(this._canExecuteChangedHandlers);
-                    }
-                    else {
-                        CommandManagerHelper.AddHandlersToRequerySuggested(this._canExecuteChangedHandlers);
-                    }
-
-                    this._isAutomaticRequeryDisabled = value;
-                }
-            }
-        }
-
-        /// <summary>
-        /// </summary>
-        public void RaiseCanExecuteChanged() {
-            this.OnCanExecuteChanged();
-        }
+        public event EventHandler CanExecuteChanged;
 
         /// <summary>
         /// </summary>
@@ -259,12 +134,6 @@ namespace FFXIVAPP.Common.ViewModelBase {
             if (this._executeMethod != null) {
                 this._executeMethod(parameter);
             }
-        }
-
-        /// <summary>
-        /// </summary>
-        private void OnCanExecuteChanged() {
-            CommandManagerHelper.CallWeakReferenceHandlers(this._canExecuteChangedHandlers);
         }
     }
 }

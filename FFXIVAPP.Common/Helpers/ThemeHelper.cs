@@ -7,18 +7,15 @@
 //   ThemeHelper.cs Implementation
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-
+/* TODO: Theme
 namespace FFXIVAPP.Common.Helpers {
     using System;
     using System.Collections.Generic;
     using System.Linq;
     using System.Windows;
-
+    using Avalonia.Controls;
     using FFXIVAPP.Common.Models;
     using FFXIVAPP.Common.Utilities;
-
-    using MahApps.Metro;
-    using MahApps.Metro.Controls;
 
     using NLog;
 
@@ -29,14 +26,14 @@ namespace FFXIVAPP.Common.Helpers {
         /// </summary>
         /// <param name="theme"> </param>
         /// <param name="window"></param>
-        public static void ChangeTheme(string theme, List<MetroWindow> window) {
+        public static void ChangeTheme(string theme, List<Window> window) {
             try {
                 if (window == null || !window.Any()) {
                     Apply(theme, Application.Current.MainWindow);
                     return;
                 }
 
-                foreach (MetroWindow metroWindow in window.Where(metroWindow => metroWindow != null)) {
+                foreach (var metroWindow in window.Where(metroWindow => metroWindow != null)) {
                     Apply(theme, metroWindow);
                 }
             }
@@ -57,3 +54,4 @@ namespace FFXIVAPP.Common.Helpers {
         }
     }
 }
+*/
