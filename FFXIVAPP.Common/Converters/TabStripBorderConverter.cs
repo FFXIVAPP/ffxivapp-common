@@ -7,7 +7,7 @@
 //   TabStripBorderConverter.cs Implementation
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-
+/* TODO: TabStripBorderConverter
 namespace FFXIVAPP.Common.Converters {
     using System;
     using System.Globalization;
@@ -40,3 +40,4 @@ namespace FFXIVAPP.Common.Converters {
         }
     }
 }
+*/

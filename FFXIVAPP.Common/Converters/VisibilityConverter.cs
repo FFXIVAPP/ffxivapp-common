@@ -7,7 +7,7 @@
 //   VisibilityConverter.cs Implementation
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-
+/* TODO: VisiblityConverter, Should be able to remove because we use IsVisible (on avalonia objects) instead
 namespace FFXIVAPP.Common.Converters {
     using System;
     using System.Globalization;
@@ -48,3 +48,4 @@ namespace FFXIVAPP.Common.Converters {
         }
     }
 }
+*/

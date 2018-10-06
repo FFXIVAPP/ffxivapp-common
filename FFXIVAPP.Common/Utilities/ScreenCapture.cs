@@ -7,7 +7,7 @@
 //   ScreenCapture.cs Implementation
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
-
+/* TODO: ScreenCapture
 namespace FFXIVAPP.Common.Utilities {
     using System.IO;
     using System.Windows;
@@ -50,3 +50,4 @@ namespace FFXIVAPP.Common.Utilities {
         }
     }
 }
+*/

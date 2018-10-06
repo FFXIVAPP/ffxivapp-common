@@ -8,6 +8,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+/* TODO: GridViewSort
 namespace FFXIVAPP.Common.Utilities {
     using System.ComponentModel;
     using System.Linq;
@@ -319,3 +320,4 @@ namespace FFXIVAPP.Common.Utilities {
         // Using a DependencyProperty as the backing store for SortedColumn.  This enables animation, styling, binding, etc...
     }
 }
+*/

@@ -8,6 +8,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+/* TODO: CommandManagerHelper
 namespace FFXIVAPP.Common.ViewModelBase {
     using System;
     using System.Collections.Generic;
@@ -122,3 +123,4 @@ namespace FFXIVAPP.Common.ViewModelBase {
         }
     }
 }
+*/

@@ -8,6 +8,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+/* TODO: FlowDochHelper
 namespace FFXIVAPP.Common.Helpers {
     using System;
     using System.Windows;
@@ -81,3 +82,4 @@ namespace FFXIVAPP.Common.Helpers {
         }
     }
 }
+*/

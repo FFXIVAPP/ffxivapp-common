@@ -19,7 +19,7 @@ namespace FFXIVAPP.Common.Controls {
         private string _zoomLevel;
 
         public xFlowDocument() {
-            this.InitializeComponent();
+            //this.InitializeComponent();
             this.ZoomLevel = "100";
         }
 

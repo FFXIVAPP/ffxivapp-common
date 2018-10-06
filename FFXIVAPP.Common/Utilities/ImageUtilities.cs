@@ -10,21 +10,18 @@
 
 namespace FFXIVAPP.Common.Utilities {
     using System.IO;
-    using System.Windows.Media.Imaging;
+    using Avalonia.Media.Imaging;
 
     public static class ImageUtilities {
-        public static BitmapImage LoadImageFromStream(string location) {
-            BitmapImage result = null;
-            if (location != null) {
-                var bitmapImage = new BitmapImage();
-                using (FileStream stream = File.OpenRead(location)) {
-                    bitmapImage.BeginInit();
-                    bitmapImage.CacheOption = BitmapCacheOption.OnLoad;
-                    bitmapImage.StreamSource = stream;
-                    bitmapImage.EndInit();
-                }
-
-                result = bitmapImage;
+        /// <summary>
+        /// Loads an image from a filepath
+        /// </summary>
+        /// <param name="location">Path to image</param>
+        /// <returns>Image as an Bitmap object. Null if not found</returns>
+        public static Bitmap LoadImageFromStream(string location) {
+            Bitmap result = null;
+            if (File.Exists(location)) {
+                result = new Bitmap(location);
             }
 
             return result;

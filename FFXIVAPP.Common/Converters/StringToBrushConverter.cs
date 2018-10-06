@@ -11,9 +11,8 @@
 namespace FFXIVAPP.Common.Converters {
     using System;
     using System.Globalization;
-    using System.Windows.Data;
-    using System.Windows.Media;
-
+    using Avalonia.Data.Converters;
+    using Avalonia.Media;
     using FFXIVAPP.Common.Models;
     using FFXIVAPP.Common.Utilities;
 

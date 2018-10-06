@@ -12,11 +12,11 @@ namespace FFXIVAPP.Common.Helpers {
     using System;
     using System.Threading;
     using System.Windows;
-    using System.Windows.Threading;
+    using Avalonia.Threading;
 
     public static class DispatcherHelper {
         public static void Invoke(Action action, DispatcherPriority dispatcherPriority = DispatcherPriority.Background) {
-            Application.Current.Dispatcher.BeginInvoke(dispatcherPriority, new ThreadStart(action));
+            DispatcherTimer.RunOnce(() => { action(); }, new TimeSpan(0), dispatcherPriority);
         }
     }
 }

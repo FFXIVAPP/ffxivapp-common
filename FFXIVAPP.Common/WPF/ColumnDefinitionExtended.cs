@@ -8,6 +8,7 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+/* TODO: ColumnDefinition extended
 namespace FFXIVAPP.Common.WPF {
     using System.Windows;
     using System.Windows.Controls;
@@ -64,3 +65,4 @@ namespace FFXIVAPP.Common.WPF {
         }
     }
 }
+*/
