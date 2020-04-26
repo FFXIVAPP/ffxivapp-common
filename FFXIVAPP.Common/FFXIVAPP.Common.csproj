@@ -121,7 +121,7 @@
     <PostBuildEvent>$(SolutionDir).nuget\nuget.exe pack $(ProjectPath) -Properties Configuration=$(ConfigurationName) -Properties Platform=$(PlatformName) -IncludeReferencedProjects -Symbols -OutputDirectory ..\packages\
 %25SYSTEMROOT%25\System32\WindowsPowerShell\v1.0\powershell.exe –NonInteractive –ExecutionPolicy Unrestricted –command "&amp; { &amp;'$(SolutionDir)RenameSymbolsToPackage.ps1' '$(TargetName)' }"</PostBuildEvent>
   </PropertyGroup>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>

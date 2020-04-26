@@ -8,6 +8,10 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
+using System.Collections.Generic;
+using System.Windows.Documents;
+using Newtonsoft.Json;
+
 namespace FFXIVAPP.Common.Utilities {
     using System;
     using System.Collections;
@@ -26,7 +30,7 @@ namespace FFXIVAPP.Common.Utilities {
     public static class GoogleTranslate {
         private static readonly Logger Logger = LogManager.GetCurrentClassLogger();
 
-        private static string _baseUrl = "http://translate.google.com/translate_t?hl=&ie=UTF-8&text={0}&sl={1}&tl={2}";
+        private static string _baseUrl = "https://translate.googleapis.com/translate_a/single?client=gtx&sl={1}&tl={2}&dt=t&q={0}";
 
         private static Hashtable _offsets;
 
@@ -64,23 +68,14 @@ namespace FFXIVAPP.Common.Utilities {
 
                 HTTPClient.DefaultRequestHeaders.TryAddWithoutValidation("User-Agent", "Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_3; en-US) AppleWebKit/533.4 (KHTML, like Gecko) Chrome/5.0.375.70 Safari/533.4");
 
-                using (Task<Stream> response = HTTPClient.GetStreamAsync(new Uri(url))) {
-                    Stream stream = response.Result;
+                using (Task<string> response = HTTPClient.GetStringAsync(new Uri(url))) {
+                    string translateResult = response.Result;
 
-                    var doc = new HtmlDocument();
-                    doc.Load(stream, Encoding.UTF8);
+                    var json = JsonConvert.DeserializeObject<List<dynamic>>(translateResult);
+                    var items = json?[0];
 
-                    HtmlNode translated = doc.DocumentNode.SelectSingleNode("//span[@id='result_box']");
-                    if (translated != null) {
-                        Logging.Log(Logger, $"Translated: {translated.InnerText}");
-                        result.Translated = HttpUtility.HtmlDecode(translated.InnerText);
-                    }
-
-                    HtmlNode romanization = doc.DocumentNode.SelectSingleNode("//div[@id='res-translit']");
-                    if (romanization != null) {
-                        Logging.Log(Logger, $"Romanized: {romanization.InnerText}");
-                        result.Romanization = HttpUtility.HtmlDecode(romanization.InnerText);
-                    }
+                    result.Translated = items?[0]?[0];
+                    result.Romanization = items?[0]?[0];
                 }
             }
             catch (Exception ex) {
