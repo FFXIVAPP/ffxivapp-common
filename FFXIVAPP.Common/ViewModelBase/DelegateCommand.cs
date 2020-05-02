@@ -1,6 +1,6 @@
 // --------------------------------------------------------------------------------------------------------------------
 // <copyright file="DelegateCommand.cs" company="SyndicatedLife">
-//   Copyright(c) 2018 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (http://syndicated.life/)
+//   Copyright© 2007 - 2020 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (https://syndicated.life/)
 //   Licensed under the MIT license. See LICENSE.md in the solution root for full license information.
 // </copyright>
 // <summary>
@@ -36,15 +36,13 @@ namespace FFXIVAPP.Common.ViewModelBase {
         /// <summary>
         /// </summary>
         /// <param name="executeMethod"> </param>
-        public DelegateCommand(Action executeMethod)
-            : this(executeMethod, null, false) { }
+        public DelegateCommand(Action executeMethod) : this(executeMethod, null, false) { }
 
         /// <summary>
         /// </summary>
         /// <param name="executeMethod"> </param>
         /// <param name="canExecuteMethod"> </param>
-        public DelegateCommand(Action executeMethod, Func<bool> canExecuteMethod)
-            : this(executeMethod, canExecuteMethod, false) { }
+        public DelegateCommand(Action executeMethod, Func<bool> canExecuteMethod) : this(executeMethod, canExecuteMethod, false) { }
 
         /// <summary>
         /// </summary>
@@ -160,8 +158,7 @@ namespace FFXIVAPP.Common.ViewModelBase {
         /// </summary>
         /// <param name="executeMethod"> </param>
         /// <param name="canExecuteMethod"> </param>
-        public DelegateCommand(Action<T> executeMethod, Func<T, bool> canExecuteMethod)
-            : this(executeMethod, canExecuteMethod, false) { }
+        public DelegateCommand(Action<T> executeMethod, Func<T, bool> canExecuteMethod) : this(executeMethod, canExecuteMethod, false) { }
 
         /// <summary>
         /// </summary>

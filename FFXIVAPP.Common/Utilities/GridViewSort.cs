@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="GridViewSort.cs" company="SyndicatedLife">
-//   Copyright(c) 2018 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (http://syndicated.life/)
+//   Copyright© 2007 - 2020 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (https://syndicated.life/)
 //   Licensed under the MIT license. See LICENSE.md in the solution root for full license information.
 // </copyright>
 // <summary>
@@ -20,12 +20,8 @@ namespace FFXIVAPP.Common.Utilities {
 
     public class GridViewSort {
         public static readonly DependencyProperty CommandProperty = DependencyProperty.RegisterAttached(
-            "Command",
-            typeof(ICommand),
-            typeof(GridViewSort),
-            new UIPropertyMetadata(
-                null,
-                (source, e) => {
+            "Command", typeof(ICommand), typeof(GridViewSort), new UIPropertyMetadata(
+                null, (source, e) => {
                     var listView = source as ItemsControl;
                     if (listView != null) {
                         if (!GetAutoSort(listView)) {
@@ -42,12 +38,8 @@ namespace FFXIVAPP.Common.Utilities {
                 }));
 
         public static readonly DependencyProperty AutoSortProperty = DependencyProperty.RegisterAttached(
-            "AutoSort",
-            typeof(bool),
-            typeof(GridViewSort),
-            new UIPropertyMetadata(
-                false,
-                (source, e) => {
+            "AutoSort", typeof(bool), typeof(GridViewSort), new UIPropertyMetadata(
+                false, (source, e) => {
                     var listView = source as ListView;
                     if (listView != null) {
                         if (GetCommand(listView) == null) {
@@ -106,11 +98,9 @@ namespace FFXIVAPP.Common.Utilities {
                 view.SortDescriptions.Add(new SortDescription(propertyName, direction));
                 if (GetShowSortGlyph(listView)) {
                     AddSortGlyph(
-                        sortedColumnHeader,
-                        direction,
-                        direction == ListSortDirection.Ascending
-                            ? GetSortGlyphAscending(listView)
-                            : GetSortGlyphDescending(listView));
+                        sortedColumnHeader, direction, direction == ListSortDirection.Ascending
+                                                           ? GetSortGlyphAscending(listView)
+                                                           : GetSortGlyphDescending(listView));
                 }
 
                 SetSortedColumnHeader(listView, sortedColumnHeader);
@@ -122,8 +112,7 @@ namespace FFXIVAPP.Common.Utilities {
         /// <typeparam name="T"> </typeparam>
         /// <param name="dependencyObject"> </param>
         /// <returns> </returns>
-        public static T GetAncestor<T>(DependencyObject dependencyObject)
-            where T : DependencyObject {
+        public static T GetAncestor<T>(DependencyObject dependencyObject) where T : DependencyObject {
             DependencyObject parent = VisualTreeHelper.GetParent(dependencyObject);
             while (!(parent is T)) {
                 parent = VisualTreeHelper.GetParent(parent);
@@ -266,8 +255,7 @@ namespace FFXIVAPP.Common.Utilities {
 
             private readonly ImageSource _sortGlyph;
 
-            public SortGlyphAdorner(GridViewColumnHeader columnHeader, ListSortDirection direction, ImageSource sortGlyph)
-                : base(columnHeader) {
+            public SortGlyphAdorner(GridViewColumnHeader columnHeader, ListSortDirection direction, ImageSource sortGlyph) : base(columnHeader) {
                 this._columnHeader = columnHeader;
                 this._direction = direction;
                 this._sortGlyph = sortGlyph;

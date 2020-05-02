@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="FlowDocHelper.cs" company="SyndicatedLife">
-//   Copyright(c) 2018 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (http://syndicated.life/)
+//   Copyright© 2007 - 2020 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (https://syndicated.life/)
 //   Licensed under the MIT license. See LICENSE.md in the solution root for full license information.
 // </copyright>
 // <summary>
@@ -42,16 +42,16 @@ namespace FFXIVAPP.Common.Helpers {
                         var paraGraph = new Paragraph();
                         var timeStamp = new Span(new Run(time)) {
                             Foreground = (Brush) timeStampColor,
-                            FontWeight = FontWeights.Bold
+                            FontWeight = FontWeights.Bold,
                         };
                         var coloredLine = new Span(new Run(line)) {
-                            Foreground = (Brush) lineColor
+                            Foreground = (Brush) lineColor,
                         };
                         paraGraph.Inlines.Add(timeStamp);
                         if (!string.IsNullOrWhiteSpace(playerName)) {
                             object playerColor = this._stb.Convert("#FFFF00FF");
                             var playerLine = new Span(new Run("[" + playerName + "] ")) {
-                                Foreground = (Brush) playerColor
+                                Foreground = (Brush) playerColor,
                             };
                             paraGraph.Inlines.Add(playerLine);
                         }

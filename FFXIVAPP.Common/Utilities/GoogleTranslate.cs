@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="GoogleTranslate.cs" company="SyndicatedLife">
-//   Copyright(c) 2018 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (http://syndicated.life/)
+//   Copyright© 2007 - 2020 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (https://syndicated.life/)
 //   Licensed under the MIT license. See LICENSE.md in the solution root for full license information.
 // </copyright>
 // <summary>
@@ -8,22 +8,16 @@
 // </summary>
 // --------------------------------------------------------------------------------------------------------------------
 
-using System.Collections.Generic;
-using System.Windows.Documents;
-using Newtonsoft.Json;
-
 namespace FFXIVAPP.Common.Utilities {
     using System;
     using System.Collections;
-    using System.IO;
+    using System.Collections.Generic;
     using System.Net.Http;
-    using System.Text;
     using System.Threading.Tasks;
-    using System.Web;
 
     using FFXIVAPP.Common.Models;
 
-    using HtmlAgilityPack;
+    using Newtonsoft.Json;
 
     using NLog;
 
@@ -53,16 +47,13 @@ namespace FFXIVAPP.Common.Utilities {
             Logging.Log(Logger, "Calling Google");
 
             var result = new GoogleTranslateResult {
-                Original = textToTranslate
+                Original = textToTranslate,
             };
             try {
                 var url = string.Format(
-                    _baseUrl,
-                    textToTranslate,
-                    jpOnly
-                        ? inLang
-                        : "auto",
-                    outLang);
+                    _baseUrl, textToTranslate, jpOnly
+                                                   ? inLang
+                                                   : "auto", outLang);
 
                 Logging.Log(Logger, $"Resolved URL: {url}");
 
@@ -174,7 +165,7 @@ namespace FFXIVAPP.Common.Utilities {
                     "Ukrainian", "uk"
                 }, {
                     "Vietnamese", "vi"
-                }
+                },
             };
         }
     }

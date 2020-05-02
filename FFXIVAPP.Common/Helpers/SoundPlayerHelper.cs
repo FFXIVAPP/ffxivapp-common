@@ -1,6 +1,6 @@
 ﻿// --------------------------------------------------------------------------------------------------------------------
 // <copyright file="SoundPlayerHelper.cs" company="SyndicatedLife">
-//   Copyright(c) 2018 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (http://syndicated.life/)
+//   Copyright© 2007 - 2020 Ryan Wilson &amp;lt;syndicated.life@gmail.com&amp;gt; (https://syndicated.life/)
 //   Licensed under the MIT license. See LICENSE.md in the solution root for full license information.
 // </copyright>
 // <summary>
@@ -38,7 +38,7 @@ namespace FFXIVAPP.Common.Helpers {
                 List<FileInfo> soundFiles = new List<FileInfo>();
                 List<string> filters = new List<string> {
                     "*.wav",
-                    "*.mp3"
+                    "*.mp3",
                 };
                 foreach (var filter in filters) {
                     IEnumerable<FileInfo> files = Directory.GetFiles(Constants.SoundsPath, filter, SearchOption.AllDirectories).Select(file => new FileInfo(file));

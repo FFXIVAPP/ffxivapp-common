@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFXIVAPP.Common", "FFXIVAPP.Common\FFXIVAPP.Common.csproj", "{8D6CDA64-78BE-4BF0-B613-0C9AFA225DF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFXIVAPP.Common", "FFXIVAPP.Common\FFXIVAPP.Common.csproj", "{06DF4BAD-D35B-4D0F-9AF6-2BC28EA3C1CD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{018623DE-9F44-4F9E-A77D-5D4931079D0F}"
 	ProjectSection(SolutionItems) = preProject
@@ -16,7 +16,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{7AE9C4
 		.nuget\NuGet.Config = .nuget\NuGet.Config
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFXIVAPP.ResourceFiles", "..\ffxivapp-resourcefiles\FFXIVAPP.ResourceFiles\FFXIVAPP.ResourceFiles.csproj", "{38E2405F-58D4-411C-B1DF-6E2D6F14082E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFXIVAPP.ResourceFiles", "..\ffxivapp-resourcefiles\FFXIVAPP.ResourceFiles\FFXIVAPP.ResourceFiles.csproj", "{4F8437FC-EE41-4A15-80FC-93BF579A2E28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,18 +25,18 @@ Global
 		ReleaseDeploy|x86 = ReleaseDeploy|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8D6CDA64-78BE-4BF0-B613-0C9AFA225DF5}.Debug|x86.ActiveCfg = Debug|x86
-		{8D6CDA64-78BE-4BF0-B613-0C9AFA225DF5}.Debug|x86.Build.0 = Debug|x86
-		{8D6CDA64-78BE-4BF0-B613-0C9AFA225DF5}.Release|x86.ActiveCfg = Release|x86
-		{8D6CDA64-78BE-4BF0-B613-0C9AFA225DF5}.Release|x86.Build.0 = Release|x86
-		{8D6CDA64-78BE-4BF0-B613-0C9AFA225DF5}.ReleaseDeploy|x86.ActiveCfg = ReleaseDeploy|x86
-		{8D6CDA64-78BE-4BF0-B613-0C9AFA225DF5}.ReleaseDeploy|x86.Build.0 = ReleaseDeploy|x86
-		{38E2405F-58D4-411C-B1DF-6E2D6F14082E}.Debug|x86.ActiveCfg = Debug|x86
-		{38E2405F-58D4-411C-B1DF-6E2D6F14082E}.Debug|x86.Build.0 = Debug|x86
-		{38E2405F-58D4-411C-B1DF-6E2D6F14082E}.Release|x86.ActiveCfg = Release|x86
-		{38E2405F-58D4-411C-B1DF-6E2D6F14082E}.Release|x86.Build.0 = Release|x86
-		{38E2405F-58D4-411C-B1DF-6E2D6F14082E}.ReleaseDeploy|x86.ActiveCfg = ReleaseDeploy|x86
-		{38E2405F-58D4-411C-B1DF-6E2D6F14082E}.ReleaseDeploy|x86.Build.0 = ReleaseDeploy|x86
+		{06DF4BAD-D35B-4D0F-9AF6-2BC28EA3C1CD}.Debug|x86.ActiveCfg = Debug|x86
+		{06DF4BAD-D35B-4D0F-9AF6-2BC28EA3C1CD}.Debug|x86.Build.0 = Debug|x86
+		{06DF4BAD-D35B-4D0F-9AF6-2BC28EA3C1CD}.Release|x86.ActiveCfg = Release|x86
+		{06DF4BAD-D35B-4D0F-9AF6-2BC28EA3C1CD}.Release|x86.Build.0 = Release|x86
+		{06DF4BAD-D35B-4D0F-9AF6-2BC28EA3C1CD}.ReleaseDeploy|x86.ActiveCfg = ReleaseDeploy|x86
+		{06DF4BAD-D35B-4D0F-9AF6-2BC28EA3C1CD}.ReleaseDeploy|x86.Build.0 = ReleaseDeploy|x86
+		{4F8437FC-EE41-4A15-80FC-93BF579A2E28}.Debug|x86.ActiveCfg = Debug|x86
+		{4F8437FC-EE41-4A15-80FC-93BF579A2E28}.Debug|x86.Build.0 = Debug|x86
+		{4F8437FC-EE41-4A15-80FC-93BF579A2E28}.Release|x86.ActiveCfg = Release|x86
+		{4F8437FC-EE41-4A15-80FC-93BF579A2E28}.Release|x86.Build.0 = Release|x86
+		{4F8437FC-EE41-4A15-80FC-93BF579A2E28}.ReleaseDeploy|x86.ActiveCfg = ReleaseDeploy|x86
+		{4F8437FC-EE41-4A15-80FC-93BF579A2E28}.ReleaseDeploy|x86.Build.0 = ReleaseDeploy|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
