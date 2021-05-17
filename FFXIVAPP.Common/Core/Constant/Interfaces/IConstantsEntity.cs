@@ -33,6 +33,8 @@ namespace FFXIVAPP.Common.Core.Constant.Interfaces {
 
         string GameLanguage { get; set; }
 
+        string GameRegion { get; set; }
+
         string ServerName { get; set; }
 
         string Theme { get; set; }
